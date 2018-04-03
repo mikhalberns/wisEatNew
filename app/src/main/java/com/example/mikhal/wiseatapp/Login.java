@@ -54,6 +54,7 @@ public class Login extends AppCompatActivity implements FacebookListener, Google
             @Override
             public void onClick(View view) {
                 mGoogle.performSignIn(Login.this);
+                startActivity(new Intent(getApplicationContext(),setProfile.class));
             }
         });
     }
