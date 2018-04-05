@@ -311,7 +311,7 @@ public final class R {
         public static final int tw__cacerts = 0x7f070000;
     }
     public static final class string {
-        public static final int kit_name = 0x7f08006a;
+        public static final int kit_name = 0x7f080077;
         public static final int tw__allow_btn_txt = 0x7f08003d;
         public static final int tw__like_tweet = 0x7f080040;
         public static final int tw__liked_tweet = 0x7f080041;

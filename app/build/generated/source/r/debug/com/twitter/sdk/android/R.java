@@ -365,7 +365,7 @@ public final class R {
         public static final int tw__cacerts = 0x7f070000;
     }
     public static final class string {
-        public static final int kit_name = 0x7f08006a;
+        public static final int kit_name = 0x7f080077;
         public static final int tw__allow_btn_txt = 0x7f08003d;
         public static final int tw__composer_hint = 0x7f08003e;
         public static final int tw__install = 0x7f08003f;
@@ -377,7 +377,7 @@ public final class R {
         public static final int tw__not_now_btn_txt = 0x7f080045;
         public static final int tw__pause = 0x7f080046;
         public static final int tw__play = 0x7f080047;
-        public static final int tw__play_store = 0x7f080074;
+        public static final int tw__play_store = 0x7f08008a;
         public static final int tw__post_tweet = 0x7f080048;
         public static final int tw__relative_date_format_long = 0x7f080049;
         public static final int tw__relative_date_format_short = 0x7f08004a;

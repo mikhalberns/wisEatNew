@@ -6,9 +6,39 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.Toast;
 
 public class setProfile extends AppCompatActivity {
     DatabaseHelper myDb;
+    CheckBox veganCheck;
+    CheckBox vegetarianCheck;
+    CheckBox beefCheck;
+    CheckBox chickenCheck;
+    CheckBox porkCheck;
+    CheckBox fishCheck;
+    CheckBox InsectsCheck;
+    CheckBox eggsFreeCheck;
+    CheckBox diaryFreeCheck;
+    CheckBox honeyCheck;
+    CheckBox glutenFreeCheck;
+    CheckBox lupinCheck;
+    CheckBox sesameCheck;
+    CheckBox algaeCheck;
+    CheckBox shellfishCheck;
+    CheckBox soyCheck;
+    CheckBox peanutsCheck;
+    CheckBox sulphiteCheck;
+    CheckBox nutsCheck;
+    CheckBox mustardCheck;
+    CheckBox celeryCheck;
+    CheckBox cornCheck;
+    Button btnAddData;
+    Integer beef, chicken , pork, fish , Insects, eggsFree, diaryFree,
+            honey , glutenFree , lupin, sesame, algae, shellfish,soy,
+            peanuts,sulphite, nuts,mustard,celery,corn;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,15 +48,82 @@ public class setProfile extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         myDb= new DatabaseHelper(this);
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+        veganCheck= (CheckBox) findViewById(R.id.vegan);
+        vegetarianCheck = (CheckBox) findViewById(R.id.vegetarian);
+        beefCheck= (CheckBox) findViewById(R.id.beef);
+        chickenCheck= (CheckBox) findViewById(R.id.chicken);
+        porkCheck= (CheckBox) findViewById(R.id.pork);
+        fishCheck= (CheckBox) findViewById(R.id.fish);
+        InsectsCheck= (CheckBox) findViewById(R.id.Insects);
+        eggsFreeCheck= (CheckBox) findViewById(R.id.eggsFree);
+        diaryFreeCheck= (CheckBox) findViewById(R.id.diaryFree);
+        honeyCheck= (CheckBox) findViewById(R.id.honey);
+        glutenFreeCheck= (CheckBox) findViewById(R.id.glutenFree);
+        lupinCheck= (CheckBox) findViewById(R.id.lupin);
+        sesameCheck= (CheckBox) findViewById(R.id.sesame);
+        algaeCheck= (CheckBox) findViewById(R.id.algae);
+        shellfishCheck= (CheckBox) findViewById(R.id.shellfish);
+        soyCheck= (CheckBox) findViewById(R.id.soy);
+        peanutsCheck= (CheckBox) findViewById(R.id.peanuts);
+        sulphiteCheck= (CheckBox) findViewById(R.id.sulphite);
+        nutsCheck= (CheckBox) findViewById(R.id.nuts);
+        mustardCheck= (CheckBox) findViewById(R.id.mustard);
+        celeryCheck= (CheckBox) findViewById(R.id.celery);
+        cornCheck= (CheckBox) findViewById(R.id.corn);
+        btnAddData = (Button)findViewById(R.id.done);
+        AddData();
     }
+    public  void AddData() {
+        btnAddData.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if (veganCheck.isChecked()) {
+                            beef  =1 ;
+                            pork  =1 ;
+                            fish  =1 ;
+                            Insects  =1 ;
+                            eggsFree  =1 ;
+                            diaryFree  =1 ;
+                            honey  =1 ;
+                            shellfish  =1 ;
+                        }
+                        if (vegetarianCheck.isChecked()) {
+                            beef  =1 ;
+                            chicken  =1 ;
+                            pork  =1 ;
+                            fish  =1 ;
+                            Insects  =1 ;
+                            shellfish  =1 ;
+                        }
+                        if (beefCheck.isChecked()) {beef  =1 ; }
+                        if (chickenCheck.isChecked()) {chicken  =1 ; }
+                        if (porkCheck.isChecked()) {pork  =1 ; }
+                        if (fishCheck.isChecked()) {fish  =1 ; }
+                        if (InsectsCheck.isChecked()) {Insects  =1 ; }
+                        if (eggsFreeCheck.isChecked()) {eggsFree  =1 ; }
+                        if (diaryFreeCheck.isChecked()) {diaryFree  =1 ; }
+                        if (honeyCheck.isChecked()) {honey  =1 ; }
+                        if (glutenFreeCheck.isChecked()) {glutenFree  =1 ; }
+                        if (lupinCheck.isChecked()) {lupin  =1 ; }
+                        if (sesameCheck.isChecked()) {sesame  =1 ; }
+                        if (algaeCheck.isChecked()) {algae  =1 ; }
+                        if (shellfishCheck.isChecked()) {shellfish  =1 ; }
+                        if (soyCheck.isChecked()) {soy  =1 ; }
+                        if (peanutsCheck.isChecked()) {peanuts  =1 ; }
+                        if (sulphiteCheck.isChecked()) {sulphite  =1 ; }
+                        if (nutsCheck.isChecked()) {nuts  =1 ; }
+                        if (mustardCheck.isChecked()) {mustard  =1 ; }
+                        if (celeryCheck.isChecked()) {celery  =1 ; }
+                        if (cornCheck.isChecked()) {corn  =1 ; }
 
+                        boolean isInserted = myDb.insertData(beef , chicken ,pork, fish , Insects, eggsFree, diaryFree, honey , glutenFree , lupin, sesame, algae, shellfish,soy, peanuts,sulphite, nuts,mustard,celery,corn);
+                        if(isInserted == true)
+                            Toast.makeText(setProfile.this,"Data Inserted",Toast.LENGTH_LONG).show();
+                        else
+                            Toast.makeText(setProfile.this,"Data not Inserted",Toast.LENGTH_LONG).show();
+                    }
+                }
+        );
+    }
 }
