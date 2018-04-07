@@ -1,5 +1,6 @@
 package com.example.mikhal.wiseatapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -71,6 +72,13 @@ public class setProfile extends AppCompatActivity {
         celeryCheck= (CheckBox) findViewById(R.id.celery);
         cornCheck= (CheckBox) findViewById(R.id.corn);
         btnAddData = (Button)findViewById(R.id.done);
+        btnAddData.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(setProfile.this,profilePop.class));
+            }
+        });
+
         AddData();
     }
     public  void AddData() {

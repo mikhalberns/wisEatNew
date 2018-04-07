@@ -23,20 +23,4 @@
     <include layout="@layout/content_set_profile" />
 
 
-
-
-    <TextView
-        android:id="@+id/title1"
-        android:layout_width="wrap_content"
-        android:layout_height="17dp"
-        android:layout_marginEnd="270dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:text="choose_your_diet"
-        app:layout_constraintBottom_toTopOf="@+id/vegetarian"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
 </android.support.design.widget.CoordinatorLayout>
