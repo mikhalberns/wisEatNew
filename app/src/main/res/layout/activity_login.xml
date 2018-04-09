@@ -9,83 +9,89 @@
 
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_alignParentTop="true"
+        android:id="@+id/appLogo_imageView"
+        android:layout_width="365dp"
+        android:layout_height="369dp"
+        android:layout_above="@+id/welcome_textView"
         android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
         app:srcCompat="@drawable/app_logo" />
-    <Button
-        android:id="@+id/btnFacebook"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center_vertical"
-        android:background="@drawable/rounded_corner_fb_btn"
-        android:elevation="0dp"
-        android:fontFamily="casual"
-        android:padding="15dp"
-        android:text="Log in with Facebook"
-        android:textColor="@android:color/white"
-        android:textStyle="bold" />
-
-    <Button
-
-        android:id="@+id/btnGoogle"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center_vertical"
-        android:layout_marginBottom="53dp"
-        android:background="@drawable/rounded_corner_gg_btn"
-        android:elevation="0dp"
-        android:fontFamily="casual"
-        android:padding="15dp"
-        android:text="Log in with Google"
-        android:textColor="@android:color/white"
-        android:textSize="14sp"
-        android:textStyle="bold" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_alignBottom="@+id/btnGoogle"
-        android:layout_alignStart="@+id/btnGoogle"
-        android:layout_marginStart="6dp"
-        app:srcCompat="@drawable/ggl_login" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="50dp"
-        android:layout_height="52dp"
-        android:layout_alignBottom="@+id/btnFacebook"
-        android:layout_alignStart="@+id/btnFacebook"
-        app:srcCompat="@drawable/fb_login" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="300dp"
+        android:id="@+id/welcome_textView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView3"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="145dp"
         android:fontFamily="casual"
-        android:text="Welcome to WisEat, an app that helps you consume smarter :)"
+        android:text="@string/welcome"
         android:textAlignment="center"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView3"
+    <Button
+        android:id="@+id/btnFacebook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="88dp"
+        android:layout_marginEnd="83dp"
+        android:background="@drawable/rounded_corner_fb_btn"
+        android:fontFamily="casual"
+        android:padding="10dp"
+        android:text="@string/fb_login"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/fbLogo_imageView"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:layout_alignTop="@+id/btnFacebook"
+        android:layout_toStartOf="@+id/btnFacebook"
+        android:contentDescription="@string/fb_login"
+        android:src="@drawable/fb_login" />
+
+    <Button
+
+        android:id="@+id/btnGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="92dp"
+        android:background="@drawable/rounded_corner_gg_btn"
+        android:fontFamily="casual"
+        android:padding="10dp"
+        android:text="@string/ggl_login"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/gglLogo_imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/btnGoogle"
+        android:layout_toStartOf="@+id/btnGoogle"
+        android:contentDescription="@string/ggl_login"
+        android:src="@drawable/ggl_login" />
+
+    <TextView
+        android:id="@+id/cpyRights_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="15dp"
-        android:text="© 20182W71. All rights reserved."
+        android:text="@string/cpyRights"
+        android:textAlignment="center"
         android:textColor="@color/com_facebook_button_background_color_focused_disabled" />
 
 </RelativeLayout>

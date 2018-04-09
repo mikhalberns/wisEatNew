@@ -4,6 +4,14 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="facebook_app_id">156568555035441</string>
+    <!-- Screen #1 Design -->
+    <string name="welcome">Welcome to WisEat, an app that\n helps you consume smarter :)</string>
+    <string name="fb_login">Log in with Facebook</string>
+    <string name="ggl_login">Log in with Google</string>
+    <string name="cpyRights">© 20182W71. All rights reserved.</string>
+    <!--End Of Screen #1 Design -->
+
+    <!-- Set Profile -->
     <string name="title_activity_set_profile">setProfile</string>
     <string name="vegetarian">vegetarian</string>
     <string name="pork">pork</string>
@@ -29,4 +37,5 @@
     <string name="insects">insects</string>
     <string name="glutenfree">glutenFree</string>
     <string name="diaryfree">diaryFree</string>
+    <!--End of Set Profile -->
 </resources>
