@@ -1,6 +1,7 @@
 package com.example.mikhal.wiseatapp;
 
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -34,8 +35,8 @@ public class setProfile extends AppCompatActivity {
     CheckBox mustardCheck;
     CheckBox celeryCheck;
     CheckBox cornCheck;
-    CheckBox customCheck= (CheckBox) findViewById(R.id.custom);
-    
+    CheckBox customCheck;
+
     Button btnAddData;
     Integer beef, chicken , pork, fish , Insects, eggsFree, diaryFree,
             honey , glutenFree , lupin, sesame, algae, shellfish,soy,
@@ -90,12 +91,26 @@ public class setProfile extends AppCompatActivity {
         celeryCheck= (CheckBox) findViewById(R.id.celery);
         cornCheck= (CheckBox) findViewById(R.id.corn);
         btnAddData = (Button)findViewById(R.id.done);
-       /* btnAddData.setOnClickListener(new View.OnClickListener() {
+        customCheck= (CheckBox) findViewById(R.id.custom);
+
+        customCheck.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(setProfile.this,profilePop.class));
+
+                if (((CheckBox) v).isChecked()) {
+                    AlertDialog.Builder pBuilder = new AlertDialog.Builder(setProfile.this);
+                    View pView = getLayoutInflater().inflate(R.layout.dialog_custom,null);
+                    //add lines ?
+
+                 pBuilder.setView(pView);
+                 AlertDialog dialog= pBuilder.create();
+                 dialog.show();
+                }
+
             }
-        });*/
+
+        });
+
 
         AddData();
     }

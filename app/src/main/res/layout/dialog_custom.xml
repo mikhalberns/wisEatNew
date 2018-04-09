@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <CheckBox
+        android:id="@+id/beef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/beef" />
+
+    <CheckBox
+        android:id="@+id/pork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/chicken"
+        android:text="@string/pork" />
+
+    <CheckBox
+        android:id="@+id/fish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/pork"
+        android:text="@string/fish" />
+
+    <CheckBox
+        android:id="@+id/honey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/honey" />
+
+    <CheckBox
+        android:id="@+id/algae"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/soy"
+        android:text="@string/algae" />
+
+    <CheckBox
+        android:id="@+id/shellfish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/fish"
+        android:text="@string/shellfish" />
+
+    <CheckBox
+        android:id="@+id/sulphite"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/corn"
+        android:text="@string/sulphite" />
+
+    <CheckBox
+        android:id="@+id/nuts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/algae"
+        android:text="@string/nuts" />
+
+    <CheckBox
+        android:id="@+id/mustard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/honey"
+        android:layout_alignParentStart="true"
+        android:text="@string/mustard" />
+
+    <CheckBox
+        android:id="@+id/celery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/sesame"
+        android:text="@string/celery" />
+
+    <CheckBox
+        android:id="@+id/corn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Insects"
+        android:text="@string/corn" />
+
+    <CheckBox
+        android:id="@+id/peanuts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/sulphite"
+        android:text="@string/peanuts" />
+
+    <CheckBox
+        android:id="@+id/Insects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/shellfish"
+        android:text="@string/insects" />
+
+    <CheckBox
+        android:id="@+id/lupin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/celery"
+        android:text="@string/lupin" />
+
+    <CheckBox
+        android:id="@+id/sesame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/peanuts"
+        android:text="@string/sesame" />
+
+    <CheckBox
+        android:id="@+id/chicken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/beef"
+        android:text="@string/chicken" />
+
+    <CheckBox
+        android:id="@+id/soy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lupin"
+        android:text="@string/soy" />
+</RelativeLayout>
