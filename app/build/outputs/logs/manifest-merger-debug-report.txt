@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml:2:1-29:12
+ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:2:1-29:12
 MERGED from [com.github.mukeshsolanki:social-login-helper:1.0.2] C:\Users\вайд\.gradle\caches\transforms-1\files-1.1\social-login-helper-1.0.2.aar\cd616ccde226d144230b5ec47917e026\AndroidManifest.xml:2:1-12:12
 MERGED from [com.android.support:design:26.1.0] C:\Users\вайд\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\ab2105a9905a62741abc5066b938f0a7\AndroidManifest.xml:17:1-31:12
 MERGED from [com.facebook.android:facebook-android-sdk:4.20.0] C:\Users\вайд\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.20.0.aar\fece818f375a81ccb987a2ae70b05256\AndroidManifest.xml:21:1-50:12
@@ -37,31 +37,31 @@ MERGED from [com.twitter.sdk.android:tweet-composer:2.3.1] C:\Users\вайд\.gradle
 MERGED from [com.twitter.sdk.android:twitter-core:2.3.1] C:\Users\вайд\.gradle\caches\transforms-1\files-1.1\twitter-core-2.3.1.aar\223007cb00dded0610a002de29b71fc9\AndroidManifest.xml:18:1-42:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\вайд\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\accc027f466a76a71e0de7e8e5940661\AndroidManifest.xml:17:1-30:12
 MERGED from [io.fabric.sdk.android:fabric:1.3.17] C:\Users\вайд\.gradle\caches\transforms-1\files-1.1\fabric-1.3.17.aar\05537aa2a538643811f4d24f4f629ecb\AndroidManifest.xml:22:1-33:12
-INJECTED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:2:1-29:12
 	package
-		ADDED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml:3:5-43
-		INJECTED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml
-		INJECTED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml
+		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:3:5-43
+		INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml
+		INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml
-		ADDED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml:2:1-29:12
-		INJECTED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml
+		INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml
+		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:2:1-29:12
+		INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml
-		ADDED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml:2:1-29:12
-		INJECTED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml
+		INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml
+		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:2:1-29:12
+		INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:2:11-69
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml:5:5-7:51
+ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:5:5-7:51
 	android:value
-		ADDED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml:7:9-48
+		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:7:9-48
 	android:name
-		ADDED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml:6:9-54
+		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:6:9-54
 application
-ADDED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml:9:5-27:19
+ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:9:5-27:19
 MERGED from [com.android.support:design:26.1.0] C:\Users\вайд\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\ab2105a9905a62741abc5066b938f0a7\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:design:26.1.0] C:\Users\вайд\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\ab2105a9905a62741abc5066b938f0a7\AndroidManifest.xml:25:5-29:19
 MERGED from [com.facebook.android:facebook-android-sdk:4.20.0] C:\Users\вайд\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.20.0.aar\fece818f375a81ccb987a2ae70b05256\AndroidManifest.xml:28:5-48:19
@@ -125,43 +125,43 @@ MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\вайд\.gradle\caches\
 MERGED from [io.fabric.sdk.android:fabric:1.3.17] C:\Users\вайд\.gradle\caches\transforms-1\files-1.1\fabric-1.3.17.aar\05537aa2a538643811f4d24f4f629ecb\AndroidManifest.xml:31:5-20
 MERGED from [io.fabric.sdk.android:fabric:1.3.17] C:\Users\вайд\.gradle\caches\transforms-1\files-1.1\fabric-1.3.17.aar\05537aa2a538643811f4d24f4f629ecb\AndroidManifest.xml:31:5-20
 	android:supportsRtl
-		ADDED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml:14:9-35
+		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml:12:9-41
+		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:12:9-41
 	android:roundIcon
-		ADDED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml:13:9-54
+		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:13:9-54
 	android:icon
-		ADDED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml:11:9-43
+		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:11:9-43
 	android:allowBackup
-		ADDED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml:15:9-40
+		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:15:9-40
 activity#com.example.mikhal.wiseatapp.Login
-ADDED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml:16:9-22:20
+ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:16:9-22:20
 	android:name
-		ADDED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml:16:19-40
+		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:16:19-40
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml:17:13-21:29
+ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:17:13-21:29
 action#android.intent.action.MAIN
-ADDED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml:18:17-69
+ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml:18:25-66
+		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml:20:17-77
+ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml:20:27-74
+		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:20:27-74
 activity#com.example.mikhal.wiseatapp.setProfile
-ADDED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml:23:9-26:68
+ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:23:9-26:68
 	android:label
-		ADDED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml:25:13-63
+		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:25:13-63
 	android:theme
-		ADDED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml:26:13-56
+		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:26:13-56
 	android:name
-		ADDED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml:24:13-39
+		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:24:13-39
 uses-sdk
-INJECTED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml
-INJECTED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml
+INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml
+INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml
 MERGED from [com.github.mukeshsolanki:social-login-helper:1.0.2] C:\Users\вайд\.gradle\caches\transforms-1\files-1.1\social-login-helper-1.0.2.aar\cd616ccde226d144230b5ec47917e026\AndroidManifest.xml:8:5-10:41
 MERGED from [com.github.mukeshsolanki:social-login-helper:1.0.2] C:\Users\вайд\.gradle\caches\transforms-1\files-1.1\social-login-helper-1.0.2.aar\cd616ccde226d144230b5ec47917e026\AndroidManifest.xml:8:5-10:41
 MERGED from [com.android.support:design:26.1.0] C:\Users\вайд\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\ab2105a9905a62741abc5066b938f0a7\AndroidManifest.xml:21:5-23:62
@@ -228,18 +228,18 @@ MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\вайд\.gradle\caches\
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\вайд\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\accc027f466a76a71e0de7e8e5940661\AndroidManifest.xml:20:5-22:41
 MERGED from [io.fabric.sdk.android:fabric:1.3.17] C:\Users\вайд\.gradle\caches\transforms-1\files-1.1\fabric-1.3.17.aar\05537aa2a538643811f4d24f4f629ecb\AndroidManifest.xml:27:5-43
 MERGED from [io.fabric.sdk.android:fabric:1.3.17] C:\Users\вайд\.gradle\caches\transforms-1\files-1.1\fabric-1.3.17.aar\05537aa2a538643811f4d24f4f629ecb\AndroidManifest.xml:27:5-43
-INJECTED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml
-INJECTED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml
+INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml
+INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:26.1.0] C:\Users\вайд\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\ab2105a9905a62741abc5066b938f0a7\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		INJECTED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml
-		ADDED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml
-		INJECTED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml
+		INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml
+		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml
+		INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml
-		ADDED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml
-		INJECTED from C:\android studio\wisEatApp-logIn\app\src\main\AndroidManifest.xml
+		INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml
+		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml
+		INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml
 meta-data#android.support.VERSION
 ADDED from [com.android.support:design:26.1.0] C:\Users\вайд\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\ab2105a9905a62741abc5066b938f0a7\AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\вайд\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\55b8f96ef955b2a18451a81862fbbcb4\AndroidManifest.xml:26:9-28:38

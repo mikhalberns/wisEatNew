@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,335 +12,278 @@
         android:id="@+id/vegetarian"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="234dp"
-        android:layout_marginStart="32dp"
-        android:text="@string/vegetarian"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title1"
-        android:onClick="selectDiet" />
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/vegan"
+        android:text="@string/vegetarian" />
 
     <CheckBox
         android:id="@+id/vegan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="234dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/vegan"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/vegetarian" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="69dp"
+        android:text="@string/vegan" />
 
     <CheckBox
         android:id="@+id/glutenFree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="228dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/glutenfree"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/vegan" />
+        android:layout_above="@+id/title2"
+        android:layout_alignStart="@+id/fish"
+        android:text="@string/glutenfree" />
 
     <CheckBox
         android:id="@+id/diaryFree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="73dp"
-        android:layout_marginStart="68dp"
-        android:text="@string/diaryfree"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/vegetarian"
-        app:layout_constraintTop_toBottomOf="@+id/title1" />
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/eggsFree"
+        android:layout_marginTop="155dp"
+        android:text="@string/diaryfree" />
 
     <CheckBox
         android:id="@+id/eggsFree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="73dp"
-        android:layout_marginStart="94dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/eggsfree"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/vegan"
-        app:layout_constraintTop_toBottomOf="@+id/diaryFree" />
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/beef"
+        android:layout_marginTop="115dp"
+        android:text="@string/eggsfree" />
 
     <CheckBox
         android:id="@+id/beef"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="264dp"
-        android:layout_marginEnd="220dp"
-        android:layout_marginTop="62dp"
-        android:text="@string/beef"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/glutenFree"
-        app:layout_constraintVertical_bias="0.0" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/chicken"
+        android:layout_marginBottom="232dp"
+        android:text="@string/beef" />
 
     <TextView
         android:id="@+id/title2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="264dp"
-        android:layout_marginEnd="220dp"
-        android:layout_marginTop="62dp"
-        android:layout_marginStart="32dp"
-        android:text="@string/i_m_avoiding"
-        app:layout_constraintBottom_toTopOf="@+id/beef"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/glutenFree"
-        app:layout_constraintVertical_bias="0.062" />
+        android:layout_alignBottom="@+id/peanuts"
+        android:layout_alignStart="@+id/diaryFree"
+        android:text=" the food you are avoiding off" />
 
     <CheckBox
         android:id="@+id/chicken"
         android:layout_width="wrap_content"
-        android:layout_height="31dp"
-        android:layout_marginBottom="9dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="13dp"
-        android:text="@string/chicken"
-        app:layout_constraintBottom_toTopOf="@+id/pork"
-        app:layout_constraintEnd_toStartOf="@+id/sulphite"
-        app:layout_constraintHorizontal_bias="0.35"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/beef" />
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="254dp"
+        android:text="@string/chicken" />
 
     <CheckBox
         android:id="@+id/pork"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="9dp"
-        android:text="@string/pork"
-        app:layout_constraintBottom_toTopOf="@+id/Insects"
-        app:layout_constraintEnd_toStartOf="@+id/honey"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chicken" />
+        android:layout_alignStart="@+id/beef"
+        android:layout_below="@+id/honey"
+        android:text="@string/pork" />
 
     <CheckBox
         android:id="@+id/fish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="54dp"
-        android:layout_marginStart="16dp"
-        android:text="@string/fish"
-        app:layout_constraintBottom_toTopOf="@+id/shellfish"
-        app:layout_constraintEnd_toStartOf="@+id/sesame"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Insects" />
+        android:layout_alignEnd="@+id/beef"
+        android:layout_below="@+id/lupin"
+        android:text="@string/fish" />
 
     <CheckBox
         android:id="@+id/honey"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
-        android:text="@string/honey"
-        app:layout_constraintBottom_toTopOf="@+id/mustard"
-        app:layout_constraintEnd_toStartOf="@+id/lupin"
-        app:layout_constraintStart_toEndOf="@+id/pork"
-        app:layout_constraintTop_toBottomOf="@+id/sulphite" />
+        android:layout_alignBottom="@+id/mustard"
+        android:layout_alignStart="@+id/lupin"
+        android:text="@string/honey" />
 
     <CheckBox
         android:id="@+id/lupin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="11dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginStart="69dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/lupin"
-        app:layout_constraintBottom_toTopOf="@+id/corn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/honey"
-        app:layout_constraintTop_toBottomOf="@+id/soy" />
+        android:layout_alignStart="@+id/sesame"
+        android:layout_alignTop="@+id/sulphite"
+        android:text="@string/lupin" />
 
     <CheckBox
         android:id="@+id/sesame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="1dp"
-        android:layout_marginEnd="152dp"
-        android:layout_marginStart="33dp"
-        android:text="@string/sesame"
-        app:layout_constraintBottom_toTopOf="@+id/algae"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/shellfish"
-        app:layout_constraintTop_toBottomOf="@+id/mustard" />
+        android:layout_alignStart="@+id/done"
+        android:layout_alignTop="@+id/celery"
+        android:text="@string/sesame" />
 
     <CheckBox
         android:id="@+id/algae"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:layout_marginEnd="168dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="9dp"
-        android:text="@string/algae"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/shellfish"
-        app:layout_constraintTop_toBottomOf="@+id/sesame" />
+        android:layout_above="@+id/corn"
+        android:layout_alignEnd="@+id/diaryFree"
+        android:text="@string/algae" />
 
     <CheckBox
         android:id="@+id/shellfish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginStart="16dp"
-        android:text="@string/shellfish"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/algae"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/Insects"
+        android:layout_marginBottom="65dp"
+        android:text="@string/shellfish" />
 
     <CheckBox
         android:id="@+id/soy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/soy"
-        app:layout_constraintBottom_toTopOf="@+id/lupin"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/sulphite"
-        app:layout_constraintTop_toBottomOf="@+id/nuts" />
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="42dp"
+        android:layout_marginStart="-234dp"
+        android:text="@string/soy"/>
 
     <CheckBox
         android:id="@+id/sulphite"
         android:layout_width="90dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="69dp"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="7dp"
-        android:text="@string/sulphite"
-        app:layout_constraintBottom_toTopOf="@+id/honey"
-        app:layout_constraintEnd_toStartOf="@+id/soy"
-        app:layout_constraintStart_toEndOf="@+id/chicken"
-        app:layout_constraintTop_toBottomOf="@+id/celery" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/nuts"
+        android:layout_marginBottom="175dp"
+        android:text="@string/sulphite" />
 
     <CheckBox
         android:id="@+id/nuts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="104dp"
-        android:text="@string/nuts"
-        app:layout_constraintBottom_toTopOf="@+id/soy"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/celery"
-        app:layout_constraintTop_toBottomOf="@+id/eggsFree" />
+        android:layout_alignTop="@+id/Insects"
+        android:layout_centerHorizontal="true"
+        android:text="@string/nuts" />
 
     <CheckBox
         android:id="@+id/mustard"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="85dp"
-        android:text="@string/mustard"
-        app:layout_constraintBottom_toTopOf="@+id/sesame"
-        app:layout_constraintEnd_toStartOf="@+id/corn"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/honey" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/sulphite"
+        android:layout_marginBottom="222dp"
+        android:text="@string/mustard" />
 
     <CheckBox
         android:id="@+id/celery"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="7dp"
-        android:layout_marginEnd="66dp"
-        android:layout_marginStart="51dp"
-        android:layout_marginTop="64dp"
-        android:text="@string/celery"
-        app:layout_constraintBottom_toTopOf="@+id/sulphite"
-        app:layout_constraintEnd_toStartOf="@+id/nuts"
-        app:layout_constraintStart_toEndOf="@+id/beef"
-        app:layout_constraintTop_toBottomOf="@+id/glutenFree"
-        app:layout_constraintVertical_chainStyle="spread_inside" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/sulphite"
+        android:layout_marginBottom="124dp"
+        android:text="@string/celery" />
 
     <CheckBox
         android:id="@+id/corn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="@string/corn"
-        app:layout_constraintBottom_toTopOf="@+id/peanuts"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/mustard"
-        app:layout_constraintTop_toBottomOf="@+id/lupin" />
+        android:layout_above="@+id/soy"
+        android:layout_centerHorizontal="true"
+        android:text="@string/corn" />
 
     <CheckBox
         android:id="@+id/peanuts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="120dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="53dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/peanuts"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/sesame"
-        app:layout_constraintTop_toBottomOf="@+id/corn"
-        app:layout_constraintVertical_bias="0.0" />
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-234dp"
+        android:layout_marginTop="210dp"
+        android:text="@string/peanuts" />
 
     <CheckBox
         android:id="@+id/Insects"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="1dp"
-        android:layout_marginEnd="35dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="22dp"
-        android:text="@string/insects"
-        app:layout_constraintBottom_toTopOf="@+id/title2"
-        app:layout_constraintEnd_toStartOf="@+id/mustard"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pork" />
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/insects" />
 
     <Button
         android:id="@+id/done"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="28dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:onClick="finalSelection"
-        android:text="@string/done"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        android:layout_alignBottom="@+id/soy"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:text="@string/done" />
 
-</android.support.constraint.ConstraintLayout>
+    <RadioGroup
+        android:id="@+id/eggsFreeRG"
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/eggsFree"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/eggs1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Never" />
+
+        <RadioButton
+            android:id="@+id/eggs2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Occasionally" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/diaryFreeRG"
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/eggsFree"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/diary1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Never" />
+
+        <RadioButton
+            android:id="@+id/diary2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Occasionally" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/glutenFreeRG"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/diaryFree"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/gluten1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Never" />
+
+        <RadioButton
+            android:id="@+id/gluten2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Occasionally" />
+
+    </RadioGroup>
+
+        />
+
+
+
+
+</RelativeLayout>

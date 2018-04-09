@@ -1,14 +1,13 @@
 package com.example.mikhal.wiseatapp;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 public class setProfile extends AppCompatActivity {
@@ -35,11 +34,14 @@ public class setProfile extends AppCompatActivity {
     CheckBox mustardCheck;
     CheckBox celeryCheck;
     CheckBox cornCheck;
+    CheckBox customCheck= (CheckBox) findViewById(R.id.custom);
+    
     Button btnAddData;
     Integer beef, chicken , pork, fish , Insects, eggsFree, diaryFree,
             honey , glutenFree , lupin, sesame, algae, shellfish,soy,
             peanuts,sulphite, nuts,mustard,celery,corn;
-
+    RadioGroup eggsFreeRG,diaryFreeRG,glutenFreeRG;
+    RadioButton eggs1,eggs2,diary1,diary2,gluten1,gluten2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,10 +58,26 @@ public class setProfile extends AppCompatActivity {
         porkCheck= (CheckBox) findViewById(R.id.pork);
         fishCheck= (CheckBox) findViewById(R.id.fish);
         InsectsCheck= (CheckBox) findViewById(R.id.Insects);
+
         eggsFreeCheck= (CheckBox) findViewById(R.id.eggsFree);
+        eggsFreeRG= (RadioGroup) findViewById(R.id.eggsFreeRG);
+        addListenerOnChk(eggsFreeCheck, eggsFreeRG);
+        eggs1=(RadioButton) findViewById(R.id.eggs1);
+        eggs2=(RadioButton) findViewById(R.id.eggs2);
+
         diaryFreeCheck= (CheckBox) findViewById(R.id.diaryFree);
-        honeyCheck= (CheckBox) findViewById(R.id.honey);
+        diaryFreeRG=(RadioGroup) findViewById(R.id.diaryFreeRG);
+        addListenerOnChk(diaryFreeCheck, diaryFreeRG);
+        diary1=(RadioButton) findViewById(R.id.diary1);
+        diary2=(RadioButton) findViewById(R.id.diary2);
+
         glutenFreeCheck= (CheckBox) findViewById(R.id.glutenFree);
+        glutenFreeRG= (RadioGroup) findViewById(R.id.glutenFreeRG);
+        addListenerOnChk(glutenFreeCheck, glutenFreeRG);
+        gluten1=(RadioButton) findViewById(R.id.gluten1);
+        gluten2=(RadioButton) findViewById(R.id.gluten2);
+
+        honeyCheck= (CheckBox) findViewById(R.id.honey);
         lupinCheck= (CheckBox) findViewById(R.id.lupin);
         sesameCheck= (CheckBox) findViewById(R.id.sesame);
         algaeCheck= (CheckBox) findViewById(R.id.algae);
@@ -72,15 +90,16 @@ public class setProfile extends AppCompatActivity {
         celeryCheck= (CheckBox) findViewById(R.id.celery);
         cornCheck= (CheckBox) findViewById(R.id.corn);
         btnAddData = (Button)findViewById(R.id.done);
-        btnAddData.setOnClickListener(new View.OnClickListener() {
+       /* btnAddData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(setProfile.this,profilePop.class));
             }
-        });
+        });*/
 
         AddData();
     }
+
     public  void AddData() {
         btnAddData.setOnClickListener(
                 new View.OnClickListener() {
@@ -104,15 +123,45 @@ public class setProfile extends AppCompatActivity {
                             Insects  =1 ;
                             shellfish  =1 ;
                         }
+
+                        if (eggsFreeCheck.isChecked())
+                            {
+                                if(eggs1.isChecked()){
+                                    eggsFree  =1;
+                                }
+                                else{
+                                    eggsFree  =2;
+                                }
+                            }
+
+                        if (diaryFreeCheck.isChecked())
+                            {
+                                if(diary1.isChecked()){
+                                    diaryFree  =1;
+                                }
+                                else{
+                                    diaryFree  =2;
+                                }
+                            }
+
+
+                        if (glutenFreeCheck.isChecked())
+                            {
+                                if(gluten1.isChecked()){
+                                    glutenFree  =1;
+                                }
+                                else{
+                                    glutenFree  =2;
+                                }
+                            }
+
+
                         if (beefCheck.isChecked()) {beef  =1 ; }
                         if (chickenCheck.isChecked()) {chicken  =1 ; }
                         if (porkCheck.isChecked()) {pork  =1 ; }
                         if (fishCheck.isChecked()) {fish  =1 ; }
                         if (InsectsCheck.isChecked()) {Insects  =1 ; }
-                        if (eggsFreeCheck.isChecked()) {eggsFree  =1 ; }
-                        if (diaryFreeCheck.isChecked()) {diaryFree  =1 ; }
                         if (honeyCheck.isChecked()) {honey  =1 ; }
-                        if (glutenFreeCheck.isChecked()) {glutenFree  =1 ; }
                         if (lupinCheck.isChecked()) {lupin  =1 ; }
                         if (sesameCheck.isChecked()) {sesame  =1 ; }
                         if (algaeCheck.isChecked()) {algae  =1 ; }
@@ -134,4 +183,23 @@ public class setProfile extends AppCompatActivity {
                 }
         );
     }
-}
+
+    public void addListenerOnChk(CheckBox checkBox, final RadioGroup rg) // showing consumption degree
+    {
+
+        checkBox.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (((CheckBox) v).isChecked()) {
+                    rg.setVisibility(View.VISIBLE);
+                }
+                else {
+                    rg.setVisibility(View.GONE);
+                }
+            }
+
+        });
+    }
+
+    }
