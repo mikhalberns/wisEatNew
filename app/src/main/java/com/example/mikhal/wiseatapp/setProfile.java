@@ -36,11 +36,12 @@ public class setProfile extends AppCompatActivity {
     CheckBox celeryCheck;
     CheckBox cornCheck;
     CheckBox customCheck;
-
+    Boolean iscustomCheck = false;
     Button btnAddData;
     Integer beef, chicken , pork, fish , Insects, eggsFree, diaryFree,
             honey , glutenFree , lupin, sesame, algae, shellfish,soy,
             peanuts,sulphite, nuts,mustard,celery,corn;
+
     RadioGroup eggsFreeRG,diaryFreeRG,glutenFreeRG,beefRG, chickenRG , porkRG,
             fishRG , InsectsRG, honeyRG , lupinRG, sesameRG, algaeRG, shellfishRG,soyRG,
             peanutsRG ,sulphiteRG, nutsRG,mustardRG,celeryRG,cornRG;
@@ -60,6 +61,9 @@ public class setProfile extends AppCompatActivity {
         veganCheck= (CheckBox) findViewById(R.id.vegan);
         vegetarianCheck = (CheckBox) findViewById(R.id.vegetarian);
 
+        beef= chicken = pork=fish=Insects=eggsFree=diaryFree=
+                honey=glutenFree=lupin=sesame=algae=shellfish=soy=
+                        peanuts=sulphite= nuts=mustard=celery=corn=0;
 
         eggsFreeCheck= (CheckBox) findViewById(R.id.eggsFree);
         eggsFreeRG= (RadioGroup) findViewById(R.id.eggsFreeRG);
@@ -88,6 +92,7 @@ public class setProfile extends AppCompatActivity {
             public void onClick(View v) {
 
                 if (((CheckBox) v).isChecked()) {
+                    iscustomCheck = true;
                     AlertDialog.Builder pBuilder = new AlertDialog.Builder(setProfile.this);
                     View pView = getLayoutInflater().inflate(R.layout.dialog_custom,null);
                     //add lines ?
@@ -201,6 +206,129 @@ public class setProfile extends AppCompatActivity {
 
         });
 
+        veganCheck.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (((CheckBox) v).isChecked()) {
+                    AlertDialog.Builder pBuilder = new AlertDialog.Builder(setProfile.this);
+                    View pView = getLayoutInflater().inflate(R.layout.dialog_vegan,null);
+
+                    eggsFreeCheck= (CheckBox) findViewById(R.id.eggsFree);
+                    eggsFreeRG= (RadioGroup) findViewById(R.id.eggsFreeRG);
+                    addListenerOnChk(eggsFreeCheck, eggsFreeRG);
+                    eggs1=(RadioButton) findViewById(R.id.eggs1);
+                    eggs2=(RadioButton) findViewById(R.id.eggs2);
+
+                    diaryFreeCheck= (CheckBox) findViewById(R.id.diaryFree);
+                    diaryFreeRG=(RadioGroup) findViewById(R.id.diaryFreeRG);
+                    addListenerOnChk(diaryFreeCheck, diaryFreeRG);
+                    diary1=(RadioButton) findViewById(R.id.diary1);
+                    diary2=(RadioButton) findViewById(R.id.diary2);
+
+                    beefCheck= (CheckBox) pView.findViewById(R.id.beef);
+                    beefRG= (RadioGroup) pView.findViewById(R.id.beefRG);
+                    addListenerOnChk(beefCheck, beefRG);
+                    beef1=(RadioButton) pView.findViewById(R.id.beef1);
+                    beef2=(RadioButton) pView.findViewById(R.id.beef2);
+
+                    chickenCheck= (CheckBox) pView.findViewById(R.id.chicken);
+                    chickenRG= (RadioGroup) pView.findViewById(R.id.chickenRG);
+                    addListenerOnChk(chickenCheck, chickenRG);
+                    chicken1=(RadioButton) pView.findViewById(R.id.chicken1);
+                    chicken2=(RadioButton) pView.findViewById(R.id.chicken2);
+
+                    porkCheck= (CheckBox) pView.findViewById(R.id.pork);
+                    porkRG= (RadioGroup) pView.findViewById(R.id.porkRG);
+                    addListenerOnChk(porkCheck, porkRG);
+                    pork1=(RadioButton) pView.findViewById(R.id.pork1);
+                    pork2=(RadioButton) pView.findViewById(R.id.pork2);
+
+                    fishCheck= (CheckBox) pView.findViewById(R.id.fish);
+                    fishRG= (RadioGroup) pView.findViewById(R.id.fishRG);
+                    addListenerOnChk(fishCheck, fishRG);
+                    fish1=(RadioButton) pView.findViewById(R.id.fish1);
+                    fish2=(RadioButton) pView.findViewById(R.id.fish2);
+
+                    InsectsCheck= (CheckBox) pView.findViewById(R.id.Insects);
+                    InsectsRG= (RadioGroup) pView.findViewById(R.id.InsectsRG);
+                    addListenerOnChk(InsectsCheck, InsectsRG);
+                    Insects1=(RadioButton) pView.findViewById(R.id.Insects1);
+                    Insects2=(RadioButton) pView.findViewById(R.id.Insects2);
+
+                    honeyCheck= (CheckBox) pView.findViewById(R.id.honey);
+                    honeyRG= (RadioGroup) pView.findViewById(R.id.honeyRG);
+                    addListenerOnChk(honeyCheck, honeyRG);
+                    honey1=(RadioButton) pView.findViewById(R.id.honey1);
+                    honey2=(RadioButton) pView.findViewById(R.id.honey2);
+
+                    shellfishCheck= (CheckBox) pView.findViewById(R.id.shellfish);
+                    shellfishRG= (RadioGroup) pView.findViewById(R.id.shellfishRG);
+                    addListenerOnChk(shellfishCheck, shellfishRG);
+                    shellfish1=(RadioButton) pView.findViewById(R.id.shellfish1);
+                    shellfish2=(RadioButton) pView.findViewById(R.id.shellfish2);
+
+                    pBuilder.setView(pView);
+                    AlertDialog dialog= pBuilder.create();
+                    dialog.show();
+                }
+
+            }
+
+        });
+
+        vegetarianCheck.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (((CheckBox) v).isChecked()) {
+                    AlertDialog.Builder pBuilder = new AlertDialog.Builder(setProfile.this);
+                    View pView = getLayoutInflater().inflate(R.layout.dialog_vegetarian,null);
+
+                    beefCheck= (CheckBox) pView.findViewById(R.id.beef);
+                    beefRG= (RadioGroup) pView.findViewById(R.id.beefRG);
+                    addListenerOnChk(beefCheck, beefRG);
+                    beef1=(RadioButton) pView.findViewById(R.id.beef1);
+                    beef2=(RadioButton) pView.findViewById(R.id.beef2);
+
+                    chickenCheck= (CheckBox) pView.findViewById(R.id.chicken);
+                    chickenRG= (RadioGroup) pView.findViewById(R.id.chickenRG);
+                    addListenerOnChk(chickenCheck, chickenRG);
+                    chicken1=(RadioButton) pView.findViewById(R.id.chicken1);
+                    chicken2=(RadioButton) pView.findViewById(R.id.chicken2);
+
+                    porkCheck= (CheckBox) pView.findViewById(R.id.pork);
+                    porkRG= (RadioGroup) pView.findViewById(R.id.porkRG);
+                    addListenerOnChk(porkCheck, porkRG);
+                    pork1=(RadioButton) pView.findViewById(R.id.pork1);
+                    pork2=(RadioButton) pView.findViewById(R.id.pork2);
+
+                    fishCheck= (CheckBox) pView.findViewById(R.id.fish);
+                    fishRG= (RadioGroup) pView.findViewById(R.id.fishRG);
+                    addListenerOnChk(fishCheck, fishRG);
+                    fish1=(RadioButton) pView.findViewById(R.id.fish1);
+                    fish2=(RadioButton) pView.findViewById(R.id.fish2);
+
+                    InsectsCheck= (CheckBox) pView.findViewById(R.id.Insects);
+                    InsectsRG= (RadioGroup) pView.findViewById(R.id.InsectsRG);
+                    addListenerOnChk(InsectsCheck, InsectsRG);
+                    Insects1=(RadioButton) pView.findViewById(R.id.Insects1);
+                    Insects2=(RadioButton) pView.findViewById(R.id.Insects2);
+
+                    shellfishCheck= (CheckBox) pView.findViewById(R.id.shellfish);
+                    shellfishRG= (RadioGroup) pView.findViewById(R.id.shellfishRG);
+                    addListenerOnChk(shellfishCheck, shellfishRG);
+                    shellfish1=(RadioButton) pView.findViewById(R.id.shellfish1);
+                    shellfish2=(RadioButton) pView.findViewById(R.id.shellfish2);
+
+                    pBuilder.setView(pView);
+                    AlertDialog dialog= pBuilder.create();
+                    dialog.show();
+                }
+
+            }
+
+        });
 
         AddData();
     }
@@ -211,22 +339,119 @@ public class setProfile extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         if (veganCheck.isChecked()) {
-                            beef  =1 ;
-                            pork  =1 ;
-                            fish  =1 ;
-                            Insects  =1 ;
-                            eggsFree  =1 ;
-                            diaryFree  =1 ;
-                            honey  =1 ;
-                            shellfish  =1 ;
+                            if (eggsFreeCheck.isChecked())
+                            {
+                                if(eggs1.isChecked()){
+                                    eggsFree  =1;
+                                }
+                                else{
+                                    eggsFree  =2;
+                                }
+                            }
+
+                            if (diaryFreeCheck.isChecked())
+                            {
+                                if(diary1.isChecked()){
+                                    diaryFree  =1;
+                                }
+                                else{
+                                    diaryFree  =2;
+                                }
+                            }
+                            if (beefCheck.isChecked()) {
+                                if (beef1.isChecked()) {
+                                    beef = 1;
+                                } else {
+                                    beef = 2;
+                                }
+                            }
+                            if (chickenCheck.isChecked()) {
+                                if (chicken1.isChecked()) {
+                                    chicken = 1;
+                                } else {
+                                    chicken = 2;
+                                }
+                            }
+                            if (porkCheck.isChecked()) {
+                                if (pork1.isChecked()) {
+                                    pork = 1;
+                                } else {
+                                    pork = 2;
+                                }
+                            }
+                            if (fishCheck.isChecked()) {
+                                if (fish1.isChecked()) {
+                                    fish = 1;
+                                } else {
+                                    fish = 2;
+                                }
+                            }
+                            if (InsectsCheck.isChecked()) {
+                                if (Insects1.isChecked()) {
+                                    Insects = 1;
+                                } else {
+                                    Insects = 2;
+                                }
+                            }
+                            if (honeyCheck.isChecked()) {
+                                if (honey1.isChecked()) {
+                                    honey = 1;
+                                } else {
+                                    honey = 2;
+                                }
+                            }
+                            if (shellfishCheck.isChecked()) {
+                                if (shellfish1.isChecked()) {
+                                    shellfish = 1;
+                                } else {
+                                    shellfish = 2;
+                                }
+                            }
                         }
                         if (vegetarianCheck.isChecked()) {
-                            beef  =1 ;
-                            chicken  =1 ;
-                            pork  =1 ;
-                            fish  =1 ;
-                            Insects  =1 ;
-                            shellfish  =1 ;
+                            if (beefCheck.isChecked()) {
+                                if (beef1.isChecked()) {
+                                    beef = 1;
+                                } else {
+                                    beef = 2;
+                                }
+                            }
+                            if (chickenCheck.isChecked()) {
+                                if (chicken1.isChecked()) {
+                                    chicken = 1;
+                                } else {
+                                    chicken = 2;
+                                }
+                            }
+                            if (porkCheck.isChecked()) {
+                                if (pork1.isChecked()) {
+                                    pork = 1;
+                                } else {
+                                    pork = 2;
+                                }
+                            }
+                            if (fishCheck.isChecked()) {
+                                if (fish1.isChecked()) {
+                                    fish = 1;
+                                } else {
+                                    fish = 2;
+                                }
+                            }
+                            if (InsectsCheck.isChecked()) {
+                                if (Insects1.isChecked()) {
+                                    Insects = 1;
+                                } else {
+                                    Insects = 2;
+                                }
+                            }
+                            if (shellfishCheck.isChecked()) {
+                                if (shellfish1.isChecked()) {
+                                    shellfish = 1;
+                                } else {
+                                    shellfish = 2;
+                                }
+                            }
+
                         }
 
                         if (eggsFreeCheck.isChecked())
@@ -260,145 +485,128 @@ public class setProfile extends AppCompatActivity {
                                 }
                             }
 
-
-                        if (beefCheck.isChecked())                             {
-                            if(beef1.isChecked()){
-                                beef  =1;
+                        if (iscustomCheck) {
+                            if (beefCheck.isChecked()) {
+                                if (beef1.isChecked()) {
+                                    beef = 1;
+                                } else {
+                                    beef = 2;
+                                }
                             }
-                            else{
-                                beef  =2;
+                            if (chickenCheck.isChecked()) {
+                                if (chicken1.isChecked()) {
+                                    chicken = 1;
+                                } else {
+                                    chicken = 2;
+                                }
                             }
-                        }
-                        if (chickenCheck.isChecked()) {
-                            if(chicken1.isChecked()){
-                                chicken  =1;
+                            if (porkCheck.isChecked()) {
+                                if (pork1.isChecked()) {
+                                    pork = 1;
+                                } else {
+                                    pork = 2;
+                                }
                             }
-                            else{
-                                chicken  =2;
+                            if (fishCheck.isChecked()) {
+                                if (fish1.isChecked()) {
+                                    fish = 1;
+                                } else {
+                                    fish = 2;
+                                }
                             }
-                        }
-                        if (porkCheck.isChecked()) {
-                            if(pork1.isChecked()){
-                                pork  =1;
+                            if (InsectsCheck.isChecked()) {
+                                if (Insects1.isChecked()) {
+                                    Insects = 1;
+                                } else {
+                                    Insects = 2;
+                                }
                             }
-                            else{
-                                pork  =2;
+                            if (honeyCheck.isChecked()) {
+                                if (honey1.isChecked()) {
+                                    honey = 1;
+                                } else {
+                                    honey = 2;
+                                }
                             }
-                        }
-                        if (fishCheck.isChecked()) {
-                            if(fish1.isChecked()){
-                                fish  =1;
+                            if (lupinCheck.isChecked()) {
+                                if (lupin1.isChecked()) {
+                                    lupin = 1;
+                                } else {
+                                    lupin = 2;
+                                }
                             }
-                            else{
-                                fish  =2;
+                            if (sesameCheck.isChecked()) {
+                                if (sesame1.isChecked()) {
+                                    sesame = 1;
+                                } else {
+                                    sesame = 2;
+                                }
                             }
-                        }
-                        if (InsectsCheck.isChecked()) {
-                            if(Insects1.isChecked()){
-                                Insects  =1;
+                            if (algaeCheck.isChecked()) {
+                                if (algae1.isChecked()) {
+                                    algae = 1;
+                                } else {
+                                    algae = 2;
+                                }
                             }
-                            else{
-                                Insects  =2;
+                            if (shellfishCheck.isChecked()) {
+                                if (shellfish1.isChecked()) {
+                                    shellfish = 1;
+                                } else {
+                                    shellfish = 2;
+                                }
                             }
-                        }
-                        if (honeyCheck.isChecked()) {
-                            if(honey1.isChecked()){
-                                honey  =1;
+                            if (soyCheck.isChecked()) {
+                                if (soy1.isChecked()) {
+                                    soy = 1;
+                                } else {
+                                    soy = 2;
+                                }
                             }
-                            else{
-                                honey  =2;
+                            if (peanutsCheck.isChecked()) {
+                                if (peanuts1.isChecked()) {
+                                    peanuts = 1;
+                                } else {
+                                    peanuts = 2;
+                                }
                             }
-                        }
-                        if (lupinCheck.isChecked()) {
-                            if(lupin1.isChecked()){
-                                lupin  =1;
+                            if (sulphiteCheck.isChecked()) {
+                                if (sulphite1.isChecked()) {
+                                    sulphite = 1;
+                                } else {
+                                    sulphite = 2;
+                                }
                             }
-                            else{
-                                lupin  =2;
+                            if (nutsCheck.isChecked()) {
+                                if (nuts1.isChecked()) {
+                                    nuts = 1;
+                                } else {
+                                    nuts = 2;
+                                }
                             }
-                        }
-                        if (sesameCheck.isChecked()) {
-                            if(sesame1.isChecked()){
-                                sesame  =1;
+                            if (mustardCheck.isChecked()) {
+                                if (mustard1.isChecked()) {
+                                    mustard = 1;
+                                } else {
+                                    mustard = 2;
+                                }
                             }
-                            else{
-                                sesame  =2;
+                            if (celeryCheck.isChecked()) {
+                                if (celery1.isChecked()) {
+                                    celery = 1;
+                                } else {
+                                    celery = 2;
+                                }
                             }
-                        }
-                        if (algaeCheck.isChecked()) {
-                            if(algae1.isChecked()){
-                                algae  =1;
-                            }
-                            else{
-                                algae  =2;
-                            }
-                        }
-                        if (shellfishCheck.isChecked()) {
-                            if(shellfish1.isChecked()){
-                                shellfish  =1;
-                            }
-                            else{
-                                shellfish  =2;
-                            }
-                        }
-                        if (soyCheck.isChecked()) {
-                            if(soy1.isChecked()){
-                                soy  =1;
-                            }
-                            else{
-                                soy  =2;
-                            }
-                        }
-                        if (peanutsCheck.isChecked()) {
-                            if(peanuts1.isChecked()){
-                                peanuts  =1;
-                            }
-                            else{
-                                peanuts  =2;
-                            }
-                        }
-                        if (sulphiteCheck.isChecked()) {
-                            if(sulphite1.isChecked()){
-                                sulphite  =1;
-                            }
-                            else{
-                                sulphite  =2;
-                            }
-                        }
-                        if (nutsCheck.isChecked()) {
-                            if(nuts1.isChecked()){
-                                nuts  =1;
-                            }
-                            else{
-                                nuts  =2;
-                            }
-                        }
-                        if (mustardCheck.isChecked()) {
-                            if(mustard1.isChecked()){
-                                mustard  =1;
-                            }
-                            else{
-                                mustard  =2;
-                            }
-                        }
-                        if (celeryCheck.isChecked()) {
-                            if(celery1.isChecked()){
-                                celery  =1;
-                            }
-                            else{
-                                celery  =2;
+                            if (cornCheck.isChecked()) {
+                                if (corn1.isChecked()) {
+                                    corn = 1;
+                                } else {
+                                    corn = 2;
+                                }
                             }
                         }
-                        if (cornCheck.isChecked()) {
-                            if(corn1.isChecked()){
-                                corn  =1;
-                            }
-                            else{
-                                corn  =2;
-                            }
-                        }
-
-                        boolean isInserted = myDb.insertData(beef , chicken ,pork, fish , Insects, eggsFree, diaryFree, honey , glutenFree , lupin, sesame, algae, shellfish,soy, peanuts,sulphite, nuts,mustard,celery,corn);
+                        boolean isInserted = myDb.insertData( beef,chicken ,pork,fish , Insects, eggsFree, diaryFree, honey , glutenFree , lupin, sesame, algae, shellfish,soy, peanuts,sulphite, nuts,mustard,celery,corn);
                         if(isInserted == true)
                             Toast.makeText(setProfile.this,"Data Inserted",Toast.LENGTH_LONG).show();
                         else

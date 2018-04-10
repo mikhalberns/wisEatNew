@@ -57,8 +57,8 @@ public final class R {
         public static final int width = 0x7f0f003d;
     }
     public static final class layout {
-        public static final int tw__activity_oauth = 0x7f04004e;
-        public static final int tw__activity_share_email = 0x7f04004f;
+        public static final int tw__activity_oauth = 0x7f040050;
+        public static final int tw__activity_share_email = 0x7f040051;
     }
     public static final class raw {
         public static final int tw__cacerts = 0x7f070000;

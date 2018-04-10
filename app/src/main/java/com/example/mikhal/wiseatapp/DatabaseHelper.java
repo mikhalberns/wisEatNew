@@ -6,8 +6,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
-    public static final String DATABASE_NAME = "wiseat.db";
-    public static final String TABLE_NAME = "profile_table";
+    public static final String DATABASE_NAME = "wiseatApp.db";
+    public static final String TABLE_NAME = "profiles_table";
     public static final String COL_1 = "profileID";
     public static final String COL_2 = "profileName";
     public static final String COL_3 = "beef";
@@ -37,7 +37,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("create table " + TABLE_NAME +" (profileID INTEGER PRIMARY KEY AUTOINCREMENT,profileName TEXT,beef INTEGER,chicken INTEGER,pork INTEGER,fish INTEGER,Insects INTEGER,eggs INTEGER,milk INTEGER,honey INTEGER,gluten INTEGER,lupin INTEGER,sesame INTEGER,algae INTEGER,shellfish INTEGER,soy INTEGER,peanuts INTEGER,sulphite INTEGER,nuts INTEGER,mustard INTEGER,celery INTEGER,corn INTEGER)");
+        db.execSQL("create table " + TABLE_NAME +" (profileID INTEGER PRIMARY KEY autoincrement,profileName TEXT,beef INTEGER,chicken INTEGER,pork INTEGER,fish INTEGER,Insects INTEGER,eggs INTEGER,milk INTEGER,honey INTEGER,gluten INTEGER,lupin INTEGER,sesame INTEGER,algae INTEGER,shellfish INTEGER,soy INTEGER,peanuts INTEGER,sulphite INTEGER,nuts INTEGER,mustard INTEGER,celery INTEGER,corn INTEGER)");
     }
 
     @Override
@@ -71,10 +71,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
        contentValues.put(COL_22,corn);
 
 
-        long result = db.insert(TABLE_NAME,null ,contentValues);
-        if(result == -1)
-            return false;
-        else
-            return true;
+       long result = db.insert(TABLE_NAME,null ,contentValues);
+       if(result == -1)
+           return false;
+       else
+           return true;
     }
 }

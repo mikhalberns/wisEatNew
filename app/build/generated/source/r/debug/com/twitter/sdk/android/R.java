@@ -342,19 +342,19 @@ public final class R {
         public static final int width = 0x7f0f003d;
     }
     public static final class layout {
-        public static final int tw__action_bar = 0x7f04004c;
-        public static final int tw__activity_composer = 0x7f04004d;
-        public static final int tw__activity_oauth = 0x7f04004e;
-        public static final int tw__activity_share_email = 0x7f04004f;
-        public static final int tw__app_card = 0x7f040050;
-        public static final int tw__composer_view = 0x7f040051;
-        public static final int tw__gallery_activity = 0x7f040052;
-        public static final int tw__media_badge = 0x7f040053;
-        public static final int tw__player_activity = 0x7f040054;
-        public static final int tw__tweet = 0x7f040055;
-        public static final int tw__tweet_compact = 0x7f040056;
-        public static final int tw__tweet_quote = 0x7f040057;
-        public static final int tw__video_control = 0x7f040058;
+        public static final int tw__action_bar = 0x7f04004e;
+        public static final int tw__activity_composer = 0x7f04004f;
+        public static final int tw__activity_oauth = 0x7f040050;
+        public static final int tw__activity_share_email = 0x7f040051;
+        public static final int tw__app_card = 0x7f040052;
+        public static final int tw__composer_view = 0x7f040053;
+        public static final int tw__gallery_activity = 0x7f040054;
+        public static final int tw__media_badge = 0x7f040055;
+        public static final int tw__player_activity = 0x7f040056;
+        public static final int tw__tweet = 0x7f040057;
+        public static final int tw__tweet_compact = 0x7f040058;
+        public static final int tw__tweet_quote = 0x7f040059;
+        public static final int tw__video_control = 0x7f04005a;
     }
     public static final class plurals {
         public static final int tw__time_hours = 0x7f090000;
