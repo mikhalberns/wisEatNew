@@ -12,12 +12,12 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\ab2105a9905a62741abc5066b938f0a7\\res\\layout\\design_navigation_item_separator.xml"
     },
     {
-        "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_small.xml",
-        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.20.0.aar\\fece818f375a81ccb987a2ae70b05256\\res\\layout\\messenger_button_send_blue_small.xml"
-    },
-    {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tw__action_bar.xml",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\74c911459a1241365d4ad530e7f6c59b\\res\\layout\\tw__action_bar.xml"
+    },
+    {
+        "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_small.xml",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.20.0.aar\\fece818f375a81ccb987a2ae70b05256\\res\\layout\\messenger_button_send_blue_small.xml"
     },
     {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",

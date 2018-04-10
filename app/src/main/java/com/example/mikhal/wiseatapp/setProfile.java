@@ -22,6 +22,8 @@ public class setProfile extends AppCompatActivity {
     CheckBox InsectsCheck;
     CheckBox eggsFreeCheck;
     CheckBox diaryFreeCheck;
+    CheckBox veggsFreeCheck;
+    CheckBox vdiaryFreeCheck;
     CheckBox honeyCheck;
     CheckBox glutenFreeCheck;
     CheckBox lupinCheck;
@@ -42,10 +44,11 @@ public class setProfile extends AppCompatActivity {
             honey , glutenFree , lupin, sesame, algae, shellfish,soy,
             peanuts,sulphite, nuts,mustard,celery,corn;
 
-    RadioGroup eggsFreeRG,diaryFreeRG,glutenFreeRG,beefRG, chickenRG , porkRG,
+    RadioGroup eggsFreeRG,diaryFreeRG,veggsFreeRG,vdiaryFreeRG,glutenFreeRG,beefRG, chickenRG , porkRG,
             fishRG , InsectsRG, honeyRG , lupinRG, sesameRG, algaeRG, shellfishRG,soyRG,
             peanutsRG ,sulphiteRG, nutsRG,mustardRG,celeryRG,cornRG;
-    RadioButton eggs1,eggs2,diary1,diary2,gluten1,gluten2,
+
+    RadioButton eggs1,eggs2,diary1,diary2,veggs1,veggs2,vdiary1,vdiary2,gluten1,gluten2,
             beef1,beef2, chicken1,chicken2 , pork1,pork2, fish1,fish2 , Insects1,Insects2,
             honey1,honey2 ,lupin1,lupin2, sesame1,sesame2, algae1,algae2, shellfish1,shellfish2 ,soy1,soy2,
             peanuts1,peanuts2,sulphite1,sulphite2, nuts1,nuts2,mustard1,mustard2,celery1,celery2,corn1,corn2;
@@ -95,7 +98,7 @@ public class setProfile extends AppCompatActivity {
                     iscustomCheck = true;
                     AlertDialog.Builder pBuilder = new AlertDialog.Builder(setProfile.this);
                     View pView = getLayoutInflater().inflate(R.layout.dialog_custom,null);
-                    //add lines ?
+
                     beefCheck= (CheckBox) pView.findViewById(R.id.beef);
                     beefRG= (RadioGroup) pView.findViewById(R.id.beefRG);
                     addListenerOnChk(beefCheck, beefRG);
@@ -214,17 +217,17 @@ public class setProfile extends AppCompatActivity {
                     AlertDialog.Builder pBuilder = new AlertDialog.Builder(setProfile.this);
                     View pView = getLayoutInflater().inflate(R.layout.dialog_vegan,null);
 
-                    eggsFreeCheck= (CheckBox) findViewById(R.id.eggsFree);
-                    eggsFreeRG= (RadioGroup) findViewById(R.id.eggsFreeRG);
-                    addListenerOnChk(eggsFreeCheck, eggsFreeRG);
-                    eggs1=(RadioButton) findViewById(R.id.eggs1);
-                    eggs2=(RadioButton) findViewById(R.id.eggs2);
+                    veggsFreeCheck= (CheckBox) pView.findViewById(R.id.veggsFree);
+                    veggsFreeRG= (RadioGroup) pView.findViewById(R.id.veggsFreeRG);
+                    addListenerOnChk(veggsFreeCheck,veggsFreeRG);
+                    veggs1=(RadioButton) pView.findViewById(R.id.veggs1);
+                    veggs2=(RadioButton) pView.findViewById(R.id.veggs2);
 
-                    diaryFreeCheck= (CheckBox) findViewById(R.id.diaryFree);
-                    diaryFreeRG=(RadioGroup) findViewById(R.id.diaryFreeRG);
-                    addListenerOnChk(diaryFreeCheck, diaryFreeRG);
-                    diary1=(RadioButton) findViewById(R.id.diary1);
-                    diary2=(RadioButton) findViewById(R.id.diary2);
+                    vdiaryFreeCheck= (CheckBox) pView.findViewById(R.id.vdiaryFree);
+                    vdiaryFreeRG=(RadioGroup) pView.findViewById(R.id.vdiaryFreeRG);
+                    addListenerOnChk(vdiaryFreeCheck, vdiaryFreeRG);
+                    vdiary1=(RadioButton) pView.findViewById(R.id.vdiary1);
+                    vdiary2=(RadioButton) pView.findViewById(R.id.vdiary2);
 
                     beefCheck= (CheckBox) pView.findViewById(R.id.beef);
                     beefRG= (RadioGroup) pView.findViewById(R.id.beefRG);
@@ -339,9 +342,9 @@ public class setProfile extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         if (veganCheck.isChecked()) {
-                            if (eggsFreeCheck.isChecked())
+                            if (veggsFreeCheck.isChecked())
                             {
-                                if(eggs1.isChecked()){
+                                if(veggs1.isChecked()){
                                     eggsFree  =1;
                                 }
                                 else{
@@ -349,9 +352,9 @@ public class setProfile extends AppCompatActivity {
                                 }
                             }
 
-                            if (diaryFreeCheck.isChecked())
+                            if (vdiaryFreeCheck.isChecked())
                             {
-                                if(diary1.isChecked()){
+                                if(vdiary1.isChecked()){
                                     diaryFree  =1;
                                 }
                                 else{
