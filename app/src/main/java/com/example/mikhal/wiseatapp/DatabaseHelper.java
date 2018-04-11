@@ -6,6 +6,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
+    // profiles table
     public static final String DATABASE_NAME = "wiseatApp.db";
     public static final String TABLE_NAME = "profiles_table";
     public static final String COL_1 = "profileID";
@@ -31,18 +32,25 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String COL_21 = "celery";
     public static final String COL_22 = "corn";
 
+    // users table
+    public static final String USERS_TABLE = "usersTable";
+    public static final String USER_ID = "userId";
+    public static final String PROFILE_ID = "profileId";
+
     public DatabaseHelper(Context context) {
-        super(context, DATABASE_NAME, null, 1);
+        super(context, DATABASE_NAME, null, 2);
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("create table " + TABLE_NAME +" (profileID INTEGER PRIMARY KEY autoincrement,profileName TEXT,beef INTEGER,chicken INTEGER,pork INTEGER,fish INTEGER,Insects INTEGER,eggs INTEGER,milk INTEGER,honey INTEGER,gluten INTEGER,lupin INTEGER,sesame INTEGER,algae INTEGER,shellfish INTEGER,soy INTEGER,peanuts INTEGER,sulphite INTEGER,nuts INTEGER,mustard INTEGER,celery INTEGER,corn INTEGER)");
+        db.execSQL("create table " + USERS_TABLE + "( userId INTEGER, profileId INTEGER)");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS "+TABLE_NAME);
+        db.execSQL("DROP TABLE IF EXISTS "+USERS_TABLE);
         onCreate(db);
     }
 
