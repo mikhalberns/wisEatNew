@@ -2,6 +2,7 @@ package com.example.mikhal.wiseatapp;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -102,9 +103,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public boolean checkIfUIDExist(String userId) {
         //query that checks if the userId exist
-
-        return  false;
-
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor res = db.rawQuery("select * from usersTable where userId='"+userId+"'", null);
+        if(res.getCount()==0)
+            return false;
+        else
+           return true;
     }
 
 }
