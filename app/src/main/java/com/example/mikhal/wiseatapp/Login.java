@@ -6,8 +6,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-
+import com.google.android.gms.auth.api.Auth;
+import com.google.android.gms.auth.api.signin.GoogleSignInResult;
 import com.facebook.FacebookSdk;
+import com.facebook.Profile;
+import com.facebook.FacebookActivity;
 import com.mukeshsolanki.sociallogin.facebook.FacebookHelper;
 import com.mukeshsolanki.sociallogin.facebook.FacebookListener;
 import com.mukeshsolanki.sociallogin.google.GoogleHelper;
@@ -18,13 +21,41 @@ public class Login extends AppCompatActivity implements FacebookListener, Google
 
     FacebookHelper mFacebook;
     GoogleHelper mGoogle;
+    DatabaseHelper myDb;
+    boolean isGoogle = false;
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data){
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        mFacebook.onActivityResult(requestCode, resultCode, data);
-        mGoogle.onActivityResult(requestCode, resultCode, data);
+        if (isGoogle)//google
+        {
+            final GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
+
+            if (myDb.checkIfUIDExist(result.getSignInAccount().getId())==false)//if first login - inset to db + move to set profile screen
+            {
+                boolean isInserted = myDb.insertUIDToUsers(result.getSignInAccount().getId());
+
+                if(isInserted == true)
+                    Toast.makeText(Login.this,"Data Inserted",Toast.LENGTH_LONG).show();
+                else
+                    Toast.makeText(Login.this,"Data not Inserted",Toast.LENGTH_LONG).show();
+
+                startActivity(new Intent(getApplicationContext(), setProfile.class));
+            }
+            else//move to the home page
+            {
+
+            }
+        }
+        else //facebook
+        {
+
+        }
+
+        //only show connection token on screen
+        //mFacebook.onActivityResult(requestCode, resultCode, data);
+        // mGoogle.onActivityResult(requestCode, resultCode, data);
     }
 
 
@@ -32,6 +63,8 @@ public class Login extends AppCompatActivity implements FacebookListener, Google
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        myDb= new DatabaseHelper(this);
 
         // init Facebook
         FacebookSdk.setApplicationId(getResources().getString(R.string.facebook_app_id));
@@ -53,8 +86,8 @@ public class Login extends AppCompatActivity implements FacebookListener, Google
         btnGoogle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                isGoogle=true;
                 mGoogle.performSignIn(Login.this);
-                startActivity(new Intent(getApplicationContext(),setProfile.class));
             }
         });
     }

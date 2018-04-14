@@ -5,6 +5,8 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import org.w3c.dom.Text;
+
 public class DatabaseHelper extends SQLiteOpenHelper {
     // profiles table
     public static final String DATABASE_NAME = "wiseatApp.db";
@@ -43,8 +45,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
+        db.execSQL("create table " + USERS_TABLE + " (userId TEXT, profileId INTEGER)");
         db.execSQL("create table " + TABLE_NAME +" (profileID INTEGER PRIMARY KEY autoincrement,profileName TEXT,beef INTEGER,chicken INTEGER,pork INTEGER,fish INTEGER,Insects INTEGER,eggs INTEGER,milk INTEGER,honey INTEGER,gluten INTEGER,lupin INTEGER,sesame INTEGER,algae INTEGER,shellfish INTEGER,soy INTEGER,peanuts INTEGER,sulphite INTEGER,nuts INTEGER,mustard INTEGER,celery INTEGER,corn INTEGER)");
-        db.execSQL("create table " + USERS_TABLE + "( userId INTEGER, profileId INTEGER)");
     }
 
     @Override
@@ -85,4 +87,24 @@ public class DatabaseHelper extends SQLiteOpenHelper {
        else
            return true;
     }
+
+    public boolean insertUIDToUsers(String userId) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(USER_ID,userId);
+
+        long result = db.insert(USERS_TABLE,null ,contentValues);
+        if(result == -1)
+            return false;
+        else
+            return true;
+    }
+
+    public boolean checkIfUIDExist(String userId) {
+        //query that checks if the userId exist
+
+        return  false;
+
+    }
+
 }
