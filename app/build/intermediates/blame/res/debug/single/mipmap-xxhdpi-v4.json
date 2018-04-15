@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_launcher_round.png",
+        "source": "C:\\android studio\\mikhal\\wisEatNew\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_launcher.png",
         "source": "C:\\android studio\\wisEatNew\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
@@ -14,6 +18,10 @@
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_launcher.png",
         "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_launcher.png",
+        "source": "C:\\android studio\\mikhal\\wisEatNew\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_launcher.png",

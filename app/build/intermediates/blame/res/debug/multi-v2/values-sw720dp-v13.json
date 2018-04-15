@@ -1,6 +1,36 @@
 {
     "logs": [
         {
+            "outputFile": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\twitter-core-2.3.1.aar\\259bf1edc40017c6c4a643ea37a417fc\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "75",
+                        "endOffsets": "126"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\twitter-core-2.3.1.aar\\259bf1edc40017c6c4a643ea37a417fc\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "75",
+                        "endOffsets": "126"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw720dp-v13\\values-sw720dp-v13.xml",
             "map": [
                 {

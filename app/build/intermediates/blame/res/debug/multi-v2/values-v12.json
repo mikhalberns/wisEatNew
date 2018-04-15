@@ -49,6 +49,22 @@
             ]
         },
         {
+            "outputFile": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\values-v12\\values-v12.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b407c1af565f8bd23e504f3816ac03e9\\res\\values-v12\\values-v12.xml",
+                    "from": {
+                        "startLines": "2,5,8,9",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,279,479,598",
+                        "endLines": "4,7,8,9",
+                        "endColumns": "12,12,118,94",
+                        "endOffsets": "274,474,593,688"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v12\\values-v12.xml",
             "map": [
                 {
@@ -69,6 +85,22 @@
             "map": [
                 {
                     "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\c6e3194c14383767460a21f45c18ccd9\\res\\values-v12\\values-v12.xml",
+                    "from": {
+                        "startLines": "2,5,8,9",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,279,479,598",
+                        "endLines": "4,7,8,9",
+                        "endColumns": "12,12,118,94",
+                        "endOffsets": "274,474,593,688"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v12\\values-v12.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b407c1af565f8bd23e504f3816ac03e9\\res\\values-v12\\values-v12.xml",
                     "from": {
                         "startLines": "2,5,8,9",
                         "startColumns": "4,4,4,4",
