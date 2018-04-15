@@ -4,7 +4,7 @@
             "outputFile": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\values-v11\\values-v11.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\55b8f96ef955b2a18451a81862fbbcb4\\res\\values-v11\\values-v11.xml",
+                    "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b407c1af565f8bd23e504f3816ac03e9\\res\\values-v11\\values-v11.xml",
                     "from": {
                         "startLines": "2,8,14,20,26,32,38,39,43,47,48,52,56,57,61,66,71,76,78,80,81,82,136,191",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -23,26 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\74c911459a1241365d4ad530e7f6c59b\\res\\values-v11\\values-v11.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "315"
-                    },
-                    "to": {
-                        "startLines": "96",
-                        "startColumns": "4",
-                        "startOffsets": "6665",
-                        "endLines": "100",
-                        "endColumns": "12",
-                        "endOffsets": "6925"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-composer-2.3.1.aar\\2ae7f08f29c689e25443fc14cac36de3\\res\\values-v11\\values-v11.xml",
+                    "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-composer-2.3.1.aar\\e7b5bd4acf6ae0af554624b71fdaf89e\\res\\values-v11\\values-v11.xml",
                     "from": {
                         "startLines": "2,10",
                         "startColumns": "4,4",
@@ -58,6 +39,25 @@
                         "endLines": "87,95",
                         "endColumns": "12,12",
                         "endOffsets": "6144,6660"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\0cbbcda143afaf70bf09cb8216833aae\\res\\values-v11\\values-v11.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "315"
+                    },
+                    "to": {
+                        "startLines": "96",
+                        "startColumns": "4",
+                        "startOffsets": "6665",
+                        "endLines": "100",
+                        "endColumns": "12",
+                        "endOffsets": "6925"
                     }
                 }
             ]
@@ -190,7 +190,7 @@
             "outputFile": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\55b8f96ef955b2a18451a81862fbbcb4\\res\\values-v11\\values-v11.xml",
+                    "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b407c1af565f8bd23e504f3816ac03e9\\res\\values-v11\\values-v11.xml",
                     "from": {
                         "startLines": "2,8,14,20,26,32,38,39,43,47,48,52,56,57,61,66,71,76,78,80,81,82,136,191",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -209,26 +209,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\74c911459a1241365d4ad530e7f6c59b\\res\\values-v11\\values-v11.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "315"
-                    },
-                    "to": {
-                        "startLines": "96",
-                        "startColumns": "4",
-                        "startOffsets": "6665",
-                        "endLines": "100",
-                        "endColumns": "12",
-                        "endOffsets": "6925"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-composer-2.3.1.aar\\2ae7f08f29c689e25443fc14cac36de3\\res\\values-v11\\values-v11.xml",
+                    "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-composer-2.3.1.aar\\e7b5bd4acf6ae0af554624b71fdaf89e\\res\\values-v11\\values-v11.xml",
                     "from": {
                         "startLines": "2,10",
                         "startColumns": "4,4",
@@ -244,6 +225,25 @@
                         "endLines": "87,95",
                         "endColumns": "12,12",
                         "endOffsets": "6144,6660"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\0cbbcda143afaf70bf09cb8216833aae\\res\\values-v11\\values-v11.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "315"
+                    },
+                    "to": {
+                        "startLines": "96",
+                        "startColumns": "4",
+                        "startOffsets": "6665",
+                        "endLines": "100",
+                        "endColumns": "12",
+                        "endOffsets": "6925"
                     }
                 }
             ]

@@ -120,24 +120,7 @@
             "outputFile": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\values-en-rSS\\values-en-rSS.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-composer-2.3.1.aar\\2ae7f08f29c689e25443fc14cac36de3\\res\\values-en-rSS\\values-en-rSS.xml",
-                    "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,131,190,253",
-                        "endColumns": "75,58,62,59",
-                        "endOffsets": "126,185,248,308"
-                    },
-                    "to": {
-                        "startLines": "15,16,21,25",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "571,647,982,1219",
-                        "endColumns": "75,58,62,59",
-                        "endOffsets": "642,701,1040,1274"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\twitter-core-2.3.1.aar\\223007cb00dded0610a002de29b71fc9\\res\\values-en-rSS\\values-en-rSS.xml",
+                    "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\twitter-core-2.3.1.aar\\259bf1edc40017c6c4a643ea37a417fc\\res\\values-en-rSS\\values-en-rSS.xml",
                     "from": {
                         "startLines": "2,3,4,5,6",
                         "startColumns": "4,4,4,4,4",
@@ -154,7 +137,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\74c911459a1241365d4ad530e7f6c59b\\res\\values-en-rSS\\values-en-rSS.xml",
+                    "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-composer-2.3.1.aar\\e7b5bd4acf6ae0af554624b71fdaf89e\\res\\values-en-rSS\\values-en-rSS.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,131,190,253",
+                        "endColumns": "75,58,62,59",
+                        "endOffsets": "126,185,248,308"
+                    },
+                    "to": {
+                        "startLines": "15,16,21,25",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "571,647,982,1219",
+                        "endColumns": "75,58,62,59",
+                        "endOffsets": "642,701,1040,1274"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\0cbbcda143afaf70bf09cb8216833aae\\res\\values-en-rSS\\values-en-rSS.xml",
                     "from": {
                         "startLines": "2,6,10,14,15,16,17,18,19,20,21,22,23,24,25,26,27",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -410,24 +410,7 @@
             "outputFile": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rSS\\values-en-rSS.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-composer-2.3.1.aar\\2ae7f08f29c689e25443fc14cac36de3\\res\\values-en-rSS\\values-en-rSS.xml",
-                    "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,131,190,253",
-                        "endColumns": "75,58,62,59",
-                        "endOffsets": "126,185,248,308"
-                    },
-                    "to": {
-                        "startLines": "15,16,21,25",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "571,647,982,1219",
-                        "endColumns": "75,58,62,59",
-                        "endOffsets": "642,701,1040,1274"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\twitter-core-2.3.1.aar\\223007cb00dded0610a002de29b71fc9\\res\\values-en-rSS\\values-en-rSS.xml",
+                    "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\twitter-core-2.3.1.aar\\259bf1edc40017c6c4a643ea37a417fc\\res\\values-en-rSS\\values-en-rSS.xml",
                     "from": {
                         "startLines": "2,3,4,5,6",
                         "startColumns": "4,4,4,4,4",
@@ -444,7 +427,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\74c911459a1241365d4ad530e7f6c59b\\res\\values-en-rSS\\values-en-rSS.xml",
+                    "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-composer-2.3.1.aar\\e7b5bd4acf6ae0af554624b71fdaf89e\\res\\values-en-rSS\\values-en-rSS.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,131,190,253",
+                        "endColumns": "75,58,62,59",
+                        "endOffsets": "126,185,248,308"
+                    },
+                    "to": {
+                        "startLines": "15,16,21,25",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "571,647,982,1219",
+                        "endColumns": "75,58,62,59",
+                        "endOffsets": "642,701,1040,1274"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\0cbbcda143afaf70bf09cb8216833aae\\res\\values-en-rSS\\values-en-rSS.xml",
                     "from": {
                         "startLines": "2,6,10,14,15,16,17,18,19,20,21,22,23,24,25,26,27",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
