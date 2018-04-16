@@ -23,7 +23,16 @@
         <activity
             android:name=".setProfile"
             android:label="@string/title_activity_set_profile"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HomePage"
+            android:label="@string/title_activity_home_page"
+            android:parentActivityName="android.support.v7.app.AppCompatActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.support.v7.app.AppCompatActivity" />
+        </activity>
     </application>
 
 </manifest>

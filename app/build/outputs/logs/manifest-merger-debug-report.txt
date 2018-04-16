@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:2:1-29:12
+ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:2:1-38:12
 MERGED from [com.github.mukeshsolanki:social-login-helper:1.0.2] C:\Users\вайд\.gradle\caches\transforms-1\files-1.1\social-login-helper-1.0.2.aar\738280f69a6da7e317d9dd89e15c9117\AndroidManifest.xml:2:1-12:12
 MERGED from [com.android.support:design:26.1.0] C:\Users\вайд\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\dbe4292c162c4a91e501ce0ca5874ae8\AndroidManifest.xml:17:1-31:12
 MERGED from [com.facebook.android:facebook-android-sdk:4.20.0] C:\Users\вайд\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.20.0.aar\73986623add842d9450194afa260c214\AndroidManifest.xml:21:1-50:12
@@ -37,20 +37,20 @@ MERGED from [com.twitter.sdk.android:tweet-composer:2.3.1] C:\Users\вайд\.gradle
 MERGED from [com.twitter.sdk.android:twitter-core:2.3.1] C:\Users\вайд\.gradle\caches\transforms-1\files-1.1\twitter-core-2.3.1.aar\259bf1edc40017c6c4a643ea37a417fc\AndroidManifest.xml:18:1-42:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\вайд\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\74427af582a7905641bf21d837ba0452\AndroidManifest.xml:17:1-30:12
 MERGED from [io.fabric.sdk.android:fabric:1.3.17] C:\Users\вайд\.gradle\caches\transforms-1\files-1.1\fabric-1.3.17.aar\8a64a1c08f60311eb73b23255e7a63e8\AndroidManifest.xml:22:1-33:12
-INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:2:1-38:12
 	package
 		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:3:5-43
 		INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml
 		INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml
-		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:2:1-29:12
+		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:2:1-38:12
 		INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml
-		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:2:1-29:12
+		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:2:1-38:12
 		INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:2:11-69
@@ -61,7 +61,7 @@ ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:5:5-7:51
 	android:name
 		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:6:9-54
 application
-ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:9:5-27:19
+ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:9:5-36:19
 MERGED from [com.android.support:design:26.1.0] C:\Users\вайд\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\dbe4292c162c4a91e501ce0ca5874ae8\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:design:26.1.0] C:\Users\вайд\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\dbe4292c162c4a91e501ce0ca5874ae8\AndroidManifest.xml:25:5-29:19
 MERGED from [com.facebook.android:facebook-android-sdk:4.20.0] C:\Users\вайд\.gradle\caches\transforms-1\files-1.1\facebook-android-sdk-4.20.0.aar\73986623add842d9450194afa260c214\AndroidManifest.xml:28:5-48:19
@@ -151,13 +151,29 @@ ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:20:17-77
 	android:name
 		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:20:27-74
 activity#com.example.mikhal.wiseatapp.setProfile
-ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:23:9-26:68
+ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:23:9-26:59
 	android:label
 		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:25:13-63
 	android:theme
 		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:26:13-56
 	android:name
 		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:24:13-39
+activity#com.example.mikhal.wiseatapp.HomePage
+ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:27:9-35:20
+	android:parentActivityName
+		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:30:13-82
+	android:label
+		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:29:13-61
+	android:theme
+		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:31:13-56
+	android:name
+		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:28:13-37
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:32:13-34:76
+	android:value
+		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:34:17-73
+	android:name
+		ADDED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml:33:17-63
 uses-sdk
 INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\android studio\wisEatNew\app\src\main\AndroidManifest.xml

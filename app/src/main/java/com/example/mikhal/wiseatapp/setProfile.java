@@ -1,5 +1,6 @@
 package com.example.mikhal.wiseatapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -614,8 +615,11 @@ public class setProfile extends AppCompatActivity {
                             Toast.makeText(setProfile.this,"Data Inserted",Toast.LENGTH_LONG).show();
                         else
                             Toast.makeText(setProfile.this,"Data not Inserted",Toast.LENGTH_LONG).show();
+
+                        startActivity(new Intent(getApplicationContext(), HomePage.class));
                     }
                 }
+
         );
     }
 

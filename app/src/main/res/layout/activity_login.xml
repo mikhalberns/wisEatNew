@@ -15,20 +15,6 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         app:srcCompat="@drawable/app_logo" />
-    <Button
-        android:id="@+id/btnFacebook"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center_vertical"
-        android:background="@drawable/rounded_corner_fb_btn"
-        android:elevation="0dp"
-        android:fontFamily="casual"
-        android:padding="15dp"
-        android:text="Log in with Facebook"
-        android:textColor="@android:color/white"
-        android:textStyle="bold" />
 
     <Button
 
