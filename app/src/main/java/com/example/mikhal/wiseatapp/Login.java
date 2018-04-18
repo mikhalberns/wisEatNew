@@ -16,35 +16,32 @@ public class Login extends AppCompatActivity implements GoogleListener{
 
     GoogleHelper mGoogle;
     DatabaseHelper myDb;
-    boolean isGoogle = false;
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if (isGoogle)//google
+        final GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
+        myDb.deactivateAll();
+
+        if (myDb.checkIfUIDExist(result.getSignInAccount().getId())==false)//if first login - inset to db + move to set profile screen
         {
-            final GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
+            boolean isInserted = myDb.insertUIDToUsers(result.getSignInAccount().getId());
 
-            if (myDb.checkIfUIDExist(result.getSignInAccount().getId())==false)//if first login - inset to db + move to set profile screen
-            {
-                boolean isInserted = myDb.insertUIDToUsers(result.getSignInAccount().getId());
+            if(isInserted == true)
+                Toast.makeText(Login.this,"Data Inserted",Toast.LENGTH_LONG).show();
+            else
+                Toast.makeText(Login.this,"Data not Inserted",Toast.LENGTH_LONG).show();
 
-                if(isInserted == true)
-                    Toast.makeText(Login.this,"Data Inserted",Toast.LENGTH_LONG).show();
-                else
-                    Toast.makeText(Login.this,"Data not Inserted",Toast.LENGTH_LONG).show();
-
-                startActivity(new Intent(getApplicationContext(), setProfile.class));
-            }
-            else//move to the home page
-            {
-                startActivity(new Intent(getApplicationContext(), HomePage.class));
-            }
+            startActivity(new Intent(getApplicationContext(), setProfile.class));
+        }
+        else//move to the home page
+        {
+            myDb.activateUser(result.getSignInAccount().getId());
+            startActivity(new Intent(getApplicationContext(), HomePage.class));
         }
 
         //only show connection token on screen
-        //mFacebook.onActivityResult(requestCode, resultCode, data);
         // mGoogle.onActivityResult(requestCode, resultCode, data);
     }
 
@@ -63,7 +60,6 @@ public class Login extends AppCompatActivity implements GoogleListener{
         btnGoogle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                isGoogle=true;
                 mGoogle.performSignIn(Login.this);
             }
         });

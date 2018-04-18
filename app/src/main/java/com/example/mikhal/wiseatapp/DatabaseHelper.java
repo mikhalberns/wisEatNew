@@ -37,7 +37,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     // users table
     public static final String USERS_TABLE = "usersTable";
     public static final String USER_ID = "userId";
-    public static final String PROFILE_ID = "profileId";
+    public static final String IS_ACTIVE = "isActive";
+
 
     public DatabaseHelper(Context context) {
         super(context, WISEATAPP_DATABASE, null, 2);
@@ -45,7 +46,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("create table " + USERS_TABLE + " (userId TEXT, profileId INTEGER)");
+        db.execSQL("create table " + USERS_TABLE + " (userId TEXT, profileID INTEGER, isActive INTEGER)");
         db.execSQL("create table " + PROFILES_TABLE +" (profileID INTEGER PRIMARY KEY autoincrement,beef INTEGER,chicken INTEGER,pork INTEGER,fish INTEGER,Insects INTEGER,eggs INTEGER,milk INTEGER,honey INTEGER,gluten INTEGER,lupin INTEGER,sesame INTEGER,algae INTEGER,shellfish INTEGER,soy INTEGER,peanuts INTEGER,sulphite INTEGER,nuts INTEGER,mustard INTEGER,celery INTEGER,corn INTEGER)");
     }
 
@@ -92,18 +93,51 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(USER_ID,userId);
+        contentValues.put(IS_ACTIVE,1);
 
         long result = db.insert(USERS_TABLE,null ,contentValues);
+
         if(result == -1)
             return false;
         else
             return true;
     }
 
+    public void deactivateAll() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(IS_ACTIVE,0);
+        db.update("usersTable",contentValues,null,null);
+    }
+
+    public void matchProfileToUser(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor res = db.rawQuery("select MAX(profileID) from profiles_table", null);
+        if(res.getCount()!=0) {
+            res.moveToFirst();
+            int data = res.getInt(0);
+
+            ContentValues contentValues = new ContentValues();
+            contentValues.put(PROFILEID,data);
+
+            db.update("usersTable",contentValues,"isActive=1",null);
+        }
+    }
+
+
+    public void activateUser (String userId){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(IS_ACTIVE,1);
+
+        db.update("usersTable",contentValues,"userId='"+userId+"'",null);
+}
+
     public boolean checkIfUIDExist(String userId) {
         //query that checks if the userId exist
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor res = db.rawQuery("select * from usersTable where userId='"+userId+"'", null);
+
         if(res.getCount()==0)
             return false;
         else

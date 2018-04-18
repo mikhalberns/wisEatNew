@@ -612,7 +612,10 @@ public class setProfile extends AppCompatActivity {
                         }
                         boolean isInserted = myDb.insertData( beef,chicken ,pork,fish , Insects, eggsFree, diaryFree, honey , glutenFree , lupin, sesame, algae, shellfish,soy, peanuts,sulphite, nuts,mustard,celery,corn);
                         if(isInserted == true)
+                        {
                             Toast.makeText(setProfile.this,"Data Inserted",Toast.LENGTH_LONG).show();
+                            myDb.matchProfileToUser();
+                        }
                         else
                             Toast.makeText(setProfile.this,"Data not Inserted",Toast.LENGTH_LONG).show();
 
