@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/wisEatApp.iml" filepath="$PROJECT_DIR$/wisEatApp.iml" />
+      <module fileurl="file://C:\Users\mikha\AndroidStudioProjects\wisEatNew\wisEatApp.iml" filepath="C:\Users\mikha\AndroidStudioProjects\wisEatNew\wisEatApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wisEatNew.iml" filepath="$PROJECT_DIR$/wisEatNew.iml" />
     </modules>
   </component>
 </project>
