@@ -47,8 +47,6 @@
         android:id="@+id/imageView6"
         android:layout_width="50dp"
         android:layout_height="52dp"
-        android:layout_alignBottom="@+id/btnFacebook"
-        android:layout_alignStart="@+id/btnFacebook"
         app:srcCompat="@drawable/fb_login" />
 
     <TextView
@@ -71,7 +69,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="15dp"
-        android:text="© 20182W71. All rights reserved."
-        android:textColor="@color/com_facebook_button_background_color_focused_disabled" />
+        android:text="© 20182W71. All rights reserved."/>
+
 
 </RelativeLayout>

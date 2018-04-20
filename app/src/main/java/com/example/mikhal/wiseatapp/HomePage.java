@@ -11,7 +11,9 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 public class HomePage extends AppCompatActivity {
+
     ImageButton btnSetProfile;
+    Button btnLogout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,16 @@ public class HomePage extends AppCompatActivity {
 
             }
         });
+
+        //log out button
+       /*btnLogout= (Button)findViewById(R.id.ButtonLogout);
+        btnLogout.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+               // Login.logoutRequest();
+                startActivity(new Intent(getApplicationContext(), Login.class));
+            }
+        });*/
     }
 
 }
