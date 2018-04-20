@@ -29,14 +29,16 @@ public class Login extends AppCompatActivity {
 
     DatabaseHelper myDb;
     private static final int RC_SIGN_IN = 1;
-    private GoogleApiClient mGoogleApiClient;
+    public GoogleApiClient mGoogleApiClient;
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
         myDb = new DatabaseHelper(this);
         mAuth = FirebaseAuth.getInstance();
         mAuthListener = new FirebaseAuth.AuthStateListener() {
@@ -73,6 +75,7 @@ public class Login extends AppCompatActivity {
 
             }
         });
+
     }
 
     @Override
@@ -83,6 +86,7 @@ public class Login extends AppCompatActivity {
     private void signIn() {
         Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
         startActivityForResult(signInIntent, RC_SIGN_IN);
+        Auth.GoogleSignInApi.signOut(mGoogleApiClient);
     }
 
     @Override

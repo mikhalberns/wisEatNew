@@ -43,12 +43,6 @@
         android:layout_marginStart="6dp"
         app:srcCompat="@drawable/ggl_login" />
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="50dp"
-        android:layout_height="52dp"
-        app:srcCompat="@drawable/fb_login" />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="300dp"
