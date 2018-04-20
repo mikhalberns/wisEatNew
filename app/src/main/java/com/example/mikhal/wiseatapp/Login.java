@@ -46,7 +46,7 @@ public class Login extends AppCompatActivity {
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 if(firebaseAuth.getCurrentUser()!=null)
                 {
-                    startActivity(new Intent(Login.this,setProfile.class));
+                   startActivity(new Intent(Login.this,setProfile.class));
                 }
             }
         };
@@ -84,6 +84,7 @@ public class Login extends AppCompatActivity {
         mAuth.addAuthStateListener(mAuthListener);
     }
     private void signIn() {
+
         Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
         startActivityForResult(signInIntent, RC_SIGN_IN);
         Auth.GoogleSignInApi.signOut(mGoogleApiClient);
@@ -94,11 +95,34 @@ public class Login extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
 
         if (requestCode == RC_SIGN_IN) {
+
+            Toast.makeText(Login.this,"sign in",Toast.LENGTH_LONG).show();
+            myDb.deactivateAll();
+
             GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
             if(result.isSuccess())
             {
                 GoogleSignInAccount account = result.getSignInAccount();
                 firebaseAuthWithGoogle(account);
+
+                if (myDb.checkIfUIDExist(result.getSignInAccount().getId())==false)//if first login - inset to db + move to set profile screen
+                {
+                    boolean isInserted = myDb.insertUIDToUsers(result.getSignInAccount().getId());
+
+                    if(isInserted == true)
+                        Toast.makeText(Login.this,"Data Inserted",Toast.LENGTH_LONG).show();
+                    else
+                        Toast.makeText(Login.this,"Data not Inserted",Toast.LENGTH_LONG).show();
+
+                    Auth.GoogleSignInApi.signOut(mGoogleApiClient);
+                    startActivity(new Intent(getApplicationContext(), setProfile.class));
+                }
+                else//move to the home page
+                {
+                    myDb.activateUser(result.getSignInAccount().getId());
+                    Auth.GoogleSignInApi.signOut(mGoogleApiClient);
+                    startActivity(new Intent(getApplicationContext(), HomePage.class));
+                }
             }
             else
             {
