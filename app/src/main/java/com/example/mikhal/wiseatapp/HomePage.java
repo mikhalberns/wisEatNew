@@ -40,7 +40,8 @@ public class HomePage extends AppCompatActivity {
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 if(firebaseAuth.getCurrentUser() == null) // if we are logged out
                 {
-                   startActivity(new Intent(HomePage.this, Login.class));
+                    Toast.makeText(HomePage.this,"user logged out",Toast.LENGTH_LONG).show();
+                   //startActivity(new Intent(HomePage.this, Login.class));
                 }
             }
         };
@@ -62,6 +63,7 @@ public class HomePage extends AppCompatActivity {
                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                 user.delete();
                 mAuth.signOut();
+                startActivity(new Intent(HomePage.this, Login.class));
             }
         });
     }

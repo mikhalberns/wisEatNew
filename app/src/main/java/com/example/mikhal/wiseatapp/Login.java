@@ -46,7 +46,9 @@ public class Login extends AppCompatActivity {
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 if(firebaseAuth.getCurrentUser()!=null)
                 {
-                   startActivity(new Intent(Login.this,setProfile.class));
+                    Toast.makeText(Login.this,"auth changed",Toast.LENGTH_LONG).show();
+
+                  // startActivity(new Intent(Login.this,setProfile.class));
                 }
             }
         };
@@ -85,6 +87,8 @@ public class Login extends AppCompatActivity {
     }
     private void signIn() {
 
+        Toast.makeText(Login.this,"sign in function",Toast.LENGTH_LONG).show();
+
         Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
         startActivityForResult(signInIntent, RC_SIGN_IN);
         Auth.GoogleSignInApi.signOut(mGoogleApiClient);
@@ -96,7 +100,6 @@ public class Login extends AppCompatActivity {
 
         if (requestCode == RC_SIGN_IN) {
 
-            Toast.makeText(Login.this,"sign in",Toast.LENGTH_LONG).show();
             myDb.deactivateAll();
 
             GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
@@ -115,12 +118,14 @@ public class Login extends AppCompatActivity {
                         Toast.makeText(Login.this,"Data not Inserted",Toast.LENGTH_LONG).show();
 
                     Auth.GoogleSignInApi.signOut(mGoogleApiClient);
+                    Toast.makeText(Login.this,"on activity result -SP",Toast.LENGTH_LONG).show();
                     startActivity(new Intent(getApplicationContext(), setProfile.class));
                 }
                 else//move to the home page
                 {
                     myDb.activateUser(result.getSignInAccount().getId());
                     Auth.GoogleSignInApi.signOut(mGoogleApiClient);
+                    Toast.makeText(Login.this,"on activity result -HP",Toast.LENGTH_LONG).show();
                     startActivity(new Intent(getApplicationContext(), HomePage.class));
                 }
             }
