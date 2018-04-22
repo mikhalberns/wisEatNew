@@ -30,4 +30,5 @@
     <string name="glutenfree">glutenFree</string>
     <string name="diaryfree">diaryFree</string>
     <string name="title_activity_home_page">HomePage</string>
+    <string name="title_activity_search_ingredients">SearchIngredients</string>
 </resources>

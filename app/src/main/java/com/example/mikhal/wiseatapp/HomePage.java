@@ -23,6 +23,7 @@ public class HomePage extends AppCompatActivity {
 
     ImageButton btnSetProfile;
     Button btnLogout;
+    Button btnEnterIngredients;
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
 
@@ -64,6 +65,16 @@ public class HomePage extends AppCompatActivity {
                 user.delete();
                 mAuth.signOut();
                 startActivity(new Intent(HomePage.this, Login.class));
+            }
+        });
+
+
+        btnEnterIngredients= (Button)findViewById(R.id.EnterIngredients);
+        btnEnterIngredients.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), SearchIngredients.class));
+
             }
         });
     }
