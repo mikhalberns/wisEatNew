@@ -31,15 +31,35 @@
         android:textSize="18sp"
         android:textStyle="bold" />
 
-    <ImageButton
+    <Button
+
         android:id="@+id/btnGoogle"
-        android:layout_width="340dp"
-        android:layout_height="70dp"
+        android:layout_width="284dp"
+        android:layout_height="67dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/rounded_corner_gg_btn"
+        android:fontFamily="casual"
+        android:padding="10dp"
+        android:text="@string/ggl_login"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/gglLogo_imageView"
+        android:layout_width="56dp"
+        android:layout_height="69dp"
+        android:layout_alignBottom="@+id/btnGoogle"
+        android:layout_alignStart="@+id/btnGoogle"
         android:contentDescription="@string/ggl_login"
-        app:srcCompat="@drawable/social_login_google" />
+        android:drawingCacheQuality="low"
+        android:elevation="3dp"
+        android:src="@drawable/ggl_login" />
 
     <TextView
         android:id="@+id/cpyRights_textView"
@@ -48,8 +68,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:text="@string/cpyRights"
-        android:textAlignment="center" />
-
-
-
+        android:textAlignment="center"/>
 </RelativeLayout>
+
+
