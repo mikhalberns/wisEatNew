@@ -8,6 +8,9 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import org.w3c.dom.Text;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class DatabaseHelper extends SQLiteOpenHelper {
     // profiles table
     public static final String WISEATAPP_DATABASE = "wiseatApp.db";
@@ -81,7 +84,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(CELERY,celery);
         contentValues.put(CORN,corn);
 
-
         long result = db.insert(PROFILES_TABLE,null ,contentValues);
         if(result == -1)
             return false;
@@ -143,5 +145,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         else
             return true;
     }
+
+
 
 }

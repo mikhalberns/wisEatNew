@@ -5,14 +5,25 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.SearchView;
 import android.widget.Toast;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.nio.charset.Charset;
+import java.util.ArrayList;
+import java.util.List;
+
 public class SearchIngredients extends AppCompatActivity {
     String ingredients;
     Button btnSearch;
+    //Ingredients csv
+    public List<IngredientsSample> IngredientsSample= new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +35,7 @@ public class SearchIngredients extends AppCompatActivity {
         btnSearch = (Button)findViewById(R.id.btnSearch);
 
         search();
-
+        readIngredients();
     }
 
    public void search(){
@@ -39,10 +50,39 @@ public class SearchIngredients extends AppCompatActivity {
                         // here we can send the string- ingredients to the function that will transform the string to individual ingredients
                    }
                }
-
-
        );
-
    }
+    public void readIngredients(){
+        InputStream is= getResources().openRawResource(R.raw.ingredients);
+        BufferedReader reader= new BufferedReader(new InputStreamReader(is, Charset.forName("UTF-8")));
 
+        String line="";
+        try {
+            //step over headers
+
+            reader.readLine();
+
+            while ((line=reader.readLine()) != null){
+                //split by ','
+                String[] tokens= line.split(",");
+
+                //Read the data
+                IngredientsSample sample= new IngredientsSample();
+                sample.setName(tokens[0]);
+                sample.setFoodGroup(tokens[1]);
+
+
+
+                IngredientsSample.add(sample);
+
+                Log.d("SearchIngredients", "Just created: "+ sample);
+            }
+        } catch (IOException e){
+            Log.wtf("SearchIngredients", "Eror reading ingredients file on line"+ line, e) ;
+            e.printStackTrace();
+        }
+
+
+
+    }
 }
