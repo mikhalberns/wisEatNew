@@ -43,9 +43,8 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         myDb = new DatabaseHelper(this);
-        //use this function before push!!!! - dont login after
-        //myDb.truncateTables();
-        ///////////////////////////////////////
+        myDb.insertING2DB();
+
         mAuth = FirebaseAuth.getInstance();
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
@@ -59,7 +58,7 @@ public class Login extends AppCompatActivity {
             }
         };
 
-       //myDb.insertING2DB();
+
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
