@@ -41,7 +41,7 @@ public class HomePage extends AppCompatActivity {
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 if(firebaseAuth.getCurrentUser() == null) // if we are logged out
                 {
-                    Toast.makeText(HomePage.this,"user logged out",Toast.LENGTH_LONG).show();
+                   // Toast.makeText(HomePage.this,"user logged out",Toast.LENGTH_LONG).show();
                    //startActivity(new Intent(HomePage.this, Login.class));
                 }
             }

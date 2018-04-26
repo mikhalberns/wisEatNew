@@ -23,7 +23,6 @@ public class SearchIngredients extends AppCompatActivity {
     String ingredients;
     Button btnSearch;
     //Ingredients csv
-    public List<IngredientsSample> IngredientsSample= new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +34,6 @@ public class SearchIngredients extends AppCompatActivity {
         btnSearch = (Button)findViewById(R.id.btnSearch);
 
         search();
-        readIngredients();
     }
 
    public void search(){
@@ -52,37 +50,5 @@ public class SearchIngredients extends AppCompatActivity {
                }
        );
    }
-    public void readIngredients(){
-        InputStream is= getResources().openRawResource(R.raw.ingredients);
-        BufferedReader reader= new BufferedReader(new InputStreamReader(is, Charset.forName("UTF-8")));
 
-        String line="";
-        try {
-            //step over headers
-
-            reader.readLine();
-
-            while ((line=reader.readLine()) != null){
-                //split by ','
-                String[] tokens= line.split(",");
-
-                //Read the data
-                IngredientsSample sample= new IngredientsSample();
-                sample.setName(tokens[0]);
-                sample.setFoodGroup(tokens[1]);
-
-
-
-                IngredientsSample.add(sample);
-
-                Log.d("SearchIngredients", "Just created: "+ sample);
-            }
-        } catch (IOException e){
-            Log.wtf("SearchIngredients", "Eror reading ingredients file on line"+ line, e) ;
-            e.printStackTrace();
-        }
-
-
-
-    }
 }

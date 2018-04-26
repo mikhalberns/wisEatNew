@@ -8,6 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import org.w3c.dom.Text;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -42,14 +43,20 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String USER_ID = "userId";
     public static final String IS_ACTIVE = "isActive";
 
+    //ingredients table
+    public static  final String ING_TABLE = "ingredientsTable";
+    public static  final  String INGREDIENT = "ingredient";
+    public static final String FAMILY = "family";
+
 
     public DatabaseHelper(Context context) {
-        super(context, WISEATAPP_DATABASE, null, 2);
+        super(context, WISEATAPP_DATABASE, null, 3);
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("create table " + USERS_TABLE + " (userId TEXT PRIMARY KEY, profileID INTEGER, isActive INTEGER)");
+        db.execSQL("create table " + ING_TABLE + " (ingredient TEXT, family TEXT)");
         db.execSQL("create table " + PROFILES_TABLE +" (profileID INTEGER PRIMARY KEY autoincrement,beef INTEGER,chicken INTEGER,pork INTEGER,fish INTEGER,Insects INTEGER,eggs INTEGER,milk INTEGER,honey INTEGER,gluten INTEGER,lupin INTEGER,sesame INTEGER,algae INTEGER,shellfish INTEGER,soy INTEGER,peanuts INTEGER,sulphite INTEGER,nuts INTEGER,mustard INTEGER,celery INTEGER,corn INTEGER)");
     }
 
@@ -146,6 +153,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             return true;
     }
 
-
-
+    public void truncateTables()
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.execSQL("delete from " + PROFILES_TABLE);
+        db.execSQL("delete from " + USERS_TABLE);
+    }
 }
