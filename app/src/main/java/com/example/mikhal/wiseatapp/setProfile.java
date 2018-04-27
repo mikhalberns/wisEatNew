@@ -616,8 +616,9 @@ public class setProfile extends AppCompatActivity {
                             Toast.makeText(setProfile.this,"Data Inserted",Toast.LENGTH_LONG).show();
                             myDb.matchProfileToUser();
                         }
-                        else
-                            Toast.makeText(setProfile.this,"Data not Inserted",Toast.LENGTH_LONG).show();
+                        else {
+                            //   Toast.makeText(setProfile.this,"Data not Inserted",Toast.LENGTH_LONG).show();
+                        }
 
                         startActivity(new Intent(getApplicationContext(), HomePage.class));
                     }

@@ -24,6 +24,9 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.common.api.ApiException;
 
+import java.io.IOException;
+import java.io.InputStream;
+
 
 public class Login extends AppCompatActivity {
 
@@ -40,18 +43,22 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         myDb = new DatabaseHelper(this);
+        myDb.insertING2DB();
+
         mAuth = FirebaseAuth.getInstance();
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 if(firebaseAuth.getCurrentUser()!=null)
                 {
-                    Toast.makeText(Login.this,"auth changed",Toast.LENGTH_LONG).show();
+                   // Toast.makeText(Login.this,"auth changed",Toast.LENGTH_LONG).show();
 
                   // startActivity(new Intent(Login.this,setProfile.class));
                 }
             }
         };
+
+
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
@@ -64,7 +71,7 @@ public class Login extends AppCompatActivity {
                 .enableAutoManage(this, new GoogleApiClient.OnConnectionFailedListener() {
                     @Override
                     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
-                        Toast.makeText(Login.this,"connection failed",Toast.LENGTH_LONG).show();
+                        //Toast.makeText(Login.this,"connection failed",Toast.LENGTH_LONG).show();
                     }
                 })
                 .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
@@ -87,7 +94,7 @@ public class Login extends AppCompatActivity {
     }
     private void signIn() {
 
-        Toast.makeText(Login.this,"sign in function",Toast.LENGTH_LONG).show();
+        //Toast.makeText(Login.this,"sign in function",Toast.LENGTH_LONG).show();
 
         Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
         startActivityForResult(signInIntent, RC_SIGN_IN);
@@ -113,19 +120,23 @@ public class Login extends AppCompatActivity {
                     boolean isInserted = myDb.insertUIDToUsers(result.getSignInAccount().getId());
 
                     if(isInserted == true)
-                        Toast.makeText(Login.this,"Data Inserted",Toast.LENGTH_LONG).show();
+                    {
+                       // Toast.makeText(Login.this,"Data Inserted",Toast.LENGTH_LONG).show();
+                    }
                     else
-                        Toast.makeText(Login.this,"Data not Inserted",Toast.LENGTH_LONG).show();
+                    {
+                        //Toast.makeText(Login.this,"Data not Inserted",Toast.LENGTH_LONG).show();
+                    }
 
                     Auth.GoogleSignInApi.signOut(mGoogleApiClient);
-                    Toast.makeText(Login.this,"on activity result -SP",Toast.LENGTH_LONG).show();
+                   // Toast.makeText(Login.this,"on activity result -SP",Toast.LENGTH_LONG).show();
                     startActivity(new Intent(getApplicationContext(), setProfile.class));
                 }
                 else//move to the home page
                 {
                     myDb.activateUser(result.getSignInAccount().getId());
                     Auth.GoogleSignInApi.signOut(mGoogleApiClient);
-                    Toast.makeText(Login.this,"on activity result -HP",Toast.LENGTH_LONG).show();
+                   // Toast.makeText(Login.this,"on activity result -HP",Toast.LENGTH_LONG).show();
                     startActivity(new Intent(getApplicationContext(), HomePage.class));
                 }
             }

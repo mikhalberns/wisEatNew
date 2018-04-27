@@ -33,6 +33,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="android.support.v7.app.AppCompatActivity" />
         </activity>
+        <activity
+            android:name=".SearchIngredients"
+            android:label="@string/title_activity_search_ingredients"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

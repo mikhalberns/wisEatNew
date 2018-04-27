@@ -39,4 +39,5 @@
     <!--End Of Screen Set Profile -->
 
     <string name="title_activity_home_page">HomePage</string>
+    <string name="title_activity_search_ingredients">SearchIngredients</string>
 </resources>

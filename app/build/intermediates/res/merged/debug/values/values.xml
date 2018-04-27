@@ -858,6 +858,7 @@
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="sulphite">sulphite</string>
     <string name="title_activity_home_page">HomePage</string>
+    <string name="title_activity_search_ingredients">SearchIngredients</string>
     <string name="title_activity_set_profile">setProfile</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_home">Home</string>
