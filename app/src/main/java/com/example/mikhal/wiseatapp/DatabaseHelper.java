@@ -1271,4 +1271,23 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             db.insert(ING_TABLE,null ,contentValues);
         }
     }
+
+    public Cursor getIngredientFromDb(String ingredient) {
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor res = db.rawQuery("select * from ingredientsTable where ingredient='"+ingredient+"'",null);
+
+        return res;
+    }
+
+    public Integer getRateFromPRofile(String family){
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor rate = db.rawQuery("select * from profiles_table where profileID=1", null);//change to real ID
+        Integer index=rate.getColumnIndex(family);
+        rate.moveToFirst();
+        Integer ingredientRate=rate.getInt(index);
+
+        return ingredientRate;
+    }
+
 }
