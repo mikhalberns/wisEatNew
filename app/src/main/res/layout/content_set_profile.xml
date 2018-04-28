@@ -36,13 +36,13 @@
         android:text="@string/glutenfree" />
 
     <CheckBox
-        android:id="@+id/diaryFree"
+        android:id="@+id/dairyFree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/eggsFree"
         android:layout_marginTop="155dp"
-        android:text="@string/diaryfree" />
+        android:text="@string/dairyfree" />
 
     <CheckBox
         android:id="@+id/eggsFree"
@@ -87,7 +87,7 @@
     </RadioGroup>
 
     <RadioGroup
-        android:id="@+id/diaryFreeRG"
+        android:id="@+id/dairyFreeRG"
         android:layout_width="199dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -96,13 +96,13 @@
         android:visibility="gone">
 
         <RadioButton
-            android:id="@+id/diary1"
+            android:id="@+id/dairy1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Never" />
 
         <RadioButton
-            android:id="@+id/diary2"
+            android:id="@+id/dairy2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Occasionally" />
@@ -114,7 +114,7 @@
         android:layout_width="196dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_below="@+id/diaryFree"
+        android:layout_below="@+id/dairyFree"
         android:orientation="horizontal"
         android:visibility="gone">
 
