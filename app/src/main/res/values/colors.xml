@@ -4,5 +4,8 @@
     <color name="colorPrimaryDark">#578227</color>
     <color name="colorGoogle">#D84B37</color>
     <color name="colorFacebook">#3B5998</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#f2d20e66</color>
+    <color name="dairy">#84779b</color>
+    <color name="gluten">#d1bc27</color>
+    <color name="peanuts">#ba8371</color>
 </resources>

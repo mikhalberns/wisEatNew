@@ -14,8 +14,7 @@ import android.widget.Toast;
 
 public class setProfile extends AppCompatActivity {
     DatabaseHelper myDb;
-    CheckBox veganCheck;
-    CheckBox vegetarianCheck;
+    CheckBox animalFriendlyCheck;
     CheckBox beefCheck;
     CheckBox chickenCheck;
     CheckBox porkCheck;
@@ -45,11 +44,11 @@ public class setProfile extends AppCompatActivity {
             honey , glutenFree , lupin, sesame, algae, shellfish,soy,
             peanuts,sulphite, nuts,mustard,celery,corn;
 
-    RadioGroup eggsFreeRG,dairyFreeRG,veggsFreeRG,vdairyFreeRG,glutenFreeRG,beefRG, chickenRG , porkRG,
+    RadioGroup animalFriendlyRG,eggsFreeRG,dairyFreeRG,veggsFreeRG,vdairyFreeRG,glutenFreeRG,beefRG, chickenRG , porkRG,
             fishRG , InsectsRG, honeyRG , lupinRG, sesameRG, algaeRG, shellfishRG,soyRG,
             peanutsRG ,sulphiteRG, nutsRG,mustardRG,celeryRG,cornRG;
 
-    RadioButton eggs1,eggs2,dairy1,dairy2,veggs1,veggs2,vdairy1,vdairy2,gluten1,gluten2,
+    RadioButton vegetarian,vegan,eggs1,eggs2,dairy1,dairy2,veggs1,veggs2,vdairy1,vdairy2,gluten1,gluten2,
             beef1,beef2, chicken1,chicken2 , pork1,pork2, fish1,fish2 , Insects1,Insects2,
             honey1,honey2 ,lupin1,lupin2, sesame1,sesame2, algae1,algae2, shellfish1,shellfish2 ,soy1,soy2,
             peanuts1,peanuts2,sulphite1,sulphite2, nuts1,nuts2,mustard1,mustard2,celery1,celery2,corn1,corn2;
@@ -62,12 +61,17 @@ public class setProfile extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         myDb= new DatabaseHelper(this);
-        veganCheck= (CheckBox) findViewById(R.id.vegan);
-        vegetarianCheck = (CheckBox) findViewById(R.id.vegetarian);
 
         beef= chicken = pork=fish=Insects=eggsFree=dairyFree=
                 honey=glutenFree=lupin=sesame=algae=shellfish=soy=
                         peanuts=sulphite= nuts=mustard=celery=corn=0;
+
+
+        animalFriendlyCheck = (CheckBox) findViewById(R.id.animalFriendly);
+        animalFriendlyRG= (RadioGroup) findViewById(R.id.animalFriendlyRG);
+        addListenerOnChk(animalFriendlyCheck, animalFriendlyRG);
+        vegan= (RadioButton) findViewById(R.id.vegan);
+        vegetarian = (RadioButton) findViewById(R.id.vegetarian);
 
         eggsFreeCheck= (CheckBox) findViewById(R.id.eggsFree);
         eggsFreeRG= (RadioGroup) findViewById(R.id.eggsFreeRG);
@@ -210,11 +214,11 @@ public class setProfile extends AppCompatActivity {
 
         });
 
-        veganCheck.setOnClickListener(new View.OnClickListener() {
+        vegan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                if (((CheckBox) v).isChecked()) {
+                if (((RadioButton) v).isChecked()) {
                     AlertDialog.Builder pBuilder = new AlertDialog.Builder(setProfile.this);
                     View pView = getLayoutInflater().inflate(R.layout.dialog_vegan,null);
 
@@ -281,11 +285,11 @@ public class setProfile extends AppCompatActivity {
 
         });
 
-        vegetarianCheck.setOnClickListener(new View.OnClickListener() {
+        vegetarian.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                if (((CheckBox) v).isChecked()) {
+                if (((RadioButton) v).isChecked()) {
                     AlertDialog.Builder pBuilder = new AlertDialog.Builder(setProfile.this);
                     View pView = getLayoutInflater().inflate(R.layout.dialog_vegetarian,null);
 
@@ -342,7 +346,7 @@ public class setProfile extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        if (veganCheck.isChecked()) {
+                        if (vegan.isChecked()) {
                             if (veggsFreeCheck.isChecked())
                             {
                                 if(veggs1.isChecked()){
@@ -412,7 +416,7 @@ public class setProfile extends AppCompatActivity {
                                 }
                             }
                         }
-                        if (vegetarianCheck.isChecked()) {
+                        if (vegetarian.isChecked()) {
                             if (beefCheck.isChecked()) {
                                 if (beef1.isChecked()) {
                                     beef = 1;
