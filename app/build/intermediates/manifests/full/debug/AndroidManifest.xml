@@ -57,6 +57,7 @@
             android:name="com.example.mikhal.wiseatapp.SearchIngredients"
             android:label="@string/title_activity_search_ingredients"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.mikhal.wiseatapp.OcrView" />
         <activity
             android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
             android:excludeFromRecents="true"

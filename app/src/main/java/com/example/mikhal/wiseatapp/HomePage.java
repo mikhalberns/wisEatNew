@@ -24,6 +24,7 @@ public class HomePage extends AppCompatActivity {
     ImageButton btnSetProfile;
     Button btnLogout;
     Button btnEnterIngredients;
+    Button btnAddPic;
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
 
@@ -77,6 +78,16 @@ public class HomePage extends AppCompatActivity {
 
             }
         });
+
+        btnAddPic= (Button)findViewById(R.id.addPic);
+        btnAddPic.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), OcrView.class));
+
+            }
+        });
+
     }
 
   //  @Override

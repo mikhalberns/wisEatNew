@@ -36,7 +36,8 @@
         <activity
             android:name=".SearchIngredients"
             android:label="@string/title_activity_search_ingredients"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".OcrView"></activity>
     </application>
 
 </manifest>

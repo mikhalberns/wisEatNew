@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:1-42:12
+ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:1-43:12
 MERGED from [com.google.firebase:firebase-core:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-core-12.0.1.aar\06fc601ad9607e002e9811564dc4266f\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-auth:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-auth-12.0.1.aar\405b6e119767d6e646d8080c8fbcf6f4\AndroidManifest.xml:17:1-39:12
 MERGED from [com.google.firebase:firebase-auth:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-auth-12.0.1.aar\2a5a45f6b385bd0e93caeb2de34a7f8e\AndroidManifest.xml:17:1-32:12
@@ -40,20 +40,20 @@ MERGED from [com.google.firebase:firebase-common-license:12.0.1] C:\Users\mikha\
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\2e7bb40b2a045fdcbdd370d195adb9e5\AndroidManifest.xml:17:1-30:12
 MERGED from [com.google.firebase:firebase-analytics-impl-license:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-12.0.1.aar\94951feeee798da884adc669612a86f7\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-iid-license:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-12.0.1.aar\07fc4a5932a2fc339b9041f95ab79ecc\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:1-43:12
 	package
 		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:3:5-43
 		INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:1-42:12
+		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:1-43:12
 		INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:1-42:12
+		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:1-43:12
 		INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:11-69
@@ -64,7 +64,7 @@ ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidMa
 	android:name
 		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:6:9-54
 application
-ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:9:5-40:19
+ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:9:5-41:19
 MERGED from [com.google.firebase:firebase-core:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-core-12.0.1.aar\06fc601ad9607e002e9811564dc4266f\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-core:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-core-12.0.1.aar\06fc601ad9607e002e9811564dc4266f\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-auth:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-auth-12.0.1.aar\405b6e119767d6e646d8080c8fbcf6f4\AndroidManifest.xml:22:5-37:19
@@ -184,13 +184,17 @@ ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidMa
 	android:name
 		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:33:17-63
 activity#com.example.mikhal.wiseatapp.SearchIngredients
-ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:36:9-39:68
+ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:36:9-39:59
 	android:label
 		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:38:13-70
 	android:theme
 		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:39:13-56
 	android:name
 		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:37:13-46
+activity#com.example.mikhal.wiseatapp.OcrView
+ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:40:9-54
+	android:name
+		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:40:19-42
 uses-sdk
 INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml

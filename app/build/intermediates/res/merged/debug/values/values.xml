@@ -824,6 +824,7 @@
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
     <string name="corn">corn</string>
+    <string name="cpyRights">© 20182W71. All rights reserved.</string>
     <string name="default_web_client_id" translatable="false">116341195017-b1l40gugbs127p1olug7hh0gftjjdks5.apps.googleusercontent.com</string>
     <string name="diaryfree">diaryFree</string>
     <string name="done">Done</string>
@@ -832,6 +833,7 @@
     <string name="firebase_database_url" translatable="false">https://wiseat-6e837.firebaseio.com</string>
     <string name="fish">fish</string>
     <string name="gcm_defaultSenderId" translatable="false">116341195017</string>
+    <string name="ggl_login">\t\tLog in with Google</string>
     <string name="glutenfree">glutenFree</string>
     <string name="google_api_key" translatable="false">AIzaSyDmBvrwJj-zZj1QAxMYBAImtLlast1fgHc</string>
     <string name="google_app_id" translatable="false">1:116341195017:android:22f6ab47c1324240</string>
@@ -865,6 +867,7 @@
     <string name="title_notifications">Notifications</string>
     <string name="vegan">vegan</string>
     <string name="vegetarian">vegetarian</string>
+    <string name="welcome">Welcome to WisEat, an app that\n helps you consume food products smarter :)</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>

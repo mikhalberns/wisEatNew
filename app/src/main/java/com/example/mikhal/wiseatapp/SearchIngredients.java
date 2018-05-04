@@ -43,7 +43,7 @@ public class SearchIngredients extends AppCompatActivity {
                    public void onClick(View v){
 
                        SearchView searchWord = (SearchView) findViewById(R.id.search);
-                       CharSequence query = searchWord.getQuery();
+                       CharSequence query = searchWord.getQuery(); // query = string searched
                        ingredients=  query.toString();
                         // here we can send the string- ingredients to the function that will transform the string to individual ingredients
                    }
