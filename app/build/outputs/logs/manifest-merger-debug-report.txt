@@ -1,12 +1,13 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:1-43:12
+ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:1-46:12
 MERGED from [com.google.firebase:firebase-core:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-core-12.0.1.aar\06fc601ad9607e002e9811564dc4266f\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-auth:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-auth-12.0.1.aar\405b6e119767d6e646d8080c8fbcf6f4\AndroidManifest.xml:17:1-39:12
 MERGED from [com.google.firebase:firebase-auth:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-auth-12.0.1.aar\2a5a45f6b385bd0e93caeb2de34a7f8e\AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-vision:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-vision-12.0.1.aar\f9574a4f0ea81ba3f5b33f5a2ccf1d86\AndroidManifest.xml:2:1-9:12
 MERGED from [com.android.support:design:26.1.0] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\58987b89e64dc77a644ef9f3928d4e9d\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\5ed903ca5ca9d6fa9548ee0e1a97e3ca\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\4932be453a2c0401dc81db7680337430\AndroidManifest.xml:2:1-11:12
@@ -15,6 +16,7 @@ MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\mikha\
 MERGED from [com.google.firebase:firebase-analytics:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-analytics-12.0.1.aar\f9023dbb4664c45ff88e718a78f0859f\AndroidManifest.xml:17:1-54:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-12.0.1.aar\c611f678053bd1bc365876b62e4a2ffa\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-auth-base:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-12.0.1.aar\6623230fa4110f9414f5a7bbbdb6404d\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-vision-common:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-vision-common-12.0.1.aar\ef1aa104fdc2a0f30919f94be8ea3d04\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-base:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-base-12.0.1.aar\c9cbd8af646305dde5a40d89689c6164\AndroidManifest.xml:17:1-29:12
 MERGED from [com.google.firebase:firebase-analytics-impl:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-12.0.1.aar\eea9b8dac60fbceefa97f39ed1f78664\AndroidManifest.xml:17:1-40:12
 MERGED from [com.google.firebase:firebase-iid:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-iid-12.0.1.aar\8287ef9273a341e1da0a003b29c013a1\AndroidManifest.xml:17:1-59:12
@@ -22,6 +24,7 @@ MERGED from [com.google.firebase:firebase-common:12.0.1] C:\Users\mikha\.gradle\
 MERGED from [com.google.android.gms:play-services-tasks:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-tasks-12.0.1.aar\1be2f11583b06da9d4c43752d1becf87\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-basement:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-basement-12.0.1.aar\d6c59bd8addcde10f36e73321898612e\AndroidManifest.xml:17:1-28:12
 MERGED from [com.google.firebase:firebase-auth-license:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-auth-license-12.0.1.aar\35179b3bb6314e987a80a9110f3c1307\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-vision-license:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-vision-license-12.0.1.aar\c70df0d8a429c3b8401d8a3dba6127eb\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\06060de9af3297d65471e6360ad23602\AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:transition:26.1.0] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\d616f278e36afea7fec5b3d035ea0807\AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\0f1d209dbd6fba643782211776de1616\AndroidManifest.xml:17:1-31:12
@@ -37,23 +40,24 @@ MERGED from [com.google.android.gms:play-services-base-license:12.0.1] C:\Users\
 MERGED from [com.google.android.gms:play-services-basement-license:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-12.0.1.aar\6ed2567cb2872efe16bf34ced0fd906b\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-tasks-license:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-12.0.1.aar\cefd8b7014d2d831f308c4173c9f354a\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-common-license:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-common-license-12.0.1.aar\ae17c85c9730b681540c06f371843396\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-vision-common-license:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-vision-common-license-12.0.1.aar\8ce43ef5afa5be4081739ed3c3e0fab6\AndroidManifest.xml:17:1-24:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\2e7bb40b2a045fdcbdd370d195adb9e5\AndroidManifest.xml:17:1-30:12
 MERGED from [com.google.firebase:firebase-analytics-impl-license:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-12.0.1.aar\94951feeee798da884adc669612a86f7\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-iid-license:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-12.0.1.aar\07fc4a5932a2fc339b9041f95ab79ecc\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:1-46:12
 	package
 		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:3:5-43
 		INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:1-43:12
+		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:1-46:12
 		INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:1-43:12
+		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:1-46:12
 		INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:2:11-69
@@ -63,14 +67,20 @@ ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidMa
 		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:7:9-48
 	android:name
 		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:6:9-54
+uses-permission#android.permission.CAMERA
+ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:9:5-64
+	android:name
+		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:9:22-62
 application
-ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:9:5-41:19
+ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:11:5-43:19
 MERGED from [com.google.firebase:firebase-core:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-core-12.0.1.aar\06fc601ad9607e002e9811564dc4266f\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-core:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-core-12.0.1.aar\06fc601ad9607e002e9811564dc4266f\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-auth:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-auth-12.0.1.aar\405b6e119767d6e646d8080c8fbcf6f4\AndroidManifest.xml:22:5-37:19
 MERGED from [com.google.android.gms:play-services-auth:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-auth-12.0.1.aar\405b6e119767d6e646d8080c8fbcf6f4\AndroidManifest.xml:22:5-37:19
 MERGED from [com.google.firebase:firebase-auth:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-auth-12.0.1.aar\2a5a45f6b385bd0e93caeb2de34a7f8e\AndroidManifest.xml:22:5-30:19
 MERGED from [com.google.firebase:firebase-auth:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-auth-12.0.1.aar\2a5a45f6b385bd0e93caeb2de34a7f8e\AndroidManifest.xml:22:5-30:19
+MERGED from [com.google.android.gms:play-services-vision:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-vision-12.0.1.aar\f9574a4f0ea81ba3f5b33f5a2ccf1d86\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-vision-12.0.1.aar\f9574a4f0ea81ba3f5b33f5a2ccf1d86\AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:design:26.1.0] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\58987b89e64dc77a644ef9f3928d4e9d\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:design:26.1.0] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\58987b89e64dc77a644ef9f3928d4e9d\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\5ed903ca5ca9d6fa9548ee0e1a97e3ca\AndroidManifest.xml:25:5-29:19
@@ -83,6 +93,8 @@ MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\mikha\
 MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\de642e20097907922b316c2592ccd820\AndroidManifest.xml:22:5-26:19
 MERGED from [com.google.firebase:firebase-analytics:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-analytics-12.0.1.aar\f9023dbb4664c45ff88e718a78f0859f\AndroidManifest.xml:27:5-52:19
 MERGED from [com.google.firebase:firebase-analytics:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-analytics-12.0.1.aar\f9023dbb4664c45ff88e718a78f0859f\AndroidManifest.xml:27:5-52:19
+MERGED from [com.google.android.gms:play-services-vision-common:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-vision-common-12.0.1.aar\ef1aa104fdc2a0f30919f94be8ea3d04\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-vision-common:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-vision-common-12.0.1.aar\ef1aa104fdc2a0f30919f94be8ea3d04\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-base:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-base-12.0.1.aar\c9cbd8af646305dde5a40d89689c6164\AndroidManifest.xml:22:5-27:19
 MERGED from [com.google.android.gms:play-services-base:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-base-12.0.1.aar\c9cbd8af646305dde5a40d89689c6164\AndroidManifest.xml:22:5-27:19
 MERGED from [com.google.firebase:firebase-analytics-impl:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-12.0.1.aar\eea9b8dac60fbceefa97f39ed1f78664\AndroidManifest.xml:27:5-38:19
@@ -97,6 +109,8 @@ MERGED from [com.google.android.gms:play-services-basement:12.0.1] C:\Users\mikh
 MERGED from [com.google.android.gms:play-services-basement:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-basement-12.0.1.aar\d6c59bd8addcde10f36e73321898612e\AndroidManifest.xml:22:5-26:19
 MERGED from [com.google.firebase:firebase-auth-license:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-auth-license-12.0.1.aar\35179b3bb6314e987a80a9110f3c1307\AndroidManifest.xml:22:5-20
 MERGED from [com.google.firebase:firebase-auth-license:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-auth-license-12.0.1.aar\35179b3bb6314e987a80a9110f3c1307\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-vision-license:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-vision-license-12.0.1.aar\c70df0d8a429c3b8401d8a3dba6127eb\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-vision-license:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-vision-license-12.0.1.aar\c70df0d8a429c3b8401d8a3dba6127eb\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\06060de9af3297d65471e6360ad23602\AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\06060de9af3297d65471e6360ad23602\AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:transition:26.1.0] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\d616f278e36afea7fec5b3d035ea0807\AndroidManifest.xml:22:5-26:19
@@ -127,6 +141,8 @@ MERGED from [com.google.android.gms:play-services-tasks-license:12.0.1] C:\Users
 MERGED from [com.google.android.gms:play-services-tasks-license:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-12.0.1.aar\cefd8b7014d2d831f308c4173c9f354a\AndroidManifest.xml:22:5-20
 MERGED from [com.google.firebase:firebase-common-license:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-common-license-12.0.1.aar\ae17c85c9730b681540c06f371843396\AndroidManifest.xml:22:5-20
 MERGED from [com.google.firebase:firebase-common-license:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-common-license-12.0.1.aar\ae17c85c9730b681540c06f371843396\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-vision-common-license:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-vision-common-license-12.0.1.aar\8ce43ef5afa5be4081739ed3c3e0fab6\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-vision-common-license:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-vision-common-license-12.0.1.aar\8ce43ef5afa5be4081739ed3c3e0fab6\AndroidManifest.xml:22:5-20
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\2e7bb40b2a045fdcbdd370d195adb9e5\AndroidManifest.xml:24:5-28:19
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\2e7bb40b2a045fdcbdd370d195adb9e5\AndroidManifest.xml:24:5-28:19
 MERGED from [com.google.firebase:firebase-analytics-impl-license:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-12.0.1.aar\94951feeee798da884adc669612a86f7\AndroidManifest.xml:22:5-20
@@ -134,67 +150,73 @@ MERGED from [com.google.firebase:firebase-analytics-impl-license:12.0.1] C:\User
 MERGED from [com.google.firebase:firebase-iid-license:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-12.0.1.aar\07fc4a5932a2fc339b9041f95ab79ecc\AndroidManifest.xml:22:5-20
 MERGED from [com.google.firebase:firebase-iid-license:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-12.0.1.aar\07fc4a5932a2fc339b9041f95ab79ecc\AndroidManifest.xml:22:5-20
 	android:supportsRtl
-		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:14:9-35
+		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:16:9-35
 	android:label
-		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:12:9-41
+		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:14:9-41
 	android:roundIcon
-		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:13:9-54
+		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:15:9-54
 	android:icon
-		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:11:9-43
+		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:13:9-43
 	android:allowBackup
-		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:12:9-35
 	android:theme
-		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:15:9-40
+		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:17:9-40
 activity#com.example.mikhal.wiseatapp.Login
-ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:16:9-22:20
+ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:18:9-24:20
 	android:name
-		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:16:19-40
+		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:18:19-40
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:17:13-21:29
+ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:19:13-23:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:18:17-69
+ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:20:17-69
 	android:name
-		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:18:25-66
+		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:20:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:20:17-77
+ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:22:17-77
 	android:name
-		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:20:27-74
+		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:22:27-74
 activity#com.example.mikhal.wiseatapp.setProfile
-ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:23:9-26:59
+ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:25:9-28:59
 	android:label
-		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:25:13-63
+		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:27:13-63
 	android:theme
-		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:26:13-56
+		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:28:13-56
 	android:name
-		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:24:13-39
+		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:26:13-39
 activity#com.example.mikhal.wiseatapp.HomePage
-ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:27:9-35:20
+ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:29:9-37:20
 	android:parentActivityName
-		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:30:13-82
+		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:32:13-82
 	android:label
-		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:29:13-61
+		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:31:13-61
 	android:theme
-		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:31:13-56
+		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:33:13-56
 	android:name
-		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:28:13-37
+		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:30:13-37
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:32:13-34:76
+ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:34:13-36:76
 	android:value
-		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:34:17-73
+		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:36:17-73
 	android:name
-		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:33:17-63
+		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:35:17-63
 activity#com.example.mikhal.wiseatapp.SearchIngredients
-ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:36:9-39:59
+ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:38:9-41:59
 	android:label
-		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:38:13-70
+		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:40:13-70
 	android:theme
-		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:39:13-56
+		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:41:13-56
 	android:name
-		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:37:13-46
+		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:39:13-46
 activity#com.example.mikhal.wiseatapp.OcrView
-ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:40:9-54
+ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:42:9-54
 	android:name
-		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:40:19-42
+		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:42:19-42
+meta-data#com.google.android.gms.vision.DEPENDENCIES
+ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:44:9-45:34
+	android:value
+		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:45:13-32
+	android:name
+		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:44:20-77
 uses-sdk
 INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml
@@ -205,6 +227,8 @@ MERGED from [com.google.android.gms:play-services-auth:12.0.1] C:\Users\mikha\.g
 MERGED from [com.google.android.gms:play-services-auth:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-auth-12.0.1.aar\405b6e119767d6e646d8080c8fbcf6f4\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-auth:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-auth-12.0.1.aar\2a5a45f6b385bd0e93caeb2de34a7f8e\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-auth:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-auth-12.0.1.aar\2a5a45f6b385bd0e93caeb2de34a7f8e\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-vision:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-vision-12.0.1.aar\f9574a4f0ea81ba3f5b33f5a2ccf1d86\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-vision-12.0.1.aar\f9574a4f0ea81ba3f5b33f5a2ccf1d86\AndroidManifest.xml:5:5-44
 MERGED from [com.android.support:design:26.1.0] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\58987b89e64dc77a644ef9f3928d4e9d\AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:design:26.1.0] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\58987b89e64dc77a644ef9f3928d4e9d\AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\5ed903ca5ca9d6fa9548ee0e1a97e3ca\AndroidManifest.xml:21:5-23:78
@@ -221,6 +245,8 @@ MERGED from [com.google.android.gms:play-services-auth-api-phone:12.0.1] C:\User
 MERGED from [com.google.android.gms:play-services-auth-api-phone:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-12.0.1.aar\c611f678053bd1bc365876b62e4a2ffa\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-base:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-12.0.1.aar\6623230fa4110f9414f5a7bbbdb6404d\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-base:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-12.0.1.aar\6623230fa4110f9414f5a7bbbdb6404d\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision-common:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-vision-common-12.0.1.aar\ef1aa104fdc2a0f30919f94be8ea3d04\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-vision-common:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-vision-common-12.0.1.aar\ef1aa104fdc2a0f30919f94be8ea3d04\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-base:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-base-12.0.1.aar\c9cbd8af646305dde5a40d89689c6164\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-base:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-base-12.0.1.aar\c9cbd8af646305dde5a40d89689c6164\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-analytics-impl:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-12.0.1.aar\eea9b8dac60fbceefa97f39ed1f78664\AndroidManifest.xml:20:5-44
@@ -235,6 +261,8 @@ MERGED from [com.google.android.gms:play-services-basement:12.0.1] C:\Users\mikh
 MERGED from [com.google.android.gms:play-services-basement:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-basement-12.0.1.aar\d6c59bd8addcde10f36e73321898612e\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-auth-license:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-auth-license-12.0.1.aar\35179b3bb6314e987a80a9110f3c1307\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-auth-license:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-auth-license-12.0.1.aar\35179b3bb6314e987a80a9110f3c1307\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-vision-license:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-vision-license-12.0.1.aar\c70df0d8a429c3b8401d8a3dba6127eb\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-vision-license:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-vision-license-12.0.1.aar\c70df0d8a429c3b8401d8a3dba6127eb\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\06060de9af3297d65471e6360ad23602\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\06060de9af3297d65471e6360ad23602\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:26.1.0] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\d616f278e36afea7fec5b3d035ea0807\AndroidManifest.xml:20:5-44
@@ -265,6 +293,8 @@ MERGED from [com.google.android.gms:play-services-tasks-license:12.0.1] C:\Users
 MERGED from [com.google.android.gms:play-services-tasks-license:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-12.0.1.aar\cefd8b7014d2d831f308c4173c9f354a\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-common-license:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-common-license-12.0.1.aar\ae17c85c9730b681540c06f371843396\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-common-license:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-common-license-12.0.1.aar\ae17c85c9730b681540c06f371843396\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-vision-common-license:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-vision-common-license-12.0.1.aar\8ce43ef5afa5be4081739ed3c3e0fab6\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-vision-common-license:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\play-services-vision-common-license-12.0.1.aar\8ce43ef5afa5be4081739ed3c3e0fab6\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\2e7bb40b2a045fdcbdd370d195adb9e5\AndroidManifest.xml:20:5-22:41
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\2e7bb40b2a045fdcbdd370d195adb9e5\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-analytics-impl-license:12.0.1] C:\Users\mikha\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-12.0.1.aar\94951feeee798da884adc669612a86f7\AndroidManifest.xml:20:5-44
