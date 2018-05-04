@@ -1,4 +1,4 @@
-#Fri May 04 14:27:01 IDT 2018
-base.0=C\:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\193
+#Fri May 04 16:50:39 IDT 2018
+base.0=C\:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\212
 path.0=classes.dex
 renamed.0=classes.dex

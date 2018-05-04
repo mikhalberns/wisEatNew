@@ -5,6 +5,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Camera;
 import android.graphics.PixelFormat;
 import android.os.Build;
@@ -13,21 +14,31 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.SparseArray;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.gms.cast.CastRemoteDisplayLocalService;
+import com.google.android.gms.vision.Frame;
+import com.google.android.gms.vision.text.Text;
+import com.google.android.gms.vision.text.TextBlock;
+import com.google.android.gms.vision.text.TextRecognizer;
 
 
 public class OcrView extends AppCompatActivity {
 
     Button picBtn;
+    Button checkBtn;
     boolean firsTime=true;
     int res;
-    ImageView im;
-    Bitmap bitmap;
+    ImageView im=null;
+    Bitmap bitmap=null;
+    TextView resText;
 
 
     final private int REQUEST_CODE_ASK_PERMISSIONS_CAMERA = 100;
@@ -60,6 +71,23 @@ public class OcrView extends AppCompatActivity {
                 }
             }
         });
+
+        checkBtn = (Button)findViewById(R.id.checkBtn);
+        checkBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(im != null)
+                {
+                    check();
+                }
+                else
+                {
+                    Toast.makeText(getApplication(), "Take a picture and try again", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+        resText = (TextView)findViewById(R.id.resText);
     }
 
     @Override
@@ -67,7 +95,9 @@ public class OcrView extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
 
         bitmap = (Bitmap)data.getExtras().get("data");
+
         im.setImageBitmap(bitmap);
+
     }
 
     public void checkPermission()
@@ -129,6 +159,40 @@ public class OcrView extends AppCompatActivity {
             }
         });
         return alertDialog;
+    }
+
+    public void check()
+    {
+
+        TextRecognizer txtRecognizer = new TextRecognizer.Builder(getApplicationContext()).build();
+        if (!txtRecognizer.isOperational())
+        {
+            // Shows if your Google Play services is not up to date or OCR is not supported for the device
+            Toast.makeText(this, "Not Up To Date Play Services", Toast.LENGTH_SHORT).show();
+        }
+        else
+        {
+            Toast.makeText(this, "Good", Toast.LENGTH_SHORT).show();
+            // Set the bitmap taken to the frame to perform OCR Operations.
+
+            Frame frame = new Frame.Builder().setBitmap(bitmap).build();
+            SparseArray items = txtRecognizer.detect(frame);
+            StringBuilder strBuilder = new StringBuilder();
+            for (int i = 0; i < items.size(); i++)
+            {
+                TextBlock item = (TextBlock)items.valueAt(i);
+                strBuilder.append(item.getValue());
+                strBuilder.append("/");
+                // The following Process is used to show how to use lines & elements as well
+                for (i = 0; i < items.size(); i++) {
+                    item = (TextBlock) items.valueAt(i);
+                    strBuilder.append(item.getValue());
+                    strBuilder.append("/");
+                }
+            }
+
+            resText.setText(strBuilder.toString());
+        }
     }
 
 
