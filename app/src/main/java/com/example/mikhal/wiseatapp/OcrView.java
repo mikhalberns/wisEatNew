@@ -27,6 +27,7 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -52,11 +53,11 @@ public class OcrView extends AppCompatActivity {
     boolean firsTime=true;
     int res1,res2;
     ImageView im=null;
-    TextView resText;
     Uri photoURI;
     Intent intent;
     String picPath;
-
+    TextView resText;
+    String subStr;
 
     final private int REQUEST_CODE_ASK_PERMISSIONS_CAMERA = 100;
     final private int REQUEST_CODE_ASK_PERMISSIONS_EXTERNAL_STORAGE = 200;
@@ -116,7 +117,7 @@ public class OcrView extends AppCompatActivity {
             }
         });
 
-        resText = (TextView)findViewById(R.id.resText);
+        resText = (TextView) findViewById(R.id.resText);
     }
 
     private File getOutputMediaFile(){
@@ -287,11 +288,44 @@ public class OcrView extends AppCompatActivity {
                     }
                 }
 
-                resText.setText(strBuilder.toString());
+                String ingStr = strBuilder.toString();
+                int indexOfIng1 = ingStr.indexOf("Ingredients:");
+                int indexOfIng2 = ingStr.indexOf("INGREDIENTS:");
+                int indexOfEnd = ingStr.indexOf(".");
+
+                if(indexOfIng1!=-1 && indexOfEnd!=-1)
+                {
+                    subStr = ingStr.substring(indexOfIng1,indexOfEnd);
+                    subStr = subStr.substring(12,subStr.length());
+                    resText.setText(subStr);
+                    SearchIngredients.isOCR=true;
+                    SearchIngredients.ocrString=subStr.toLowerCase();;
+                    startActivity(new Intent(getApplicationContext(), SearchIngredients.class));
+                }
+                else if(indexOfIng2!=-1&& indexOfEnd!=-1)
+                {
+                    subStr = ingStr.substring(indexOfIng2,indexOfEnd);
+                    subStr = subStr.substring(12,subStr.length());
+                    resText.setText(subStr);
+                    SearchIngredients.isOCR=true;
+                    SearchIngredients.ocrString=subStr.toLowerCase();
+                    startActivity(new Intent(getApplicationContext(), SearchIngredients.class));
+                }
+                else
+                {
+                    resText.setText("Couldn't Find Ingredients Or The End Of The List." + "Please Try Again.");
+                }
+
+              /*  for(int i=0;i<ingStr.length();i++)
+                {
+
+                }*/
+
             }
             catch (IOException e)
             {
-                return;
+                Toast.makeText(getApplication(), "Please Take a Picture With Latin Letters Only", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this, OcrView.class));
             }
 
         }
