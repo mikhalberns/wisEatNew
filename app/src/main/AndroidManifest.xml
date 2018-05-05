@@ -7,6 +7,8 @@
         android:value="@string/facebook_app_id" />
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera" />
 
     <meta-data
         android:name="com.google.android.gms.vision.DEPENDENCIES"
@@ -43,7 +45,10 @@
             android:name=".SearchIngredients"
             android:label="@string/title_activity_search_ingredients"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".OcrView" />
+
+        <activity android:name=".OcrView">
+        </activity>
+
     </application>
 
 </manifest>
