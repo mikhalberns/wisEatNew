@@ -22,9 +22,9 @@ public class setProfile extends AppCompatActivity {
     CheckBox fishCheck;
     CheckBox InsectsCheck;
     CheckBox eggsFreeCheck;
-    CheckBox diaryFreeCheck;
+    CheckBox dairyFreeCheck;
     CheckBox veggsFreeCheck;
-    CheckBox vdiaryFreeCheck;
+    CheckBox vdairyFreeCheck;
     CheckBox honeyCheck;
     CheckBox glutenFreeCheck;
     CheckBox lupinCheck;
@@ -41,15 +41,15 @@ public class setProfile extends AppCompatActivity {
     CheckBox customCheck;
     Boolean iscustomCheck = false;
     Button btnAddData;
-    Integer beef, chicken , pork, fish , Insects, eggsFree, diaryFree,
+    Integer beef, chicken , pork, fish , Insects, eggsFree, dairyFree,
             honey , glutenFree , lupin, sesame, algae, shellfish,soy,
             peanuts,sulphite, nuts,mustard,celery,corn;
 
-    RadioGroup eggsFreeRG,diaryFreeRG,veggsFreeRG,vdiaryFreeRG,glutenFreeRG,beefRG, chickenRG , porkRG,
+    RadioGroup eggsFreeRG,dairyFreeRG,veggsFreeRG,vdairyFreeRG,glutenFreeRG,beefRG, chickenRG , porkRG,
             fishRG , InsectsRG, honeyRG , lupinRG, sesameRG, algaeRG, shellfishRG,soyRG,
             peanutsRG ,sulphiteRG, nutsRG,mustardRG,celeryRG,cornRG;
 
-    RadioButton eggs1,eggs2,diary1,diary2,veggs1,veggs2,vdiary1,vdiary2,gluten1,gluten2,
+    RadioButton eggs1,eggs2,dairy1,dairy2,veggs1,veggs2,vdairy1,vdairy2,gluten1,gluten2,
             beef1,beef2, chicken1,chicken2 , pork1,pork2, fish1,fish2 , Insects1,Insects2,
             honey1,honey2 ,lupin1,lupin2, sesame1,sesame2, algae1,algae2, shellfish1,shellfish2 ,soy1,soy2,
             peanuts1,peanuts2,sulphite1,sulphite2, nuts1,nuts2,mustard1,mustard2,celery1,celery2,corn1,corn2;
@@ -65,7 +65,7 @@ public class setProfile extends AppCompatActivity {
         veganCheck= (CheckBox) findViewById(R.id.vegan);
         vegetarianCheck = (CheckBox) findViewById(R.id.vegetarian);
 
-        beef= chicken = pork=fish=Insects=eggsFree=diaryFree=
+        beef= chicken = pork=fish=Insects=eggsFree=dairyFree=
                 honey=glutenFree=lupin=sesame=algae=shellfish=soy=
                         peanuts=sulphite= nuts=mustard=celery=corn=0;
 
@@ -75,11 +75,11 @@ public class setProfile extends AppCompatActivity {
         eggs1=(RadioButton) findViewById(R.id.eggs1);
         eggs2=(RadioButton) findViewById(R.id.eggs2);
 
-        diaryFreeCheck= (CheckBox) findViewById(R.id.diaryFree);
-        diaryFreeRG=(RadioGroup) findViewById(R.id.diaryFreeRG);
-        addListenerOnChk(diaryFreeCheck, diaryFreeRG);
-        diary1=(RadioButton) findViewById(R.id.diary1);
-        diary2=(RadioButton) findViewById(R.id.diary2);
+        dairyFreeCheck= (CheckBox) findViewById(R.id.dairyFree);
+        dairyFreeRG=(RadioGroup) findViewById(R.id.dairyFreeRG);
+        addListenerOnChk(dairyFreeCheck, dairyFreeRG);
+        dairy1=(RadioButton) findViewById(R.id.dairy1);
+        dairy2=(RadioButton) findViewById(R.id.dairy2);
 
         glutenFreeCheck= (CheckBox) findViewById(R.id.glutenFree);
         glutenFreeRG= (RadioGroup) findViewById(R.id.glutenFreeRG);
@@ -224,11 +224,11 @@ public class setProfile extends AppCompatActivity {
                     veggs1=(RadioButton) pView.findViewById(R.id.veggs1);
                     veggs2=(RadioButton) pView.findViewById(R.id.veggs2);
 
-                    vdiaryFreeCheck= (CheckBox) pView.findViewById(R.id.vdiaryFree);
-                    vdiaryFreeRG=(RadioGroup) pView.findViewById(R.id.vdiaryFreeRG);
-                    addListenerOnChk(vdiaryFreeCheck, vdiaryFreeRG);
-                    vdiary1=(RadioButton) pView.findViewById(R.id.vdiary1);
-                    vdiary2=(RadioButton) pView.findViewById(R.id.vdiary2);
+                    vdairyFreeCheck= (CheckBox) pView.findViewById(R.id.vdairyFree);
+                    vdairyFreeRG=(RadioGroup) pView.findViewById(R.id.vdairyFreeRG);
+                    addListenerOnChk(vdairyFreeCheck, vdairyFreeRG);
+                    vdairy1=(RadioButton) pView.findViewById(R.id.vdairy1);
+                    vdairy2=(RadioButton) pView.findViewById(R.id.vdairy2);
 
                     beefCheck= (CheckBox) pView.findViewById(R.id.beef);
                     beefRG= (RadioGroup) pView.findViewById(R.id.beefRG);
@@ -353,13 +353,13 @@ public class setProfile extends AppCompatActivity {
                                 }
                             }
 
-                            if (vdiaryFreeCheck.isChecked())
+                            if (vdairyFreeCheck.isChecked())
                             {
-                                if(vdiary1.isChecked()){
-                                    diaryFree  =1;
+                                if(vdairy1.isChecked()){
+                                    dairyFree  =1;
                                 }
                                 else{
-                                    diaryFree  =2;
+                                    dairyFree  =2;
                                 }
                             }
                             if (beefCheck.isChecked()) {
@@ -468,13 +468,13 @@ public class setProfile extends AppCompatActivity {
                                 }
                             }
 
-                        if (diaryFreeCheck.isChecked())
+                        if (dairyFreeCheck.isChecked())
                             {
-                                if(diary1.isChecked()){
-                                    diaryFree  =1;
+                                if(dairy1.isChecked()){
+                                    dairyFree  =1;
                                 }
                                 else{
-                                    diaryFree  =2;
+                                    dairyFree  =2;
                                 }
                             }
 
@@ -610,7 +610,7 @@ public class setProfile extends AppCompatActivity {
                                 }
                             }
                         }
-                        boolean isInserted = myDb.insertData( beef,chicken ,pork,fish , Insects, eggsFree, diaryFree, honey , glutenFree , lupin, sesame, algae, shellfish,soy, peanuts,sulphite, nuts,mustard,celery,corn);
+                        boolean isInserted = myDb.insertData( beef,chicken ,pork,fish , Insects, eggsFree, dairyFree, honey , glutenFree , lupin, sesame, algae, shellfish,soy, peanuts,sulphite, nuts,mustard,celery,corn);
                         if(isInserted == true)
                         {
                             Toast.makeText(setProfile.this,"Data Inserted",Toast.LENGTH_LONG).show();

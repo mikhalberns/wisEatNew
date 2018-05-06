@@ -3,12 +3,12 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <CheckBox
-        android:id="@+id/vdiaryFree"
+        android:id="@+id/vdairyFree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:text="@string/diaryfree"
+        android:text="@string/dairyfree"
         android:checked="true"/>
 
     <CheckBox
@@ -16,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/vdiaryFree"
+        android:layout_below="@+id/vdairyFree"
         android:text="@string/eggsfree"
         android:checked="true"/>
 
@@ -107,21 +107,21 @@
     </RadioGroup>
 
     <RadioGroup
-        android:id="@+id/vdiaryFreeRG"
+        android:id="@+id/vdairyFreeRG"
         android:layout_width="199dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/vdiaryFree"
+        android:layout_alignTop="@+id/vdairyFree"
         android:orientation="horizontal">
 
         <RadioButton
-            android:id="@+id/vdiary1"
+            android:id="@+id/vdairy1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Never" />
 
         <RadioButton
-            android:id="@+id/vdiary2"
+            android:id="@+id/vdairy2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Occasionally" />

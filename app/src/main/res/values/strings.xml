@@ -35,7 +35,7 @@
     <string name="corn">corn</string>
     <string name="insects">insects</string>
     <string name="glutenfree">glutenFree</string>
-    <string name="diaryfree">diaryFree</string>
+    <string name="dairyfree">dairyFree</string>
     <!--End Of Screen Set Profile -->
 
     <string name="title_activity_home_page">HomePage</string>
