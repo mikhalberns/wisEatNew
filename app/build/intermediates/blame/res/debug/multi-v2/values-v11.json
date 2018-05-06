@@ -268,6 +268,25 @@
             "outputFile": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\values-v11\\values-v11.xml",
             "map": [
                 {
+                    "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-appinvite-12.0.1.aar\\964f4d09aa15a87374ec16faf52a65b1\\res\\values-v11\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "172",
+                        "endLines": "5",
+                        "endColumns": "8",
+                        "endOffsets": "293"
+                    },
+                    "to": {
+                        "startLines": "192",
+                        "startColumns": "4",
+                        "startOffsets": "14077",
+                        "endLines": "193",
+                        "endColumns": "8",
+                        "endOffsets": "14198"
+                    }
+                },
+                {
                     "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\5ed903ca5ca9d6fa9548ee0e1a97e3ca\\res\\values-v11\\values-v11.xml",
                     "from": {
                         "startLines": "2,8,14,20,26,32,38,39,43,47,48,52,56,57,61,66,71,76,78,80,81,82,136,191",
@@ -283,6 +302,25 @@
         {
             "outputFile": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
             "map": [
+                {
+                    "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-appinvite-12.0.1.aar\\964f4d09aa15a87374ec16faf52a65b1\\res\\values-v11\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "172",
+                        "endLines": "5",
+                        "endColumns": "8",
+                        "endOffsets": "293"
+                    },
+                    "to": {
+                        "startLines": "192",
+                        "startColumns": "4",
+                        "startOffsets": "14077",
+                        "endLines": "193",
+                        "endColumns": "8",
+                        "endOffsets": "14198"
+                    }
+                },
                 {
                     "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\5ed903ca5ca9d6fa9548ee0e1a97e3ca\\res\\values-v11\\values-v11.xml",
                     "from": {

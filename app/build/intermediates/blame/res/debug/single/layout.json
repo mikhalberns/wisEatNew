@@ -40,6 +40,10 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.20.0.aar\\73986623add842d9450194afa260c214\\res\\layout\\com_facebook_device_auth_dialog_fragment.xml"
     },
     {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_item_powered_by_google.xml",
+        "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-places-12.0.1.aar\\0717ceb6a05a6043a928f718f9208c09\\res\\layout\\place_autocomplete_item_powered_by_google.xml"
+    },
+    {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_icon_group.xml",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\25248d7ef97636902935efd567f23eff\\res\\layout\\notification_template_icon_group.xml"
     },
@@ -182,6 +186,10 @@
     {
         "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tw__app_card.xml",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-composer-2.3.1.aar\\e7b5bd4acf6ae0af554624b71fdaf89e\\res\\layout\\tw__app_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_item_prediction.xml",
+        "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-places-12.0.1.aar\\0717ceb6a05a6043a928f718f9208c09\\res\\layout\\place_autocomplete_item_prediction.xml"
     },
     {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tw__tweet_compact.xml",
@@ -412,6 +420,10 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\0cbbcda143afaf70bf09cb8216833aae\\res\\layout\\tw__tweet_compact.xml"
     },
     {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_chooser_list_item.xml",
+        "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\89616e4e5296f3560c19c25c46759c9c\\res\\layout\\mr_chooser_list_item.xml"
+    },
+    {
         "merged": "C:\\android studio\\mikhal\\mikhal\\21.4\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\layout\\abc_select_dialog_material.xml"
     },
@@ -422,6 +434,10 @@
     {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\fbb07174550e7cfe1810ded94dfad89b\\res\\layout\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\wallet_test_layout.xml",
+        "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-wallet-12.0.1.aar\\a0ef26817884c35a65a3f039ab0b7683\\res\\layout\\wallet_test_layout.xml"
     },
     {
         "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_login_fragment.xml",
@@ -512,6 +528,10 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-composer-2.3.1.aar\\0d4e7a7245812fa42e1a40919d1c7775\\res\\layout\\tw__composer_view.xml"
     },
     {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_controller_volume_item.xml",
+        "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\89616e4e5296f3560c19c25c46759c9c\\res\\layout\\mr_controller_volume_item.xml"
+    },
+    {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\5ed903ca5ca9d6fa9548ee0e1a97e3ca\\res\\layout\\abc_list_menu_item_radio.xml"
     },
@@ -580,6 +600,10 @@
         "source": "C:\\android studio\\wisEatApp-logIn\\app\\src\\main\\res\\layout\\activity_login.xml"
     },
     {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_controller_material_dialog_b.xml",
+        "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\89616e4e5296f3560c19c25c46759c9c\\res\\layout\\mr_controller_material_dialog_b.xml"
+    },
+    {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tw__media_badge.xml",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\0cbbcda143afaf70bf09cb8216833aae\\res\\layout\\tw__media_badge.xml"
     },
@@ -596,6 +620,10 @@
         "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\layout\\dialog_vegan.xml"
     },
     {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_fragment.xml",
+        "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-places-12.0.1.aar\\0717ceb6a05a6043a928f718f9208c09\\res\\layout\\place_autocomplete_fragment.xml"
+    },
+    {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b407c1af565f8bd23e504f3816ac03e9\\res\\layout\\abc_activity_chooser_view_list_item.xml"
     },
@@ -606,6 +634,10 @@
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_smart_device_dialog_fragment.xml",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.20.0.aar\\d42aed3c8a9c07f015d90d81709e9dea\\res\\layout\\com_facebook_smart_device_dialog_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\place_autocomplete_progress.xml",
+        "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-places-12.0.1.aar\\0717ceb6a05a6043a928f718f9208c09\\res\\layout\\place_autocomplete_progress.xml"
     },
     {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
@@ -646,6 +678,10 @@
     {
         "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\dbe4292c162c4a91e501ce0ca5874ae8\\res\\layout\\design_layout_tab_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cast_tracks_chooser_dialog_row_layout.xml",
+        "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\d88e1c8ad39fe6cd996915c350785ace\\res\\layout\\cast_tracks_chooser_dialog_row_layout.xml"
     },
     {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tw__activity_oauth.xml",
@@ -746,6 +782,10 @@
     {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\d656bd9ffdd8b1391a5241900da2e182\\res\\layout\\notification_template_lines_media.xml"
+    },
+    {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_volume_control.xml",
+        "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\89616e4e5296f3560c19c25c46759c9c\\res\\layout\\mr_volume_control.xml"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tw__tweet.xml",
@@ -980,6 +1020,10 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b407c1af565f8bd23e504f3816ac03e9\\res\\layout\\abc_expanded_menu_layout.xml"
     },
     {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cast_intro_overlay.xml",
+        "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\d88e1c8ad39fe6cd996915c350785ace\\res\\layout\\cast_intro_overlay.xml"
+    },
+    {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\fbb07174550e7cfe1810ded94dfad89b\\res\\layout\\notification_media_cancel_action.xml"
     },
@@ -990,6 +1034,10 @@
     {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\fbb07174550e7cfe1810ded94dfad89b\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cast_mini_controller.xml",
+        "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\d88e1c8ad39fe6cd996915c350785ace\\res\\layout\\cast_mini_controller.xml"
     },
     {
         "merged": "C:\\android studio\\mikhal\\mikhal\\21.4\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
@@ -1260,6 +1308,10 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b407c1af565f8bd23e504f3816ac03e9\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     },
     {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_ocr_view.xml",
+        "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\layout\\activity_ocr_view.xml"
+    },
+    {
         "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\d656bd9ffdd8b1391a5241900da2e182\\res\\layout\\notification_template_big_media.xml"
     },
@@ -1332,6 +1384,10 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\25248d7ef97636902935efd567f23eff\\res\\layout\\notification_template_part_time.xml"
     },
     {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cast_expanded_controller_activity.xml",
+        "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\d88e1c8ad39fe6cd996915c350785ace\\res\\layout\\cast_expanded_controller_activity.xml"
+    },
+    {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tw__action_bar.xml",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\0cbbcda143afaf70bf09cb8216833aae\\res\\layout\\tw__action_bar.xml"
     },
@@ -1380,6 +1436,10 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\6ecdde88a8eaef69a548f2c593b4eaef\\res\\layout\\notification_template_icon_group.xml"
     },
     {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_playback_control.xml",
+        "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\89616e4e5296f3560c19c25c46759c9c\\res\\layout\\mr_playback_control.xml"
+    },
+    {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b407c1af565f8bd23e504f3816ac03e9\\res\\layout\\abc_dialog_title_material.xml"
     },
@@ -1426,6 +1486,10 @@
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\5ed903ca5ca9d6fa9548ee0e1a97e3ca\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_chooser_dialog.xml",
+        "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\89616e4e5296f3560c19c25c46759c9c\\res\\layout\\mr_chooser_dialog.xml"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
@@ -1490,6 +1554,10 @@
     {
         "merged": "C:\\android studio\\mikhal\\mikhal\\21.4\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\6ecdde88a8eaef69a548f2c593b4eaef\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cast_help_text.xml",
+        "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\d88e1c8ad39fe6cd996915c350785ace\\res\\layout\\cast_help_text.xml"
     },
     {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_activity_layout.xml",
@@ -1662,6 +1730,10 @@
     {
         "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b407c1af565f8bd23e504f3816ac03e9\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cast_tracks_chooser_dialog_layout.xml",
+        "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\d88e1c8ad39fe6cd996915c350785ace\\res\\layout\\cast_tracks_chooser_dialog_layout.xml"
     },
     {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tw__gallery_activity.xml",
