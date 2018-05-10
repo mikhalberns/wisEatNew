@@ -1450,6 +1450,10 @@ int id cpyRights_textView 0x7f0f00e4
 int id crash_reporting_present 0x7f0f0011
 int id custom 0x7f0f00bf
 int id customPanel 0x7f0f00be
+int id dairy1 0x7f0f011e
+int id dairy2 0x7f0f011f
+int id dairyFree 0x7f0f0116
+int id dairyFreeRG 0x7f0f011d
 int id dark 0x7f0f005b
 int id date 0x7f0f0082
 int id decor_content_parent 0x7f0f00cc
@@ -1461,10 +1465,6 @@ int id design_menu_item_action_area 0x7f0f012f
 int id design_menu_item_action_area_stub 0x7f0f012e
 int id design_menu_item_text 0x7f0f012d
 int id design_navigation_view 0x7f0f012c
-int id diary1 0x7f0f011e
-int id diary2 0x7f0f011f
-int id diaryFree 0x7f0f0116
-int id diaryFreeRG 0x7f0f011d
 int id disableHome 0x7f0f0036
 int id donate_with 0x7f0f009f
 int id donate_with_google 0x7f0f00a0
@@ -1737,10 +1737,10 @@ int id uniform 0x7f0f0047
 int id up 0x7f0f0028
 int id url 0x7f0f0086
 int id useLogo 0x7f0f003b
-int id vdiary1 0x7f0f017a
-int id vdiary2 0x7f0f017b
-int id vdiaryFree 0x7f0f0174
-int id vdiaryFreeRG 0x7f0f0179
+int id vdairy1 0x7f0f017a
+int id vdairy2 0x7f0f017b
+int id vdairyFree 0x7f0f0174
+int id vdairyFreeRG 0x7f0f0179
 int id vegan 0x7f0f0114
 int id vegetarian 0x7f0f0113
 int id veggs1 0x7f0f0177
@@ -1964,8 +1964,8 @@ int string common_signin_button_text 0x7f08004a
 int string common_signin_button_text_long 0x7f08004b
 int string corn 0x7f080085
 int string cpyRights 0x7f080086
-int string default_web_client_id 0x7f080087
-int string diaryfree 0x7f080088
+int string dairyfree 0x7f080087
+int string default_web_client_id 0x7f080088
 int string done 0x7f080089
 int string eggsfree 0x7f08008a
 int string facebook_app_id 0x7f08008b

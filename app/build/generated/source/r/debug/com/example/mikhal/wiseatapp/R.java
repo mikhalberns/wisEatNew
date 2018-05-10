@@ -4899,6 +4899,10 @@ containing a value of this type.
         public static final int crash_reporting_present=0x7f0f0011;
         public static final int custom=0x7f0f00bf;
         public static final int customPanel=0x7f0f00be;
+        public static final int dairy1=0x7f0f011e;
+        public static final int dairy2=0x7f0f011f;
+        public static final int dairyFree=0x7f0f0116;
+        public static final int dairyFreeRG=0x7f0f011d;
         public static final int dark=0x7f0f005b;
         public static final int date=0x7f0f0082;
         public static final int decor_content_parent=0x7f0f00cc;
@@ -4910,10 +4914,6 @@ containing a value of this type.
         public static final int design_menu_item_action_area_stub=0x7f0f012e;
         public static final int design_menu_item_text=0x7f0f012d;
         public static final int design_navigation_view=0x7f0f012c;
-        public static final int dairy1=0x7f0f011e;
-        public static final int dairy2=0x7f0f011f;
-        public static final int dairyFree=0x7f0f0116;
-        public static final int dairyFreeRG=0x7f0f011d;
         public static final int disableHome=0x7f0f0036;
         public static final int donate_with=0x7f0f009f;
         public static final int donate_with_google=0x7f0f00a0;
@@ -5423,8 +5423,8 @@ containing a value of this type.
         public static final int common_signin_button_text_long=0x7f08004b;
         public static final int corn=0x7f080085;
         public static final int cpyRights=0x7f080086;
-        public static final int default_web_client_id=0x7f080087;
-        public static final int dairyfree=0x7f080088;
+        public static final int dairyfree=0x7f080087;
+        public static final int default_web_client_id=0x7f080088;
         public static final int done=0x7f080089;
         public static final int eggsfree=0x7f08008a;
         public static final int facebook_app_id=0x7f08008b;

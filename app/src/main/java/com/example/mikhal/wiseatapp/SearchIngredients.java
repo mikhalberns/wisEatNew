@@ -29,12 +29,13 @@ public class SearchIngredients extends AppCompatActivity {
     DatabaseHelper myDb;
     public static boolean isOCR=false;
     public static String ocrString;
+    String tmp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         myDb = new DatabaseHelper(this);
-
+        String [] resOcr;
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_ingredients);
@@ -43,54 +44,106 @@ public class SearchIngredients extends AppCompatActivity {
 
         btnSearch = (Button)findViewById(R.id.btnSearch);
 
-        if(isOCR==true)
+       if(isOCR==true)
         {
             isOCR=false;
-            //ocrString.replaceAll("\n"," ");
-            if(ocrString.charAt(0)==' ')
-            {
-                ocrString.substring(1,ocrString.length());
-                searchOcr(ocrString);
-            }
+            tmp = ocrString;
+            resOcr = deleteSpacesAndSplit(tmp);
+
+            searchOcr(resOcr);
+
+            resOcr = null;
         }
 
         search();
     }
+
+    private String [] deleteSpacesAndSplit(String str)
+    {
+        if(str.contains(","))
+        {
+            String [] ingStrings = new String[str.split(",").length];
+            int cnt = 0;
+
+
+            for (String s: str.split(",")) { //foreach word
+
+                s = s.replace("\n", " ");
+                String tmp = s.replaceAll(" {2,}", " ");
+                tmp = tmp.toLowerCase();
+
+                if(tmp.charAt(tmp.length()-1)==' ')
+                    tmp = tmp.substring(0,tmp.length()-1);
+                if(tmp.charAt(0)==' ')
+                    tmp = tmp.substring(1,tmp.length());
+
+                ingStrings[cnt]=tmp;
+                cnt++;
+            }
+            return ingStrings;
+        }
+        else
+        {
+            String [] ingStrings = new String[1];
+
+            String s = str.replace("\n", " ");
+            String tmp = s.replaceAll(" {2,}", " ");
+            tmp = tmp.toLowerCase();
+
+            if(tmp.charAt(tmp.length()-1)==' ')
+                tmp = tmp.substring(0,tmp.length()-1);
+            if(tmp.charAt(0)==' ')
+                tmp = tmp.replace(" ","");
+
+            ingStrings[0]=tmp;
+
+            return ingStrings;
+        }
+    }
+
 
     public void search(){
         btnSearch.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v){
-
+                        String [] str;
                         SearchView searchWord = (SearchView) findViewById(R.id.search);
                         CharSequence query = searchWord.getQuery();
                         ingredients=  query.toString();
 
+                        if(ingredients!=null && ingredients.equals("")==false)
+                        {
+                            str = deleteSpacesAndSplit(ingredients);
 
-                        for (String retval: ingredients.split(",")) {
-                            searchInDb(retval);
+                            for (String s: str) {
+                                searchInDb(s);
+                            }
+                        }
+                        else
+                        {
+                            Toast.makeText(getApplication(), "Please enter ingredients", Toast.LENGTH_SHORT).show();
                         }
                     }
                 }
         );
     }
 
-    public void searchOcr(String str){
+    public void searchOcr(String [] ocr){
 
-        for (String retval: str.split(",")) {
-            Toast.makeText(getApplicationContext(),retval,Toast.LENGTH_LONG).show();
-           // searchInDb(retval);
+        for (String s: ocr) {
+            searchInDb(s);
         }
     }
 
     public void searchInDb(String ingredient) {
 
-        Cursor DBIngredient = myDb.getIngredientFromDb(ingredient.toLowerCase());
+        Cursor DBIngredient = myDb.getIngredientFromDb(ingredient);
         if (DBIngredient.getCount() == 0) {
             showMessage("Error", "Nothing found");
             return;
         }
+
         StringBuffer buffer = new StringBuffer();
 
 
@@ -102,8 +155,8 @@ public class SearchIngredients extends AppCompatActivity {
         }
 
 
-        Integer ingredientRate = myDb.getRateFromPRofile(family);
-        buffer.append("avoidence rate :" + ingredientRate + "\n");
+        /*Integer ingredientRate = myDb.getRateFromPRofile(family);
+        buffer.append("avoidence rate :" + ingredientRate + "\n");*/
         showMessage("Data", buffer.toString());
 
         return;
