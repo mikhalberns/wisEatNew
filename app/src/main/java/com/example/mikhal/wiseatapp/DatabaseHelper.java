@@ -48,9 +48,33 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static  final  String INGREDIENT = "ingredient";
     public static final String FAMILY = "family";
 
+    //recovery table
+    public static final String RECOVERY_TABLE = "recovery_table";
+    public static final String R_PROFILEID = "profileID";
+    public static final String R_BEEF = "beef";
+    public static final String R_CHICKEN = "chicken";
+    public static final String R_PORK = "pork";
+    public static final String R_FISH = "fish";
+    public static final String R_INSECTS = "Insects";
+    public static final String R_EGGS = "eggs";
+    public static final String R_MILK = "milk";
+    public static final String R_HONEY = "honey";
+    public static final String R_GLUTEN = "gluten";
+    public static final String R_LUPIN = "lupin";
+    public static final String R_SESAME = "sesame";
+    public static final String R_ALGAE = "algae";
+    public static final String R_SHELLFISH = "shellfish";
+    public static final String R_SOY = "soy";
+    public static final String R_PEANUTS = "peanuts";
+    public static final String R_SULPHITE = "sulphite";
+    public static final String R_NUTS = "nuts";
+    public static final String R_MUSTARD = "mustard";
+    public static final String R_CELERY = "celery";
+    public static final String R_CORN = "corn";
+
 
     public DatabaseHelper(Context context) {
-        super(context, WISEATAPP_DATABASE, null, 3);
+        super(context, WISEATAPP_DATABASE, null, 4);
     }
 
     @Override
@@ -58,12 +82,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("create table " + USERS_TABLE + " (userId TEXT PRIMARY KEY, profileID INTEGER, isActive INTEGER)");
         db.execSQL("create table " + ING_TABLE + " (ingredient TEXT, family TEXT)");
         db.execSQL("create table " + PROFILES_TABLE +" (profileID INTEGER PRIMARY KEY autoincrement,beef INTEGER,chicken INTEGER,pork INTEGER,fish INTEGER,Insects INTEGER,eggs INTEGER,milk INTEGER,honey INTEGER,gluten INTEGER,lupin INTEGER,sesame INTEGER,algae INTEGER,shellfish INTEGER,soy INTEGER,peanuts INTEGER,sulphite INTEGER,nuts INTEGER,mustard INTEGER,celery INTEGER,corn INTEGER)");
+        db.execSQL("create table " + RECOVERY_TABLE +" (profileID INTEGER PRIMARY KEY autoincrement,beef INTEGER,chicken INTEGER,pork INTEGER,fish INTEGER,Insects INTEGER,eggs INTEGER,milk INTEGER,honey INTEGER,gluten INTEGER,lupin INTEGER,sesame INTEGER,algae INTEGER,shellfish INTEGER,soy INTEGER,peanuts INTEGER,sulphite INTEGER,nuts INTEGER,mustard INTEGER,celery INTEGER,corn INTEGER)");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS "+PROFILES_TABLE);
         db.execSQL("DROP TABLE IF EXISTS "+USERS_TABLE);
+        db.execSQL("DROP TABLE IF EXISTS "+RECOVERY_TABLE);
         onCreate(db);
     }
 
@@ -1282,7 +1308,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return res;
     }
 
-    public Integer getRateFromPRofile(String family){
+    public Integer getRateFromProfile(String family){
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor res = db.rawQuery("select profileID from usersTable where isActive=1", null);//find the active user profileID
         res.moveToFirst();
