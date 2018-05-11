@@ -15,9 +15,7 @@ import android.widget.TextView;
 public class ResultView extends AppCompatActivity {
 
     TextView resView;
-    TextView emailText;
     ImageView resImage;
-    Button emailButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,9 +23,8 @@ public class ResultView extends AppCompatActivity {
         setContentView(R.layout.activity_result_view);
 
         resView = (TextView) findViewById(R.id.resTextView);
-        emailText = (TextView) findViewById(R.id.emailText);
         resImage = (ImageView) findViewById(R.id.resImageView);
-        emailButton = (Button) findViewById(R.id.emailButton);
+
 
         if(checkIfNeverIng()==true)//there is never eat ingredient
         {
@@ -46,7 +43,7 @@ public class ResultView extends AppCompatActivity {
         else if(SearchIngredients.cntUnknown!=0)//unknown ingredient
         {
             resView.setText("We Didn't Find Some Of The Ingredients:\n" + SearchIngredients.buffer.toString() +"\n"+"Please Help Us Expand Our DataBase And Send Us" +
-                    "The Data In This Format: (IngredientName,Family).\n"+"Don't Forget To Press The Send Button.");
+                    "An Email To wiseatapp@gmail.com And Classify The Unknown Ingredients To Their Food Family.");
 
             Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.unknown);
             resImage.setImageBitmap(bm);
@@ -58,23 +55,6 @@ public class ResultView extends AppCompatActivity {
             Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.perfect);
             resImage.setImageBitmap(bm);
         }
-
-        emailButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-             /*   try {
-                    GMailSender sender = new GMailSender("username@gmail.com", "password");
-                    sender.sendMail("This is Subject",
-                            "This is Body",
-                            "user@gmail.com",
-                            "user@yahoo.com");
-                } catch (Exception e) {
-
-                }*/
-
-
-            }
-        });
 
         for (int i = 0; i < 20; i++) SearchIngredients.neverFamily[i] = 0;
         SearchIngredients.occasionallyFamily = new int[20];
