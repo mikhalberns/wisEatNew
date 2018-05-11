@@ -4,6 +4,14 @@
         "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26\\ic_launcher.xml",
+        "source": "C:\\android studio\\11.5\\wisEatNew\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26\\ic_launcher_round.xml",
+        "source": "C:\\android studio\\11.5\\wisEatNew\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26\\ic_launcher.xml",
         "source": "C:\\android studio\\wisEatApp-logIn\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },

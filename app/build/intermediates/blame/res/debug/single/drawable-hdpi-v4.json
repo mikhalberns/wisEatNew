@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_mr_button_grey.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\5bd950a8fca5e39661a0e4c4445b2064\\res\\drawable-hdpi-v4\\ic_mr_button_grey.png"
+    },
+    {
         "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b407c1af565f8bd23e504f3816ac03e9\\res\\drawable-hdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
@@ -18,6 +22,10 @@
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_media_play_dark.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\89616e4e5296f3560c19c25c46759c9c\\res\\drawable-hdpi-v4\\ic_media_play_dark.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_audiotrack_light.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\5bd950a8fca5e39661a0e4c4445b2064\\res\\drawable-hdpi-v4\\ic_audiotrack_light.png"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\messenger_bubble_large_white.png",
@@ -48,32 +56,36 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\55b8f96ef955b2a18451a81862fbbcb4\\res\\drawable-hdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
     },
     {
-        "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tw__ic_vine_badge.png",
-        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\74c911459a1241365d4ad530e7f6c59b\\res\\drawable-hdpi-v4\\tw__ic_vine_badge.png"
-    },
-    {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tw__ic_tweet_photo_error_dark.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\74c911459a1241365d4ad530e7f6c59b\\res\\drawable-hdpi-v4\\tw__ic_tweet_photo_error_dark.png"
     },
     {
-        "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
-        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\55b8f96ef955b2a18451a81862fbbcb4\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
-    },
-    {
-        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png",
-        "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\a9cc8d68cd9ab23b23919cbc7db1488f\\res\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png"
+        "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tw__ic_vine_badge.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\74c911459a1241365d4ad530e7f6c59b\\res\\drawable-hdpi-v4\\tw__ic_vine_badge.png"
     },
     {
         "merged": "C:\\android studio\\mikhal\\mikhal\\21.4\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png"
     },
     {
-        "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tw__ic_seekbar_bg.9.png",
-        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\74c911459a1241365d4ad530e7f6c59b\\res\\drawable-hdpi-v4\\tw__ic_seekbar_bg.9.png"
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png",
+        "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\a9cc8d68cd9ab23b23919cbc7db1488f\\res\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\55b8f96ef955b2a18451a81862fbbcb4\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
         "merged": "C:\\android studio\\mikhal\\mikhal\\21.4\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tw__ic_seekbar_bg.9.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\74c911459a1241365d4ad530e7f6c59b\\res\\drawable-hdpi-v4\\tw__ic_seekbar_bg.9.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_pause_circle_filled_grey600_36.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_pause_circle_filled_grey600_36.png"
     },
     {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\com_facebook_tooltip_black_bottomnub.png",
@@ -100,6 +112,10 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\89616e4e5296f3560c19c25c46759c9c\\res\\drawable-hdpi-v4\\ic_audiotrack_light.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_text_select_handle_middle_mtrl_light.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
+    },
+    {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_star_black_36dp.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\55b8f96ef955b2a18451a81862fbbcb4\\res\\drawable-hdpi-v4\\abc_ic_star_black_36dp.png"
     },
@@ -108,8 +124,20 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-9.0.2.aar\\6261d22d728aa4d52149645613ee7d0b\\res\\drawable-hdpi-v4\\common_plus_signin_btn_icon_dark_disabled.9.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
         "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\notification_bg_normal.9.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\25248d7ef97636902935efd567f23eff\\res\\drawable-hdpi-v4\\notification_bg_normal.9.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_text_select_handle_left_mtrl_dark.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_plusone_standard_off_client.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-plus-12.0.1.aar\\33a2d0eb257a64e932e9423c8c4eacd3\\res\\drawable-hdpi-v4\\ic_plusone_standard_off_client.png"
     },
     {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tw__ic_logo_blue.png",
@@ -132,6 +160,10 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-12.0.1.aar\\c9cbd8af646305dde5a40d89689c6164\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_play_circle_filled_grey600_36.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_play_circle_filled_grey600_36.png"
+    },
+    {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\55b8f96ef955b2a18451a81862fbbcb4\\res\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
     },
@@ -142,6 +174,10 @@
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\a9cc8d68cd9ab23b23919cbc7db1488f\\res\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\cast_abc_scrubber_control_off_mtrl_alpha.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\cast_abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
@@ -200,6 +236,14 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\0cbbcda143afaf70bf09cb8216833aae\\res\\drawable-hdpi-v4\\tw__ic_seekbar_secondary_bg.9.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_closed_caption_grey600_36.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_closed_caption_grey600_36.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_clear_white_24.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_clear_white_24.png"
+    },
+    {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_disabled.9.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-9.8.0.aar\\edf48ebf12e2383972d0ea4eff965f50\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_disabled.9.png"
     },
@@ -232,20 +276,24 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\5ed903ca5ca9d6fa9548ee0e1a97e3ca\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
     {
-        "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_longpressed_holo.9.png",
-        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b407c1af565f8bd23e504f3816ac03e9\\res\\drawable-hdpi-v4\\abc_list_longpressed_holo.9.png"
+        "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\55b8f96ef955b2a18451a81862fbbcb4\\res\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tw__ic_video_pause_pressed.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\daf3ae571ed0b9fe75609855f652e309\\res\\drawable-hdpi-v4\\tw__ic_video_pause_pressed.png"
     },
     {
-        "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png",
-        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\55b8f96ef955b2a18451a81862fbbcb4\\res\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+        "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_longpressed_holo.9.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b407c1af565f8bd23e504f3816ac03e9\\res\\drawable-hdpi-v4\\abc_list_longpressed_holo.9.png"
     },
     {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\com_facebook_tooltip_blue_background.9.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.20.0.aar\\fece818f375a81ccb987a2ae70b05256\\res\\drawable-hdpi-v4\\com_facebook_tooltip_blue_background.9.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_mr_button_disconnected_light.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\5bd950a8fca5e39661a0e4c4445b2064\\res\\drawable-hdpi-v4\\ic_mr_button_disconnected_light.png"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png",
@@ -254,6 +302,10 @@
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tw__ic_seekbar_bg.9.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\daf3ae571ed0b9fe75609855f652e309\\res\\drawable-hdpi-v4\\tw__ic_seekbar_bg.9.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_plusone_small_off_client.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-plus-12.0.1.aar\\33a2d0eb257a64e932e9423c8c4eacd3\\res\\drawable-hdpi-v4\\ic_plusone_small_off_client.png"
     },
     {
         "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png",
@@ -272,12 +324,24 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-9.0.2.aar\\6261d22d728aa4d52149645613ee7d0b\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_focused.9.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\cast_ic_notification_0.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-12.0.1.aar\\2aa07e67676ea97febca62f82c951696\\res\\drawable-hdpi-v4\\cast_ic_notification_0.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-12.0.1.aar\\b029adce355209d0780212e23cec5204\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\5ed903ca5ca9d6fa9548ee0e1a97e3ca\\res\\drawable-hdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
         "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tw__ic_video_pause.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\0cbbcda143afaf70bf09cb8216833aae\\res\\drawable-hdpi-v4\\tw__ic_video_pause.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tw__ic_play_pressed.png",
@@ -300,6 +364,10 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\55b8f96ef955b2a18451a81862fbbcb4\\res\\drawable-hdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b407c1af565f8bd23e504f3816ac03e9\\res\\drawable-hdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
     },
@@ -316,8 +384,20 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_text_select_handle_right_mtrl_light.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_text_select_handle_right_mtrl_light.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_media_pause_dark.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\5bd950a8fca5e39661a0e4c4445b2064\\res\\drawable-hdpi-v4\\ic_media_pause_dark.png"
+    },
+    {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_text_select_handle_right_mtrl_dark.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b407c1af565f8bd23e504f3816ac03e9\\res\\drawable-hdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_skip_previous_grey600_36.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_skip_previous_grey600_36.png"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_bigtop_updates_white_24.png",
@@ -360,8 +440,24 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-9.0.2.aar\\6261d22d728aa4d52149645613ee7d0b\\res\\drawable-hdpi-v4\\common_plus_signin_btn_text_light_normal.9.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\places_ic_search.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-places-12.0.1.aar\\3edffa43b8638106e2616835de51ebba\\res\\drawable-hdpi-v4\\places_ic_search.png"
+    },
+    {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\55b8f96ef955b2a18451a81862fbbcb4\\res\\drawable-hdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\cast_abc_scrubber_control_to_pressed_mtrl_005.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\cast_abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_plusone_tall_off_client.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-plus-12.0.1.aar\\33a2d0eb257a64e932e9423c8c4eacd3\\res\\drawable-hdpi-v4\\ic_plusone_tall_off_client.png"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tw__ic_vine_badge.png",
@@ -374,6 +470,10 @@
     {
         "merged": "C:\\android studio\\mikhal\\mikhal\\21.4\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\design_ic_visibility.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\e6a5e4873818349b38fca2f3f99187d1\\res\\drawable-hdpi-v4\\design_ic_visibility.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_skip_next_white_36.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_skip_next_white_36.png"
     },
     {
         "merged": "C:\\android studio\\mikhal\\mikhal\\21.4\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png",
@@ -428,6 +528,14 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b407c1af565f8bd23e504f3816ac03e9\\res\\drawable-hdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_volume_off_white_36.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_volume_off_white_36.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_full_open_on_phone.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-12.0.1.aar\\b029adce355209d0780212e23cec5204\\res\\drawable-hdpi-v4\\common_full_open_on_phone.png"
+    },
+    {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_light.9.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\5ed903ca5ca9d6fa9548ee0e1a97e3ca\\res\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
     },
@@ -440,6 +548,10 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-10.2.1.aar\\296c31e826a33d66c2565c80d13c43ca\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_bigtop_updates_white_24.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_bigtop_updates_white_24.png"
+    },
+    {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tw__ic_inline_share.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\daf3ae571ed0b9fe75609855f652e309\\res\\drawable-hdpi-v4\\tw__ic_inline_share.png"
     },
@@ -450,6 +562,10 @@
     {
         "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_dark.9.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b407c1af565f8bd23e504f3816ac03e9\\res\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_forward_30_grey600_36.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_forward_30_grey600_36.png"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_pause_grey600_36.png",
@@ -480,6 +596,10 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-9.0.2.aar\\6261d22d728aa4d52149645613ee7d0b\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_focused.9.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_play_arrow_grey600_36.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_play_arrow_grey600_36.png"
+    },
+    {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\messenger_button_send_round_shadow.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.20.0.aar\\fece818f375a81ccb987a2ae70b05256\\res\\drawable-hdpi-v4\\messenger_button_send_round_shadow.png"
     },
@@ -498,6 +618,10 @@
     {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_longpressed_holo.9.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\55b8f96ef955b2a18451a81862fbbcb4\\res\\drawable-hdpi-v4\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_volume_up_white_36.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_volume_up_white_36.png"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_focused.9.png",
@@ -564,6 +688,10 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\74c911459a1241365d4ad530e7f6c59b\\res\\drawable-hdpi-v4\\tw__ic_logo_white.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_divider_mtrl_alpha.9.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\55b8f96ef955b2a18451a81862fbbcb4\\res\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
     },
@@ -588,8 +716,16 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\d88e1c8ad39fe6cd996915c350785ace\\res\\drawable-hdpi-v4\\quantum_ic_closed_caption_white_36.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_text_select_handle_right_mtrl_dark.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
+    },
+    {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_play_arrow_grey600_48.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\d88e1c8ad39fe6cd996915c350785ace\\res\\drawable-hdpi-v4\\quantum_ic_play_arrow_grey600_48.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\notification_bg_low_normal.9.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\6ecdde88a8eaef69a548f2c593b4eaef\\res\\drawable-hdpi-v4\\notification_bg_low_normal.9.png"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
@@ -616,8 +752,20 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\d88e1c8ad39fe6cd996915c350785ace\\res\\drawable-hdpi-v4\\quantum_ic_pause_white_24.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_textfield_default_mtrl_alpha.9.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_art_track_grey600_48.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_art_track_grey600_48.png"
+    },
+    {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_mr_button_disabled_dark.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\89616e4e5296f3560c19c25c46759c9c\\res\\drawable-hdpi-v4\\ic_mr_button_disabled_dark.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_mr_button_disabled_light.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\5bd950a8fca5e39661a0e4c4445b2064\\res\\drawable-hdpi-v4\\ic_mr_button_disabled_light.png"
     },
     {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tw__ic_video_play_pressed.png",
@@ -626,6 +774,10 @@
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\5ed903ca5ca9d6fa9548ee0e1a97e3ca\\res\\drawable-hdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_volume_off_grey600_36.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_volume_off_grey600_36.png"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_text_select_handle_left_mtrl_light.png",
@@ -644,8 +796,16 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\d88e1c8ad39fe6cd996915c350785ace\\res\\drawable-hdpi-v4\\cast_ic_stop_circle_filled_grey600.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_popup_background_mtrl_mult.9.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_volume_up_white_36.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\d88e1c8ad39fe6cd996915c350785ace\\res\\drawable-hdpi-v4\\quantum_ic_volume_up_white_36.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_play_arrow_white_24.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_play_arrow_white_24.png"
     },
     {
         "merged": "C:\\android studio\\mikhal\\mikhal\\21.4\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png",
@@ -660,12 +820,24 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\0cbbcda143afaf70bf09cb8216833aae\\res\\drawable-hdpi-v4\\tw__ic_gif_badge.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_forward_30_white_24.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_forward_30_white_24.png"
+    },
+    {
         "merged": "C:\\android studio\\mikhal\\mikhal\\21.4\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_popup_background_mtrl_mult.9.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_popup_background_mtrl_mult.9.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_play_circle_filled_white_36.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_play_circle_filled_white_36.png"
+    },
+    {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\com_facebook_tooltip_black_background.9.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.20.0.aar\\73986623add842d9450194afa260c214\\res\\drawable-hdpi-v4\\com_facebook_tooltip_black_background.9.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\design_ic_visibility.png",
@@ -728,6 +900,10 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\74c911459a1241365d4ad530e7f6c59b\\res\\drawable-hdpi-v4\\tw__ic_play_default.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_longpressed_holo.9.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_list_longpressed_holo.9.png"
+    },
+    {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tw__ic_video_replay.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\0cbbcda143afaf70bf09cb8216833aae\\res\\drawable-hdpi-v4\\tw__ic_video_replay.png"
     },
@@ -746,6 +922,10 @@
     {
         "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tw__ic_tweet_verified.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\0cbbcda143afaf70bf09cb8216833aae\\res\\drawable-hdpi-v4\\tw__ic_tweet_verified.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
     },
     {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tw__ic_video_play_pressed.png",
@@ -770,6 +950,14 @@
     {
         "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b407c1af565f8bd23e504f3816ac03e9\\res\\drawable-hdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_closed_caption_white_36.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_closed_caption_white_36.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_pressed_holo_dark.9.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
     {
         "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png",
@@ -802,6 +990,18 @@
     {
         "merged": "C:\\android studio\\mikhal\\mikhal\\21.4\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\6ecdde88a8eaef69a548f2c593b4eaef\\res\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_pause_circle_filled_white_36.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_pause_circle_filled_white_36.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_star_half_black_16dp.png",
@@ -888,6 +1088,10 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\d88e1c8ad39fe6cd996915c350785ace\\res\\drawable-hdpi-v4\\quantum_ic_replay_10_white_24.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_replay_30_grey600_36.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_replay_30_grey600_36.png"
+    },
+    {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\5ed903ca5ca9d6fa9548ee0e1a97e3ca\\res\\drawable-hdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
@@ -960,6 +1164,10 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\d88e1c8ad39fe6cd996915c350785ace\\res\\drawable-hdpi-v4\\quantum_ic_pause_grey600_48.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_volume_up_grey600_36.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_volume_up_grey600_36.png"
+    },
+    {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\5ed903ca5ca9d6fa9548ee0e1a97e3ca\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
     },
@@ -976,6 +1184,10 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b407c1af565f8bd23e504f3816ac03e9\\res\\drawable-hdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_plusone_medium_off_client.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-plus-12.0.1.aar\\33a2d0eb257a64e932e9423c8c4eacd3\\res\\drawable-hdpi-v4\\ic_plusone_medium_off_client.png"
+    },
+    {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_full_open_on_phone.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-10.2.1.aar\\296c31e826a33d66c2565c80d13c43ca\\res\\drawable-hdpi-v4\\common_full_open_on_phone.png"
     },
@@ -984,8 +1196,16 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-composer-2.3.1.aar\\2ae7f08f29c689e25443fc14cac36de3\\res\\drawable-hdpi-v4\\tw__composer_logo_white.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\cast_ic_notification_on.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-12.0.1.aar\\2aa07e67676ea97febca62f82c951696\\res\\drawable-hdpi-v4\\cast_ic_notification_on.png"
+    },
+    {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\com_facebook_tooltip_black_xout.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.20.0.aar\\fece818f375a81ccb987a2ae70b05256\\res\\drawable-hdpi-v4\\com_facebook_tooltip_black_xout.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_vol_type_speaker_dark.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\5bd950a8fca5e39661a0e4c4445b2064\\res\\drawable-hdpi-v4\\ic_vol_type_speaker_dark.png"
     },
     {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tw__ic_tweet_photo_error_light.png",
@@ -1032,12 +1252,20 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-9.0.2.aar\\6261d22d728aa4d52149645613ee7d0b\\res\\drawable-hdpi-v4\\common_plus_signin_btn_icon_light_normal.9.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_vol_type_tv_light.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\5bd950a8fca5e39661a0e4c4445b2064\\res\\drawable-hdpi-v4\\ic_vol_type_tv_light.png"
+    },
+    {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-10.2.1.aar\\9313d6a1abe05222794a6f3e4e35bf9e\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\5ed903ca5ca9d6fa9548ee0e1a97e3ca\\res\\drawable-hdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_focused_holo.9.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_list_focused_holo.9.png"
     },
     {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\messenger_bubble_small_white.png",
@@ -1068,12 +1296,20 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.20.0.aar\\fece818f375a81ccb987a2ae70b05256\\res\\drawable-hdpi-v4\\com_facebook_button_icon_white.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
         "merged": "C:\\android studio\\mikhal\\mikhal\\21.4\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_launcher_background.png",
         "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\cast_abc_scrubber_primary_mtrl_alpha.9.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\cast_abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\com_facebook_button_send_icon_blue.png",
@@ -1148,6 +1384,10 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-12.0.1.aar\\b029adce355209d0780212e23cec5204\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
         "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\messenger_bubble_small_blue.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.20.0.aar\\73986623add842d9450194afa260c214\\res\\drawable-hdpi-v4\\messenger_bubble_small_blue.png"
     },
@@ -1158,6 +1398,10 @@
     {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b407c1af565f8bd23e504f3816ac03e9\\res\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tw__share_email_header.png",
@@ -1172,12 +1416,24 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\daf3ae571ed0b9fe75609855f652e309\\res\\drawable-hdpi-v4\\tw__ic_tweet_verified.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_text_select_handle_left_mtrl_light.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
+    },
+    {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\5ed903ca5ca9d6fa9548ee0e1a97e3ca\\res\\drawable-hdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_play_arrow_grey600_48.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_play_arrow_grey600_48.png"
+    },
+    {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\cast_ic_notification_0.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-12.0.1.aar\\e669c0ae47ec852088acbb0362bb6b73\\res\\drawable-hdpi-v4\\cast_ic_notification_0.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_media_pause_light.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\5bd950a8fca5e39661a0e4c4445b2064\\res\\drawable-hdpi-v4\\ic_media_pause_light.png"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_pressed.9.png",
@@ -1200,12 +1456,20 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\0cbbcda143afaf70bf09cb8216833aae\\res\\drawable-hdpi-v4\\tw__ic_tweet_photo_error_light.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png"
+    },
+    {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tw__ic_logo_blue.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\daf3ae571ed0b9fe75609855f652e309\\res\\drawable-hdpi-v4\\tw__ic_logo_blue.png"
     },
     {
         "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tw__ic_video_play_pressed.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\0cbbcda143afaf70bf09cb8216833aae\\res\\drawable-hdpi-v4\\tw__ic_video_play_pressed.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
     },
     {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
@@ -1228,6 +1492,10 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\5ed903ca5ca9d6fa9548ee0e1a97e3ca\\res\\drawable-hdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\6ecdde88a8eaef69a548f2c593b4eaef\\res\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png"
+    },
+    {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b407c1af565f8bd23e504f3816ac03e9\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
     },
@@ -1248,6 +1516,10 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\0cbbcda143afaf70bf09cb8216833aae\\res\\drawable-hdpi-v4\\tw__action_heart_off_default.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\design_ic_visibility.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\e6a5e4873818349b38fca2f3f99187d1\\res\\drawable-hdpi-v4\\design_ic_visibility.png"
+    },
+    {
         "merged": "C:\\android studio\\mikhal\\mikhal\\21.4\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_full_open_on_phone.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-12.0.1.aar\\b029adce355209d0780212e23cec5204\\res\\drawable-hdpi-v4\\common_full_open_on_phone.png"
     },
@@ -1258,6 +1530,10 @@
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\googleg_standard_color_18.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-12.0.1.aar\\c9cbd8af646305dde5a40d89689c6164\\res\\drawable-hdpi-v4\\googleg_standard_color_18.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_media_play_light.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\5bd950a8fca5e39661a0e4c4445b2064\\res\\drawable-hdpi-v4\\ic_media_play_light.png"
     },
     {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png",
@@ -1292,6 +1568,10 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b407c1af565f8bd23e504f3816ac03e9\\res\\drawable-hdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_pause_grey600_48.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_pause_grey600_48.png"
+    },
+    {
         "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b407c1af565f8bd23e504f3816ac03e9\\res\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
     },
@@ -1324,6 +1604,10 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\89616e4e5296f3560c19c25c46759c9c\\res\\drawable-hdpi-v4\\ic_audiotrack_dark.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
         "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_pressed_holo_dark.9.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b407c1af565f8bd23e504f3816ac03e9\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
@@ -1332,12 +1616,28 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_pause_white_24.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_pause_white_24.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_stop_grey600_48.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_stop_grey600_48.png"
+    },
+    {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\notification_bg_low_normal.9.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\25248d7ef97636902935efd567f23eff\\res\\drawable-hdpi-v4\\notification_bg_low_normal.9.png"
     },
     {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_text_select_handle_middle_mtrl_light.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b407c1af565f8bd23e504f3816ac03e9\\res\\drawable-hdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\cast_abc_scrubber_control_to_pressed_mtrl_000.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\cast_abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_star_black_36dp.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_ic_star_black_36dp.png"
     },
     {
         "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",
@@ -1352,8 +1652,16 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.20.0.aar\\d42aed3c8a9c07f015d90d81709e9dea\\res\\drawable-hdpi-v4\\com_facebook_button_icon_white.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_media_stop_light.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\5bd950a8fca5e39661a0e4c4445b2064\\res\\drawable-hdpi-v4\\ic_media_stop_light.png"
+    },
+    {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\5ed903ca5ca9d6fa9548ee0e1a97e3ca\\res\\drawable-hdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_mr_button_disabled_dark.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\5bd950a8fca5e39661a0e4c4445b2064\\res\\drawable-hdpi-v4\\ic_mr_button_disabled_dark.png"
     },
     {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_focused_holo.9.png",
@@ -1408,12 +1716,20 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\f0e5850b3e78455e9c0111105644b8ff\\res\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\messenger_button_send_round_shadow.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.20.0.aar\\d42aed3c8a9c07f015d90d81709e9dea\\res\\drawable-hdpi-v4\\messenger_button_send_round_shadow.png"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-12.0.1.aar\\c9cbd8af646305dde5a40d89689c6164\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_replay_white_24.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_replay_white_24.png"
     },
     {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png",
@@ -1428,8 +1744,20 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\0cbbcda143afaf70bf09cb8216833aae\\res\\drawable-hdpi-v4\\tw__ic_gif_badge.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\cast_ic_notification_2.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-12.0.1.aar\\2aa07e67676ea97febca62f82c951696\\res\\drawable-hdpi-v4\\cast_ic_notification_2.png"
+    },
+    {
         "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b407c1af565f8bd23e504f3816ac03e9\\res\\drawable-hdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_vol_type_speaker_group_light.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\5bd950a8fca5e39661a0e4c4445b2064\\res\\drawable-hdpi-v4\\ic_vol_type_speaker_group_light.png"
     },
     {
         "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tw__ic_seekbar_progress_bg.9.png",
@@ -1442,6 +1770,10 @@
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_text_light_focused.9.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-9.0.2.aar\\6261d22d728aa4d52149645613ee7d0b\\res\\drawable-hdpi-v4\\common_plus_signin_btn_text_light_focused.9.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_plusone_small_off_client.png",
@@ -1484,6 +1816,10 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\5ed903ca5ca9d6fa9548ee0e1a97e3ca\\res\\drawable-hdpi-v4\\abc_ic_star_black_36dp.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\places_ic_clear.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-places-12.0.1.aar\\3edffa43b8638106e2616835de51ebba\\res\\drawable-hdpi-v4\\places_ic_clear.png"
+    },
+    {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\com_facebook_button_send_icon_white.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.20.0.aar\\73986623add842d9450194afa260c214\\res\\drawable-hdpi-v4\\com_facebook_button_send_icon_white.png"
     },
@@ -1516,6 +1852,10 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_replay_30_white_36.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_replay_30_white_36.png"
+    },
+    {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\com_facebook_tooltip_black_bottomnub.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.20.0.aar\\fece818f375a81ccb987a2ae70b05256\\res\\drawable-hdpi-v4\\com_facebook_tooltip_black_bottomnub.png"
     },
@@ -1544,12 +1884,20 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b407c1af565f8bd23e504f3816ac03e9\\res\\drawable-hdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\googleg_disabled_color_18.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-12.0.1.aar\\b029adce355209d0780212e23cec5204\\res\\drawable-hdpi-v4\\googleg_disabled_color_18.png"
+    },
+    {
         "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_000.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b407c1af565f8bd23e504f3816ac03e9\\res\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
     },
     {
         "merged": "C:\\android studio\\mikhal\\mikhal\\21.4\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_light.9.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\powered_by_google_light.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-places-12.0.1.aar\\3edffa43b8638106e2616835de51ebba\\res\\drawable-hdpi-v4\\powered_by_google_light.png"
     },
     {
         "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\com_facebook_tooltip_blue_topnub.png",
@@ -1560,12 +1908,24 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\89616e4e5296f3560c19c25c46759c9c\\res\\drawable-hdpi-v4\\ic_vol_type_tv_light.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_cast_white_36.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_cast_white_36.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-12.0.1.aar\\b029adce355209d0780212e23cec5204\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
+    },
+    {
         "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\25248d7ef97636902935efd567f23eff\\res\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_skip_next_white_24.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\d88e1c8ad39fe6cd996915c350785ace\\res\\drawable-hdpi-v4\\quantum_ic_skip_next_white_24.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\cast_ic_stop_circle_filled_white.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\cast_ic_stop_circle_filled_white.png"
     },
     {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_pressed_holo_dark.9.png",
@@ -1578,6 +1938,10 @@
     {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b407c1af565f8bd23e504f3816ac03e9\\res\\drawable-hdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_stop_grey600_36.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_stop_grey600_36.png"
     },
     {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
@@ -1598,6 +1962,10 @@
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\messenger_bubble_small_blue.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.20.0.aar\\d42aed3c8a9c07f015d90d81709e9dea\\res\\drawable-hdpi-v4\\messenger_bubble_small_blue.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
@@ -1640,6 +2008,10 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-12.0.1.aar\\c9cbd8af646305dde5a40d89689c6164\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
         "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\com_facebook_tooltip_black_bottomnub.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.20.0.aar\\73986623add842d9450194afa260c214\\res\\drawable-hdpi-v4\\com_facebook_tooltip_black_bottomnub.png"
     },
@@ -1654,6 +2026,10 @@
     {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_text_select_handle_right_mtrl_dark.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\55b8f96ef955b2a18451a81862fbbcb4\\res\\drawable-hdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_star_half_black_36dp.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_36dp.png"
     },
     {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png",
@@ -1672,12 +2048,32 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-9.0.2.aar\\6261d22d728aa4d52149645613ee7d0b\\res\\drawable-hdpi-v4\\common_plus_signin_btn_icon_dark_focused.9.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\6ecdde88a8eaef69a548f2c593b4eaef\\res\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_pause_grey600_36.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_pause_grey600_36.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_skip_next_grey600_36.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_skip_next_grey600_36.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_000.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_keyboard_arrow_down_white_36.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\d88e1c8ad39fe6cd996915c350785ace\\res\\drawable-hdpi-v4\\quantum_ic_keyboard_arrow_down_white_36.png"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\5ed903ca5ca9d6fa9548ee0e1a97e3ca\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png",
@@ -1736,6 +2132,10 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\89616e4e5296f3560c19c25c46759c9c\\res\\drawable-hdpi-v4\\ic_vol_type_speaker_group_light.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\googleg_standard_color_18.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-12.0.1.aar\\b029adce355209d0780212e23cec5204\\res\\drawable-hdpi-v4\\googleg_standard_color_18.png"
+    },
+    {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\55b8f96ef955b2a18451a81862fbbcb4\\res\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
     },
@@ -1788,8 +2188,16 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\d88e1c8ad39fe6cd996915c350785ace\\res\\drawable-hdpi-v4\\quantum_ic_skip_next_grey600_36.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_vol_type_speaker_light.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\5bd950a8fca5e39661a0e4c4445b2064\\res\\drawable-hdpi-v4\\ic_vol_type_speaker_light.png"
+    },
+    {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\com_facebook_tooltip_blue_topnub.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.20.0.aar\\73986623add842d9450194afa260c214\\res\\drawable-hdpi-v4\\com_facebook_tooltip_blue_topnub.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tw__ic_seekbar_secondary_bg.9.png",
@@ -1814,6 +2222,10 @@
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_mr_button_disconnected_dark.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\89616e4e5296f3560c19c25c46759c9c\\res\\drawable-hdpi-v4\\ic_mr_button_disconnected_dark.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\cast_ic_stop_circle_filled_grey600.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\cast_ic_stop_circle_filled_grey600.png"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal.9.png",
@@ -1848,8 +2260,16 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b407c1af565f8bd23e504f3816ac03e9\\res\\drawable-hdpi-v4\\abc_ic_star_black_36dp.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\powered_by_google_dark.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-places-12.0.1.aar\\3edffa43b8638106e2616835de51ebba\\res\\drawable-hdpi-v4\\powered_by_google_dark.png"
+    },
+    {
         "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tw__ic_video_replay.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\0cbbcda143afaf70bf09cb8216833aae\\res\\drawable-hdpi-v4\\tw__ic_video_replay.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_replay_10_white_24.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_replay_10_white_24.png"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tw__ic_seekbar_secondary_bg.9.png",
@@ -1876,6 +2296,10 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b407c1af565f8bd23e504f3816ac03e9\\res\\drawable-hdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\messenger_button_send_round_shadow.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.20.0.aar\\73986623add842d9450194afa260c214\\res\\drawable-hdpi-v4\\messenger_button_send_round_shadow.png"
     },
@@ -1896,6 +2320,10 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-9.0.2.aar\\6261d22d728aa4d52149645613ee7d0b\\res\\drawable-hdpi-v4\\common_plus_signin_btn_text_dark_normal.9.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_stop_white_24.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_stop_white_24.png"
+    },
+    {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tw__ic_tweet_photo_error_dark.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\0cbbcda143afaf70bf09cb8216833aae\\res\\drawable-hdpi-v4\\tw__ic_tweet_photo_error_dark.png"
     },
@@ -1908,12 +2336,24 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\5ed903ca5ca9d6fa9548ee0e1a97e3ca\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_vol_type_tv_dark.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\5bd950a8fca5e39661a0e4c4445b2064\\res\\drawable-hdpi-v4\\ic_vol_type_tv_dark.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_skip_previous_white_36.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_skip_previous_white_36.png"
+    },
+    {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b407c1af565f8bd23e504f3816ac03e9\\res\\drawable-hdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_plusone_medium_off_client.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-plus-12.0.1.aar\\3dc874785a593d6afd1de3921e076ca9\\res\\drawable-hdpi-v4\\ic_plusone_medium_off_client.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\com_facebook_button_send_icon_white.png",
@@ -1936,6 +2376,10 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\d88e1c8ad39fe6cd996915c350785ace\\res\\drawable-hdpi-v4\\quantum_ic_play_circle_filled_white_36.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\cast_ic_notification_1.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-12.0.1.aar\\2aa07e67676ea97febca62f82c951696\\res\\drawable-hdpi-v4\\cast_ic_notification_1.png"
+    },
+    {
         "merged": "C:\\android studio\\mikhal\\mikhal\\21.4\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
@@ -1948,8 +2392,28 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b407c1af565f8bd23e504f3816ac03e9\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_skip_previous_white_24.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_skip_previous_white_24.png"
+    },
+    {
         "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\messenger_button_send_round_shadow.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.20.0.aar\\73986623add842d9450194afa260c214\\res\\drawable-hdpi-v4\\messenger_button_send_round_shadow.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_forward_30_white_36.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_forward_30_white_36.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\notification_bg_normal.9.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\6ecdde88a8eaef69a548f2c593b4eaef\\res\\drawable-hdpi-v4\\notification_bg_normal.9.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_star_half_black_16dp.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
@@ -2000,6 +2464,10 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-10.2.1.aar\\296c31e826a33d66c2565c80d13c43ca\\res\\drawable-hdpi-v4\\googleg_standard_color_18.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_mr_button_disconnected_dark.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\5bd950a8fca5e39661a0e4c4445b2064\\res\\drawable-hdpi-v4\\ic_mr_button_disconnected_dark.png"
+    },
+    {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\messenger_bubble_small_blue.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.20.0.aar\\fece818f375a81ccb987a2ae70b05256\\res\\drawable-hdpi-v4\\messenger_bubble_small_blue.png"
     },
@@ -2032,6 +2500,10 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b407c1af565f8bd23e504f3816ac03e9\\res\\drawable-hdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_media_play_dark.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\5bd950a8fca5e39661a0e4c4445b2064\\res\\drawable-hdpi-v4\\ic_media_play_dark.png"
+    },
+    {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\places_ic_clear.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-places-12.0.1.aar\\0717ceb6a05a6043a928f718f9208c09\\res\\drawable-hdpi-v4\\places_ic_clear.png"
     },
@@ -2056,6 +2528,14 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-12.0.1.aar\\b029adce355209d0780212e23cec5204\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-12.0.1.aar\\b029adce355209d0780212e23cec5204\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_refresh_white_24.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_refresh_white_24.png"
+    },
+    {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_ic_googleplayservices.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-9.0.2.aar\\6261d22d728aa4d52149645613ee7d0b\\res\\drawable-hdpi-v4\\common_ic_googleplayservices.png"
     },
@@ -2068,12 +2548,24 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-composer-2.3.1.aar\\2ae7f08f29c689e25443fc14cac36de3\\res\\drawable-hdpi-v4\\tw__composer_logo_blue.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_audiotrack_dark.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\5bd950a8fca5e39661a0e4c4445b2064\\res\\drawable-hdpi-v4\\ic_audiotrack_dark.png"
+    },
+    {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tw__ic_play_default.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\daf3ae571ed0b9fe75609855f652e309\\res\\drawable-hdpi-v4\\tw__ic_play_default.png"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_play_arrow_grey600_36.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\d88e1c8ad39fe6cd996915c350785ace\\res\\drawable-hdpi-v4\\quantum_ic_play_arrow_grey600_36.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_star_black_48dp.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_ic_star_black_48dp.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\messenger_bubble_large_white.png",
@@ -2098,6 +2590,10 @@
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\cast_ic_notification_1.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-12.0.1.aar\\e669c0ae47ec852088acbb0362bb6b73\\res\\drawable-hdpi-v4\\cast_ic_notification_1.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\design_ic_visibility_off.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\e6a5e4873818349b38fca2f3f99187d1\\res\\drawable-hdpi-v4\\design_ic_visibility_off.png"
     },
     {
         "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png",
@@ -2132,6 +2628,10 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
         "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\com_facebook_button_send_icon_white.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.20.0.aar\\73986623add842d9450194afa260c214\\res\\drawable-hdpi-v4\\com_facebook_button_send_icon_white.png"
     },
@@ -2160,6 +2660,10 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_list_focused_holo.9.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_star_half_black_48dp.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_48dp.png"
+    },
+    {
         "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tw__ic_play_default.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\0cbbcda143afaf70bf09cb8216833aae\\res\\drawable-hdpi-v4\\tw__ic_play_default.png"
     },
@@ -2178,6 +2682,10 @@
     {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tw__ic_seekbar_progress_bg.9.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\74c911459a1241365d4ad530e7f6c59b\\res\\drawable-hdpi-v4\\tw__ic_seekbar_progress_bg.9.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_cast_connected_white_24.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_cast_connected_white_24.png"
     },
     {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tw__ic_video_replay_pressed.png",
@@ -2240,8 +2748,16 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b407c1af565f8bd23e504f3816ac03e9\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_replay_30_white_24.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_replay_30_white_24.png"
+    },
+    {
         "merged": "C:\\android studio\\mikhal\\mikhal\\21.4\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\googleg_standard_color_18.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-12.0.1.aar\\b029adce355209d0780212e23cec5204\\res\\drawable-hdpi-v4\\googleg_standard_color_18.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_dark.9.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
     },
     {
         "merged": "C:\\android studio\\mikhal\\mikhal\\21.4\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png",
@@ -2250,6 +2766,10 @@
     {
         "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b407c1af565f8bd23e504f3816ac03e9\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\com_facebook_tooltip_black_background.9.png",
@@ -2284,6 +2804,10 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\89616e4e5296f3560c19c25c46759c9c\\res\\drawable-hdpi-v4\\ic_media_pause_dark.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-12.0.1.aar\\b029adce355209d0780212e23cec5204\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
+    },
+    {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tw__ic_logo_default.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\twitter-core-2.3.1.aar\\223007cb00dded0610a002de29b71fc9\\res\\drawable-hdpi-v4\\tw__ic_logo_default.png"
     },
@@ -2294,6 +2818,10 @@
     {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\com_facebook_close.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.20.0.aar\\fece818f375a81ccb987a2ae70b05256\\res\\drawable-hdpi-v4\\com_facebook_close.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_dialog_close_dark.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\5bd950a8fca5e39661a0e4c4445b2064\\res\\drawable-hdpi-v4\\ic_dialog_close_dark.png"
     },
     {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
@@ -2344,12 +2872,24 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.20.0.aar\\73986623add842d9450194afa260c214\\res\\drawable-hdpi-v4\\com_facebook_button_like_icon_selected.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_vol_type_speaker_group_dark.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\5bd950a8fca5e39661a0e4c4445b2064\\res\\drawable-hdpi-v4\\ic_vol_type_speaker_group_dark.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_dialog_close_light.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\5bd950a8fca5e39661a0e4c4445b2064\\res\\drawable-hdpi-v4\\ic_dialog_close_light.png"
+    },
+    {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\com_facebook_tooltip_black_xout.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.20.0.aar\\d42aed3c8a9c07f015d90d81709e9dea\\res\\drawable-hdpi-v4\\com_facebook_tooltip_black_xout.png"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_dark.9.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\5ed903ca5ca9d6fa9548ee0e1a97e3ca\\res\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
         "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\design_ic_visibility.png",
@@ -2360,12 +2900,24 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-10.2.1.aar\\296c31e826a33d66c2565c80d13c43ca\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_forward_10_white_24.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_forward_10_white_24.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_light.9.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\com_facebook_button_send_icon_blue.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.20.0.aar\\fece818f375a81ccb987a2ae70b05256\\res\\drawable-hdpi-v4\\com_facebook_button_send_icon_blue.png"
     },
     {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\com_facebook_tooltip_blue_bottomnub.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.20.0.aar\\73986623add842d9450194afa260c214\\res\\drawable-hdpi-v4\\com_facebook_tooltip_blue_bottomnub.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_keyboard_arrow_down_white_36.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_keyboard_arrow_down_white_36.png"
     },
     {
         "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\com_facebook_tooltip_blue_bottomnub.png",
@@ -2404,6 +2956,10 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\89616e4e5296f3560c19c25c46759c9c\\res\\drawable-hdpi-v4\\ic_media_stop_dark.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable-hdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
         "merged": "C:\\android studio\\mikhal\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tw__ic_logo_blue.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-2.3.2.aar\\0cbbcda143afaf70bf09cb8216833aae\\res\\drawable-hdpi-v4\\tw__ic_logo_blue.png"
     },
@@ -2420,11 +2976,19 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\6ecdde88a8eaef69a548f2c593b4eaef\\res\\drawable-hdpi-v4\\notification_bg_normal.9.png"
     },
     {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_media_stop_dark.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\5bd950a8fca5e39661a0e4c4445b2064\\res\\drawable-hdpi-v4\\ic_media_stop_dark.png"
+    },
+    {
         "merged": "C:\\android studio\\wisEatApp-logIn\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_star_black_48dp.png",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\55b8f96ef955b2a18451a81862fbbcb4\\res\\drawable-hdpi-v4\\abc_ic_star_black_48dp.png"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\5ed903ca5ca9d6fa9548ee0e1a97e3ca\\res\\drawable-hdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\quantum_ic_skip_next_white_24.png",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable-hdpi-v4\\quantum_ic_skip_next_white_24.png"
     }
 ]

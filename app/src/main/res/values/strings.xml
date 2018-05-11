@@ -12,15 +12,17 @@
 
     <!-- Set Profile -->
     <string name="title_activity_set_profile">setProfile</string>
-    <string name="vegetarian">vegetarian</string>
+    <string name="guidelines">Please select a consumption profile, and\n set the desired degree of avoidance</string>
+    <string name="animalFriendly">Animals\tFriendly</string>
+    <string name="vegetarian">Vegetarian</string>
     <string name="pork">pork</string>
     <string name="celery">celery</string>
-    <string name="done">Done</string>
+    <string name="done">DONE</string>
     <string name="shellfish">shellfish</string>
     <string name="sesame">sesame</string>
-    <string name="peanuts">peanuts</string>
-    <string name="vegan">vegan</string>
-    <string name="eggsfree">eggsFree</string>
+    <string name="peanuts">Peanuts Free</string>
+    <string name="vegan">Vegan</string>
+    <string name="eggsfree">Eggs Free</string>
     <string name="beef">beef</string>
     <string name="chicken">chicken</string>
     <string name="i_m_avoiding">i_m_avoiding</string>
@@ -34,8 +36,9 @@
     <string name="mustard">mustard</string>
     <string name="corn">corn</string>
     <string name="insects">insects</string>
-    <string name="glutenfree">glutenFree</string>
-    <string name="dairyfree">dairyFree</string>
+    <string name="glutenfree">Gluten Free</string>
+    <string name="dairyfree">Dairy Free</string>
+    <string name="custom">Customize</string>
     <!--End Of Screen Set Profile -->
 
     <string name="title_activity_home_page">HomePage</string>

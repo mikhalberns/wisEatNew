@@ -6,5 +6,13 @@
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\interpolator\\mr_fast_out_slow_in.xml",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\89616e4e5296f3560c19c25c46759c9c\\res\\interpolator\\mr_fast_out_slow_in.xml"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\interpolator\\mr_linear_out_slow_in.xml",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\5bd950a8fca5e39661a0e4c4445b2064\\res\\interpolator\\mr_linear_out_slow_in.xml"
+    },
+    {
+        "merged": "C:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\interpolator\\mr_fast_out_slow_in.xml",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\5bd950a8fca5e39661a0e4c4445b2064\\res\\interpolator\\mr_fast_out_slow_in.xml"
     }
 ]

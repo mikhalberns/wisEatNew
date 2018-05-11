@@ -1,19 +1,10 @@
-#Sun May 06 14:12:34 IDT 2018
+#Fri May 11 22:09:42 IDT 2018
+path.2=classes2.dex
 path.1=classes.dex
 path.0=classes.dex
-renamed.5=classes6.dex
-renamed.4=classes5.dex
-renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-base.5=C\:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\226
-base.4=C\:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\223
-base.3=C\:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\224
-base.2=C\:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\221
-base.1=C\:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\222
-base.0=C\:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\225
-path.5=classes.dex
-path.4=classes.dex
-path.3=classes.dex
-path.2=classes.dex
+base.2=C\:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\220
+base.1=C\:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\228
+base.0=C\:\\android studio\\11.5\\wisEatNew\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\220
