@@ -4,12 +4,12 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\5ed903ca5ca9d6fa9548ee0e1a97e3ca\\res\\layout\\abc_screen_simple.xml"
     },
     {
-        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\messenger_button_send_blue_small.xml",
-        "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.20.0.aar\\d42aed3c8a9c07f015d90d81709e9dea\\res\\layout\\messenger_button_send_blue_small.xml"
-    },
-    {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\messenger_button_send_blue_large.xml",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.20.0.aar\\d42aed3c8a9c07f015d90d81709e9dea\\res\\layout\\messenger_button_send_blue_large.xml"
+    },
+    {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\messenger_button_send_blue_small.xml",
+        "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\facebook-android-sdk-4.20.0.aar\\d42aed3c8a9c07f015d90d81709e9dea\\res\\layout\\messenger_button_send_blue_small.xml"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\notification_template_big_media_custom.xml",

@@ -261,74 +261,66 @@ public class OcrView extends AppCompatActivity {
 
     public void check()
     {
+        try {
+            TextRecognizer txtRecognizer = new TextRecognizer.Builder(getApplicationContext()).build();
+            if (!txtRecognizer.isOperational()) {
+                // Shows if your Google Play services is not up to date or OCR is not supported for the device
+                Toast.makeText(this, "Not Up To Date Play Services", Toast.LENGTH_SHORT).show();
+            } else {
+                try {
+                    Bitmap bitmap = decodeBitmapUri(this, photoURI);
+                    Frame frame = new Frame.Builder().setBitmap(bitmap).build();
+                    SparseArray items = txtRecognizer.detect(frame);
+                    StringBuilder strBuilder = new StringBuilder();
 
-        TextRecognizer txtRecognizer = new TextRecognizer.Builder(getApplicationContext()).build();
-        if (!txtRecognizer.isOperational())
-        {
-            // Shows if your Google Play services is not up to date or OCR is not supported for the device
-            Toast.makeText(this, "Not Up To Date Play Services", Toast.LENGTH_SHORT).show();
-        }
-        else
-        {
-            try{
-                Bitmap bitmap = decodeBitmapUri(this, photoURI);
-                Frame frame = new Frame.Builder().setBitmap(bitmap).build();
-                SparseArray items = txtRecognizer.detect(frame);
-                StringBuilder strBuilder = new StringBuilder();
-                for (int i = 0; i < items.size(); i++)
-                {
-                    TextBlock item = (TextBlock)items.valueAt(i);
-                    strBuilder.append(item.getValue());
-                    strBuilder.append("/");
-                    // The following Process is used to show how to use lines & elements as well
-                    for (i = 0; i < items.size(); i++) {
-                        item = (TextBlock) items.valueAt(i);
+                    for (int i = 0; i < items.size(); i++) {
+                        TextBlock item = (TextBlock) items.valueAt(i);
                         strBuilder.append(item.getValue());
                         strBuilder.append("/");
+                        // The following Process is used to show how to use lines & elements as well
+                        for (i = 0; i < items.size(); i++) {
+                            item = (TextBlock) items.valueAt(i);
+                            strBuilder.append(item.getValue());
+                            strBuilder.append("/");
+                        }
                     }
+
+                    String ingStr = strBuilder.toString();
+                    int indexOfIng1 = ingStr.indexOf("Ingredients:");
+                    int indexOfIng2 = ingStr.indexOf("INGREDIENTS:");
+                    int indexOfEnd = ingStr.indexOf(".");
+
+                    if (indexOfIng1 != -1 && indexOfEnd != -1) {
+
+                        subStr = ingStr.substring(indexOfIng1, indexOfEnd);
+                        subStr = subStr.substring(12, subStr.length());
+                        resText.setText(subStr);
+                        SearchIngredients.isOCR = true;
+                        SearchIngredients.ocrString = subStr;
+                        startActivity(new Intent(getApplicationContext(), SearchIngredients.class));
+                    } else if (indexOfIng2 != -1 && indexOfEnd != -1) {
+                        subStr = ingStr.substring(indexOfIng2, indexOfEnd);
+                        subStr = subStr.substring(12, subStr.length());
+                        resText.setText(subStr);
+                        SearchIngredients.isOCR = true;
+                        SearchIngredients.ocrString = subStr;
+                        startActivity(new Intent(getApplicationContext(), SearchIngredients.class));
+                    } else {
+                        resText.setText("Couldn't Find Ingredients Or The End Of The List." + "Please Try Again.");
+                    }
+
+                } catch (IOException e) {
+                    Toast.makeText(getApplication(), "Please Take a Picture Again", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(this, OcrView.class));
                 }
-
-                String ingStr = strBuilder.toString();
-                int indexOfIng1 = ingStr.indexOf("Ingredients:");
-                int indexOfIng2 = ingStr.indexOf("INGREDIENTS:");
-                int indexOfEnd = ingStr.indexOf(".");
-
-                if(indexOfIng1!=-1 && indexOfEnd!=-1)
-                {
-                    subStr = ingStr.substring(indexOfIng1,indexOfEnd);
-                    subStr = subStr.substring(12,subStr.length());
-                    resText.setText(subStr);
-                    SearchIngredients.isOCR=true;
-                    SearchIngredients.ocrString=subStr.toLowerCase();;
-                    startActivity(new Intent(getApplicationContext(), SearchIngredients.class));
-                }
-                else if(indexOfIng2!=-1&& indexOfEnd!=-1)
-                {
-                    subStr = ingStr.substring(indexOfIng2,indexOfEnd);
-                    subStr = subStr.substring(12,subStr.length());
-                    resText.setText(subStr);
-                    SearchIngredients.isOCR=true;
-                    SearchIngredients.ocrString=subStr.toLowerCase();
-                    startActivity(new Intent(getApplicationContext(), SearchIngredients.class));
-                }
-                else
-                {
-                    resText.setText("Couldn't Find Ingredients Or The End Of The List." + "Please Try Again.");
-                }
-
-              /*  for(int i=0;i<ingStr.length();i++)
-                {
-
-                }*/
-
             }
-            catch (IOException e)
-            {
-                Toast.makeText(getApplication(), "Please Take a Picture With Latin Letters Only", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(this, OcrView.class));
-            }
-
         }
+        catch(Exception e)
+        {
+            Toast.makeText(getApplication(), "Please Take a Picture Again", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this, OcrView.class));
+        }
+
     }
 
 
@@ -347,6 +339,11 @@ public class OcrView extends AppCompatActivity {
 
         return BitmapFactory.decodeStream(ctx.getContentResolver()
                 .openInputStream(uri), null, bmOptions);
+    }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(getApplicationContext(), HomePage.class));
     }
 
 }

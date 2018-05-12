@@ -6,6 +6,7 @@ import android.os.Parcel;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -27,6 +28,7 @@ public class HomePage extends AppCompatActivity {
     Button btnAddPic;
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
+    DatabaseHelper myDb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +37,7 @@ public class HomePage extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
+        myDb = new DatabaseHelper(this);
         mAuth = FirebaseAuth.getInstance();
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
@@ -95,5 +97,37 @@ public class HomePage extends AppCompatActivity {
         super.onStart();
 
         mAuth.addAuthStateListener(mAuthListener);
+
+        if(myDb.checkIfExistInRecoveryTable()==true)
+        {
+            String neverStr = myDb.checkIfGotTo10NeverIng();
+            String occStr = myDb.checkIfGotTo10OccIng();
+
+            //Toast.makeText(HomePage.this,neverStr,Toast.LENGTH_LONG).show();
+            if(neverStr!="")
+            {
+
+                showMessage("Reccomendation", "We've noticed that you choose ingredients from food families that you have marked as 'Never' over and over again, consider changing your profile.\n"+"The families are:\n"+neverStr);
+            }
+            if(occStr!="")
+            {
+                //Toast.makeText(HomePage.this,occStr,Toast.LENGTH_LONG).show();
+                showMessage("Reccomendation", "We've noticed that you choose ingredients from food families that you have marked as 'Occasionally' over and over again, consider changing your profile.\n"+"The families are:\n"+occStr);
+            }
+        }
+
+    }
+
+    public void showMessage(String title, String Message) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setCancelable(true);
+        builder.setTitle(title);
+        builder.setMessage(Message);
+        builder.show();
+    }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(getApplicationContext(), HomePage.class));
     }
 }
