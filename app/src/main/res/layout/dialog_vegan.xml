@@ -2,86 +2,95 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
-    <CheckBox
+    <Button
         android:id="@+id/vdairyFree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:text="@string/dairyfree"
-        android:checked="true"/>
+        android:tag="vdairyFree"
+        android:background="@android:color/transparent"/>
 
-    <CheckBox
+    <Button
         android:id="@+id/veggsFree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/vdairyFree"
         android:text="@string/eggsfree"
-        android:checked="true"/>
+        android:tag="veggsFree"
+        android:background="@android:color/transparent"/>
 
-    <CheckBox
+    <Button
         android:id="@+id/beef"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/veggsFree"
         android:text="@string/beef"
-        android:checked="true"/>
+        android:tag="beef"
+        android:background="@android:color/transparent"/>
 
-    <CheckBox
+    <Button
         android:id="@+id/pork"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/chicken"
         android:text="@string/pork"
-        android:checked="true"/>
+        android:tag="pork"
+        android:background="@android:color/transparent"/>
 
-    <CheckBox
+    <Button
         android:id="@+id/fish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/pork"
         android:text="@string/fish"
-        android:checked="true"/>
+        android:tag="fish"
+        android:background="@android:color/transparent"/>
 
-    <CheckBox
+    <Button
         android:id="@+id/honey"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/Insects"
         android:text="@string/honey"
-        android:checked="true"/>
+        android:tag="honey"
+        android:background="@android:color/transparent"/>
 
-    <CheckBox
+    <Button
         android:id="@+id/shellfish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/fish"
         android:text="@string/shellfish"
-        android:checked="true"/>
+        android:tag="shellfish"
+        android:background="@android:color/transparent" />
 
-    <CheckBox
+    <Button
         android:id="@+id/Insects"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/shellfish"
         android:text="@string/insects"
-        android:checked="true"/>
+        android:tag="Insects"
+        android:background="@android:color/transparent"/>
 
-    <CheckBox
+    <Button
         android:id="@+id/chicken"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/beef"
         android:text="@string/chicken"
-        android:checked="true"/>
+        android:tag="chicken"
+        android:background="@android:color/transparent"/>
 
     <RadioGroup
         android:id="@+id/veggsFreeRG"
@@ -90,7 +99,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/veggsFree"
         android:orientation="horizontal"
-        >
+        android:visibility="gone">
 
         <RadioButton
             android:id="@+id/veggs1"
@@ -112,7 +121,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/vdairyFree"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:visibility="gone">
 
         <RadioButton
             android:id="@+id/vdairy1"
@@ -135,7 +145,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/beef"
         android:orientation="horizontal"
-        >
+        android:visibility="gone">
 
         <RadioButton
             android:id="@+id/beef1"
@@ -158,7 +168,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/chicken"
         android:orientation="horizontal"
-        >
+        android:visibility="gone">
 
         <RadioButton
             android:id="@+id/chicken1"
@@ -179,7 +189,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/pork"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:visibility="gone">
 
         <RadioButton
             android:id="@+id/pork1"
@@ -201,7 +212,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/fish"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:visibility="gone">
 
         <RadioButton
             android:id="@+id/fish1"
@@ -224,7 +236,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/shellfish"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:visibility="gone">
 
         <RadioButton
             android:id="@+id/shellfish1"
@@ -246,7 +259,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/Insects"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:visibility="gone">
 
         <RadioButton
             android:id="@+id/Insects1"
@@ -268,7 +282,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/honey"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:visibility="gone">
 
         <RadioButton
             android:id="@+id/honey1"
