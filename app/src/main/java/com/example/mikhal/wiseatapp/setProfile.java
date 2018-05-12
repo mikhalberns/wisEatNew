@@ -746,7 +746,7 @@ public class setProfile extends AppCompatActivity {
                             if(eggs1.isChecked()){
                                 eggsFree  =1;
                             }
-                            else{
+                            else if(eggs2.isChecked()){
                                 eggsFree  =2;
                             }
                         }
@@ -758,7 +758,7 @@ public class setProfile extends AppCompatActivity {
                             if(dairy1.isChecked()){
                                 dairyFree  =1;
                             }
-                            else{
+                            else if(dairy2.isChecked()){
                                 dairyFree  =2;
                             }
                         }
@@ -770,7 +770,7 @@ public class setProfile extends AppCompatActivity {
                             if(gluten1.isChecked()){
                                 glutenFree  =1;
                             }
-                            else{
+                            else if(gluten2.isChecked()){
                                 glutenFree  =2;
                             }
                         }
@@ -901,14 +901,22 @@ public class setProfile extends AppCompatActivity {
                                 }
                             }
                         }
-                        boolean isInserted = myDb.insertData( beef,chicken ,pork,fish , Insects, eggsFree, dairyFree, honey , glutenFree , lupin, sesame, algae, shellfish,soy, peanuts,sulphite, nuts,mustard,celery,corn);
-                        if(isInserted == true)
-                        {
-                            Toast.makeText(setProfile.this,"Data Inserted",Toast.LENGTH_LONG).show();
-                            myDb.matchProfileToUser();
+                        Integer[] dataArr={beef,chicken ,pork,fish , Insects, eggsFree, dairyFree, honey , glutenFree , lupin, sesame, algae, shellfish,soy, peanuts,sulphite, nuts,mustard,celery,corn};
+                        boolean isEmpty= isInsertionEmpty(dataArr);
+                        if (!isEmpty){
+                            boolean isInserted = myDb.insertData( beef,chicken ,pork,fish , Insects, eggsFree, dairyFree, honey , glutenFree , lupin, sesame, algae, shellfish,soy, peanuts,sulphite, nuts,mustard,celery,corn);
+                            if(isInserted == true)
+                            {
+                                Toast.makeText(setProfile.this,"Data Inserted",Toast.LENGTH_LONG).show();
+                                myDb.matchProfileToUser();
+                            }
+                            else {
+                                Toast.makeText(setProfile.this,"Data not Inserted",Toast.LENGTH_LONG).show();
+                            }
                         }
-                        else {
-                            //   Toast.makeText(setProfile.this,"Data not Inserted",Toast.LENGTH_LONG).show();
+
+                        else{
+                            Toast.makeText(setProfile.this,"Data not Inserted",Toast.LENGTH_LONG).show();
                         }
 
                         startActivity(new Intent(getApplicationContext(), HomePage.class));
@@ -965,4 +973,14 @@ public class setProfile extends AppCompatActivity {
         }
         return;
     }
+
+    public boolean isInsertionEmpty(Integer[] data){
+        for(int i=0;i<data.length;i++) {
+            if (data[i] != 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
 }
