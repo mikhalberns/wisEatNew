@@ -1,5 +1,6 @@
 package com.example.mikhal.wiseatapp;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
@@ -15,6 +16,7 @@ import android.widget.TextView;
 public class ResultView extends AppCompatActivity {
 
     TextView resView;
+    TextView email;
     ImageView resImage;
 
     @Override
@@ -24,6 +26,8 @@ public class ResultView extends AppCompatActivity {
 
         resView = (TextView) findViewById(R.id.resTextView);
         resImage = (ImageView) findViewById(R.id.resImageView);
+        email = (TextView) findViewById(R.id.emailAddress);
+        email.setVisibility(View.GONE);
 
 
         if(checkIfNeverIng()==true)//there is never eat ingredient
@@ -47,6 +51,8 @@ public class ResultView extends AppCompatActivity {
 
             Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.unknown);
             resImage.setImageBitmap(bm);
+
+            email.setVisibility(View.VISIBLE);
         }
         else //allowed
         {
@@ -236,6 +242,11 @@ public class ResultView extends AppCompatActivity {
             }
         }
         return buffer.toString();
+    }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(getApplicationContext(), HomePage.class));
     }
 
 }

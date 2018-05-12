@@ -341,4 +341,9 @@ public class OcrView extends AppCompatActivity {
                 .openInputStream(uri), null, bmOptions);
     }
 
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(getApplicationContext(), HomePage.class));
+    }
+
 }

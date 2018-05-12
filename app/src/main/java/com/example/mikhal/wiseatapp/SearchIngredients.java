@@ -140,6 +140,11 @@ public class SearchIngredients extends AppCompatActivity {
 
     public void searchInDb(String ingredient) {
 
+        if(myDb.checkIfExistInRecoveryTable()==false)
+        {
+            myDb.insertRowsForNewUserInRecovery();
+        }
+
         buffer = new StringBuffer();
 
         Cursor DBIngredient = myDb.getIngredientFromDb(ingredient);
@@ -167,133 +172,259 @@ public class SearchIngredients extends AppCompatActivity {
         builder.show();
     }
 
+    //update profile arrays and result table
     private void updateProfileArrays(String family) {
         int rate = myDb.getRateFromProfile(family);
 
         switch (family) {
             case "beef":
                 if(rate == 2)
+                {
                     occasionallyFamily[0]=1;
+                    myDb.updateRelevantFamily(family,0);
+                }
                 else if(rate == 1)
+                {
                     neverFamily[0]=1;
+                    myDb.updateRelevantFamily(family,1);
+                }
                 break;
             case "chiken":
                 if(rate == 2)
+                {
                     occasionallyFamily[1]=1;
+                    myDb.updateRelevantFamily(family,0);
+                }
                 else if(rate == 1)
+                {
                     neverFamily[1]=1;
+                    myDb.updateRelevantFamily(family,1);
+                }
                 break;
             case "pork":
                 if(rate == 2)
+                {
                     occasionallyFamily[2]=1;
+                    myDb.updateRelevantFamily(family,0);
+                }
                 else if(rate == 1)
+                {
                     neverFamily[2]=1;
+                    myDb.updateRelevantFamily(family,1);
+                }
                 break;
             case "fish":
                 if(rate == 2)
+                {
                     occasionallyFamily[3]=1;
+                    myDb.updateRelevantFamily(family,0);
+                }
                 else if(rate == 1)
+                {
                     neverFamily[3]=1;
+                    myDb.updateRelevantFamily(family,1);
+                }
                 break;
             case "insects":
                 if(rate == 2)
+                {
                     occasionallyFamily[4]=1;
+                    myDb.updateRelevantFamily(family,0);
+                }
                 else if(rate == 1)
+                {
                     neverFamily[4]=1;
+                    myDb.updateRelevantFamily(family,1);
+                }
                 break;
             case "eggs":
                 if(rate == 2)
+                {
                     occasionallyFamily[5]=1;
+                    myDb.updateRelevantFamily(family,0);
+                }
                 else if(rate == 1)
+                {
                     neverFamily[5]=1;
+                    myDb.updateRelevantFamily(family,1);
+                }
                 break;
             case "milk":
                 if(rate == 2)
+                {
                     occasionallyFamily[6]=1;
+                    myDb.updateRelevantFamily(family,0);
+                }
                 else if(rate == 1)
+                {
                     neverFamily[6]=1;
+                    myDb.updateRelevantFamily(family,1);
+                }
                 break;
             case "honey":
                 if(rate == 2)
+                {
                     occasionallyFamily[7]=1;
+                    myDb.updateRelevantFamily(family,0);
+                }
                 else if(rate == 1)
+                {
                     neverFamily[7]=1;
+                    myDb.updateRelevantFamily(family,1);
+                }
                 break;
             case "gluten":
                 if(rate == 2)
+                {
                     occasionallyFamily[8]=1;
+                    myDb.updateRelevantFamily(family,0);
+                }
                 else if(rate == 1)
+                {
                     neverFamily[8]=1;
+                    myDb.updateRelevantFamily(family,1);
+                }
                 break;
             case "lupin":
                 if(rate == 2)
+                {
                     occasionallyFamily[9]=1;
+                    myDb.updateRelevantFamily(family,0);
+                }
                 else if(rate == 1)
+                {
                     neverFamily[9]=1;
+                    myDb.updateRelevantFamily(family,1);
+                }
                 break;
             case "sesame":
                 if(rate == 2)
+                {
                     occasionallyFamily[10]=1;
+                    myDb.updateRelevantFamily(family,0);
+                }
                 else if(rate == 1)
+                {
                     neverFamily[10]=1;
+                    myDb.updateRelevantFamily(family,1);
+                }
                 break;
             case "algae":
                 if(rate == 2)
+                {
                     occasionallyFamily[11]=1;
+                    myDb.updateRelevantFamily(family,0);
+                }
                 else if(rate == 1)
+                {
                     neverFamily[11]=1;
+                    myDb.updateRelevantFamily(family,1);
+                }
                 break;
             case "shellfish":
                 if(rate == 2)
+                {
                     occasionallyFamily[12]=1;
+                    myDb.updateRelevantFamily(family,0);
+                }
                 else if(rate == 1)
+                {
                     neverFamily[12]=1;
+                    myDb.updateRelevantFamily(family,1);
+                }
                 break;
             case "soy":
                 if(rate == 2)
+                {
                     occasionallyFamily[13]=1;
+                    myDb.updateRelevantFamily(family,0);
+                }
                 else if(rate == 1)
+                {
                     neverFamily[13]=1;
+                    myDb.updateRelevantFamily(family,1);
+                }
                 break;
             case "peanuts":
                 if(rate == 2)
+                {
                     occasionallyFamily[14]=1;
+                    myDb.updateRelevantFamily(family,0);
+                }
                 else if(rate == 1)
+                {
                     neverFamily[14]=1;
+                    myDb.updateRelevantFamily(family,1);
+                }
                 break;
             case "sulphite":
                 if(rate == 2)
+                {
                     occasionallyFamily[15]=1;
+                    myDb.updateRelevantFamily(family,0);
+                }
                 else if(rate == 1)
+                {
                     neverFamily[15]=1;
+                    myDb.updateRelevantFamily(family,1);
+                }
                 break;
             case "nuts":
                 if(rate == 2)
+                {
                     occasionallyFamily[16]=1;
+                    myDb.updateRelevantFamily(family,0);
+                }
                 else if(rate == 1)
+                {
                     neverFamily[16]=1;
+                    myDb.updateRelevantFamily(family,1);
+                }
                 break;
             case "mustard":
                 if(rate == 2)
+                {
                     occasionallyFamily[17]=1;
+                    myDb.updateRelevantFamily(family,0);
+                }
                 else if(rate == 1)
+                {
                     neverFamily[17]=1;
+                    myDb.updateRelevantFamily(family,1);
+                }
                 break;
             case "celery":
                 if(rate == 2)
+                {
                     occasionallyFamily[18]=1;
+                    myDb.updateRelevantFamily(family,0);
+                }
                 else if(rate == 1)
+                {
                     neverFamily[18]=1;
+                    myDb.updateRelevantFamily(family,1);
+                }
                 break;
             case "corn":
                 if(rate == 2)
+                {
                     occasionallyFamily[19]=1;
+                    myDb.updateRelevantFamily(family,0);
+                }
                 else if(rate == 1)
+                {
                     neverFamily[19]=1;
+                    myDb.updateRelevantFamily(family,1);
+                }
                 break;
             default:
                 return;
         }
         return;
+    }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(getApplicationContext(), HomePage.class));
     }
 }

@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -51,11 +52,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     //recovery table
     public static final String RECOVERY_TABLE = "recovery_table";
     public static final String R_PROFILEID = "profileID";
+    public static final String IS_NEVER = "isNever";
     public static final String R_BEEF = "beef";
     public static final String R_CHICKEN = "chicken";
     public static final String R_PORK = "pork";
     public static final String R_FISH = "fish";
-    public static final String R_INSECTS = "Insects";
+    public static final String R_INSECTS = "insects";
     public static final String R_EGGS = "eggs";
     public static final String R_MILK = "milk";
     public static final String R_HONEY = "honey";
@@ -82,7 +84,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("create table " + USERS_TABLE + " (userId TEXT PRIMARY KEY, profileID INTEGER, isActive INTEGER)");
         db.execSQL("create table " + ING_TABLE + " (ingredient TEXT, family TEXT)");
         db.execSQL("create table " + PROFILES_TABLE +" (profileID INTEGER PRIMARY KEY autoincrement,beef INTEGER,chicken INTEGER,pork INTEGER,fish INTEGER,Insects INTEGER,eggs INTEGER,milk INTEGER,honey INTEGER,gluten INTEGER,lupin INTEGER,sesame INTEGER,algae INTEGER,shellfish INTEGER,soy INTEGER,peanuts INTEGER,sulphite INTEGER,nuts INTEGER,mustard INTEGER,celery INTEGER,corn INTEGER)");
-        db.execSQL("create table " + RECOVERY_TABLE +" (profileID INTEGER PRIMARY KEY autoincrement,beef INTEGER,chicken INTEGER,pork INTEGER,fish INTEGER,Insects INTEGER,eggs INTEGER,milk INTEGER,honey INTEGER,gluten INTEGER,lupin INTEGER,sesame INTEGER,algae INTEGER,shellfish INTEGER,soy INTEGER,peanuts INTEGER,sulphite INTEGER,nuts INTEGER,mustard INTEGER,celery INTEGER,corn INTEGER)");
+        db.execSQL("create table " + RECOVERY_TABLE +" (profileID INTEGER,isNever INTEGER,beef INTEGER,chicken INTEGER,pork INTEGER,fish INTEGER,Insects INTEGER,eggs INTEGER,milk INTEGER,honey INTEGER,gluten INTEGER,lupin INTEGER,sesame INTEGER,algae INTEGER,shellfish INTEGER,soy INTEGER,peanuts INTEGER,sulphite INTEGER,nuts INTEGER,mustard INTEGER,celery INTEGER,corn INTEGER)");
     }
 
     @Override
@@ -166,7 +168,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(IS_ACTIVE,1);
 
         db.update("usersTable",contentValues,"userId='"+userId+"'",null);
-}
+    }
 
     public boolean checkIfUIDExist(String userId) {
         //query that checks if the userId exist
@@ -1322,4 +1324,266 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         return ingredientRate;
     }
+
+    //insert rows for new user in the recovery table
+    public void insertRowsForNewUserInRecovery() {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        int pid = getActivateUserProfileId();
+
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(R_PROFILEID, pid);
+        contentValues.put(IS_NEVER, 0);
+        contentValues.put(R_BEEF, 0);
+        contentValues.put(R_CHICKEN, 0);
+        contentValues.put(R_PORK, 0);
+        contentValues.put(R_FISH, 0);
+        contentValues.put(R_INSECTS, 0);
+        contentValues.put(R_EGGS, 0);
+        contentValues.put(R_MILK, 0);
+        contentValues.put(R_HONEY, 0);
+        contentValues.put(R_GLUTEN, 0);
+        contentValues.put(R_LUPIN, 0);
+        contentValues.put(R_SESAME, 0);
+        contentValues.put(R_ALGAE, 0);
+        contentValues.put(R_SHELLFISH, 0);
+        contentValues.put(R_SOY, 0);
+        contentValues.put(R_PEANUTS, 0);
+        contentValues.put(R_SULPHITE, 0);
+        contentValues.put(R_NUTS, 0);
+        contentValues.put(R_MUSTARD, 0);
+        contentValues.put(R_CELERY, 0);
+        contentValues.put(R_CORN, 0);
+
+        db.insert(RECOVERY_TABLE, null, contentValues); //occ row
+
+        contentValues.put(IS_NEVER, 1);
+        db.insert(RECOVERY_TABLE, null, contentValues); //never row
+    }
+
+    //get the active user
+    public int getActivateUserProfileId()
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        Cursor res = db.rawQuery("select profileID from usersTable where isActive=1", null);//find the active user profileID
+        if(res.getCount()==0)
+            return -1;
+        res.moveToFirst();
+        return res.getInt(0);
+    }
+
+    //check if user already exists in recovery table (run in the db search)
+    public boolean checkIfExistInRecoveryTable()
+    {
+        int pId = getActivateUserProfileId();
+
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        Cursor res = db.rawQuery("select profileID from " +RECOVERY_TABLE+" where "+R_PROFILEID+"="+pId, null);
+        if(res.getCount()==0)
+            return false;
+        return true;
+    }
+
+    //function - check if current user got to 10 (from homepage) -never (run in homepage)
+    public String checkIfGotTo10NeverIng()
+    {
+        int pId = getActivateUserProfileId();
+        String str = "";
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        Cursor res = db.rawQuery("select * from " +RECOVERY_TABLE+" where isNever=1"+" and profileID="+pId, null);
+        res.moveToFirst();
+
+        for(int i=2;i<22;i++)
+        {
+            int data = res.getInt(i);
+            if(data>=10)
+            {
+                switch(i)
+                {
+                    case 2:
+                        str = str + "Beef\n";
+                        break;
+                    case 3:
+                        str = str + "Chicken\n";
+                        break;
+                    case 4:
+                        str = str + "Pork\n";
+                        break;
+                    case 5:
+                        str = str + "Fish\n";
+                        break;
+                    case 6:
+                        str = str + "Insects\n";
+                        break;
+                    case 7:
+                        str = str + "Eggs\n";
+                        break;
+                    case 8:
+                        str = str + "Milk\n";
+                        break;
+                    case 9:
+                        str = str + "Honey\n";
+                        break;
+                    case 10:
+                        str = str + "Gluten\n";
+                        break;
+                    case 11:
+                        str = str + "Lupin\n";
+                        break;
+                    case 12:
+                        str = str + "Sesame\n";
+                        break;
+                    case 13:
+                        str = str + "Algae\n";
+                        break;
+                    case 14:
+                        str = str + "Shellfish\n";
+                        break;
+                    case 15:
+                        str = str + "Soy\n";
+                        break;
+                    case 16:
+                        str = str + "Peanuts\n";
+                        break;
+                    case 17:
+                        str = str + "Sulphite\n";
+                        break;
+                    case 18:
+                        str = str + "Nuts\n";
+                        break;
+                    case 19:
+                        str = str + "Mustard\n";
+                        break;
+                    case 20:
+                        str = str + "Celery\n";
+                        break;
+                    case 21:
+                        str = str + "Corn\n";
+                        break;
+                    default:
+
+                }
+
+                ContentValues contentValues = new ContentValues();
+                contentValues.put(res.getColumnName(i),0);
+
+                db.update(RECOVERY_TABLE,contentValues,"isNever=1 and profileID="+pId,null);
+            }
+        }
+
+       return str;
+    }
+
+    //check if current user got to 10 (from homepage) -occ (run in homepage)
+    public String checkIfGotTo10OccIng()
+    {
+        int pId = getActivateUserProfileId();
+        String str = "";
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        Cursor res = db.rawQuery("select * from " +RECOVERY_TABLE+" where isNever=0"+" and profileID="+pId, null);
+        res.moveToFirst();
+
+        for(int i=2;i<22;i++)
+        {
+            int data = res.getInt(i);
+            if(data>=10)
+            {
+                switch(i)
+                {
+                    case 2:
+                        str = str + "Beef\n";
+                        break;
+                    case 3:
+                        str = str + "Chicken\n";
+                        break;
+                    case 4:
+                        str = str + "Pork\n";
+                        break;
+                    case 5:
+                        str = str + "Fish\n";
+                        break;
+                    case 6:
+                        str = str + "Insects\n";
+                        break;
+                    case 7:
+                        str = str + "Eggs\n";
+                        break;
+                    case 8:
+                        str = str + "Milk\n";
+                        break;
+                    case 9:
+                        str = str + "Honey\n";
+                        break;
+                    case 10:
+                        str = str + "Gluten\n";
+                        break;
+                    case 11:
+                        str = str + "Lupin\n";
+                        break;
+                    case 12:
+                        str = str + "Sesame\n";
+                        break;
+                    case 13:
+                        str = str + "Algae\n";
+                        break;
+                    case 14:
+                        str = str + "Shellfish\n";
+                        break;
+                    case 15:
+                        str = str + "Soy\n";
+                        break;
+                    case 16:
+                        str = str + "Peanuts\n";
+                        break;
+                    case 17:
+                        str = str + "Sulphite\n";
+                        break;
+                    case 18:
+                        str = str + "Nuts\n";
+                        break;
+                    case 19:
+                        str = str + "Mustard\n";
+                        break;
+                    case 20:
+                        str = str + "Celery\n";
+                        break;
+                    case 21:
+                        str = str + "Corn\n";
+                        break;
+                    default:
+
+                }
+
+                ContentValues contentValues = new ContentValues();
+                contentValues.put(res.getColumnName(i),0);
+
+                db.update(RECOVERY_TABLE,contentValues,"isNever=0 and profileID="+pId,null);
+            }
+        }
+
+        return str;
+    }
+
+    //add +1 to the relevant family in the relevant never/occ (run in the db search)
+    public void updateRelevantFamily(String family,int isNever)
+    {
+        int pId = getActivateUserProfileId();
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor res = db.rawQuery("select "+family+" from " +RECOVERY_TABLE+" where isNever="+isNever+" and profileID="+pId, null);
+        res.moveToFirst();
+        int data = res.getInt(0);
+
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(family,data+1);
+
+        db.update(RECOVERY_TABLE,contentValues,"isNever="+isNever+" and profileID="+pId,null);
+
+        return;
+    }
+
 }
