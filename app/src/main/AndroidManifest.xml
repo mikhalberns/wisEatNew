@@ -33,12 +33,14 @@
         <activity
             android:name=".setProfile"
             android:label="@string/title_activity_set_profile"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".HomePage"
             android:label="@string/title_activity_home_page"
             android:parentActivityName="android.support.v7.app.AppCompatActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="android.support.v7.app.AppCompatActivity" />
@@ -46,9 +48,15 @@
         <activity
             android:name=".SearchIngredients"
             android:label="@string/title_activity_search_ingredients"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".OcrView"></activity>
-        <activity android:name=".ResultView"></activity>
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".OcrView"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ResultView"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
