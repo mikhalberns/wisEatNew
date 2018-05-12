@@ -157,7 +157,10 @@ public class SearchIngredients extends AppCompatActivity {
         while (DBIngredient.moveToNext()) {
             family = DBIngredient.getString(1);
 
-            updateProfileArrays(family);
+            if(family.equals("null")==false)
+            {
+                updateProfileArrays(family);
+            }
         }
 
         startActivity(new Intent(getApplicationContext(), ResultView.class));
