@@ -245,9 +245,9 @@ public class ResultView extends AppCompatActivity {
         return buffer.toString();
     }
 
-    @Override
+   /* @Override
     public void onBackPressed() {
-        startActivity(new Intent(getApplicationContext(), HomePage.class));
-    }
+        // startActivity(new Intent(getApplicationContext(), HomePage.class));
+    }*/
 
 }

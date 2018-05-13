@@ -114,8 +114,10 @@ public class Login extends AppCompatActivity {
             {
                 GoogleSignInAccount account = result.getSignInAccount();
                 firebaseAuthWithGoogle(account);
+                myDb.checkIfNullUser();
 
-                if (myDb.checkIfUIDExist(result.getSignInAccount().getId())==false)//if first login - inset to db + move to set profile screen
+
+                if (myDb.checkIfUIDExist(result.getSignInAccount().getId())==false || myDb.checkIfExistProfileIdForUser(result.getSignInAccount().getId())==false)//if first login - inset to db + move to set profile screen
                 {
                     boolean isInserted = myDb.insertUIDToUsers(result.getSignInAccount().getId());
 

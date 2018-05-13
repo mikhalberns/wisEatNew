@@ -1586,4 +1586,32 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return;
     }
 
+    //check if exist profile id for the activated user
+    public boolean checkIfExistProfileIdForUser(String uid)
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor res1 = db.rawQuery("select profileID from " +USERS_TABLE+" where userId='"+uid+"'", null);
+        res1.moveToFirst();
+
+        Cursor res2 = db.rawQuery("select * from " +PROFILES_TABLE+" where profileID="+res1.getInt(0), null);
+
+        if(res2.getCount()!=0)
+            return true;
+        return false;
+    }
+
+    //check if null user so delete (didn't choose pid)
+
+    public void checkIfNullUser()
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor res = db.rawQuery("select * from " +USERS_TABLE+" where profileID=null", null);
+
+        if(res.getCount()!=0) //there is a null user
+        {
+            db.delete(USERS_TABLE, "profileID=null", null);
+        }
+    }
+
+
 }

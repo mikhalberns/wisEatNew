@@ -907,19 +907,20 @@ public class setProfile extends AppCompatActivity {
                             boolean isInserted = myDb.insertData( beef,chicken ,pork,fish , Insects, eggsFree, dairyFree, honey , glutenFree , lupin, sesame, algae, shellfish,soy, peanuts,sulphite, nuts,mustard,celery,corn);
                             if(isInserted == true)
                             {
-                                Toast.makeText(setProfile.this,"Data Inserted",Toast.LENGTH_LONG).show();
+                                Toast.makeText(setProfile.this,"You've just set up your profile",Toast.LENGTH_LONG).show();
                                 myDb.matchProfileToUser();
+                                startActivity(new Intent(getApplicationContext(), HomePage.class));
                             }
                             else {
-                                Toast.makeText(setProfile.this,"Data not Inserted",Toast.LENGTH_LONG).show();
+                                Toast.makeText(setProfile.this,"Please choose your preference first",Toast.LENGTH_LONG).show();
                             }
                         }
 
                         else{
-                            Toast.makeText(setProfile.this,"Data not Inserted",Toast.LENGTH_LONG).show();
+                            Toast.makeText(setProfile.this,"Please choose your preference first",Toast.LENGTH_LONG).show();
                         }
 
-                        startActivity(new Intent(getApplicationContext(), HomePage.class));
+
                     }
                 }
 
@@ -981,6 +982,10 @@ public class setProfile extends AppCompatActivity {
             }
         }
         return true;
+    }
+
+    public void onBackPressed() {
+        // startActivity(new Intent(getApplicationContext(), setProfile.class));
     }
 
 }

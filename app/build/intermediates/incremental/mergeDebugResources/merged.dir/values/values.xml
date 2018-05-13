@@ -149,7 +149,7 @@
     <color name="cast_libraries_material_featurehighlight_outer_highlight_default_color">#2196F3</color>
     <color name="cast_libraries_material_featurehighlight_text_body_color">#FFFFFFFF</color>
     <color name="cast_libraries_material_featurehighlight_text_header_color">#FFFFFFFF</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#f2d20e66</color>
     <color name="colorFacebook">#3B5998</color>
     <color name="colorGoogle">#D84B37</color>
     <color name="colorPrimary">#7bb737</color>
@@ -162,6 +162,7 @@
     <color name="common_google_signin_btn_text_light_disabled">#1F000000</color>
     <color name="common_google_signin_btn_text_light_focused">#90000000</color>
     <color name="common_google_signin_btn_text_light_pressed">#DE000000</color>
+    <color name="dairy">#84779b</color>
     <color name="design_bottom_navigation_shadow_color">#14000000</color>
     <color name="design_fab_shadow_end_color">@android:color/transparent</color>
     <color name="design_fab_shadow_mid_color">#14000000</color>
@@ -178,6 +179,7 @@
     <color name="error_color_material">#F4511E</color>
     <color name="foreground_material_dark">@android:color/white</color>
     <color name="foreground_material_light">@android:color/black</color>
+    <color name="gluten">#d1bc27</color>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
     <color name="material_blue_grey_800">#ff37474f</color>
@@ -195,6 +197,7 @@
     <color name="notification_action_color_filter">#ffffffff</color>
     <color name="notification_icon_bg_color">#ff9e9e9e</color>
     <color name="notification_material_background_media_default_color">#ff424242</color>
+    <color name="peanuts">#ba8371</color>
     <color name="place_autocomplete_prediction_primary_text">#212121</color>
     <color name="place_autocomplete_prediction_primary_text_highlight">#757575</color>
     <color name="place_autocomplete_prediction_secondary_text">#757575</color>
@@ -1082,6 +1085,7 @@
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="algae">algae</string>
+    <string name="animalFriendly">Animals\tFriendly</string>
     <string name="app_name">wisEat</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="beef">beef</string>
@@ -1150,10 +1154,11 @@
     <string name="common_signin_button_text_long">Sign in with Google</string>
     <string name="corn">corn</string>
     <string name="cpyRights">© 20182W71. All rights reserved.</string>
-    <string name="dairyfree">dairyFree</string>
+    <string name="custom">Customize</string>
+    <string name="dairyfree">Dairy Free</string>
     <string name="default_web_client_id" translatable="false">116341195017-b1l40gugbs127p1olug7hh0gftjjdks5.apps.googleusercontent.com</string>
-    <string name="done">Done</string>
-    <string name="eggsfree">eggsFree</string>
+    <string name="done">DONE</string>
+    <string name="eggsfree">Eggs Free</string>
     <string name="facebook_app_id">156568555035441</string>
     <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
     <string name="firebase_database_url" translatable="false">https://wiseat-6e837.firebaseio.com</string>
@@ -1161,11 +1166,12 @@
     <string name="gcm_defaultSenderId" translatable="false">116341195017</string>
     <string name="gcm_fallback_notification_channel_label">Miscellaneous</string>
     <string name="ggl_login">\t\tLog in with Google</string>
-    <string name="glutenfree">glutenFree</string>
+    <string name="glutenfree">Gluten Free</string>
     <string name="google_api_key" translatable="false">AIzaSyDmBvrwJj-zZj1QAxMYBAImtLlast1fgHc</string>
     <string name="google_app_id" translatable="false">1:116341195017:android:22f6ab47c1324240</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDmBvrwJj-zZj1QAxMYBAImtLlast1fgHc</string>
     <string name="google_storage_bucket" translatable="false">wiseat-6e837.appspot.com</string>
+    <string name="guidelines">Please select a consumption profile, and\n set the desired degree of avoidance</string>
     <string name="honey">honey</string>
     <string name="i_m_avoiding">i_m_avoiding</string>
     <string name="insects">insects</string>
@@ -1198,7 +1204,7 @@
     <string name="path_password_eye_mask_strike_through" translatable="false">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_eye_mask_visible" translatable="false">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
-    <string name="peanuts">peanuts</string>
+    <string name="peanuts">Peanuts Free</string>
     <string name="place_autocomplete_clear_button">Clear search</string>
     <string name="place_autocomplete_search_hint">Search</string>
     <string name="pork">pork</string>
@@ -1225,8 +1231,8 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_home">Home</string>
     <string name="title_notifications">Notifications</string>
-    <string name="vegan">vegan</string>
-    <string name="vegetarian">vegetarian</string>
+    <string name="vegan">Vegan</string>
+    <string name="vegetarian">Vegetarian</string>
     <string name="wallet_buy_button_place_holder">Buy with Google</string>
     <string name="welcome">Welcome to WisEat, an app that\n helps you consume food products smarter :)</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>

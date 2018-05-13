@@ -343,7 +343,7 @@ public class OcrView extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        startActivity(new Intent(getApplicationContext(), HomePage.class));
+     //   startActivity(new Intent(getApplicationContext(), HomePage.class));
     }
 
 }
