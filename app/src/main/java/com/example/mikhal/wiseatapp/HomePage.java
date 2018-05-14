@@ -2,21 +2,14 @@ package com.example.mikhal.wiseatapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcel;
 import android.support.annotation.NonNull;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
-import com.google.android.gms.auth.api.Auth;
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -54,7 +47,7 @@ public class HomePage extends AppCompatActivity {
         btnSetProfile.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), setProfile.class));
+                startActivity(new Intent(getApplicationContext(), UserProfile.class));
 
             }
         });

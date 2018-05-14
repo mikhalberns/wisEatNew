@@ -867,6 +867,8 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
+    <dimen name="activity_horizontal_marigin">8dp</dimen>
+    <dimen name="activity_vertical_marigin">8dp</dimen>
     <dimen name="cast_expanded_controller_ad_background_layout_height">350dp</dimen>
     <dimen name="cast_expanded_controller_ad_background_layout_width">-1px</dimen>
     <dimen name="cast_expanded_controller_ad_layout_height">350dp</dimen>

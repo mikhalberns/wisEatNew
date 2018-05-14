@@ -54,11 +54,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.mikhal.wiseatapp.setProfile"
-            android:label="@string/title_activity_set_profile"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name="com.example.mikhal.wiseatapp.HomePage"
             android:label="@string/title_activity_home_page"
             android:parentActivityName="android.support.v7.app.AppCompatActivity"
@@ -79,6 +74,7 @@
         <activity
             android:name="com.example.mikhal.wiseatapp.ResultView"
             android:screenOrientation="portrait" />
+        <activity android:name="com.example.mikhal.wiseatapp.UserProfile" />
         <activity
             android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
             android:excludeFromRecents="true"
