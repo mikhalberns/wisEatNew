@@ -19,6 +19,7 @@ public class ResultView extends AppCompatActivity {
     TextView resView;
     TextView email;
     ImageView resImage;
+    ImageButton home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +30,14 @@ public class ResultView extends AppCompatActivity {
         resImage = (ImageView) findViewById(R.id.resImageView);
         email = (TextView) findViewById(R.id.emailAddress);
         email.setVisibility(View.GONE);
+        home = (ImageButton) findViewById(R.id.homeButton);
+
+        home.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),HomePage.class));
+            }
+        });
 
 
         if(checkIfNeverIng()==true)//there is never eat ingredient
@@ -245,9 +254,9 @@ public class ResultView extends AppCompatActivity {
         return buffer.toString();
     }
 
-   /* @Override
+    @Override
     public void onBackPressed() {
         // startActivity(new Intent(getApplicationContext(), HomePage.class));
-    }*/
+    }
 
 }

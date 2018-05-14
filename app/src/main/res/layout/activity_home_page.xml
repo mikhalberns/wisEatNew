@@ -24,7 +24,7 @@
     <include
         layout="@layout/content_home_page"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true" />
+        android:layout_below="@+id/appBarLayout" />
 
     <Button
         android:id="@+id/ButtonLogout"
