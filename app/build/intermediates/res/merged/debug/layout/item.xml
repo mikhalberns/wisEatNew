@@ -40,4 +40,35 @@
         android:text="choose this profile if you want to avoide dairy products"
         android:textSize="12sp"
         />
+
+    <RadioGroup
+        android:id="@+id/familyRG"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/postThumb"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/postThumb"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <RadioButton
+            android:id="@+id/r1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/postThumb"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/postThumb"
+            android:text="Never" />
+
+        <RadioButton
+            android:id="@+id/r2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/postThumb"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/postThumb"
+            android:text="Occasionally" />
+
+    </RadioGroup>
+
 </RelativeLayout>

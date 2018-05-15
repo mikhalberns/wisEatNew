@@ -10,12 +10,15 @@ import android.widget.ListView;
 
 public class CustomProfile extends AppCompatActivity {
 
+    ListView listView;
+    FamilyItemAdapter itemAdapter;
     private FamilyData[] listData;
     String [] familyArr ={"Beef","Chicken","Pork","Fish","Insects","Eggs","Milk","Honey","Gluten","Lupin","Sesame","Algae","Shellfish","Soy","Peanuts","Sulphite"
             ,"Nuts","Mustard","Celery","Corn"};
     int [] imArr ={R.drawable.dairy,R.drawable.gluten,R.drawable.peanuts,R.drawable.eggs,R.drawable.vegaterian,R.drawable.vegan,R.drawable.custom,R.drawable.dairy,R.drawable.dairy
             ,R.drawable.gluten,R.drawable.gluten,R.drawable.gluten,R.drawable.gluten,R.drawable.gluten,R.drawable.gluten,R.drawable.gluten,R.drawable.gluten,R.drawable.gluten
             ,R.drawable.gluten,R.drawable.gluten};
+    static boolean [] familyClicked = {true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,8 +26,8 @@ public class CustomProfile extends AppCompatActivity {
         setContentView(R.layout.activity_custom_profile);
 
         this.generateData();
-        final ListView listView = (ListView) this.findViewById(R.id.CfamilyListView);
-        FamilyItemAdapter itemAdapter = new FamilyItemAdapter(this,
+        listView = (ListView) this.findViewById(R.id.CfamilyListView);
+        itemAdapter = new FamilyItemAdapter(this,
                 R.layout.item, listData);
         listView.setAdapter(itemAdapter);
 
@@ -37,12 +40,6 @@ public class CustomProfile extends AppCompatActivity {
             }
         });
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-               // clickOnFamily(l);
-            }
-        });
     }
 
     private void generateData() {
@@ -52,6 +49,7 @@ public class CustomProfile extends AppCompatActivity {
             data = new FamilyData();
             data.familyTitle = familyArr[i];
             data.im = imArr[i];
+            data.familyClicked = familyClicked[i];
             listData[i] = data;
         }
     }

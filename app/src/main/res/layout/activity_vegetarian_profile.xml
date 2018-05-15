@@ -11,7 +11,7 @@
     tools:context=".VegetarianProfile" >
 
     <ListView
-        android:id="@+id/familyListView"
+        android:id="@+id/VegeterianListView"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_alignParentBottom="true"
@@ -19,12 +19,14 @@
         android:layout_marginBottom="52dp" />
 
     <Button
-        android:id="@+id/done"
+        android:id="@+id/VegeterianDone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:text="DONE" />
 </RelativeLayout>
+
+
 
 

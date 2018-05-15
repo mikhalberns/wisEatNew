@@ -6,5 +6,6 @@ public class FamilyData {
     public String familyTitle;
     public String desc;
     public int im;
+    public boolean familyClicked;
 }
 

@@ -11,7 +11,7 @@
     tools:context=".VeganProfile" >
 
     <ListView
-        android:id="@+id/familyListView"
+        android:id="@+id/VeganListView"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_alignParentBottom="true"
@@ -19,7 +19,7 @@
         android:layout_marginBottom="52dp" />
 
     <Button
-        android:id="@+id/done"
+        android:id="@+id/VeganDone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
