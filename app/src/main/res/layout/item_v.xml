@@ -57,7 +57,8 @@
             android:layout_alignBottom="@id/postThumbV"
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/postThumbV"
-            android:text="Never" />
+            android:text="Never"
+            android:textSize="13sp" />
 
         <RadioButton
             android:id="@+id/r2v"
@@ -65,7 +66,8 @@
             android:layout_alignBottom="@id/postThumbV"
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/postThumbV"
-            android:text="Occasionally" />
+            android:text="Occasionally"
+            android:textSize="13sp" />
 
         <RadioButton
             android:id="@+id/r3v"
@@ -73,7 +75,8 @@
             android:layout_alignBottom="@id/postThumbV"
             android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/postThumbV"
-            android:text="Off" />
+            android:text="Always"
+            android:textSize="13sp" />
 
 
     </RadioGroup>

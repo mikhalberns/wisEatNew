@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class CustomProfile extends AppCompatActivity {
 
@@ -14,11 +15,11 @@ public class CustomProfile extends AppCompatActivity {
     ListView listView;
     VFamilyItemAdapter itemAdapter;
     private FamilyData[] listData;
-    String [] familyArr ={"Beef","Chicken","Pork","Fish","Insects","Eggs","Milk","Honey","Gluten","Lupin","Sesame","Algae","Shellfish","Soy","Peanuts","Sulphite"
+    String [] familyArr ={"Beef","Chicken","Pork","Fish","Insects","Eggs","Dairy","Honey","Gluten","Lupin","Sesame","Algae","Shellfish","Soy","Peanuts","Sulphite"
             ,"Nuts","Mustard","Celery","Corn"};
-    int [] imArr ={R.drawable.dairy,R.drawable.gluten,R.drawable.peanuts,R.drawable.eggs,R.drawable.vegaterian,R.drawable.vegan,R.drawable.custom,R.drawable.dairy,R.drawable.dairy
-            ,R.drawable.gluten,R.drawable.gluten,R.drawable.gluten,R.drawable.gluten,R.drawable.gluten,R.drawable.gluten,R.drawable.gluten,R.drawable.gluten,R.drawable.gluten
-            ,R.drawable.gluten,R.drawable.gluten};
+    int [] imArr ={R.drawable.beef,R.drawable.chicken,R.drawable.pork,R.drawable.fish,R.drawable.insects,R.drawable.eggs,R.drawable.dairy,R.drawable.honey
+            ,R.drawable.gluten,R.drawable.lupin,R.drawable.sesame,R.drawable.algae,R.drawable.shellfish,R.drawable.soya,R.drawable.peanuts,R.drawable.sulphite,R.drawable.nuts
+            ,R.drawable.mustard,R.drawable.celery,R.drawable.corn};
     static boolean [] familyClicked = {true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true};
     static boolean isCustom = false;
 
@@ -45,6 +46,7 @@ public class CustomProfile extends AppCompatActivity {
 
                 myDb.insertData(VFamilyItemAdapter.cBeef,VFamilyItemAdapter.cChicken,VFamilyItemAdapter.cPork,VFamilyItemAdapter.cFish,VFamilyItemAdapter.cInsects,VFamilyItemAdapter.cEggs,VFamilyItemAdapter.cMilk,VFamilyItemAdapter.cHoney,VFamilyItemAdapter.cGluten,VFamilyItemAdapter.cLupin,VFamilyItemAdapter.cSesame,VFamilyItemAdapter.cAlgae,VFamilyItemAdapter.vegiShellfish,0,0,0,0,0,0,0);
                 myDb.matchProfileToUser();
+                Toast.makeText(CustomProfile.this,"Your Profile Has Been Set Up!",Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(getApplicationContext(), HomePage.class));
             }
         });

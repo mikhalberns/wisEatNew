@@ -10,12 +10,39 @@
 
     tools:context=".CustomProfile" >
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="Custom Profile"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="Don't forget to chooce your category eating frequency"
+        android:textAlignment="center" />
+
     <ListView
         android:id="@+id/CfamilyListView"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
         android:layout_marginBottom="52dp" />
 
     <Button

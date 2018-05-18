@@ -35,6 +35,7 @@ public class UserProfile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_profile);
+        for(int i=0;i<4;i++)familyClicked[i]=false;
 
         myDb = new DatabaseHelper(this);
         isVegetarian=isVegan=isCustom=false;
@@ -58,50 +59,59 @@ public class UserProfile extends AppCompatActivity {
                 {
                     myDb.insertData(0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0);
                     myDb.matchProfileToUser();
+                    Toast.makeText(UserProfile.this,"Your Profile Has Been Set Up!",Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(getApplicationContext(), HomePage.class));
                 }
                 else if(FamilyItemAdapter.peanutsVal==2)
                 {
                     myDb.insertData(0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0);
                     myDb.matchProfileToUser();
+                    Toast.makeText(UserProfile.this,"Your Profile Has Been Set Up!",Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(getApplicationContext(), HomePage.class));
                 }
                 else if(FamilyItemAdapter.eggsVal==1)
                 {
                     myDb.insertData(0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
                     myDb.matchProfileToUser();
+                    Toast.makeText(UserProfile.this,"Your Profile Has Been Set Up!",Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(getApplicationContext(), HomePage.class));
                 }
                 else if(FamilyItemAdapter.eggsVal==2)
                 {
                     myDb.insertData(0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
                     myDb.matchProfileToUser();
+                    Toast.makeText(UserProfile.this,"Your Profile Has Been Set Up!",Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(getApplicationContext(), HomePage.class));
                 }
                 else if(FamilyItemAdapter.dairyVal==1)
                 {
                     myDb.insertData(0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0);
                     myDb.matchProfileToUser();
+                    Toast.makeText(UserProfile.this,"Your Profile Has Been Set Up!",Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(getApplicationContext(), HomePage.class));
                 }
                 else if(FamilyItemAdapter.dairyVal==2)
                 {
                     myDb.insertData(0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0);
                     myDb.matchProfileToUser();
+                    Toast.makeText(UserProfile.this,"Your Profile Has Been Set Up!",Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(getApplicationContext(), HomePage.class));
                 }
                 else if(FamilyItemAdapter.glutenVal==1)
                 {
                     myDb.insertData(0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0);
                     myDb.matchProfileToUser();
+                    Toast.makeText(UserProfile.this,"Your Profile Has Been Set Up!",Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(getApplicationContext(), HomePage.class));
                 }
                 else if(FamilyItemAdapter.glutenVal==2)
                 {
                     myDb.insertData(0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0);
                     myDb.matchProfileToUser();
+                    Toast.makeText(UserProfile.this,"Your Profile Has Been Set Up!",Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(getApplicationContext(), HomePage.class));
                 }
+
 
             }
         });

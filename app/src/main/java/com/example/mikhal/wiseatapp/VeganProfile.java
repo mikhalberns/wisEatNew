@@ -15,8 +15,8 @@ public class VeganProfile extends AppCompatActivity {
     ListView listView;
     VFamilyItemAdapter itemAdapter;
     private FamilyData[] listData;
-    String [] familyArr ={"Beef","Chicken","Pork","Fish","Insects","Eggs","Milk","Honey","Shellfish"};
-    int [] imArr ={R.drawable.dairy,R.drawable.gluten,R.drawable.peanuts,R.drawable.eggs,R.drawable.vegaterian,R.drawable.vegan,R.drawable.custom,R.drawable.dairy,R.drawable.dairy};
+    String [] familyArr ={"Beef","Chicken","Pork","Fish","Insects","Eggs","Dairy","Honey","Shellfish"};
+    int [] imArr ={R.drawable.beef,R.drawable.chicken,R.drawable.pork,R.drawable.fish,R.drawable.insects,R.drawable.eggs,R.drawable.dairy,R.drawable.honey,R.drawable.shellfish};
     static boolean [] familyClicked = {true,true,true,true,true,true,true,true,true};
     static boolean isVegan = false;
 
@@ -43,6 +43,7 @@ public class VeganProfile extends AppCompatActivity {
 
                 myDb.insertData(VFamilyItemAdapter.veganBeefVal,VFamilyItemAdapter.veganChickenVal,VFamilyItemAdapter.veganPorkVal,VFamilyItemAdapter.veganFishVal,VFamilyItemAdapter.veganInsectsVal,VFamilyItemAdapter.veganEggsVal,VFamilyItemAdapter.veganMilkVal,VFamilyItemAdapter.veganHoneyVal,0,0,0,0,VFamilyItemAdapter.veganShellfishVal,0,0,0,0,0,0,0);
                 myDb.matchProfileToUser();
+                Toast.makeText(VeganProfile.this,"Your Profile Has Been Set Up!",Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(getApplicationContext(), HomePage.class));
             }
         });
