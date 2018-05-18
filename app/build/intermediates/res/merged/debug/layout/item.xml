@@ -33,13 +33,13 @@
         android:id="@+id/postDateLabel"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
         android:layout_alignBottom="@id/postThumb"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/postTitleLabel"
         android:layout_toRightOf="@id/postThumb"
-        android:maxLines="1"
+        android:maxLines="2"
         android:text="choose this profile if you want to avoide dairy products"
-        android:textSize="12sp"
-        />
+        android:textSize="12sp" />
 
     <RadioGroup
         android:id="@+id/familyRG"

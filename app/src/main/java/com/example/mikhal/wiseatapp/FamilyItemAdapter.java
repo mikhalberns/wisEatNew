@@ -9,6 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -37,15 +39,17 @@ public class FamilyItemAdapter extends ArrayAdapter<FamilyData> {
                 .findViewById(R.id.postTitleLabel);
         postTitleView.setText(datas[position].familyTitle);
 
-        TextView postDateView = (TextView) rowView
+        final TextView postDateView = (TextView) rowView
                 .findViewById(R.id.postDateLabel);
         postDateView.setText(datas[position].desc);
 
         thumbImageView.setImageResource(datas[position].im);
+
         RadioGroup rg = (RadioGroup) rowView
                 .findViewById(R.id.familyRG);
         RadioButton r1= (RadioButton) rowView.findViewById(R.id.r1);
         RadioButton r2= (RadioButton) rowView.findViewById(R.id.r2);
+
 
         if(datas[position].familyClicked==true){
 
@@ -53,13 +57,10 @@ public class FamilyItemAdapter extends ArrayAdapter<FamilyData> {
             r1.setVisibility(View.VISIBLE);
             r2.setVisibility(View.VISIBLE);
             postDateView.setVisibility(View.INVISIBLE);
-          //  rowView.setBackgroundColor(Color.BLUE);
-        }
-        if(UserProfile.isVegetarian==true || UserProfile.isVegan==true)
-        {
             r1.setChecked(true);
         }
 
         return rowView;
     }
+
 }

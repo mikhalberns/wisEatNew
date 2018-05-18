@@ -12,21 +12,26 @@ import android.widget.Toast;
 public class VeganProfile extends AppCompatActivity {
 
     ListView listView;
-    FamilyItemAdapter itemAdapter;
+    VFamilyItemAdapter itemAdapter;
     private FamilyData[] listData;
     String [] familyArr ={"Beef","Chicken","Pork","Fish","Insects","Eggs","Milk","Honey","Shellfish"};
     int [] imArr ={R.drawable.dairy,R.drawable.gluten,R.drawable.peanuts,R.drawable.eggs,R.drawable.vegaterian,R.drawable.vegan,R.drawable.custom,R.drawable.dairy,R.drawable.dairy};
     static boolean [] familyClicked = {true,true,true,true,true,true,true,true,true};
+    static boolean isVegan = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vegan_profile);
 
+        VeganProfile.isVegan=true;
+        VegetarianProfile.isVegi=false;
+        CustomProfile.isCustom=false;
+
         this.generateData();
         listView = (ListView) this.findViewById(R.id.VeganListView);
-        itemAdapter = new FamilyItemAdapter(this,
-                R.layout.item, listData);
+        itemAdapter = new VFamilyItemAdapter(this,
+                R.layout.item_v, listData);
         listView.setAdapter(itemAdapter);
 
         Button done = (Button) findViewById(R.id.VeganDone);
@@ -38,7 +43,7 @@ public class VeganProfile extends AppCompatActivity {
             }
         });
 
-    }
+}
 
     private void generateData() {
         FamilyData data = null;

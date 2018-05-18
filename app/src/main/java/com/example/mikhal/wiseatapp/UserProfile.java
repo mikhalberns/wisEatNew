@@ -28,14 +28,15 @@ public class UserProfile extends AppCompatActivity {
     static boolean [] familyClicked = {false,false,false,false};
     static public boolean isVegetarian = false;
     static public boolean isVegan = false;
-    static public boolean isCuston = false;
+    static public boolean isCustom = false;
+    public boolean isFirstClick = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_profile);
 
-        isVegetarian=isVegan=isCuston=false;
+        isVegetarian=isVegan=isCustom=false;
         this.generateData();
         listView = (ListView) this.findViewById(R.id.familyListView);
         itemAdapter = new FamilyItemAdapter(this,
@@ -56,7 +57,9 @@ public class UserProfile extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                    clickOnFamily(l);
+
+                Toast.makeText(UserProfile.this,l+"",Toast.LENGTH_SHORT).show();
+                clickOnFamily(l);
             }
         });
     }
@@ -113,19 +116,19 @@ public class UserProfile extends AppCompatActivity {
 
         }
         else if(position==4){
-            isVegan=isCuston=false;
+            isVegan=isCustom=false;
             isVegetarian=true;
             startActivity(new Intent(getApplicationContext(), VegetarianProfile.class));
         }
         else if(position==5){
-            isVegetarian=isCuston=false;
+            isVegetarian=isCustom=false;
             isVegan=true;
             startActivity(new Intent(getApplicationContext(), VeganProfile.class));
 
         }
         else if(position==6){
             isVegetarian=isVegan=false;
-            isCuston=true;
+            isCustom=true;
             startActivity(new Intent(getApplicationContext(), CustomProfile.class));
 
         }
@@ -145,6 +148,16 @@ public class UserProfile extends AppCompatActivity {
             data = new FamilyData();
             data.desc = descArr[i];
             data.familyTitle = familyArr[i];
+            if(isFirstClick==true)
+            {
+                data.isFirstClick=true;
+                isFirstClick=false;
+            }
+            else
+            {
+                data.isFirstClick=false;
+                isFirstClick=true;
+            }
             data.im = imArr[i];
             if(i<4)
                 data.familyClicked = familyClicked[i];

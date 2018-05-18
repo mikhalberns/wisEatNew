@@ -1,0 +1,81 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    >
+
+    <ImageView
+        android:id="@+id/postThumbV"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/dairy"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="5dp"/>
+
+    <TextView
+        android:id="@+id/postTitleLabelV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/postThumbV"
+        android:layout_toRightOf="@id/postThumbV"
+        android:maxLines="2"
+        android:text="Dairy Free"
+        android:textIsSelectable="false"
+        android:textSize="16sp"
+        android:ellipsize="end"/>
+
+    <TextView
+        android:id="@+id/postDateLabelV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/postThumbV"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/postTitleLabelV"
+        android:layout_toRightOf="@id/postThumbV"
+        android:maxLines="2"
+        android:text="choose this profile if you want to avoide dairy products"
+        android:textSize="12sp" />
+
+    <RadioGroup
+        android:id="@+id/familyRGV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/postThumbV"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/postThumbV"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <RadioButton
+            android:id="@+id/r1v"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/postThumbV"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/postThumbV"
+            android:text="Never" />
+
+        <RadioButton
+            android:id="@+id/r2v"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/postThumbV"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/postThumbV"
+            android:text="Occasionally" />
+
+        <RadioButton
+            android:id="@+id/r3v"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/postThumbV"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/postThumbV"
+            android:text="Off" />
+
+
+    </RadioGroup>
+
+</RelativeLayout>

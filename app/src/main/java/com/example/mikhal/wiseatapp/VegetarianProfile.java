@@ -13,24 +13,29 @@ import static com.example.mikhal.wiseatapp.R.id.VegeterianDone;
 public class VegetarianProfile extends AppCompatActivity {
 
     ListView listView;
-    FamilyItemAdapter itemAdapter;
+    VFamilyItemAdapter itemAdapter;
     private FamilyData[] listData;
     String [] familyArr ={"Beef","Chicken","Pork","Fish","Insects","Shellfish"};
     int [] imArr ={R.drawable.dairy,R.drawable.peanuts,R.drawable.eggs,R.drawable.vegaterian,R.drawable.vegan,R.drawable.custom};
     static boolean [] familyClicked = {true,true,true,true,true,true};
+    static boolean isVegi = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_vegetarian_profile);
+        setContentView(R.layout.activity_vegan_profile);
+
+        VeganProfile.isVegan=false;
+        VegetarianProfile.isVegi=true;
+        CustomProfile.isCustom=false;
 
         this.generateData();
-        listView = (ListView) this.findViewById(R.id.VegeterianListView);
-        itemAdapter = new FamilyItemAdapter(this,
-                R.layout.item, listData);
+        listView = (ListView) this.findViewById(R.id.VeganListView);
+        itemAdapter = new VFamilyItemAdapter(this,
+                R.layout.item_v, listData);
         listView.setAdapter(itemAdapter);
 
-        Button done = (Button) findViewById(R.id.VegeterianDone);
+        Button done = (Button) findViewById(R.id.VeganDone);
         done.setOnClickListener(new View.OnClickListener() { //do when click done
             @Override
             public void onClick(View v) {

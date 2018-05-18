@@ -11,7 +11,7 @@ import android.widget.ListView;
 public class CustomProfile extends AppCompatActivity {
 
     ListView listView;
-    FamilyItemAdapter itemAdapter;
+    VFamilyItemAdapter itemAdapter;
     private FamilyData[] listData;
     String [] familyArr ={"Beef","Chicken","Pork","Fish","Insects","Eggs","Milk","Honey","Gluten","Lupin","Sesame","Algae","Shellfish","Soy","Peanuts","Sulphite"
             ,"Nuts","Mustard","Celery","Corn"};
@@ -19,16 +19,21 @@ public class CustomProfile extends AppCompatActivity {
             ,R.drawable.gluten,R.drawable.gluten,R.drawable.gluten,R.drawable.gluten,R.drawable.gluten,R.drawable.gluten,R.drawable.gluten,R.drawable.gluten,R.drawable.gluten
             ,R.drawable.gluten,R.drawable.gluten};
     static boolean [] familyClicked = {true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true};
+    static boolean isCustom = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_custom_profile);
+        VeganProfile.isVegan=false;
+        VegetarianProfile.isVegi=false;
+        CustomProfile.isCustom=true;
+
 
         this.generateData();
         listView = (ListView) this.findViewById(R.id.CfamilyListView);
-        itemAdapter = new FamilyItemAdapter(this,
-                R.layout.item, listData);
+        itemAdapter = new VFamilyItemAdapter(this,
+                R.layout.item_v, listData);
         listView.setAdapter(itemAdapter);
 
         Button done = (Button) findViewById(R.id.Cdone);
