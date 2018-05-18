@@ -29,13 +29,14 @@ public class UserProfile extends AppCompatActivity {
     static public boolean isVegetarian = false;
     static public boolean isVegan = false;
     static public boolean isCustom = false;
-    public boolean isFirstClick = true;
+    DatabaseHelper myDb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_profile);
 
+        myDb = new DatabaseHelper(this);
         isVegetarian=isVegan=isCustom=false;
         this.generateData();
         listView = (ListView) this.findViewById(R.id.familyListView);
@@ -48,17 +49,68 @@ public class UserProfile extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(getApplicationContext(), HomePage.class));
+
+                if(FamilyItemAdapter.glutenVal==0&&FamilyItemAdapter.dairyVal==0&&FamilyItemAdapter.eggsVal==0&&FamilyItemAdapter.peanutsVal==0)
+                {
+                    Toast.makeText(UserProfile.this,"Please Choose Your Profile",Toast.LENGTH_SHORT).show();
+                }
+                else if(FamilyItemAdapter.peanutsVal==1)
+                {
+                    myDb.insertData(0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0);
+                    myDb.matchProfileToUser();
+                    startActivity(new Intent(getApplicationContext(), HomePage.class));
+                }
+                else if(FamilyItemAdapter.peanutsVal==2)
+                {
+                    myDb.insertData(0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0);
+                    myDb.matchProfileToUser();
+                    startActivity(new Intent(getApplicationContext(), HomePage.class));
+                }
+                else if(FamilyItemAdapter.eggsVal==1)
+                {
+                    myDb.insertData(0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
+                    myDb.matchProfileToUser();
+                    startActivity(new Intent(getApplicationContext(), HomePage.class));
+                }
+                else if(FamilyItemAdapter.eggsVal==2)
+                {
+                    myDb.insertData(0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
+                    myDb.matchProfileToUser();
+                    startActivity(new Intent(getApplicationContext(), HomePage.class));
+                }
+                else if(FamilyItemAdapter.dairyVal==1)
+                {
+                    myDb.insertData(0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0);
+                    myDb.matchProfileToUser();
+                    startActivity(new Intent(getApplicationContext(), HomePage.class));
+                }
+                else if(FamilyItemAdapter.dairyVal==2)
+                {
+                    myDb.insertData(0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0);
+                    myDb.matchProfileToUser();
+                    startActivity(new Intent(getApplicationContext(), HomePage.class));
+                }
+                else if(FamilyItemAdapter.glutenVal==1)
+                {
+                    myDb.insertData(0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0);
+                    myDb.matchProfileToUser();
+                    startActivity(new Intent(getApplicationContext(), HomePage.class));
+                }
+                else if(FamilyItemAdapter.glutenVal==2)
+                {
+                    myDb.insertData(0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0);
+                    myDb.matchProfileToUser();
+                    startActivity(new Intent(getApplicationContext(), HomePage.class));
+                }
+
             }
         });
-
 
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-                Toast.makeText(UserProfile.this,l+"",Toast.LENGTH_SHORT).show();
                 clickOnFamily(l);
             }
         });
@@ -134,13 +186,6 @@ public class UserProfile extends AppCompatActivity {
         }
     }
 
-   /* @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }*/
-
     private void generateData() {
         FamilyData data = null;
         listData = new FamilyData[7];
@@ -148,16 +193,6 @@ public class UserProfile extends AppCompatActivity {
             data = new FamilyData();
             data.desc = descArr[i];
             data.familyTitle = familyArr[i];
-            if(isFirstClick==true)
-            {
-                data.isFirstClick=true;
-                isFirstClick=false;
-            }
-            else
-            {
-                data.isFirstClick=false;
-                isFirstClick=true;
-            }
             data.im = imArr[i];
             if(i<4)
                 data.familyClicked = familyClicked[i];

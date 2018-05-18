@@ -8,6 +8,5 @@ public class FamilyData {
     public String desc;
     public int im;
     public boolean familyClicked;
-    public boolean isFirstClick;
 }
 

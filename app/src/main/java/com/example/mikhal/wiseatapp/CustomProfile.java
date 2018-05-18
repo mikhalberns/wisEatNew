@@ -10,6 +10,7 @@ import android.widget.ListView;
 
 public class CustomProfile extends AppCompatActivity {
 
+    DatabaseHelper myDb;
     ListView listView;
     VFamilyItemAdapter itemAdapter;
     private FamilyData[] listData;
@@ -29,6 +30,7 @@ public class CustomProfile extends AppCompatActivity {
         VegetarianProfile.isVegi=false;
         CustomProfile.isCustom=true;
 
+        myDb = new DatabaseHelper(this);
 
         this.generateData();
         listView = (ListView) this.findViewById(R.id.CfamilyListView);
@@ -41,6 +43,8 @@ public class CustomProfile extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                myDb.insertData(VFamilyItemAdapter.cBeef,VFamilyItemAdapter.cChicken,VFamilyItemAdapter.cPork,VFamilyItemAdapter.cFish,VFamilyItemAdapter.cInsects,VFamilyItemAdapter.cEggs,VFamilyItemAdapter.cMilk,VFamilyItemAdapter.cHoney,VFamilyItemAdapter.cGluten,VFamilyItemAdapter.cLupin,VFamilyItemAdapter.cSesame,VFamilyItemAdapter.cAlgae,VFamilyItemAdapter.vegiShellfish,0,0,0,0,0,0,0);
+                myDb.matchProfileToUser();
                 startActivity(new Intent(getApplicationContext(), HomePage.class));
             }
         });

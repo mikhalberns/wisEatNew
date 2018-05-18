@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 public class VeganProfile extends AppCompatActivity {
 
+    DatabaseHelper myDb;
     ListView listView;
     VFamilyItemAdapter itemAdapter;
     private FamilyData[] listData;
@@ -24,6 +25,7 @@ public class VeganProfile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vegan_profile);
 
+        myDb = new DatabaseHelper(this);
         VeganProfile.isVegan=true;
         VegetarianProfile.isVegi=false;
         CustomProfile.isCustom=false;
@@ -39,6 +41,8 @@ public class VeganProfile extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                myDb.insertData(VFamilyItemAdapter.veganBeefVal,VFamilyItemAdapter.veganChickenVal,VFamilyItemAdapter.veganPorkVal,VFamilyItemAdapter.veganFishVal,VFamilyItemAdapter.veganInsectsVal,VFamilyItemAdapter.veganEggsVal,VFamilyItemAdapter.veganMilkVal,VFamilyItemAdapter.veganHoneyVal,0,0,0,0,VFamilyItemAdapter.veganShellfishVal,0,0,0,0,0,0,0);
+                myDb.matchProfileToUser();
                 startActivity(new Intent(getApplicationContext(), HomePage.class));
             }
         });

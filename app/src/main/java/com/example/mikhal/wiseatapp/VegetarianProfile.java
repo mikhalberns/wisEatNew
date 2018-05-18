@@ -12,6 +12,7 @@ import static com.example.mikhal.wiseatapp.R.id.VegeterianDone;
 
 public class VegetarianProfile extends AppCompatActivity {
 
+    DatabaseHelper myDb;
     ListView listView;
     VFamilyItemAdapter itemAdapter;
     private FamilyData[] listData;
@@ -24,7 +25,7 @@ public class VegetarianProfile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vegan_profile);
-
+        myDb = new DatabaseHelper(this);
         VeganProfile.isVegan=false;
         VegetarianProfile.isVegi=true;
         CustomProfile.isCustom=false;
@@ -39,7 +40,8 @@ public class VegetarianProfile extends AppCompatActivity {
         done.setOnClickListener(new View.OnClickListener() { //do when click done
             @Override
             public void onClick(View v) {
-
+                myDb.insertData(VFamilyItemAdapter.vegiBeef,VFamilyItemAdapter.vegiChicken,VFamilyItemAdapter.vegiPork,VFamilyItemAdapter.vegiFish,VFamilyItemAdapter.vegiInsects,0,0,0,0,0,0,0,VFamilyItemAdapter.vegiShellfish,0,0,0,0,0,0,0);
+                myDb.matchProfileToUser();
                 startActivity(new Intent(getApplicationContext(), HomePage.class));
             }
         });
