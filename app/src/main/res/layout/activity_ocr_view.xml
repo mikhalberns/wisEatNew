@@ -48,28 +48,29 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="86dp"
+        android:background="@drawable/shadow_rect"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <RelativeLayout
-        android:layout_width="124dp"
+        android:layout_width="153dp"
         android:layout_height="41dp"
         android:layout_above="@+id/resText"
         android:layout_centerHorizontal="true">
 
         <Button
             android:id="@+id/checkBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
             android:background="@drawable/rounded_corner_check"
             android:fontFamily="casual"
             android:padding="10dp"
-            android:text="Check"
+            android:text="@string/Check"
             android:textAllCaps="false"
-
             android:textColor="@android:color/background_light" />
 
     </RelativeLayout>

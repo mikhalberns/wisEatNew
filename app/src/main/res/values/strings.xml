@@ -46,6 +46,12 @@
 
     <!--Ocr View -->
     <string name="pic_take">Take A Picture</string>
+    <string name="Check">Check Ingredients</string>
     <!--Ocr View -->
+
+    <!---HomePage-->
+    <string name="take_picture">Take a picture to check ingredients</string>
+    <string name="typing">Check ingredients by typing manually</string>
+    <!---HomePage-->
 
 </resources>
