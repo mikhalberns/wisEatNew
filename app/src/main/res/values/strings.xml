@@ -6,7 +6,7 @@
     <string name="facebook_app_id">156568555035441</string>
     <!-- Screen #1 Design -->
     <string name="welcome">Welcome to WisEat, an app that\n helps you consume food products smarter :)</string>
-    <string name="ggl_login">\t\tLog in with Google</string>
+    <string name="ggl_login">\t\t\tLog in with Google</string>
     <string name="cpyRights">© 20182W71. All rights reserved.</string>
     <!--End Of Screen #1 Design -->
 
@@ -43,4 +43,9 @@
 
     <string name="title_activity_home_page">HomePage</string>
     <string name="title_activity_search_ingredients">SearchIngredients</string>
+
+    <!--Ocr View -->
+    <string name="pic_take">Take A Picture</string>
+    <!--Ocr View -->
+
 </resources>
