@@ -44,14 +44,14 @@ public class ResultView extends AppCompatActivity {
         {
             resView.setText(getNeverIngString());
 
-            Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.never);
+            Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.bad);
             resImage.setImageBitmap(bm);
         }
         else if (checkIfOccIng()==true && SearchIngredients.cntUnknown==0) //check if there is occasionally ingredient
         {
             resView.setText(getOccIngString());
 
-            Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.oc);
+            Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.suspicious);
             resImage.setImageBitmap(bm);
         }
         else if(SearchIngredients.cntUnknown!=0)//unknown ingredient
@@ -59,7 +59,7 @@ public class ResultView extends AppCompatActivity {
             resView.setText("We Didn't Find Some Of The Ingredients:\n" + SearchIngredients.buffer.toString() +"\n"+"Please Help Us Expand Our DataBase And Send Us" +
                     "An Email To wiseatapp@gmail.com And Classify The Unknown Ingredients To Their Food Family.");
 
-            Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.unknown);
+            Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.please);
             resImage.setImageBitmap(bm);
 
             email.setVisibility(View.VISIBLE);
