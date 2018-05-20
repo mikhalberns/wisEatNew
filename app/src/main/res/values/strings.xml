@@ -50,8 +50,8 @@
     <!--Ocr View -->
 
     <!---HomePage-->
-    <string name="take_picture">Take a picture to check ingredients</string>
-    <string name="typing">Check ingredients by typing manually</string>
+    <string name="take_picture">Take a picture</string>
+    <string name="typing">Type manually</string>
     <string name="logout">\tLog Out</string>
     <string name="profile">Edit Profile</string>
 
