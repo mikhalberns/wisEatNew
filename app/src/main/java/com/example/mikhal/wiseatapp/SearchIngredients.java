@@ -32,7 +32,7 @@ public class SearchIngredients extends AppCompatActivity {
     static int[] neverFamily;
     static int[] occasionallyFamily;
     String[] resOcr;
-    static StringBuffer buffer = new StringBuffer();
+    static String buffer = "";
     static int cntUnknown;
 
     @Override
@@ -41,6 +41,7 @@ public class SearchIngredients extends AppCompatActivity {
         myDb = new DatabaseHelper(this);
         cntUnknown=0;
 
+        buffer="";
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_ingredients);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -108,11 +109,11 @@ public class SearchIngredients extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        buffer ="";
                         String[] str;
                         SearchView searchWord = (SearchView) findViewById(R.id.search);
                         CharSequence query = searchWord.getQuery();
                         ingredients = query.toString();
-
                         if (ingredients != null && ingredients.equals("") == false) {
                             str = deleteSpacesAndSplit(ingredients);
 
@@ -131,6 +132,8 @@ public class SearchIngredients extends AppCompatActivity {
 
     public void searchOcr(String[] ocr) {
 
+        buffer ="";
+
         for (String s : ocr) {
             searchInDb(s);
         }
@@ -145,12 +148,10 @@ public class SearchIngredients extends AppCompatActivity {
             myDb.insertRowsForNewUserInRecovery();
         }
 
-        buffer = new StringBuffer();
-
         Cursor DBIngredient = myDb.getIngredientFromDb(ingredient);
         if (DBIngredient.getCount() == 0) {
             cntUnknown++;
-            buffer.append(ingredient+"\n");
+            buffer = buffer + ingredient+"\n";
         }
 
         String family = null;
@@ -159,7 +160,15 @@ public class SearchIngredients extends AppCompatActivity {
 
             if(family.equals("null")==false)
             {
-                updateProfileArrays(family);
+                if(family.equals("beef")==true || family.equals("chicken")==true || family.equals("pork")==true|| family.equals("fish")==true|| family.equals("insects")==true
+                        || family.equals("eggs")==true|| family.equals("milk")==true || family.equals("honey")==true|| family.equals("gluten")==true
+                        || family.equals("lupin")==true|| family.equals("sesame")==true|| family.equals("algae")==true|| family.equals("shellfish")==true
+                        || family.equals("soy")==true|| family.equals("peanuts")==true|| family.equals("sulphite")==true|| family.equals("nuts")==true
+                        || family.equals("mustrad")==true|| family.equals("celery")==true|| family.equals("corn")==true)
+                {
+                    updateProfileArrays(family);
+                }
+
             }
         }
 
@@ -428,6 +437,6 @@ public class SearchIngredients extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-       // startActivity(new Intent(getApplicationContext(), HomePage.class));
+        // startActivity(new Intent(getApplicationContext(), HomePage.class));
     }
 }

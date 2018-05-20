@@ -99,6 +99,14 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/relativeLayout"
         android:layout_alignParentStart="true"
-        android:text="Button" />
+        android:text="rotate" />
+
+    <Button
+        android:id="@+id/backB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/resText"
+        android:layout_alignEnd="@+id/resText"
+        android:text="back" />
 
 </RelativeLayout>

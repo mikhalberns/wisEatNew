@@ -56,7 +56,8 @@ public class ResultView extends AppCompatActivity {
         }
         else if(SearchIngredients.cntUnknown!=0)//unknown ingredient
         {
-            resView.setText("We Didn't Find Some Of The Ingredients:\n" + SearchIngredients.buffer.toString() +"\n"+"Please Help Us Expand Our DataBase And Send Us" +
+
+            resView.setText("We Didn't Find Some Of The Ingredients:\n" + SearchIngredients.buffer +"\n"+"Please Help Us Expand Our DataBase And Send Us" +
                     "An Email To wiseatapp@gmail.com And Classify The Unknown Ingredients To Their Food Family.");
 
             Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.please);
