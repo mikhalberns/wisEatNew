@@ -26,13 +26,12 @@
         android:layout_marginBottom="145dp"
         android:fontFamily="casual"
         android:text="@string/welcome"
-        android:textAlignment="center"
+        android:gravity="center"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp"
         android:textStyle="bold" />
 
     <Button
-
         android:id="@+id/btnGoogle"
         android:layout_width="284dp"
         android:layout_height="67dp"
@@ -45,6 +44,7 @@
         android:padding="10dp"
         android:text="@string/ggl_login"
         android:textAllCaps="false"
+        android:gravity="center"
         android:textColor="@android:color/white"
         android:textSize="22sp"
         android:textStyle="bold" />
@@ -57,7 +57,6 @@
         android:layout_alignBottom="@+id/btnGoogle"
         android:layout_alignStart="@+id/btnGoogle"
         android:contentDescription="@string/ggl_login"
-        android:drawingCacheQuality="low"
         android:elevation="3dp"
         android:src="@drawable/ggl_login" />
 
@@ -67,8 +66,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:gravity="center"
         android:text="@string/cpyRights"
         android:textAlignment="center"/>
 </RelativeLayout>
-
 

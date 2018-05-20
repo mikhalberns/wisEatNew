@@ -12,6 +12,7 @@ import android.content.pm.ResolveInfo;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Camera;
+import android.graphics.Matrix;
 import android.graphics.PixelFormat;
 import android.net.Uri;
 import android.os.Build;
@@ -58,6 +59,7 @@ public class OcrView extends AppCompatActivity {
     String picPath;
     TextView resText;
     String subStr;
+    Button rotateB;
 
     final private int REQUEST_CODE_ASK_PERMISSIONS_CAMERA = 100;
     final private int REQUEST_CODE_ASK_PERMISSIONS_EXTERNAL_STORAGE = 200;
@@ -69,194 +71,244 @@ public class OcrView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ocr_view);
 
-        im = (ImageView)findViewById(R.id.imageView);
+        try {
+            im = (ImageView) findViewById(R.id.imageView);
+            rotateB = (Button) findViewById(R.id.rotateB);
 
-        checkPermission();
+            checkPermission();
 
-        picBtn= (Button)findViewById(R.id.picBtn);
-        picBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (Build.VERSION.SDK_INT >= 23) {
-                    if (shouldShowRequestPermissionRationale(android.Manifest.permission.CAMERA) || shouldShowRequestPermissionRationale(Manifest.permission.WRITE_EXTERNAL_STORAGE))
-                    {
-                        checkPermission();
+            picBtn = (Button) findViewById(R.id.picBtn);
+
+            picBtn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (Build.VERSION.SDK_INT >= 23) {
+                        if (shouldShowRequestPermissionRationale(android.Manifest.permission.CAMERA) || shouldShowRequestPermissionRationale(Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+                            checkPermission();
+                        } else {
+                            intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+
+                            //File photoFile = getOutputMediaFile();
+                            // photoURI = Uri.fromFile(photoFile);
+                            String fileName = "IMG_1.jpg";
+                            ContentValues values = new ContentValues();
+                            values.put(MediaStore.Images.Media.TITLE, fileName);
+                            values.put(MediaStore.Images.Media.DESCRIPTION, "Image capture by camera");
+                            photoURI = getContentResolver().insert(
+                                    MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
+                            intent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
+                            intent.putExtra(MediaStore.EXTRA_VIDEO_QUALITY, 1);
+
+                            startActivityForResult(intent, 100);
+                        }
                     }
-                    else {
-                        intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                }
+            });
 
-                        //File photoFile = getOutputMediaFile();
-                       // photoURI = Uri.fromFile(photoFile);
-                        String fileName = "IMG_1.jpg";
-                        ContentValues values = new ContentValues();
-                        values.put(MediaStore.Images.Media.TITLE, fileName);
-                        values.put(MediaStore.Images.Media.DESCRIPTION,"Image capture by camera");
-                        photoURI = getContentResolver().insert(
-                                MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
-                        intent.putExtra(MediaStore.EXTRA_OUTPUT,photoURI);
-                        intent.putExtra(MediaStore.EXTRA_VIDEO_QUALITY, 1);
-
-                        startActivityForResult(intent, 100);
+            checkBtn = (Button) findViewById(R.id.checkBtn);
+            checkBtn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (im != null) {
+                        check();
+                    } else {
+                        Toast.makeText(getApplication(), "Take a picture and try again", Toast.LENGTH_SHORT).show();
                     }
                 }
-            }
-        });
+            });
 
-        checkBtn = (Button)findViewById(R.id.checkBtn);
-        checkBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(im != null)
-                {
-                    check();
+            rotateB.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    im.setRotation(im.getRotation()+90);
                 }
-                else
-                {
-                    Toast.makeText(getApplication(), "Take a picture and try again", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
+            });
 
-        resText = (TextView) findViewById(R.id.resText);
+            resText = (TextView) findViewById(R.id.resText);
+        }
+        catch (Exception e)
+        {
+            resText.setText("Couldn't Find Ingredients Or The End Of The List." + "Please Try Again.");
+        }
     }
 
     private File getOutputMediaFile(){
-        File mediaStorageDir = new File(Environment.getExternalStoragePublicDirectory(
-                Environment.DIRECTORY_PICTURES), "WisEatPics");
 
-        if (!mediaStorageDir.exists()) {
-            if (!mediaStorageDir.mkdirs()) {
-                return null;
+        try{
+            File mediaStorageDir = new File(Environment.getExternalStoragePublicDirectory(
+                    Environment.DIRECTORY_PICTURES), "WisEatPics");
+
+            if (!mediaStorageDir.exists()) {
+                if (!mediaStorageDir.mkdirs()) {
+                    return null;
+                }
             }
-        }
 
-        picPath = mediaStorageDir.getPath()+File.separator+"IMG_1.jpg";
-        return new File(mediaStorageDir.getPath() + File.separator +
-                "IMG_1.jpg");
+            picPath = mediaStorageDir.getPath()+File.separator+"IMG_1.jpg";
+            return new File(mediaStorageDir.getPath() + File.separator +
+                    "IMG_1.jpg");
+        }
+        catch(Exception e)
+        {
+            resText.setText("Couldn't Find Ingredients Or The End Of The List." + "Please Try Again.");
+            return null;
+        }
     }
+
 
 
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
-        if (requestCode == 100) {
-            if (resultCode == RESULT_OK) {
+        try{
+            if (requestCode == 100) {
+                if (resultCode == RESULT_OK) {
 
-                im.setImageURI(photoURI);
+                    im.setImageURI(photoURI);
+                }
             }
         }
+        catch(Exception e)
+        {
+            resText.setText("Couldn't Find Ingredients Or The End Of The List." + "Please Try Again.");
+        }
+
+
     }
 
     public void checkPermission() {
-        // For Check Camera Permission
-       if (Build.VERSION.SDK_INT >= 23) {
-            int hasCameraPermission = ContextCompat.checkSelfPermission(this, android.Manifest.permission.CAMERA);
-            int hasStoragePermission = ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
 
-            if(hasCameraPermission != PackageManager.PERMISSION_GRANTED && hasStoragePermission != PackageManager.PERMISSION_GRANTED)
-            {
-                if (shouldShowRequestPermissionRationale(android.Manifest.permission.CAMERA)) {
-                    // Display UI and wait for user interaction
-                    getErrorDialog("You need to allow Camera & Storage permissions." +
-                            "\nIf you disable this permission, You will not able to add attachment.", this, 2).show();
-                } else {
-                    requestPermissions(new String[]{android.Manifest.permission.CAMERA,Manifest.permission.WRITE_EXTERNAL_STORAGE}, REQUEST_BOTH);
-                }
-                return;
-            }
+        try{
+            // For Check Camera Permission
+            if (Build.VERSION.SDK_INT >= 23) {
+                int hasCameraPermission = ContextCompat.checkSelfPermission(this, android.Manifest.permission.CAMERA);
+                int hasStoragePermission = ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
 
-            if (hasCameraPermission != PackageManager.PERMISSION_GRANTED) {
-                if (shouldShowRequestPermissionRationale(android.Manifest.permission.CAMERA)) {
-                    // Display UI and wait for user interaction
-                    getErrorDialog("You need to allow Camera permission." +
-                            "\nIf you disable this permission, You will not able to add attachment.", this, 0).show();
-                } else {
-                    requestPermissions(new String[]{android.Manifest.permission.CAMERA}, REQUEST_CODE_ASK_PERMISSIONS_CAMERA);
+                if(hasCameraPermission != PackageManager.PERMISSION_GRANTED && hasStoragePermission != PackageManager.PERMISSION_GRANTED)
+                {
+                    if (shouldShowRequestPermissionRationale(android.Manifest.permission.CAMERA)) {
+                        // Display UI and wait for user interaction
+                        getErrorDialog("You need to allow Camera & Storage permissions." +
+                                "\nIf you disable this permission, You will not able to add attachment.", this, 2).show();
+                    } else {
+                        requestPermissions(new String[]{android.Manifest.permission.CAMERA,Manifest.permission.WRITE_EXTERNAL_STORAGE}, REQUEST_BOTH);
+                    }
+                    return;
+                }
+
+                if (hasCameraPermission != PackageManager.PERMISSION_GRANTED) {
+                    if (shouldShowRequestPermissionRationale(android.Manifest.permission.CAMERA)) {
+                        // Display UI and wait for user interaction
+                        getErrorDialog("You need to allow Camera permission." +
+                                "\nIf you disable this permission, You will not able to add attachment.", this, 0).show();
+                    } else {
+                        requestPermissions(new String[]{android.Manifest.permission.CAMERA}, REQUEST_CODE_ASK_PERMISSIONS_CAMERA);
+                    }
+                    return;
+                }
+                if (hasStoragePermission != PackageManager.PERMISSION_GRANTED) {
+                    if (shouldShowRequestPermissionRationale(Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+                        // Display UI and wait for user interaction
+                        getErrorDialog("You need to allow Storage permission." +
+                                "\nIf you disable this permission, You will not able to add attachment.", this, 1).show();
+                    } else {
+                        requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, REQUEST_CODE_ASK_PERMISSIONS_EXTERNAL_STORAGE);
+                    }
+                    return;
                 }
                 return;
             }
-            if (hasStoragePermission != PackageManager.PERMISSION_GRANTED) {
-                if (shouldShowRequestPermissionRationale(Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
-                    // Display UI and wait for user interaction
-                    getErrorDialog("You need to allow Storage permission." +
-                            "\nIf you disable this permission, You will not able to add attachment.", this, 1).show();
-                } else {
-                    requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, REQUEST_CODE_ASK_PERMISSIONS_EXTERNAL_STORAGE);
-                }
-                return;
-            }
-            return;
-       }
+        }
+        catch(Exception e)
+        {
+            resText.setText("You Need To Allow Camera And Storage Permissions");
+        }
+
     }
 
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
 
-        if(firsTime)
-        {
-            firsTime=false;
+        try{
+            if(firsTime)
+            {
+                firsTime=false;
 
-            res1 = grantResults[0]; //camera
-            res2 = grantResults[1]; //storage
+                res1 = grantResults[0]; //camera
+                res2 = grantResults[1]; //storage
 
 
-            switch (requestCode) {
-                case REQUEST_CODE_ASK_PERMISSIONS_CAMERA:
-                    if (res1 == PackageManager.PERMISSION_GRANTED) {
-                        // Permission Granted
-                        Toast.makeText(this, "Permission Grant Camera", Toast.LENGTH_SHORT).show();
-                    }
-                    break;
+                switch (requestCode) {
+                    case REQUEST_CODE_ASK_PERMISSIONS_CAMERA:
+                        if (res1 == PackageManager.PERMISSION_GRANTED) {
+                            // Permission Granted
+                            Toast.makeText(this, "Permission Grant Camera", Toast.LENGTH_SHORT).show();
+                        }
+                        break;
 
-                case REQUEST_CODE_ASK_PERMISSIONS_EXTERNAL_STORAGE:
-                    if (res2 == PackageManager.PERMISSION_GRANTED) {
-                        // Permission Granted
-                        Toast.makeText(this, "Permission Grant Storage", Toast.LENGTH_SHORT).show();
-                    }
-                    break;
+                    case REQUEST_CODE_ASK_PERMISSIONS_EXTERNAL_STORAGE:
+                        if (res2 == PackageManager.PERMISSION_GRANTED) {
+                            // Permission Granted
+                            Toast.makeText(this, "Permission Grant Storage", Toast.LENGTH_SHORT).show();
+                        }
+                        break;
 
-                case REQUEST_BOTH:
-                    if (res1 == PackageManager.PERMISSION_GRANTED && res2 == PackageManager.PERMISSION_GRANTED) {
-                        // Permission Granted
-                        Toast.makeText(this, "Permission Grant Camera Storage", Toast.LENGTH_SHORT).show();
-                    }
-                    break;
+                    case REQUEST_BOTH:
+                        if (res1 == PackageManager.PERMISSION_GRANTED && res2 == PackageManager.PERMISSION_GRANTED) {
+                            // Permission Granted
+                            Toast.makeText(this, "Permission Grant Camera Storage", Toast.LENGTH_SHORT).show();
+                        }
+                        break;
 
-                default:
-                    super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+                    default:
+                        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+                }
             }
         }
+        catch (Exception e)
+        {
+            resText.setText("You Need To Allow Camera And Storage Permissions");
+        }
+
     }
 
     public AlertDialog.Builder getErrorDialog(String message, Context context, final int indicator) {
         final AlertDialog.Builder alertDialog = new AlertDialog.Builder(context);
-        alertDialog.setTitle(getString(R.string.app_name)).setMessage(message);
-        alertDialog.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
 
-                //indicator=0 - only camera
-                //indicator=1 - only storage
-                //indicator=2 - both
-                dialog.dismiss();
-                if (Build.VERSION.SDK_INT >= 23) {
-                    if(indicator == 0){
-                        requestPermissions(new String[]{android.Manifest.permission.CAMERA},
-                                REQUEST_CODE_ASK_PERMISSIONS_CAMERA);
-                    }
-                    else if(indicator == 1) {
-                        requestPermissions(new String[]{android.Manifest.permission.READ_EXTERNAL_STORAGE},
-                                REQUEST_CODE_ASK_PERMISSIONS_EXTERNAL_STORAGE);
-                    }
-                    else if(indicator == 2){
-                        requestPermissions(new String[]{Manifest.permission.CAMERA, android.Manifest.permission.READ_EXTERNAL_STORAGE},
-                                REQUEST_BOTH);
+        try{
+            alertDialog.setTitle(getString(R.string.app_name)).setMessage(message);
+            alertDialog.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+
+                    //indicator=0 - only camera
+                    //indicator=1 - only storage
+                    //indicator=2 - both
+                    dialog.dismiss();
+                    if (Build.VERSION.SDK_INT >= 23) {
+                        if(indicator == 0){
+                            requestPermissions(new String[]{android.Manifest.permission.CAMERA},
+                                    REQUEST_CODE_ASK_PERMISSIONS_CAMERA);
+                        }
+                        else if(indicator == 1) {
+                            requestPermissions(new String[]{android.Manifest.permission.READ_EXTERNAL_STORAGE},
+                                    REQUEST_CODE_ASK_PERMISSIONS_EXTERNAL_STORAGE);
+                        }
+                        else if(indicator == 2){
+                            requestPermissions(new String[]{Manifest.permission.CAMERA, android.Manifest.permission.READ_EXTERNAL_STORAGE},
+                                    REQUEST_BOTH);
+                        }
                     }
                 }
-            }
-        });
-        return alertDialog;
+            });
+            return alertDialog;
+        }
+        catch(Exception e)
+        {
+            resText.setText("You Need To Allow Camera And Storage Permissions");
+        }
+        return null;
     }
 
     public void check()
@@ -269,6 +321,11 @@ public class OcrView extends AppCompatActivity {
             } else {
                 try {
                     Bitmap bitmap = decodeBitmapUri(this, photoURI);
+                    if(bitmap==null)
+                    {
+                        resText.setText("Please Try Again.");
+                        return;
+                    }
                     Frame frame = new Frame.Builder().setBitmap(bitmap).build();
                     SparseArray items = txtRecognizer.detect(frame);
                     StringBuilder strBuilder = new StringBuilder();
@@ -325,20 +382,28 @@ public class OcrView extends AppCompatActivity {
 
 
     private Bitmap decodeBitmapUri(Context ctx, Uri uri) throws FileNotFoundException {
-        int targetW = 600;
-        int targetH = 600;
-        BitmapFactory.Options bmOptions = new BitmapFactory.Options();
-        bmOptions.inJustDecodeBounds = true;
-        BitmapFactory.decodeStream(ctx.getContentResolver().openInputStream(uri), null, bmOptions);
-        int photoW = bmOptions.outWidth;
-        int photoH = bmOptions.outHeight;
 
-        int scaleFactor = Math.min(photoW / targetW, photoH / targetH);
-        bmOptions.inJustDecodeBounds = false;
-        bmOptions.inSampleSize = scaleFactor;
+        try{
+            int targetW = 600;
+            int targetH = 600;
+            BitmapFactory.Options bmOptions = new BitmapFactory.Options();
+            bmOptions.inJustDecodeBounds = true;
+            BitmapFactory.decodeStream(ctx.getContentResolver().openInputStream(uri), null, bmOptions);
+            int photoW = bmOptions.outWidth;
+            int photoH = bmOptions.outHeight;
 
-        return BitmapFactory.decodeStream(ctx.getContentResolver()
-                .openInputStream(uri), null, bmOptions);
+            int scaleFactor = Math.min(photoW / targetW, photoH / targetH);
+            bmOptions.inJustDecodeBounds = false;
+            bmOptions.inSampleSize = scaleFactor;
+
+            return BitmapFactory.decodeStream(ctx.getContentResolver()
+                    .openInputStream(uri), null, bmOptions);
+        }
+        catch (Exception e)
+        {
+            resText.setText("Please Try Again.");
+        }
+        return null;
     }
 
     @Override

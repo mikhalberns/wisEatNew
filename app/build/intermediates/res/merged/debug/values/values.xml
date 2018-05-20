@@ -149,8 +149,8 @@
     <color name="cast_libraries_material_featurehighlight_outer_highlight_default_color">#2196F3</color>
     <color name="cast_libraries_material_featurehighlight_text_body_color">#FFFFFFFF</color>
     <color name="cast_libraries_material_featurehighlight_text_header_color">#FFFFFFFF</color>
-    <color name="colorAccent">#f2d20e66</color>
-    <color name="colorFacebook">#3B5998</color>
+    <color name="check">#59757f</color>
+    <color name="colorAccent">#B0B0B0</color>
     <color name="colorGoogle">#D84B37</color>
     <color name="colorPrimary">#7bb737</color>
     <color name="colorPrimaryDark">#578227</color>
@@ -182,6 +182,7 @@
     <color name="gluten">#d1bc27</color>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
+    <color name="manually">#cc6600</color>
     <color name="material_blue_grey_800">#ff37474f</color>
     <color name="material_blue_grey_900">#ff263238</color>
     <color name="material_blue_grey_950">#ff21272b</color>
@@ -212,6 +213,7 @@
     <color name="primary_text_default_material_light">#de000000</color>
     <color name="primary_text_disabled_material_dark">#4Dffffff</color>
     <color name="primary_text_disabled_material_light">#39000000</color>
+    <color name="profile">#a52751</color>
     <color name="ripple_material_dark">#33ffffff</color>
     <color name="ripple_material_light">#1f000000</color>
     <color name="secondary_text_default_material_dark">#b3ffffff</color>
@@ -222,6 +224,8 @@
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
+    <color name="takePic">#36748b</color>
+    <color name="takePicture">#3B5998</color>
     <color name="tooltip_background_dark">#e6616161</color>
     <color name="tooltip_background_light">#e6FFFFFF</color>
     <color name="wallet_bright_foreground_disabled_holo_light">#ffb2b2b2</color>
@@ -1055,6 +1059,7 @@
     <integer name="mr_controller_volume_group_list_fade_out_duration_ms">200</integer>
     <integer name="show_password_duration">200</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
+    <string name="Check">Check Ingredients</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
     <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
@@ -1167,7 +1172,7 @@
     <string name="fish">fish</string>
     <string name="gcm_defaultSenderId" translatable="false">116341195017</string>
     <string name="gcm_fallback_notification_channel_label">Miscellaneous</string>
-    <string name="ggl_login">\t\tLog in with Google</string>
+    <string name="ggl_login">\t\t\tLog in with Google</string>
     <string name="glutenfree">Gluten Free</string>
     <string name="google_api_key" translatable="false">AIzaSyDmBvrwJj-zZj1QAxMYBAImtLlast1fgHc</string>
     <string name="google_app_id" translatable="false">1:116341195017:android:22f6ab47c1324240</string>
@@ -1177,6 +1182,7 @@
     <string name="honey">honey</string>
     <string name="i_m_avoiding">i_m_avoiding</string>
     <string name="insects">insects</string>
+    <string name="logout">\tLog Out</string>
     <string name="lupin">lupin</string>
     <string name="mr_button_content_description">Cast button</string>
     <string name="mr_cast_button_connected">Cast button. Connected</string>
@@ -1207,9 +1213,11 @@
     <string name="path_password_eye_mask_visible" translatable="false">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
     <string name="peanuts">Peanuts Free</string>
+    <string name="pic_take">Take A Picture</string>
     <string name="place_autocomplete_clear_button">Clear search</string>
     <string name="place_autocomplete_search_hint">Search</string>
     <string name="pork">pork</string>
+    <string name="profile">Edit Profile</string>
     <string name="project_id" translatable="false">wiseat-6e837</string>
     <string name="s1">Save image</string>
     <string name="s2">"Allow Ad to store image in Picture gallery?"</string>
@@ -1227,12 +1235,14 @@
     <string name="tagmanager_preview_dialog_button">Continue</string>
     <string name="tagmanager_preview_dialog_message">Preview mode updated.</string>
     <string name="tagmanager_preview_dialog_title">Preview</string>
+    <string name="take_picture">Take a picture</string>
     <string name="title_activity_home_page">HomePage</string>
     <string name="title_activity_search_ingredients">SearchIngredients</string>
     <string name="title_activity_set_profile">setProfile</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_home">Home</string>
     <string name="title_notifications">Notifications</string>
+    <string name="typing">Type manually</string>
     <string name="vegan">Vegan</string>
     <string name="vegetarian">Vegetarian</string>
     <string name="wallet_buy_button_place_holder">Buy with Google</string>
