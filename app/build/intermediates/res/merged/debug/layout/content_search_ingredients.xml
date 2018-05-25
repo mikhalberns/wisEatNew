@@ -48,7 +48,6 @@
         android:text='Use , to seperate a list of ingredients '
         android:textAlignment="center" />
 
-    />
 
 
     <RelativeLayout

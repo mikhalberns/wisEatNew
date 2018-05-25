@@ -44,7 +44,7 @@ public class CustomProfile extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                myDb.insertData(VFamilyItemAdapter.cBeef,VFamilyItemAdapter.cChicken,VFamilyItemAdapter.cPork,VFamilyItemAdapter.cFish,VFamilyItemAdapter.cInsects,VFamilyItemAdapter.cEggs,VFamilyItemAdapter.cMilk,VFamilyItemAdapter.cHoney,VFamilyItemAdapter.cGluten,VFamilyItemAdapter.cLupin,VFamilyItemAdapter.cSesame,VFamilyItemAdapter.cAlgae,VFamilyItemAdapter.vegiShellfish,0,0,0,0,0,0,0);
+                myDb.insertData(VFamilyItemAdapter.cBeef,VFamilyItemAdapter.cChicken,VFamilyItemAdapter.cPork,VFamilyItemAdapter.cFish,VFamilyItemAdapter.cInsects,VFamilyItemAdapter.cEggs,VFamilyItemAdapter.cMilk,VFamilyItemAdapter.cHoney,VFamilyItemAdapter.cGluten,VFamilyItemAdapter.cLupin,VFamilyItemAdapter.cSesame,VFamilyItemAdapter.cAlgae,VFamilyItemAdapter.cShellfish,VFamilyItemAdapter.cSoy,VFamilyItemAdapter.cPeanuts,VFamilyItemAdapter.cSulphite,VFamilyItemAdapter.cNuts,VFamilyItemAdapter.cMustrad,VFamilyItemAdapter.cCelery,VFamilyItemAdapter.cCorn);
                 myDb.matchProfileToUser();
                 Toast.makeText(CustomProfile.this,"Your Profile Has Been Set Up!",Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(getApplicationContext(), HomePage.class));

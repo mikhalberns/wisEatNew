@@ -25,6 +25,7 @@ import java.util.List;
 public class SearchIngredients extends AppCompatActivity {
     String ingredients;
     Button btnSearch;
+    Button btnBack;
     DatabaseHelper myDb;
     public static boolean isOCR = false;
     public static String ocrString;
@@ -48,6 +49,14 @@ public class SearchIngredients extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         btnSearch = (Button) findViewById(R.id.btnSearch);
+        btnBack = (Button) findViewById(R.id.backB);
+        btnBack.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        startActivity(new Intent(getApplicationContext(), HomePage.class));
+                    }
+                });
         neverFamily = new int[20];
         for (int i = 0; i < 20; i++) neverFamily[i] = 0;
         occasionallyFamily = new int[20];
@@ -135,6 +144,7 @@ public class SearchIngredients extends AppCompatActivity {
         buffer ="";
 
         for (String s : ocr) {
+
             searchInDb(s);
         }
 
@@ -151,7 +161,10 @@ public class SearchIngredients extends AppCompatActivity {
         Cursor DBIngredient = myDb.getIngredientFromDb(ingredient);
         if (DBIngredient.getCount() == 0) {
             cntUnknown++;
-            buffer = buffer + ingredient+"\n";
+            if(buffer.equals(""))
+                buffer = buffer + ingredient;
+            else
+                buffer = buffer +", "+ ingredient;
         }
 
         String family = null;

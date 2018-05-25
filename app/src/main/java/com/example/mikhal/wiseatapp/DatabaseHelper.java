@@ -395,9 +395,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 "clove leaf oil,null",
                 "clove stem oil,null",
                 "cocoa,null",
-                "cocoa (processed with alkali),null",
+                "cocoa (processed with al- kali),null",
+                "cocoa (processed with a- kali),null",
                 "cocoa butter,null",
-                "cocoa processed with alkali,null",
+                "cocoa processed with al- kali,null",
                 "coconut,null",
                 "coconut oil,null",
                 "coconut oil (packaging),null",
@@ -1219,7 +1220,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 "triticum,gluten",
                 "triticum flour,gluten",
                 "turmeric,null",
-                "unbleached enriched flour (wheat flour, niacin, re-duced iron, thiamin mononitrate (vitamin : b1), riboflavin (vitamin b2), folic acid),gluten",
+                "unbleached enriched flour (wheat flour, niacin, re- duced iron, thiamin mononitrate (vitamin : b1), riboflavin (vitamin b2), folic acid),gluten",
                 "unbleached flour,gluten",
                 "virginia peanuts,peanuts",
                 "vital gluten,gluten",
@@ -1266,7 +1267,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 "zea mays,corn",
                 "zein,corn",
                 "zinc caseinate,milk",
-                "zinc oxide,null"};
+                "zinc oxide,null",
+                "niacin,null",
+                "re- duced iron,null",
+                "folic acid),null",
+                "titaniunm diox- ide (color),null",
+                "high fructose/or calcium phosphate),null",
+                "corn starch (contains sulfite),sulphite",
+                "vegetable oil, null",
+                "flavourings,null"};
 
         db.execSQL("delete from " + ING_TABLE);
 

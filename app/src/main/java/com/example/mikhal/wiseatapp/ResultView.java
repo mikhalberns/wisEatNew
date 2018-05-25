@@ -21,6 +21,7 @@ public class ResultView extends AppCompatActivity {
     ImageView resImage;
     ImageButton home;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,13 +40,13 @@ public class ResultView extends AppCompatActivity {
             }
         });
 
-
+        Toast.makeText(getApplication(), "Result", Toast.LENGTH_SHORT).show();
         if(checkIfNeverIng()==true)//there is never eat ingredient
         {
             resView.setText(getNeverIngString());
 
-            Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.bad);
-            resImage.setImageBitmap(bm);
+           Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.bad);
+           resImage.setImageBitmap(bm);
         }
         else if (checkIfOccIng()==true && SearchIngredients.cntUnknown==0) //check if there is occasionally ingredient
         {
@@ -57,7 +58,7 @@ public class ResultView extends AppCompatActivity {
         else if(SearchIngredients.cntUnknown!=0)//unknown ingredient
         {
 
-            resView.setText("We Didn't Find Some Of The Ingredients:\n" + SearchIngredients.buffer +"\n"+"Please Help Us Expand Our DataBase And Send Us" +
+            resView.setText("We Didn't Find Some Of The Ingredients:\n" + SearchIngredients.buffer +"\n\n"+"Please Help Us Expand Our DataBase And Send Us" +
                     "An Email To wiseatapp@gmail.com And Classify The Unknown Ingredients To Their Food Family.");
 
             Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.please);

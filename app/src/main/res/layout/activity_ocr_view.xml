@@ -31,8 +31,8 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="297dp"
-        android:layout_above="@+id/rotateB"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -46,7 +46,7 @@
         android:id="@+id/relativeLayout">
 
         <Button
-            android:id="@+id/checkBtn"
+            android:id="@+id/idBtn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignParentStart="true"
@@ -54,7 +54,7 @@
             android:background="@drawable/rounded_corner_check"
             android:fontFamily="casual"
             android:padding="10dp"
-            android:text="@string/Check"
+            android:text="identify text"
             android:textAllCaps="false"
             android:textColor="@android:color/background_light" />
 
@@ -64,12 +64,11 @@
         android:id="@+id/resText"
         android:layout_width="341dp"
         android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/backB"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="21dp"
         android:fontFamily="casual"
-        android:textAllCaps="false"
         android:gravity="center"
+        android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
@@ -78,8 +77,8 @@
         android:id="@+id/picBtn"
         android:layout_width="145dp"
         android:layout_height="45dp"
-        android:layout_alignTop="@+id/relativeLayout2"
-        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/relativeLayout2"
+        android:layout_alignEnd="@+id/relativeLayout"
         android:background="@drawable/rounded_corner_scan"
         android:fontFamily="casual"
         android:gravity="left"
@@ -95,7 +94,7 @@
         android:id="@+id/rotateB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/relativeLayout"
+        android:layout_above="@+id/resText"
         android:layout_alignStart="@+id/resText"
         android:text="rotate" />
 
@@ -106,5 +105,13 @@
         android:layout_alignBottom="@+id/relativeLayout"
         android:layout_alignEnd="@+id/imageView"
         android:text="back" />
+
+    <Button
+        android:id="@+id/resB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_alignStart="@+id/picBtn"
+        android:text="check" />
 
 </RelativeLayout>

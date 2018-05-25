@@ -41,7 +41,9 @@ import com.google.android.gms.vision.text.TextRecognizer;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -50,14 +52,14 @@ import java.util.List;
 public class OcrView extends AppCompatActivity {
 
     Button picBtn;
-    Button checkBtn;
+    Button idBtn;
     Button backBtn;
+    Button checkBtn;
     boolean firsTime=true;
     int res1,res2;
     ImageView im=null;
     Uri photoURI;
     Intent intent;
-    String picPath;
     TextView resText;
     String subStr;
     Button rotateB;
@@ -73,23 +75,38 @@ public class OcrView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ocr_view);
 
-        isRotated=0;
         try {
             im = (ImageView) findViewById(R.id.imageView);
             rotateB = (Button) findViewById(R.id.rotateB);
             backBtn = (Button) findViewById(R.id.backB);
+            checkBtn =(Button) findViewById(R.id.resB);
+
 
             checkPermission();
 
             picBtn = (Button) findViewById(R.id.picBtn);
 
+
+            checkBtn.setOnClickListener(new View.OnClickListener() {
+                                         @Override
+                                         public void onClick(View v) {
+                                             if (im != null) {
+                                                 check();
+                                             } else {
+                                                 resText.setText("Take a picture and try again");
+                                                 startActivity(new Intent(getApplicationContext(), OcrView.class));
+                                             }
+                                         }
+                                     });
+
             picBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
 
-                    im = (ImageView) findViewById(R.id.imageView);
-                    resText = (TextView) findViewById(R.id.resText);
-                    isRotated=0;
+                    resText.setText("");
+                    initiateRotation();
+
+
                     if (Build.VERSION.SDK_INT >= 23) {
                         if (shouldShowRequestPermissionRationale(android.Manifest.permission.CAMERA) || shouldShowRequestPermissionRationale(Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
                             checkPermission();
@@ -102,6 +119,7 @@ public class OcrView extends AppCompatActivity {
                             ContentValues values = new ContentValues();
                             values.put(MediaStore.Images.Media.TITLE, fileName);
                             values.put(MediaStore.Images.Media.DESCRIPTION, "Image capture by camera");
+                            photoURI=null;
                             photoURI = getContentResolver().insert(
                                     MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
                             intent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
@@ -113,16 +131,11 @@ public class OcrView extends AppCompatActivity {
                 }
             });
 
-            checkBtn = (Button) findViewById(R.id.checkBtn);
-            checkBtn.setOnClickListener(new View.OnClickListener() {
+            idBtn = (Button) findViewById(R.id.idBtn);
+            idBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if (im != null) {
-                        check();
-                    } else {
-                        Toast.makeText(getApplication(), "Take a picture and try again", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(getApplicationContext(), OcrView.class));
-                    }
+                    identifyText();
                 }
             });
 
@@ -139,7 +152,6 @@ public class OcrView extends AppCompatActivity {
                 public void onClick(View v) {
                     im.setRotation(im.getRotation()+90);
                     isRotated++;
-                    im = (ImageView) findViewById(R.id.imageView);
                 }
             });
 
@@ -152,6 +164,15 @@ public class OcrView extends AppCompatActivity {
         }
     }
 
+    void initiateRotation()
+    {
+        for(int i=0;i<isRotated;i++)
+        {
+            im.setRotation(im.getRotation()-90);
+        }
+        isRotated=0;
+        im = (ImageView) findViewById(R.id.imageView);
+    }
    /* private File getOutputMediaFile(){
 
         try{
@@ -263,21 +284,18 @@ public class OcrView extends AppCompatActivity {
                     case REQUEST_CODE_ASK_PERMISSIONS_CAMERA:
                         if (res1 == PackageManager.PERMISSION_GRANTED) {
                             // Permission Granted
-                          //  Toast.makeText(this, "Permission Grant Camera", Toast.LENGTH_SHORT).show();
                         }
                         break;
 
                     case REQUEST_CODE_ASK_PERMISSIONS_EXTERNAL_STORAGE:
                         if (res2 == PackageManager.PERMISSION_GRANTED) {
                             // Permission Granted
-                           // Toast.makeText(this, "Permission Grant Storage", Toast.LENGTH_SHORT).show();
                         }
                         break;
 
                     case REQUEST_BOTH:
                         if (res1 == PackageManager.PERMISSION_GRANTED && res2 == PackageManager.PERMISSION_GRANTED) {
                             // Permission Granted
-                          //  Toast.makeText(this, "Permission Grant Camera Storage", Toast.LENGTH_SHORT).show();
                         }
                         break;
 
@@ -331,14 +349,14 @@ public class OcrView extends AppCompatActivity {
         }
     }
 
-    public void check() {
+    public void identifyText()
+    {
         try {
             TextRecognizer txtRecognizer = new TextRecognizer.Builder(getApplicationContext()).build();
             if (!txtRecognizer.isOperational()) {
                 // Shows if your Google Play services is not up to date or OCR is not supported for the device
                 Toast.makeText(this, "Not Up To Date Play Services", Toast.LENGTH_SHORT).show();
             } else {
-
                 Bitmap bitmap = null;
                 bitmap = decodeBitmapUri(this, photoURI);
                 Matrix matrix = new Matrix();
@@ -350,7 +368,7 @@ public class OcrView extends AppCompatActivity {
                 if (isRotated > 0)
                     bitmap = rotatedBitmap;
                 if (bitmap == null) {
-                    resText.setText("Please Try Again.");
+                    resText.setText("Please Take A Picture Again.");
                     return;
                 }
                 Frame frame = new Frame.Builder().setBitmap(bitmap).build();
@@ -368,40 +386,166 @@ public class OcrView extends AppCompatActivity {
                         strBuilder.append("/");
                     }
                 }
-
                 String ingStr = strBuilder.toString();
                 int indexOfIng1 = ingStr.indexOf("Ingredients:");
                 int indexOfIng2 = ingStr.indexOf("INGREDIENTS:");
+                int indexOfIng3 = ingStr.indexOf("/Ingredients:");
+                int indexOfIng4 = ingStr.indexOf("/INGREDIENTS:");
                 int indexOfEnd = ingStr.indexOf(".");
 
-                if (indexOfIng1 != -1 && indexOfEnd != -1) {
+                if(indexOfIng3 != -1 && indexOfEnd != -1)
+                {
+                    subStr = ingStr.substring(indexOfIng3, indexOfEnd);
+                    subStr = subStr.substring(13, subStr.length());
+
+                    resText.setText(subStr);
+                    SearchIngredients.isOCR = true;
+                    SearchIngredients.ocrString = subStr;
+                    im = (ImageView) findViewById(R.id.imageView);
+
+                }else if(indexOfIng4 != -1 && indexOfEnd != -1)
+                {
+                    subStr = ingStr.substring(indexOfIng4, indexOfEnd);
+                    subStr = subStr.substring(13, subStr.length());
+
+                    resText.setText(subStr);
+                    SearchIngredients.isOCR = true;
+                    SearchIngredients.ocrString = subStr;
+                    im = (ImageView) findViewById(R.id.imageView);
+
+                }
+                else if (indexOfIng1 != -1 && indexOfEnd != -1) {
 
                     subStr = ingStr.substring(indexOfIng1, indexOfEnd);
                     subStr = subStr.substring(12, subStr.length());
+
                     resText.setText(subStr);
                     SearchIngredients.isOCR = true;
                     SearchIngredients.ocrString = subStr;
-                    isRotated = 0;
                     im = (ImageView) findViewById(R.id.imageView);
-                    startActivity(new Intent(getApplicationContext(), SearchIngredients.class));
+
+
                 } else if (indexOfIng2 != -1 && indexOfEnd != -1) {
                     subStr = ingStr.substring(indexOfIng2, indexOfEnd);
                     subStr = subStr.substring(12, subStr.length());
+
                     resText.setText(subStr);
                     SearchIngredients.isOCR = true;
                     SearchIngredients.ocrString = subStr;
-                    isRotated = 0;
                     im = (ImageView) findViewById(R.id.imageView);
+
+                }
+                else {
+                    resText.setText("Couldn't Find Ingredients Or The End Of The List." + "Please Try Again.");
+            }
+
+            }
+        } catch (Exception e) {
+            resText.setText("Something Went Wrong!\n+Please Take a Picture Again.");
+        }
+    }
+
+    public void check() {
+
+        try {
+            TextRecognizer txtRecognizer = new TextRecognizer.Builder(getApplicationContext()).build();
+            if (!txtRecognizer.isOperational()) {
+                // Shows if your Google Play services is not up to date or OCR is not supported for the device
+                Toast.makeText(this, "Not Up To Date Play Services", Toast.LENGTH_SHORT).show();
+            } else {
+                Bitmap bitmap = null;
+                bitmap = decodeBitmapUri(this, photoURI);
+                Matrix matrix = new Matrix();
+                Bitmap rotatedBitmap = null;
+                for (int i = 0; i < isRotated; i++) {
+                    matrix.preRotate(90);
+                    rotatedBitmap = Bitmap.createBitmap(bitmap, 0, 0, bitmap.getWidth(), bitmap.getHeight(), matrix, true);
+                }
+                if (isRotated > 0)
+                    bitmap = rotatedBitmap;
+                if (bitmap == null) {
+                    resText.setText("Please Take A Picture First.");
+                    return;
+                }
+                Frame frame = new Frame.Builder().setBitmap(bitmap).build();
+                SparseArray items = txtRecognizer.detect(frame);
+                StringBuilder strBuilder = new StringBuilder();
+
+                for (int i = 0; i < items.size(); i++) {
+                    TextBlock item = (TextBlock) items.valueAt(i);
+                    strBuilder.append(item.getValue());
+                    strBuilder.append("/");
+                    // The following Process is used to show how to use lines & elements as well
+                    for (i = 0; i < items.size(); i++) {
+                        item = (TextBlock) items.valueAt(i);
+                        strBuilder.append(item.getValue());
+                        strBuilder.append("/");
+                    }
+                }
+                String ingStr = strBuilder.toString();
+                int indexOfIng1 = ingStr.indexOf("Ingredients:");
+                int indexOfIng2 = ingStr.indexOf("INGREDIENTS:");
+                int indexOfIng3 = ingStr.indexOf("/Ingredients:");
+                int indexOfIng4 = ingStr.indexOf("/INGREDIENTS:");
+                int indexOfEnd = ingStr.indexOf(".");
+
+                if(indexOfIng3 != -1 && indexOfEnd != -1)
+                {
+                    subStr = ingStr.substring(indexOfIng3, indexOfEnd);
+                    subStr = subStr.substring(13, subStr.length());
+
+                    resText.setText(subStr);
+                    SearchIngredients.isOCR = true;
+                    SearchIngredients.ocrString = subStr;
+                    im = (ImageView) findViewById(R.id.imageView);
+
                     startActivity(new Intent(getApplicationContext(), SearchIngredients.class));
 
-                } else {
+                }else if(indexOfIng4 != -1 && indexOfEnd != -1)
+                {
+                    subStr = ingStr.substring(indexOfIng4, indexOfEnd);
+                    subStr = subStr.substring(13, subStr.length());
+
+                    resText.setText(subStr);
+                    SearchIngredients.isOCR = true;
+                    SearchIngredients.ocrString = subStr;
+                    im = (ImageView) findViewById(R.id.imageView);
+
+                    startActivity(new Intent(getApplicationContext(), SearchIngredients.class));
+                }
+               else if (indexOfIng1 != -1 && indexOfEnd != -1) {
+
+                    subStr = ingStr.substring(indexOfIng1, indexOfEnd);
+                    subStr = subStr.substring(12, subStr.length());
+
+                    resText.setText(subStr);
+                    SearchIngredients.isOCR = true;
+                    SearchIngredients.ocrString = subStr;
+                    im = (ImageView) findViewById(R.id.imageView);
+
+                    startActivity(new Intent(getApplicationContext(), SearchIngredients.class));
+
+                } else if (indexOfIng2 != -1 && indexOfEnd != -1) {
+                    subStr = ingStr.substring(indexOfIng2, indexOfEnd);
+                    subStr = subStr.substring(12, subStr.length());
+
+                    resText.setText(subStr);
+                    SearchIngredients.isOCR = true;
+                    SearchIngredients.ocrString = subStr;
+                    im = (ImageView) findViewById(R.id.imageView);
+
+                    startActivity(new Intent(getApplicationContext(), SearchIngredients.class));
+
+                }
+                else {
                     resText.setText("Couldn't Find Ingredients Or The End Of The List." + "Please Try Again.");
                     startActivity(new Intent(getApplicationContext(), OcrView.class));
                 }
+
             }
-            } catch (IOException e) {
-                Toast.makeText(getApplication(), "Please Take a Picture Again", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(this, OcrView.class));
+            } catch (Exception e) {
+                resText.setText("Please Take a Picture Again");
+
             }
 
     }
@@ -427,7 +571,7 @@ public class OcrView extends AppCompatActivity {
         }
         catch (Exception e)
         {
-            resText.setText("Please Try Again.");
+            resText.setText("Please Take A Picture First.");
             return null;
         }
     }
