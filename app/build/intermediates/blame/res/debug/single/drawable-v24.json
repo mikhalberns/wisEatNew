@@ -1,15 +1,19 @@
 [
     {
+        "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\beef.png",
+        "source": "C:\\android studio\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\beef.png"
+    },
+    {
+        "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\mustard.gif",
+        "source": "C:\\android studio\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\mustard.gif"
+    },
+    {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\peanuts.gif",
         "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\peanuts.gif"
     },
     {
-        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\vegaterian.gif",
-        "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\vegaterian.gif"
-    },
-    {
-        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\sulphite.gif",
-        "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\sulphite.gif"
+        "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\soya.gif",
+        "source": "C:\\android studio\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\soya.gif"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\algae.gif",
@@ -20,6 +24,10 @@
         "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\pork.png"
     },
     {
+        "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\ic_launcher_foreground.xml",
+        "source": "C:\\android studio\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\sesame.gif",
         "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\sesame.gif"
     },
@@ -28,8 +36,8 @@
         "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\nuts.gif"
     },
     {
-        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\mustard.gif",
-        "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\mustard.gif"
+        "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\nuts.gif",
+        "source": "C:\\android studio\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\nuts.gif"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\chicken.gif",
@@ -48,6 +56,10 @@
         "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\insects.gif"
     },
     {
+        "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\peanuts.gif",
+        "source": "C:\\android studio\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\peanuts.gif"
+    },
+    {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\vegan.png",
         "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\vegan.png"
     },
@@ -56,12 +68,80 @@
         "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\lupin.gif"
     },
     {
-        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\soya.gif",
-        "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\soya.gif"
+        "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\sesame.gif",
+        "source": "C:\\android studio\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\sesame.gif"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\corn.gif",
         "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\corn.gif"
+    },
+    {
+        "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\honey.png",
+        "source": "C:\\android studio\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\honey.png"
+    },
+    {
+        "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\corn.gif",
+        "source": "C:\\android studio\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\corn.gif"
+    },
+    {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\fish.gif",
+        "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\fish.gif"
+    },
+    {
+        "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\fish.gif",
+        "source": "C:\\android studio\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\fish.gif"
+    },
+    {
+        "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\vegan.png",
+        "source": "C:\\android studio\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\vegan.png"
+    },
+    {
+        "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\chicken.gif",
+        "source": "C:\\android studio\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\chicken.gif"
+    },
+    {
+        "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\insects.gif",
+        "source": "C:\\android studio\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\insects.gif"
+    },
+    {
+        "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\vegaterian.gif",
+        "source": "C:\\android studio\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\vegaterian.gif"
+    },
+    {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\vegaterian.gif",
+        "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\vegaterian.gif"
+    },
+    {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\sulphite.gif",
+        "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\sulphite.gif"
+    },
+    {
+        "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\lupin.gif",
+        "source": "C:\\android studio\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\lupin.gif"
+    },
+    {
+        "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\pork.png",
+        "source": "C:\\android studio\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\pork.png"
+    },
+    {
+        "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\sulphite.gif",
+        "source": "C:\\android studio\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\sulphite.gif"
+    },
+    {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\mustard.gif",
+        "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\mustard.gif"
+    },
+    {
+        "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\algae.gif",
+        "source": "C:\\android studio\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\algae.gif"
+    },
+    {
+        "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\celery.gif",
+        "source": "C:\\android studio\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\celery.gif"
+    },
+    {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\soya.gif",
+        "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\soya.gif"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\ic_launcher_foreground.xml",
@@ -72,11 +152,11 @@
         "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\beef.png"
     },
     {
-        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\celery.gif",
-        "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\celery.gif"
+        "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\shellfish.gif",
+        "source": "C:\\android studio\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\shellfish.gif"
     },
     {
-        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\fish.gif",
-        "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\fish.gif"
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24\\celery.gif",
+        "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable-v24\\celery.gif"
     }
 ]

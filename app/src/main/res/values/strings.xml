@@ -51,7 +51,7 @@
 
     <!---HomePage-->
     <string name="take_picture">Take a picture</string>
-    <string name="typing">Type manually</string>
+    <string name="typing">\tType manually</string>
     <string name="logout">\tLog Out</string>
     <string name="profile">Edit Profile</string>
     <string name="home_guidelines">Welcome!\n How would you like to check the ingredients in your product?</string>

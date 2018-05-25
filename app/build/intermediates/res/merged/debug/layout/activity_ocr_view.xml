@@ -29,13 +29,10 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="370dp"
-        android:layout_height="480dp"
-        android:layout_above="@+id/relativeLayout"
-        android:layout_alignEnd="@+id/resText"
-        android:layout_below="@+id/relativeLayout2"
-        android:layout_marginBottom="18dp"
-        android:background="@drawable/shadow_rect"
+        android:layout_width="match_parent"
+        android:layout_height="297dp"
+        android:layout_above="@+id/rotateB"
+        android:layout_alignParentStart="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -81,7 +78,7 @@
         android:id="@+id/picBtn"
         android:layout_width="145dp"
         android:layout_height="45dp"
-        android:layout_above="@+id/imageView"
+        android:layout_alignTop="@+id/relativeLayout2"
         android:layout_centerHorizontal="true"
         android:background="@drawable/rounded_corner_scan"
         android:fontFamily="casual"
@@ -98,15 +95,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/relativeLayout"
-        android:layout_alignParentStart="true"
+        android:layout_alignStart="@+id/resText"
         android:text="rotate" />
 
     <Button
         android:id="@+id/backB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/resText"
-        android:layout_alignEnd="@+id/resText"
+        android:layout_alignBottom="@+id/relativeLayout"
+        android:layout_alignEnd="@+id/imageView"
         android:text="back" />
 
 </RelativeLayout>
