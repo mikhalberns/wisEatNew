@@ -8,26 +8,27 @@
 
     <Button
         android:id="@+id/backB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="45dp"
+        android:layout_height="77dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="19dp"
-        android:text="back" />
+        android:layout_marginEnd="29dp"
+        android:background="@drawable/homeicon" /> "
 
     <Button
         android:id="@+id/picBtn"
-        android:layout_width="147dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="53dp"
         android:background="@android:color/transparent"
         android:drawableLeft="@drawable/focus_btn"
         android:fontFamily="casual"
         android:text="@string/pic_take"
         android:textAlignment="center"
-        android:textAllCaps="false" />
+        android:textAllCaps="false"
+        android:textStyle="bold" />
 
 
     <ImageView

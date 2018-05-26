@@ -14,17 +14,17 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="86dp"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="79dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="110dp"
         android:fontFamily="casual"
         android:gravity="center"
         android:text="Please search your ingredients"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="79dp" />
 
     <SearchView
         android:id="@+id/search"
@@ -49,15 +49,13 @@
         android:textAlignment="center" />
 
 
-
     <RelativeLayout
+        android:id="@+id/relativeLayout1"
         android:layout_width="153dp"
         android:layout_height="41dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="90dp"
-        android:id="@+id/relativeLayout1"
-        >
+        android:layout_marginBottom="43dp">
 
 
         <Button
