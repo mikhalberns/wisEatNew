@@ -8,8 +8,8 @@
     <color name="gluten">#d1bc27</color>
     <color name="peanuts">#ba8371</color>
     <color name="takePicture">#3B5998</color>
-    <color name="check">#59757f</color>
     <color name="takePic">#36748b</color>
+    <color name="check">#57688c</color>
     <color name="manually">#cc6600</color>
     <color name="profile">#a52751</color>
 </resources>

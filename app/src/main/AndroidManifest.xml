@@ -47,7 +47,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".OcrView"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".ResultView"
             android:screenOrientation="portrait" />

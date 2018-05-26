@@ -69,7 +69,7 @@
             android:background="@drawable/rounded_corner_check"
             android:fontFamily="casual"
             android:padding="10dp"
-            android:text="@string/Check"
+            android:text="@string/check_prod"
             android:textAllCaps="false"
             android:textColor="@android:color/background_light" />
 

@@ -46,7 +46,11 @@
 
     <!--Ocr View -->
     <string name="pic_take">Take A Picture</string>
-    <string name="Check">Check Ingredients</string>
+    <string name="rotate">Rotate Picture</string>
+    <string name="identify">Identify text</string>
+    <string name="check_prod">Check Ingredients</string>
+
+
     <!--Ocr View -->
 
     <!---HomePage-->
