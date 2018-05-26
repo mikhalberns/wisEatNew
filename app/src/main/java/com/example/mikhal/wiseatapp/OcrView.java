@@ -1,69 +1,54 @@
 package com.example.mikhal.wiseatapp;
 
-import android.*;
 import android.Manifest;
-import android.content.ClipData;
 import android.content.ContentValues;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.content.pm.ResolveInfo;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.Camera;
 import android.graphics.Matrix;
-import android.graphics.PixelFormat;
 import android.net.Uri;
 import android.os.Build;
-import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.v4.content.ContextCompat;
-import android.support.v4.content.FileProvider;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.SparseArray;
-import android.view.SurfaceHolder;
-import android.view.SurfaceView;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.cast.CastRemoteDisplayLocalService;
 import com.google.android.gms.vision.Frame;
-import com.google.android.gms.vision.text.Text;
 import com.google.android.gms.vision.text.TextBlock;
 import com.google.android.gms.vision.text.TextRecognizer;
 
-import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.List;
 
+
+/****************************************************OcrView.java**********************************************************
+ This class is responsible for taking a picture and convert it to text (OCR) - in this class we use Google Vision API.
+ **************************************************************************************************************************/
 
 public class OcrView extends AppCompatActivity {
 
-    Button picBtn;
-    Button idBtn;
-    Button backBtn;
-    Button checkBtn;
-    boolean firsTime=true;
-    int res1,res2;
-    ImageView im=null;
-    Uri photoURI;
-    Intent intent;
-    TextView resText;
-    String subStr;
-    Button rotateB;
-    int isRotated = 0;
+    private Button picBtn;
+    private Button idBtn;
+    private Button backBtn;
+    private Button checkBtn;
+    private boolean firsTime=true;
+    private int res1,res2;
+    private ImageView im=null;
+    private Uri photoURI;
+    private Intent intent;
+    private TextView resText;
+    private String subStr;
+    private Button rotateB;
+    private int isRotated = 0;
 
     final private int REQUEST_CODE_ASK_PERMISSIONS_CAMERA = 100;
     final private int REQUEST_CODE_ASK_PERMISSIONS_EXTERNAL_STORAGE = 200;
@@ -113,8 +98,6 @@ public class OcrView extends AppCompatActivity {
                         } else {
                             intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 
-                            //File photoFile = getOutputMediaFile();
-                            // photoURI = Uri.fromFile(photoFile);
                             String fileName = "IMG_1.jpg";
                             ContentValues values = new ContentValues();
                             values.put(MediaStore.Images.Media.TITLE, fileName);
@@ -173,30 +156,6 @@ public class OcrView extends AppCompatActivity {
         isRotated=0;
         im = (ImageView) findViewById(R.id.imageView);
     }
-   /* private File getOutputMediaFile(){
-
-        try{
-            File mediaStorageDir = new File(Environment.getExternalStoragePublicDirectory(
-                    Environment.DIRECTORY_PICTURES), "WisEatPics");
-
-            if (!mediaStorageDir.exists()) {
-                if (!mediaStorageDir.mkdirs()) {
-                    return null;
-                }
-            }
-
-            picPath = mediaStorageDir.getPath()+File.separator+"IMG_1.jpg";
-            return new File(mediaStorageDir.getPath() + File.separator +
-                    "IMG_1.jpg");
-        }
-        catch(Exception e)
-        {
-            resText.setText("Couldn't Find Ingredients Or The End Of The List." + "Please Try Again.");
-            startActivity(new Intent(getApplicationContext(), OcrView.class));
-            return null;
-        }
-    }*/
-
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {

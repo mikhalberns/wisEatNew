@@ -3,24 +3,23 @@ package com.example.mikhal.wiseatapp;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.drawable.Drawable;
-import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
+
+/***************************************************ResultView.java*********************************************************
+ This class is responsible for the Results of the ingredients search.
+ **************************************************************************************************************************/
 
 public class ResultView extends AppCompatActivity {
 
-    TextView resView;
-    TextView email;
-    ImageView resImage;
-    ImageButton home;
-
+    private TextView resView;
+    private TextView email;
+    private ImageView resImage;
+    private ImageButton home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +39,6 @@ public class ResultView extends AppCompatActivity {
             }
         });
 
-        Toast.makeText(getApplication(), "Result", Toast.LENGTH_SHORT).show();
         if(checkIfNeverIng()==true)//there is never eat ingredient
         {
             resView.setText(getNeverIngString());
@@ -80,6 +78,7 @@ public class ResultView extends AppCompatActivity {
         SearchIngredients.cntUnknown=0;
     }
 
+    //Checks if the user searched ingredients that the profile says the user never eat
     private boolean checkIfNeverIng()
     {
         for (int i = 0; i < 20; i++)
@@ -89,6 +88,8 @@ public class ResultView extends AppCompatActivity {
         }
         return false;
     }
+
+    //Checks if the user searched ingredients that the profile says the user occasionally eat
     private boolean checkIfOccIng()
     {
         for (int i = 0; i < 20; i++)
@@ -99,6 +100,7 @@ public class ResultView extends AppCompatActivity {
         return false;
     }
 
+    //Get the list of families that user never eat and found in the search
     private String getNeverIngString()
     {
         StringBuffer buffer = new StringBuffer();
@@ -177,6 +179,8 @@ public class ResultView extends AppCompatActivity {
         }
         return buffer.toString();
     }
+
+    //Get the list of families that user occationally eat and found in the search
     private String getOccIngString()
     {
         StringBuffer buffer = new StringBuffer();
