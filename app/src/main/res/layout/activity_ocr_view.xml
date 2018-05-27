@@ -13,7 +13,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
         android:layout_marginEnd="29dp"
-        android:background="@drawable/homeicon" /> "
+        android:background="@drawable/homeicon_preesedx" /> "
 
     <Button
         android:id="@+id/picBtn"

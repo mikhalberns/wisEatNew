@@ -5,6 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SearchIngredients">
+    <Button
+        android:id="@+id/backB"
+        android:layout_width="45dp"
+        android:layout_height="77dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="29dp"
+        android:background="@drawable/homeicon_preesedx" />
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -28,14 +36,5 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/appBarLayout2" />
-
-    <Button
-        android:id="@+id/backB"
-        android:layout_width="45dp"
-        android:layout_height="77dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginEnd="29dp"
-        android:background="@drawable/homeicon" />
 
 </RelativeLayout>

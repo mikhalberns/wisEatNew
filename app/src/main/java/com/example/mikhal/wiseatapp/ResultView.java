@@ -43,8 +43,8 @@ public class ResultView extends AppCompatActivity {
         {
             resView.setText(getNeverIngString());
 
-           Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.bad);
-           resImage.setImageBitmap(bm);
+            Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.bad);
+            resImage.setImageBitmap(bm);
         }
         else if (checkIfOccIng()==true && SearchIngredients.cntUnknown==0) //check if there is occasionally ingredient
         {
@@ -56,8 +56,8 @@ public class ResultView extends AppCompatActivity {
         else if(SearchIngredients.cntUnknown!=0)//unknown ingredient
         {
 
-            resView.setText("We Didn't Find Some Of The Ingredients:\n" + SearchIngredients.buffer +"\n\n"+"Please Help Us Expand Our DataBase And Send Us" +
-                    "An Email To wiseatapp@gmail.com And Classify The Unknown Ingredients To Their Food Family.");
+            resView.setText("Oh no!\nUnfortunately, our app couldn't find a food family classification for the following ingredients:\n" + SearchIngredients.buffer +"\n"+"Think you know the right classification?\n" +
+                    "Feel free to send us an Email with your suggestion:");
 
             Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.please);
             resImage.setImageBitmap(bm);
@@ -104,7 +104,7 @@ public class ResultView extends AppCompatActivity {
     private String getNeverIngString()
     {
         StringBuffer buffer = new StringBuffer();
-        buffer.append("You Are Not Allowed To Eat This Product.\n" + "This Product Contains:\n");
+        buffer.append("You Are Not Allowed To Eat This Product." + " This product contains ingredients from the following food families that you've marked as 'Never':\n");
 
         for (int i = 0; i < 20; i++)
         {
@@ -184,7 +184,7 @@ public class ResultView extends AppCompatActivity {
     private String getOccIngString()
     {
         StringBuffer buffer = new StringBuffer();
-        buffer.append("This Product Contains Ingredients That You've Marked As 'Occasionally':\n");
+        buffer.append("This Product Contains Ingredients From Food Families That You've Marked As 'Occasionally':\n");
 
         for (int i = 0; i < 20; i++)
         {

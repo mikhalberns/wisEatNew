@@ -49,8 +49,6 @@
     <string name="rotate">Rotate Picture</string>
     <string name="identify">Identify text</string>
     <string name="check_prod">Check Ingredients</string>
-
-
     <!--Ocr View -->
 
     <!---HomePage-->
@@ -60,5 +58,11 @@
     <string name="profile">Edit Profile</string>
     <string name="home_guidelines">Welcome!\n How would you like to check the ingredients in your product?</string>
     <!---HomePage-->
+
+
+    <!---Manual Search-->
+    <string name="pls_search">Please enter ingredients to search</string>
+    <string name="instructions">Use a comma to separate between the ingredients</string>
+    <!---Manual Search-->
 
 </resources>
