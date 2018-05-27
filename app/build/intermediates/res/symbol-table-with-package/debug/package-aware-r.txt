@@ -1508,7 +1508,7 @@ int id container_current 0x7f0f0114
 int id contentPanel 0x7f0f00b8
 int id controllers 0x7f0f00fe
 int id coordinator 0x7f0f0128
-int id cpyRights_textView 0x7f0f00e9
+int id cpyRights_textView 0x7f0f00e8
 int id crash_reporting_present 0x7f0f0011
 int id custom 0x7f0f00bf
 int id customImg 0x7f0f0178
@@ -1551,7 +1551,7 @@ int id fill_horizontal 0x7f0f0059
 int id fill_vertical 0x7f0f004f
 int id fixed 0x7f0f0090
 int id forever 0x7f0f0062
-int id gglLogo_imageView 0x7f0f00e8
+int id gglLogo_imageView 0x7f0f00e9
 int id ghost_view 0x7f0f0012
 int id glutenImg 0x7f0f017d
 int id googleMaterial2 0x7f0f005d
@@ -1572,10 +1572,10 @@ int id icon_group 0x7f0f016b
 int id icon_only 0x7f0f008d
 int id icon_uri 0x7f0f0064
 int id icon_view 0x7f0f0115
-int id idBtn 0x7f0f00ee
+int id idBtn 0x7f0f00ec
 int id ifRoom 0x7f0f007f
 int id image 0x7f0f00b1
-int id imageView 0x7f0f00ec
+int id imageView 0x7f0f00ed
 int id index_entity_types 0x7f0f0089
 int id info 0x7f0f0167
 int id instant_message 0x7f0f006f
@@ -1675,7 +1675,7 @@ int id r2v 0x7f0f013e
 int id r3v 0x7f0f013f
 int id radio 0x7f0f00c7
 int id relativeLayout 0x7f0f0120
-int id resB 0x7f0f00ed
+int id resB 0x7f0f00ef
 int id resImageView 0x7f0f00f3
 int id resTextView 0x7f0f00f1
 int id rfc822 0x7f0f0085
@@ -1683,7 +1683,7 @@ int id right 0x7f0f0051
 int id right_icon 0x7f0f0169
 int id right_side 0x7f0f0164
 int id rorate 0x7f0f0177
-int id rotateB 0x7f0f00ef
+int id rotateB 0x7f0f00ee
 int id sandbox 0x7f0f0095
 int id satellite 0x7f0f0075
 int id save_image_matrix 0x7f0f001a

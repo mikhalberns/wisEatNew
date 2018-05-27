@@ -514,9 +514,9 @@ public class OcrView extends AppCompatActivity {
 
                 }
                 else {
-                    resText="Couldn't Find Ingredients Or The End Of The List." + "Please Try Again.";
+                    resText="Couldn't Find Ingredients Or The End Of The List.\n" + "Please Try Again.";
                     showMessage("Identified Text",resText);
-                    startActivity(new Intent(getApplicationContext(), OcrView.class));
+                    initiateRotation();
                 }
 
             }

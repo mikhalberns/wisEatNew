@@ -388,11 +388,11 @@ MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\mikha\.gradle\caches
 	android:supportsRtl
 		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:24:9-36
 	android:label
-		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:22:9-41
+		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:22:9-31
 	android:roundIcon
 		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:23:9-54
 	android:icon
-		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:21:9-43
+		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:21:9-42
 	android:allowBackup
 		ADDED from C:\Users\mikha\AndroidStudioProjects\wisEatNew\app\src\main\AndroidManifest.xml:20:9-35
 	android:theme

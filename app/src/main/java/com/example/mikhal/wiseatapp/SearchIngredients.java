@@ -28,6 +28,7 @@ public class SearchIngredients extends AppCompatActivity {
     private String[] resOcr;
     public static String buffer = "";
     public static int cntUnknown;
+    private SearchView s;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +41,9 @@ public class SearchIngredients extends AppCompatActivity {
         setContentView(R.layout.activity_search_ingredients);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        s = (SearchView) findViewById(R.id.search);
+        s.setIconifiedByDefault(false);
 
         btnSearch = (Button) findViewById(R.id.btnSearch);
         btnBack = (Button) findViewById(R.id.backB);

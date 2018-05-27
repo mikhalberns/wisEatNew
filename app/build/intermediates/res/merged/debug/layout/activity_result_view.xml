@@ -21,7 +21,7 @@
         android:layout_below="@+id/homeButton"
         android:layout_centerHorizontal="true"
         android:fontFamily="casual"
-        android:textSize="18dp"
+        android:textSize="20dp"
         android:textStyle="bold" />
 
     <TextView

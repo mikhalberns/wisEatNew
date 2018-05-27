@@ -4956,7 +4956,7 @@ containing a value of this type.
         public static final int contentPanel=0x7f0f00b8;
         public static final int controllers=0x7f0f00fe;
         public static final int coordinator=0x7f0f0128;
-        public static final int cpyRights_textView=0x7f0f00e9;
+        public static final int cpyRights_textView=0x7f0f00e8;
         public static final int crash_reporting_present=0x7f0f0011;
         public static final int custom=0x7f0f00bf;
         public static final int customImg=0x7f0f0178;
@@ -4999,7 +4999,7 @@ containing a value of this type.
         public static final int fill_vertical=0x7f0f004f;
         public static final int fixed=0x7f0f0090;
         public static final int forever=0x7f0f0062;
-        public static final int gglLogo_imageView=0x7f0f00e8;
+        public static final int gglLogo_imageView=0x7f0f00e9;
         public static final int ghost_view=0x7f0f0012;
         public static final int glutenImg=0x7f0f017d;
         public static final int googleMaterial2=0x7f0f005d;
@@ -5020,10 +5020,10 @@ containing a value of this type.
         public static final int icon_only=0x7f0f008d;
         public static final int icon_uri=0x7f0f0064;
         public static final int icon_view=0x7f0f0115;
-        public static final int idBtn=0x7f0f00ee;
+        public static final int idBtn=0x7f0f00ec;
         public static final int ifRoom=0x7f0f007f;
         public static final int image=0x7f0f00b1;
-        public static final int imageView=0x7f0f00ec;
+        public static final int imageView=0x7f0f00ed;
         public static final int index_entity_types=0x7f0f0089;
         public static final int info=0x7f0f0167;
         public static final int instant_message=0x7f0f006f;
@@ -5123,7 +5123,7 @@ containing a value of this type.
         public static final int r3v=0x7f0f013f;
         public static final int radio=0x7f0f00c7;
         public static final int relativeLayout=0x7f0f0120;
-        public static final int resB=0x7f0f00ed;
+        public static final int resB=0x7f0f00ef;
         public static final int resImageView=0x7f0f00f3;
         public static final int resTextView=0x7f0f00f1;
         public static final int rfc822=0x7f0f0085;
@@ -5131,7 +5131,7 @@ containing a value of this type.
         public static final int right_icon=0x7f0f0169;
         public static final int right_side=0x7f0f0164;
         public static final int rorate=0x7f0f0177;
-        public static final int rotateB=0x7f0f00ef;
+        public static final int rotateB=0x7f0f00ee;
         public static final int sandbox=0x7f0f0095;
         public static final int satellite=0x7f0f0075;
         public static final int save_image_matrix=0x7f0f001a;
