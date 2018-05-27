@@ -58,6 +58,7 @@ public class Login extends AppCompatActivity {
 
         Button btnGoogle = (Button) findViewById(R.id.btnGoogle);
 
+        //creating Google SignIn Client
         mGoogleApiClient = new GoogleApiClient.Builder(getApplicationContext())
                 .enableAutoManage(this, new GoogleApiClient.OnConnectionFailedListener() {
                     @Override
@@ -67,6 +68,7 @@ public class Login extends AppCompatActivity {
                 .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
                 .build();
 
+        //load signIn() function when button clicked
         btnGoogle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -83,6 +85,7 @@ public class Login extends AppCompatActivity {
         mAuth.addAuthStateListener(mAuthListener);
     }
 
+    //Sign In Functions
     private void signIn() {
 
         Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
@@ -90,6 +93,7 @@ public class Login extends AppCompatActivity {
         Auth.GoogleSignInApi.signOut(mGoogleApiClient);
     }
 
+    //works after signIn function - handle the login by send a login message to Firebase object that handles the authentication and sessions
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -123,6 +127,7 @@ public class Login extends AppCompatActivity {
         }
     }
 
+    //authenticate using firebase service (manage the sessions after the authentication)
     private void firebaseAuthWithGoogle(GoogleSignInAccount acct) {
 
         AuthCredential credential = GoogleAuthProvider.getCredential(acct.getIdToken(), null);

@@ -2,25 +2,23 @@ package com.example.mikhal.wiseatapp;
 
 import android.app.Activity;
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
-import android.widget.Toast;
+
+/***********************************************FamilyItemAdapter.java**************************************************
+ This class is responsible for users choices in the main choices screen in Dairy Free,Gluten Free, Peanuts Free, Eggs Free
+ ***********************************************************************************************************************/
 
 public class FamilyItemAdapter extends ArrayAdapter<FamilyData> {
     private Activity myContext;
     private FamilyData[] datas;
-    static public int dairyVal=0,glutenVal=0,peanutsVal=0,eggsVal=0;
+    public static int dairyVal=0,glutenVal=0,peanutsVal=0,eggsVal=0;
 
 
     public FamilyItemAdapter(Context context, int textViewResourceId,
@@ -31,6 +29,7 @@ public class FamilyItemAdapter extends ArrayAdapter<FamilyData> {
         datas = objects;
     }
 
+    //loaded when the screen is loaded
     public View getView(final int position, View convertView, ViewGroup parent) {
         LayoutInflater inflater = myContext.getLayoutInflater();
         View rowView = inflater.inflate(R.layout.item, null);

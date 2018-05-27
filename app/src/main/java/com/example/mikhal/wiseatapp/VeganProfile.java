@@ -4,21 +4,23 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
+/*************************************************VeganProfile.java****************************************************
+ This class is responsible for the vegan profile choices
+ ***********************************************************************************************************************/
 public class VeganProfile extends AppCompatActivity {
 
-    DatabaseHelper myDb;
-    ListView listView;
-    VFamilyItemAdapter itemAdapter;
+    private DatabaseHelper myDb;
+    private ListView listView;
+    private VFamilyItemAdapter itemAdapter;
     private FamilyData[] listData;
-    String [] familyArr ={"Beef","Chicken","Pork","Fish","Insects","Eggs","Dairy","Honey","Shellfish"};
-    int [] imArr ={R.drawable.beef,R.drawable.chicken,R.drawable.pork,R.drawable.fish,R.drawable.insects,R.drawable.eggs,R.drawable.dairy,R.drawable.honey,R.drawable.shellfish};
-    static boolean [] familyClicked = {true,true,true,true,true,true,true,true,true};
-    static boolean isVegan = false;
+    private String [] familyArr ={"Beef","Chicken","Pork","Fish","Insects","Eggs","Dairy","Honey","Shellfish"};
+    private int [] imArr ={R.drawable.beef,R.drawable.chicken,R.drawable.pork,R.drawable.fish,R.drawable.insects,R.drawable.eggs,R.drawable.dairy,R.drawable.honey,R.drawable.shellfish};
+    public static boolean [] familyClicked = {true,true,true,true,true,true,true,true,true};
+    public static boolean isVegan = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +39,8 @@ public class VeganProfile extends AppCompatActivity {
         listView.setAdapter(itemAdapter);
 
         Button done = (Button) findViewById(R.id.VeganDone);
+
+        //insert the data that chosen to the db
         done.setOnClickListener(new View.OnClickListener() { //do when click done
             @Override
             public void onClick(View v) {
@@ -48,8 +52,9 @@ public class VeganProfile extends AppCompatActivity {
             }
         });
 
-}
+    }
 
+    //generate pictures and titles into the list
     private void generateData() {
         FamilyData data = null;
         listData = new FamilyData[9];

@@ -4,12 +4,12 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\5ed903ca5ca9d6fa9548ee0e1a97e3ca\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
     },
     {
-        "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\gluten.gif",
-        "source": "C:\\android studio\\wisEatNew\\app\\src\\main\\res\\drawable\\gluten.gif"
-    },
-    {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_closed_caption.xml",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\d88e1c8ad39fe6cd996915c350785ace\\res\\drawable\\cast_ic_mini_controller_closed_caption.xml"
+    },
+    {
+        "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\gluten.gif",
+        "source": "C:\\android studio\\wisEatNew\\app\\src\\main\\res\\drawable\\gluten.gif"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_play_large.xml",
@@ -24,12 +24,12 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\d88e1c8ad39fe6cd996915c350785ace\\res\\drawable\\cast_ic_notification_rewind.xml"
     },
     {
-        "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\eggsxml.xml",
-        "source": "C:\\android studio\\wisEatNew\\app\\src\\main\\res\\drawable\\eggsxml.xml"
-    },
-    {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_skip_prev.xml",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable\\cast_ic_notification_skip_prev.xml"
+    },
+    {
+        "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\eggsxml.xml",
+        "source": "C:\\android studio\\wisEatNew\\app\\src\\main\\res\\drawable\\eggsxml.xml"
     },
     {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light_normal.xml",
@@ -64,6 +64,10 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable\\cast_ic_expanded_controller_closed_caption.xml"
     },
     {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\focus_btn.xml",
+        "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable\\focus_btn.xml"
+    },
+    {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\animalxml.xml",
         "source": "C:\\android studio\\wisEatNew\\app\\src\\main\\res\\drawable\\animalxml.xml"
     },
@@ -76,12 +80,12 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\d88e1c8ad39fe6cd996915c350785ace\\res\\drawable\\cast_mini_controller_progress_drawable.xml"
     },
     {
-        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_stop_large.xml",
-        "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\d88e1c8ad39fe6cd996915c350785ace\\res\\drawable\\cast_ic_mini_controller_stop_large.xml"
-    },
-    {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_disabled.xml",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-12.0.1.aar\\c9cbd8af646305dde5a40d89689c6164\\res\\drawable\\common_google_signin_btn_icon_disabled.xml"
+    },
+    {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_stop_large.xml",
+        "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\d88e1c8ad39fe6cd996915c350785ace\\res\\drawable\\cast_ic_mini_controller_stop_large.xml"
     },
     {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_expanded_controller_seekbar_thumb.xml",
@@ -96,16 +100,16 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2c08bf659365bf970a7a973f2d1f837b\\res\\drawable\\abc_ratingbar_material.xml"
     },
     {
-        "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light_normal.xml",
-        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-12.0.1.aar\\b029adce355209d0780212e23cec5204\\res\\drawable\\common_google_signin_btn_icon_light_normal.xml"
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
+        "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-12.0.1.aar\\c9cbd8af646305dde5a40d89689c6164\\res\\drawable\\common_google_signin_btn_icon_light.xml"
     },
     {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_forward10.xml",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable\\cast_ic_notification_forward10.xml"
     },
     {
-        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
-        "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-12.0.1.aar\\c9cbd8af646305dde5a40d89689c6164\\res\\drawable\\common_google_signin_btn_icon_light.xml"
+        "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light_normal.xml",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-12.0.1.aar\\b029adce355209d0780212e23cec5204\\res\\drawable\\common_google_signin_btn_icon_light_normal.xml"
     },
     {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light.xml",
@@ -124,20 +128,36 @@
         "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable\\profile.png"
     },
     {
-        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
-        "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\5ed903ca5ca9d6fa9548ee0e1a97e3ca\\res\\drawable\\abc_btn_check_material.xml"
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\identify.png",
+        "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable\\identify.png"
     },
     {
-        "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_skip_next.xml",
-        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable\\cast_ic_expanded_controller_skip_next.xml"
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\5ed903ca5ca9d6fa9548ee0e1a97e3ca\\res\\drawable\\abc_btn_check_material.xml"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\58987b89e64dc77a644ef9f3928d4e9d\\res\\drawable\\design_snackbar_background.xml"
     },
     {
+        "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_expanded_controller_skip_next.xml",
+        "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable\\cast_ic_expanded_controller_skip_next.xml"
+    },
+    {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\type_manually_btn.xml",
+        "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable\\type_manually_btn.xml"
+    },
+    {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\camera_pressedx.xml",
         "source": "C:\\android studio\\wisEatNew\\app\\src\\main\\res\\drawable\\camera_pressedx.xml"
+    },
+    {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\identify_btn.xml",
+        "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable\\identify_btn.xml"
+    },
+    {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\check_btn.xml",
+        "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable\\check_btn.xml"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
@@ -408,6 +428,10 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\d88e1c8ad39fe6cd996915c350785ace\\res\\drawable\\cast_ic_notification_rewind30.xml"
     },
     {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\focus_pressed.png",
+        "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable\\focus_pressed.png"
+    },
+    {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_closed_caption.xml",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable\\cast_ic_mini_controller_closed_caption.xml"
     },
@@ -422,6 +446,10 @@
     {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\customxml.xml",
         "source": "C:\\android studio\\wisEatNew\\app\\src\\main\\res\\drawable\\customxml.xml"
+    },
+    {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\identify_preesedx.xml",
+        "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable\\identify_preesedx.xml"
     },
     {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_dialog_material_background_light.xml",
@@ -468,6 +496,10 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\d88e1c8ad39fe6cd996915c350785ace\\res\\drawable\\cast_mini_controller_gradient_light.xml"
     },
     {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\check_preesedx.xml",
+        "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable\\check_preesedx.xml"
+    },
+    {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_forward30.xml",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable\\cast_ic_notification_forward30.xml"
     },
@@ -494,6 +526,10 @@
     {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_button_dark.xml",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\5bd950a8fca5e39661a0e4c4445b2064\\res\\drawable\\mr_button_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\check_prod.gif",
+        "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable\\check_prod.gif"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_expanded_controller_seekbar_track.xml",
@@ -548,6 +584,10 @@
         "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable\\manually_preesedx.xml"
     },
     {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\focus_pressedx.xml",
+        "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable\\focus_pressedx.xml"
+    },
+    {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_vol_type_audiotrack_light.xml",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\5bd950a8fca5e39661a0e4c4445b2064\\res\\drawable\\mr_vol_type_audiotrack_light.xml"
     },
@@ -570,6 +610,10 @@
     {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logout_icon.png",
         "source": "C:\\android studio\\wisEatNew\\app\\src\\main\\res\\drawable\\logout_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\check_prod_pressed.gif",
+        "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable\\check_prod_pressed.gif"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
@@ -624,6 +668,10 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\89616e4e5296f3560c19c25c46759c9c\\res\\drawable\\mr_button_connecting_dark.xml"
     },
     {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\rotation_pressed.png",
+        "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable\\rotation_pressed.png"
+    },
+    {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_play.xml",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable\\cast_ic_notification_play.xml"
     },
@@ -642,6 +690,10 @@
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_stop.xml",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\d88e1c8ad39fe6cd996915c350785ace\\res\\drawable\\cast_ic_mini_controller_stop.xml"
+    },
+    {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\homeicon_pressed.png",
+        "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable\\homeicon_pressed.png"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
@@ -756,6 +808,10 @@
         "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable\\glutenxml.xml"
     },
     {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\homeicon.png",
+        "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable\\homeicon.png"
+    },
+    {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\5ed903ca5ca9d6fa9548ee0e1a97e3ca\\res\\drawable\\abc_edit_text_material.xml"
     },
@@ -822,6 +878,10 @@
     {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\rounded_corner_scan.xml",
         "source": "C:\\android studio\\wisEatNew\\app\\src\\main\\res\\drawable\\rounded_corner_scan.xml"
+    },
+    {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\homeicon_preesedx.xml",
+        "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable\\homeicon_preesedx.xml"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
@@ -1100,8 +1160,20 @@
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\d88e1c8ad39fe6cd996915c350785ace\\res\\drawable\\cast_ic_expanded_controller_pause.xml"
     },
     {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\rotation_pressedx.xml",
+        "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable\\rotation_pressedx.xml"
+    },
+    {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\rotation.png",
+        "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable\\rotation.png"
+    },
+    {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_stop_live_stream.xml",
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable\\cast_ic_notification_stop_live_stream.xml"
+    },
+    {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\take_a_picture_btn.xml",
+        "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable\\take_a_picture_btn.xml"
     },
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_media_play_dark.xml",
@@ -1172,6 +1244,10 @@
         "source": "C:\\Users\\גאיה\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\153cd0e102d3eb169371425f57cb433d\\res\\drawable\\cast_ic_expanded_controller_skip_previous.xml"
     },
     {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\identify_pressed.png",
+        "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable\\identify_pressed.png"
+    },
+    {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
         "source": "C:\\Users\\mikha\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\5ed903ca5ca9d6fa9548ee0e1a97e3ca\\res\\drawable\\abc_ratingbar_indicator_material.xml"
     },
@@ -1182,6 +1258,10 @@
     {
         "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\never.png",
         "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable\\never.png"
+    },
+    {
+        "merged": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\rotate_btn.xml",
+        "source": "C:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\src\\main\\res\\drawable\\rotate_btn.xml"
     },
     {
         "merged": "C:\\android studio\\wisEatNew\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_mini_controller_stop.xml",

@@ -70,7 +70,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.example.mikhal.wiseatapp.OcrView"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.example.mikhal.wiseatapp.ResultView"
             android:screenOrientation="portrait" />

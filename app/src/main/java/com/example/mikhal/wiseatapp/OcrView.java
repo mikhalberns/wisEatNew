@@ -55,6 +55,7 @@ public class OcrView extends AppCompatActivity {
     final private int REQUEST_BOTH = 300;
 
 
+    //loads when the screen load
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -147,6 +148,7 @@ public class OcrView extends AppCompatActivity {
         }
     }
 
+    //intiaite rotation to "start point"
     void initiateRotation()
     {
         for(int i=0;i<isRotated;i++)
@@ -157,6 +159,7 @@ public class OcrView extends AppCompatActivity {
         im = (ImageView) findViewById(R.id.imageView);
     }
 
+    //start after taking the picture
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
@@ -173,10 +176,9 @@ public class OcrView extends AppCompatActivity {
             resText.setText("Couldn't Find Ingredients Or The End Of The List." + "Please Try Again.");
             startActivity(new Intent(getApplicationContext(), OcrView.class));
         }
-
-
     }
 
+    //ask for permissions to storage and camera
     public void checkPermission() {
 
         try{
@@ -267,9 +269,9 @@ public class OcrView extends AppCompatActivity {
         {
             resText.setText("You Need To Allow Camera And Storage Permissions");
         }
-
     }
 
+    //popup alerts about permissions
     public AlertDialog.Builder getErrorDialog(String message, Context context, final int indicator) {
         final AlertDialog.Builder alertDialog = new AlertDialog.Builder(context);
 
@@ -308,6 +310,7 @@ public class OcrView extends AppCompatActivity {
         }
     }
 
+    //identify text from the picture
     public void identifyText()
     {
         try {
@@ -404,6 +407,7 @@ public class OcrView extends AppCompatActivity {
         }
     }
 
+    //check text for results
     public void check() {
 
         try {
@@ -509,7 +513,7 @@ public class OcrView extends AppCompatActivity {
 
     }
 
-
+    //converts to bitmap in order to enable rotation
     private Bitmap decodeBitmapUri(Context ctx, Uri uri) throws FileNotFoundException {
 
         try{
@@ -538,6 +542,14 @@ public class OcrView extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         //   startActivity(new Intent(getApplicationContext(), HomePage.class));
+    }
+
+    public void showMessage(String title, String Message) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setCancelable(true);
+        builder.setTitle(title);
+        builder.setMessage(Message);
+        builder.show();
     }
 
 }

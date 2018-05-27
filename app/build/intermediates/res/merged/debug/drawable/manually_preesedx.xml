@@ -2,6 +2,5 @@
     <item
         android:drawable="@drawable/manually_pressed"
         android:state_pressed="true"/>
-
     <item android:drawable="@drawable/manually"/>
 </selector>
