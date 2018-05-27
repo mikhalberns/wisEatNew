@@ -66,7 +66,7 @@ public class ResultView extends AppCompatActivity {
         }
         else //allowed
         {
-            resView.setText("This Product Is Perfect For You!");
+            resView.setText("This Product Is Perfect For You!\nBon Appetit!");
 
             Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.perfect);
             resImage.setImageBitmap(bm);
@@ -104,7 +104,7 @@ public class ResultView extends AppCompatActivity {
     private String getNeverIngString()
     {
         StringBuffer buffer = new StringBuffer();
-        buffer.append("You Are Not Allowed To Eat This Product." + " This product contains ingredients from the following food families that you've marked as 'Never':\n");
+        buffer.append("You Are Not Allowed To Eat This Product.\n" + " This product contains ingredients from the following food families that you've marked as 'Never':\n");
 
         for (int i = 0; i < 20; i++)
         {
@@ -177,6 +177,7 @@ public class ResultView extends AppCompatActivity {
                 }
             }
         }
+        buffer.append("We're really sorry for you. Try another product!");
         return buffer.toString();
     }
 
@@ -257,6 +258,7 @@ public class ResultView extends AppCompatActivity {
                 }
             }
         }
+        buffer.append("You should consider whether to consume this product or not.");
         return buffer.toString();
     }
 
