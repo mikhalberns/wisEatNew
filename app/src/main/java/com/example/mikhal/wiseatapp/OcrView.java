@@ -45,7 +45,7 @@ public class OcrView extends AppCompatActivity {
     private ImageView im=null;
     private Uri photoURI;
     private Intent intent;
-    private TextView resText;
+    private String resText;
     private String subStr;
     private Button rotateB;
     private int isRotated = 0;
@@ -79,7 +79,8 @@ public class OcrView extends AppCompatActivity {
                                              if (im != null) {
                                                  check();
                                              } else {
-                                                 resText.setText("Take a picture and try again");
+                                                 resText="Take a picture and try again";
+                                                 Toast.makeText(getApplicationContext(),resText,Toast.LENGTH_LONG).show();
                                                  startActivity(new Intent(getApplicationContext(), OcrView.class));
                                              }
                                          }
@@ -89,7 +90,7 @@ public class OcrView extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
 
-                    resText.setText("");
+                    resText="";
                     initiateRotation();
 
 
@@ -139,11 +140,11 @@ public class OcrView extends AppCompatActivity {
                 }
             });
 
-            resText = (TextView) findViewById(R.id.resText);
         }
         catch (Exception e)
         {
-            resText.setText("Couldn't Find Ingredients Or The End Of The List." + "Please Try Again.");
+            resText="Couldn't Find Ingredients Or The End Of The List.\n" + "Please Try Again.";
+            showMessage("Identified Text",resText);
             startActivity(new Intent(getApplicationContext(), OcrView.class));
         }
     }
@@ -173,7 +174,8 @@ public class OcrView extends AppCompatActivity {
         }
         catch(Exception e)
         {
-            resText.setText("Couldn't Find Ingredients Or The End Of The List." + "Please Try Again.");
+            resText="Couldn't Find Ingredients Or The End Of The List.\n" + "Please Try Again.";
+            showMessage("Identified Text",resText);
             startActivity(new Intent(getApplicationContext(), OcrView.class));
         }
     }
@@ -224,7 +226,8 @@ public class OcrView extends AppCompatActivity {
         }
         catch(Exception e)
         {
-            resText.setText("You Need To Allow Camera And Storage Permissions");
+            resText="You Need To Allow Camera And Storage Permissions";
+            Toast.makeText(getApplicationContext(),resText,Toast.LENGTH_LONG).show();
         }
 
     }
@@ -267,7 +270,8 @@ public class OcrView extends AppCompatActivity {
         }
         catch (Exception e)
         {
-            resText.setText("You Need To Allow Camera And Storage Permissions");
+            resText="You Need To Allow Camera And Storage Permissions";
+            Toast.makeText(getApplicationContext(),resText,Toast.LENGTH_LONG).show();
         }
     }
 
@@ -305,7 +309,8 @@ public class OcrView extends AppCompatActivity {
         }
         catch(Exception e)
         {
-            resText.setText("You Need To Allow Camera And Storage Permissions");
+            resText="You Need To Allow Camera And Storage Permissions";
+            Toast.makeText(getApplicationContext(),resText,Toast.LENGTH_LONG).show();
             return null;
         }
     }
@@ -330,7 +335,8 @@ public class OcrView extends AppCompatActivity {
                 if (isRotated > 0)
                     bitmap = rotatedBitmap;
                 if (bitmap == null) {
-                    resText.setText("Please Take A Picture Again.");
+                    resText="Please Take A Picture Again.";
+                    Toast.makeText(getApplicationContext(),resText,Toast.LENGTH_LONG).show();
                     return;
                 }
                 Frame frame = new Frame.Builder().setBitmap(bitmap).build();
@@ -360,20 +366,22 @@ public class OcrView extends AppCompatActivity {
                     subStr = ingStr.substring(indexOfIng3, indexOfEnd);
                     subStr = subStr.substring(13, subStr.length());
 
-                    resText.setText(subStr);
+                    resText=subStr;
                     SearchIngredients.isOCR = true;
                     SearchIngredients.ocrString = subStr;
                     im = (ImageView) findViewById(R.id.imageView);
+                    showMessage("Identified Text",resText);
 
                 }else if(indexOfIng4 != -1 && indexOfEnd != -1)
                 {
                     subStr = ingStr.substring(indexOfIng4, indexOfEnd);
                     subStr = subStr.substring(13, subStr.length());
 
-                    resText.setText(subStr);
+                    resText=subStr;
                     SearchIngredients.isOCR = true;
                     SearchIngredients.ocrString = subStr;
                     im = (ImageView) findViewById(R.id.imageView);
+                    showMessage("Identified Text",resText);
 
                 }
                 else if (indexOfIng1 != -1 && indexOfEnd != -1) {
@@ -381,29 +389,32 @@ public class OcrView extends AppCompatActivity {
                     subStr = ingStr.substring(indexOfIng1, indexOfEnd);
                     subStr = subStr.substring(12, subStr.length());
 
-                    resText.setText(subStr);
+                    resText=subStr;
                     SearchIngredients.isOCR = true;
                     SearchIngredients.ocrString = subStr;
                     im = (ImageView) findViewById(R.id.imageView);
+                    showMessage("Identified Text",resText);
 
 
                 } else if (indexOfIng2 != -1 && indexOfEnd != -1) {
                     subStr = ingStr.substring(indexOfIng2, indexOfEnd);
                     subStr = subStr.substring(12, subStr.length());
 
-                    resText.setText(subStr);
+                    resText=subStr;
                     SearchIngredients.isOCR = true;
                     SearchIngredients.ocrString = subStr;
                     im = (ImageView) findViewById(R.id.imageView);
-
+                    showMessage("Identified Text",resText);
                 }
                 else {
-                    resText.setText("Couldn't Find Ingredients Or The End Of The List." + "Please Try Again.");
+                    resText="Couldn't Find Ingredients Or The End Of The List.\n" + "Please Try Again.";
+                    showMessage("Identified Text",resText);
             }
 
             }
         } catch (Exception e) {
-            resText.setText("Something Went Wrong!\n+Please Take a Picture Again.");
+            resText="Something Went Wrong!\n"+"Please Take a Picture Again.";
+            Toast.makeText(getApplicationContext(),resText,Toast.LENGTH_LONG).show();
         }
     }
 
@@ -427,12 +438,14 @@ public class OcrView extends AppCompatActivity {
                 if (isRotated > 0)
                     bitmap = rotatedBitmap;
                 if (bitmap == null) {
-                    resText.setText("Please Take A Picture First.");
+                    resText="Please Take A Picture First.";
+                    Toast.makeText(getApplicationContext(),resText,Toast.LENGTH_LONG).show();
                     return;
                 }
                 Frame frame = new Frame.Builder().setBitmap(bitmap).build();
                 SparseArray items = txtRecognizer.detect(frame);
                 StringBuilder strBuilder = new StringBuilder();
+
 
                 for (int i = 0; i < items.size(); i++) {
                     TextBlock item = (TextBlock) items.valueAt(i);
@@ -457,7 +470,7 @@ public class OcrView extends AppCompatActivity {
                     subStr = ingStr.substring(indexOfIng3, indexOfEnd);
                     subStr = subStr.substring(13, subStr.length());
 
-                    resText.setText(subStr);
+                    resText=subStr;
                     SearchIngredients.isOCR = true;
                     SearchIngredients.ocrString = subStr;
                     im = (ImageView) findViewById(R.id.imageView);
@@ -469,7 +482,7 @@ public class OcrView extends AppCompatActivity {
                     subStr = ingStr.substring(indexOfIng4, indexOfEnd);
                     subStr = subStr.substring(13, subStr.length());
 
-                    resText.setText(subStr);
+                    resText=subStr;
                     SearchIngredients.isOCR = true;
                     SearchIngredients.ocrString = subStr;
                     im = (ImageView) findViewById(R.id.imageView);
@@ -481,7 +494,7 @@ public class OcrView extends AppCompatActivity {
                     subStr = ingStr.substring(indexOfIng1, indexOfEnd);
                     subStr = subStr.substring(12, subStr.length());
 
-                    resText.setText(subStr);
+                    resText=subStr;
                     SearchIngredients.isOCR = true;
                     SearchIngredients.ocrString = subStr;
                     im = (ImageView) findViewById(R.id.imageView);
@@ -492,7 +505,7 @@ public class OcrView extends AppCompatActivity {
                     subStr = ingStr.substring(indexOfIng2, indexOfEnd);
                     subStr = subStr.substring(12, subStr.length());
 
-                    resText.setText(subStr);
+                    resText=subStr;
                     SearchIngredients.isOCR = true;
                     SearchIngredients.ocrString = subStr;
                     im = (ImageView) findViewById(R.id.imageView);
@@ -501,13 +514,15 @@ public class OcrView extends AppCompatActivity {
 
                 }
                 else {
-                    resText.setText("Couldn't Find Ingredients Or The End Of The List." + "Please Try Again.");
+                    resText="Couldn't Find Ingredients Or The End Of The List." + "Please Try Again.";
+                    showMessage("Identified Text",resText);
                     startActivity(new Intent(getApplicationContext(), OcrView.class));
                 }
 
             }
             } catch (Exception e) {
-                resText.setText("Please Take a Picture Again");
+                resText="Please Take a Picture Again";
+                Toast.makeText(getApplicationContext(),resText,Toast.LENGTH_LONG).show();
 
             }
 
@@ -534,7 +549,8 @@ public class OcrView extends AppCompatActivity {
         }
         catch (Exception e)
         {
-            resText.setText("Please Take A Picture First.");
+            resText="Please Take A Picture First.";
+            Toast.makeText(getApplicationContext(),resText,Toast.LENGTH_LONG).show();
             return null;
         }
     }
