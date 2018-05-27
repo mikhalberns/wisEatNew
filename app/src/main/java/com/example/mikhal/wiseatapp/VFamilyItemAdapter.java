@@ -60,16 +60,341 @@ public class VFamilyItemAdapter extends ArrayAdapter<FamilyData> {
         RadioButton r2= (RadioButton) rowView.findViewById(R.id.r2v);
         RadioButton r3= (RadioButton) rowView.findViewById(R.id.r3v);
 
+       /* if(VeganProfile.isVegan==true ||VegetarianProfile.isVegi==true)
+            r1.setChecked(true);
+        else if(CustomProfile.isCustom==true)
+            r3.setChecked(true);*/
+
+
+        if(VeganProfile.isVegan==true) {
+
+            if (p == 0)
+            {
+               if(veganBeefVal==1)//never
+                   r1.setChecked(true);
+               else if(veganBeefVal==2)//occ
+                   r2.setChecked(true);
+               else if(veganBeefVal==0)//always
+                   r3.setChecked(true);
+            }
+            else if (p == 1)
+            {
+                if(veganChickenVal==1)//never
+                    r1.setChecked(true);
+                else if(veganChickenVal==2)//occ
+                    r2.setChecked(true);
+                else if(veganChickenVal==0)//always
+                    r3.setChecked(true);
+            }
+            else if (p == 2)
+            {
+                if(veganPorkVal==1)//never
+                    r1.setChecked(true);
+                else if(veganPorkVal==2)//occ
+                    r2.setChecked(true);
+                else if(veganPorkVal==0)//always
+                    r3.setChecked(true);
+            }
+            else if (p == 3)
+            {
+                if(veganFishVal==1)//never
+                    r1.setChecked(true);
+                else if(veganFishVal==2)//occ
+                    r2.setChecked(true);
+                else if(veganFishVal==0)//always
+                    r3.setChecked(true);
+            }
+            else if (p == 4)
+            {
+                if(veganInsectsVal==1)//never
+                    r1.setChecked(true);
+                else if(veganInsectsVal==2)//occ
+                    r2.setChecked(true);
+                else if(veganInsectsVal==0)//always
+                    r3.setChecked(true);
+            }
+            else if (p== 5)
+            {
+                if(veganEggsVal==1)//never
+                    r1.setChecked(true);
+                else if(veganEggsVal==2)//occ
+                    r2.setChecked(true);
+                else if(veganEggsVal==0)//always
+                    r3.setChecked(true);
+            }
+            else if (p == 6)
+            {
+                if(veganMilkVal==1)//never
+                    r1.setChecked(true);
+                else if(veganMilkVal==2)//occ
+                    r2.setChecked(true);
+                else if(veganMilkVal==0)//always
+                    r3.setChecked(true);
+            }
+            else if (p == 7)
+            {
+                if(veganHoneyVal==1)//never
+                    r1.setChecked(true);
+                else if(veganHoneyVal==2)//occ
+                    r2.setChecked(true);
+                else if(veganHoneyVal==0)//always
+                    r3.setChecked(true);
+            }
+            else if (p == 8)
+            {
+                if(veganShellfishVal==1)//never
+                    r1.setChecked(true);
+                else if(veganShellfishVal==2)//occ
+                    r2.setChecked(true);
+                else if(veganShellfishVal==0)//always
+                    r3.setChecked(true);
+            }
+
+        } else if(VegetarianProfile.isVegi==true)
+        {
+            if (p == 0)
+            {
+                if(vegiBeef==1)//never
+                    r1.setChecked(true);
+                else if(vegiBeef==2)//occ
+                    r2.setChecked(true);
+                else if(vegiBeef==0)//always
+                    r3.setChecked(true);
+            }
+            else if (p == 1)
+            {
+                if(vegiChicken==1)//never
+                    r1.setChecked(true);
+                else if(vegiChicken==2)//occ
+                    r2.setChecked(true);
+                else if(vegiChicken==0)//always
+                    r3.setChecked(true);
+            }
+            else if (p == 2)
+            {
+                if(vegiPork==1)//never
+                    r1.setChecked(true);
+                else if(vegiPork==2)//occ
+                    r2.setChecked(true);
+                else if(vegiPork==0)//always
+                    r3.setChecked(true);
+            }
+            else if (p == 3)
+            {
+                if(vegiFish==1)//never
+                    r1.setChecked(true);
+                else if(vegiFish==2)//occ
+                    r2.setChecked(true);
+                else if(vegiFish==0)//always
+                    r3.setChecked(true);
+            }
+            else if (p == 4)
+            {
+                if(vegiInsects==1)//never
+                    r1.setChecked(true);
+                else if(vegiInsects==2)//occ
+                    r2.setChecked(true);
+                else if(vegiInsects==0)//always
+                    r3.setChecked(true);
+            }
+            else if (p== 5)
+            {
+                if(vegiShellfish==1)//never
+                    r1.setChecked(true);
+                else if(vegiShellfish==2)//occ
+                    r2.setChecked(true);
+                else if(vegiShellfish==0)//always
+                    r3.setChecked(true);
+            }
+        }else if(CustomProfile.isCustom==true)
+        {
+            if (p == 0)
+            {
+                if(cBeef==1)//never
+                    r1.setChecked(true);
+                else if(cBeef==2)//occ
+                    r2.setChecked(true);
+                else if(cBeef==0)//always
+                    r3.setChecked(true);
+            }
+            else if (p == 1)
+            {
+                if(cChicken==1)//never
+                    r1.setChecked(true);
+                else if(cChicken==2)//occ
+                    r2.setChecked(true);
+                else if(cChicken==0)//always
+                    r3.setChecked(true);
+            }
+            else if (p == 2)
+            {
+                if(cPork==1)//never
+                    r1.setChecked(true);
+                else if(cPork==2)//occ
+                    r2.setChecked(true);
+                else if(cPork==0)//always
+                    r3.setChecked(true);
+            }
+            else if (p == 3)
+            {
+                if(cFish==1)//never
+                    r1.setChecked(true);
+                else if(cFish==2)//occ
+                    r2.setChecked(true);
+                else if(cFish==0)//always
+                    r3.setChecked(true);
+            }
+            else if (p == 4)
+            {
+                if(cInsects==1)//never
+                    r1.setChecked(true);
+                else if(cInsects==2)//occ
+                    r2.setChecked(true);
+                else if(cInsects==0)//always
+                    r3.setChecked(true);
+            }
+            else if (p== 5)
+            {
+                if(cEggs==1)//never
+                    r1.setChecked(true);
+                else if(cEggs==2)//occ
+                    r2.setChecked(true);
+                else if(cEggs==0)//always
+                    r3.setChecked(true);
+            }
+            else if (p == 6)
+            {
+                if(cMilk==1)//never
+                    r1.setChecked(true);
+                else if(cMilk==2)//occ
+                    r2.setChecked(true);
+                else if(cMilk==0)//always
+                    r3.setChecked(true);
+            }
+            else if (p == 7)
+            {
+                if(cHoney==1)//never
+                    r1.setChecked(true);
+                else if(cHoney==2)//occ
+                    r2.setChecked(true);
+                else if(cHoney==0)//always
+                    r3.setChecked(true);
+            }
+            else if (p == 8)
+            {
+                if(cGluten==1)//never
+                    r1.setChecked(true);
+                else if(cGluten==2)//occ
+                    r2.setChecked(true);
+                else if(cGluten==0)//always
+                    r3.setChecked(true);
+            }
+            else if (p == 9)
+            {
+                if(  cLupin==1)//never
+                    r1.setChecked(true);
+                else if(  cLupin==2)//occ
+                    r2.setChecked(true);
+                else if(  cLupin==0)//always
+                    r3.setChecked(true);
+            }
+            else if (p == 10)
+            {
+                if(cSesame==1)//never
+                    r1.setChecked(true);
+                else if(cSesame==2)//occ
+                    r2.setChecked(true);
+                else if(cSesame==0)//always
+                    r3.setChecked(true);
+            }
+            else if (p == 11)
+            {
+                if(cAlgae==1)//never
+                    r1.setChecked(true);
+                else if(cAlgae==2)//occ
+                    r2.setChecked(true);
+                else if(cAlgae==0)//always
+                    r3.setChecked(true);
+            }
+            else if (p == 12)
+            {
+                if(cShellfish==1)//never
+                    r1.setChecked(true);
+                else if(cShellfish==2)//occ
+                    r2.setChecked(true);
+                else if(cShellfish==0)//always
+                    r3.setChecked(true);
+            }
+            else if (p == 13)
+            {
+                if(cSoy==1)//never
+                    r1.setChecked(true);
+                else if(cSoy==2)//occ
+                    r2.setChecked(true);
+                else if(cSoy==0)//always
+                    r3.setChecked(true);
+            }
+            else if (p == 14)
+            {
+                if(cPeanuts==1)//never
+                    r1.setChecked(true);
+                else if(cPeanuts==2)//occ
+                    r2.setChecked(true);
+                else if(cPeanuts==0)//always
+                    r3.setChecked(true);
+            }
+            else if (p == 15)
+            {
+                if(cSulphite==1)//never
+                    r1.setChecked(true);
+                else if(cSulphite==2)//occ
+                    r2.setChecked(true);
+                else if(cSulphite==0)//always
+                    r3.setChecked(true);
+            }
+            else if (p== 16)
+            {
+                if(cNuts==1)//never
+                    r1.setChecked(true);
+                else if(cNuts==2)//occ
+                    r2.setChecked(true);
+                else if(cNuts==0)//always
+                    r3.setChecked(true);
+            }
+            else if (p == 17)
+            {
+                if(cMustrad==1)//never
+                    r1.setChecked(true);
+                else if(cMustrad==2)//occ
+                    r2.setChecked(true);
+                else if(cMustrad==0)//always
+                    r3.setChecked(true);
+            }
+            else if (p == 18)
+            {
+                if(cCelery==1)//never
+                    r1.setChecked(true);
+                else if(cCelery==2)//occ
+                    r2.setChecked(true);
+                else if(cCelery==0)//always
+                    r3.setChecked(true);
+            }
+            else if (p == 19)
+            {
+                if(cCorn==1)//never
+                    r1.setChecked(true);
+                else if(cCorn==2)//occ
+                    r2.setChecked(true);
+                else if(cCorn==0)//always
+                    r3.setChecked(true);
+            }
+        }
+
         rg.setVisibility(View.VISIBLE);
         r1.setVisibility(View.VISIBLE);
         r2.setVisibility(View.VISIBLE);
         r3.setVisibility(View.VISIBLE);
         postDateView.setVisibility(View.INVISIBLE);
-
-        if(VeganProfile.isVegan==true ||VegetarianProfile.isVegi==true)
-            r1.setChecked(true);
-        else if(CustomProfile.isCustom==true)
-            r3.setChecked(true);
 
 
             rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {

@@ -52,6 +52,40 @@ public class FamilyItemAdapter extends ArrayAdapter<FamilyData> {
         RadioButton r2 = (RadioButton) rowView.findViewById(R.id.r2);
 
 
+        if (position == 0)//dairy
+        {
+            if(dairyVal==1)//never
+                r1.setChecked(true);
+            else if(dairyVal==2)//occ
+                r2.setChecked(true);
+
+        }
+        else if (position == 1)//gluten
+        {
+            if(glutenVal==1)//never
+                r1.setChecked(true);
+            else if(glutenVal==2)//occ
+                r2.setChecked(true);
+
+        }
+        else if (position == 2)//peanuts
+        {
+            if(peanutsVal==1)//never
+                r1.setChecked(true);
+            else if(peanutsVal==2)//occ
+                r2.setChecked(true);
+        }
+        else if (position == 3)//eggs
+        {
+            if(eggsVal==1)//never
+                r1.setChecked(true);
+            else if(eggsVal==2)//occ
+                r2.setChecked(true);
+        }
+
+
+
+
         if (datas[position].familyClicked == true) {
 
             rg.setVisibility(View.VISIBLE);
