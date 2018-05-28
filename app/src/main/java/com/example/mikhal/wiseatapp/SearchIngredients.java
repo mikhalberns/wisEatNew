@@ -3,37 +3,32 @@ package com.example.mikhal.wiseatapp;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.SearchView;
 import android.widget.Toast;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.nio.charset.Charset;
-import java.util.ArrayList;
-import java.util.List;
-
+/************************************************SearchIngredients.java*****************************************************
+ This class is responsible for ingredients search (all ingredients - both from OCR and from the manual search.
+ **************************************************************************************************************************/
 public class SearchIngredients extends AppCompatActivity {
-    String ingredients;
-    Button btnSearch;
-    DatabaseHelper myDb;
+
+    private String ingredients;
+    private Button btnSearch;
+    private Button btnBack;
+    private DatabaseHelper myDb;
     public static boolean isOCR = false;
     public static String ocrString;
-    String tmp;
-    static int[] neverFamily;
-    static int[] occasionallyFamily;
-    String[] resOcr;
-    static String buffer = "";
-    static int cntUnknown;
+    public String tmp;
+    public static int[] neverFamily;
+    public static int[] occasionallyFamily;
+    private String[] resOcr;
+    public static String buffer = "";
+    public static int cntUnknown;
+    private SearchView s;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,12 +42,24 @@ public class SearchIngredients extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        s = (SearchView) findViewById(R.id.search);
+        s.setIconifiedByDefault(false);
+
         btnSearch = (Button) findViewById(R.id.btnSearch);
+        btnBack = (Button) findViewById(R.id.backB);
+        btnBack.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        startActivity(new Intent(getApplicationContext(), HomePage.class));
+                    }
+                });
         neverFamily = new int[20];
         for (int i = 0; i < 20; i++) neverFamily[i] = 0;
         occasionallyFamily = new int[20];
         for (int i = 0; i < 20; i++) occasionallyFamily[i] = 0;
 
+        //OCR Case
         if (isOCR == true) {
             isOCR = false;
             tmp = ocrString;
@@ -61,9 +68,11 @@ public class SearchIngredients extends AppCompatActivity {
             searchOcr(resOcr);
         }
 
+        //Manual Case
         search();
     }
 
+    //converts the String (from OCR & Manual Search) to the same format (also delete unnecessary spaces)
     private String[] deleteSpacesAndSplit(String str) {
         if (str.contains(",")) {
             String[] ingStrings = new String[str.split(",").length];
@@ -103,7 +112,7 @@ public class SearchIngredients extends AppCompatActivity {
         }
     }
 
-
+    //Case Of Manual search - after press the search button. search each one of the ingredients in the DB
     public void search() {
         btnSearch.setOnClickListener(
                 new View.OnClickListener() {
@@ -130,17 +139,20 @@ public class SearchIngredients extends AppCompatActivity {
         );
     }
 
+    //Case Of OCR search - after press check button in the ocr view. search each one of the ingredients in the DB
     public void searchOcr(String[] ocr) {
 
         buffer ="";
 
         for (String s : ocr) {
+
             searchInDb(s);
         }
 
         resOcr = null;
     }
 
+    //Search each ingredient in the DB and classifies it acorrdinly to the user's profile
     public void searchInDb(String ingredient) {
 
         if(myDb.checkIfExistInRecoveryTable()==false)
@@ -151,7 +163,10 @@ public class SearchIngredients extends AppCompatActivity {
         Cursor DBIngredient = myDb.getIngredientFromDb(ingredient);
         if (DBIngredient.getCount() == 0) {
             cntUnknown++;
-            buffer = buffer + ingredient+"\n";
+            if(buffer.equals(""))
+                buffer = buffer + ingredient;
+            else
+                buffer = buffer +", "+ ingredient;
         }
 
         String family = null;
@@ -176,15 +191,7 @@ public class SearchIngredients extends AppCompatActivity {
 
     }
 
-    public void showMessage(String title, String Message) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setCancelable(true);
-        builder.setTitle(title);
-        builder.setMessage(Message);
-        builder.show();
-    }
-
-    //update profile arrays and result table
+    //classifies each ingredient in the right category (never/ocasionally eat) and update choices data in the DB
     private void updateProfileArrays(String family) {
         int rate = myDb.getRateFromProfile(family);
 

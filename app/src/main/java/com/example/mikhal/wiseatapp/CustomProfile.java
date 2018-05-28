@@ -4,24 +4,27 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
+
+/************************************************CustomProfile.java****************************************************
+        This class is responsible for the custom profile choices
+ ***********************************************************************************************************************/
 public class CustomProfile extends AppCompatActivity {
 
-    DatabaseHelper myDb;
-    ListView listView;
-    VFamilyItemAdapter itemAdapter;
+    private DatabaseHelper myDb;
+    private ListView listView;
+    private VFamilyItemAdapter itemAdapter;
     private FamilyData[] listData;
-    String [] familyArr ={"Beef","Chicken","Pork","Fish","Insects","Eggs","Dairy","Honey","Gluten","Lupin","Sesame","Algae","Shellfish","Soy","Peanuts","Sulphite"
+    private String [] familyArr ={"Beef","Chicken","Pork","Fish","Insects","Eggs","Dairy","Honey","Gluten","Lupin","Sesame","Algae","Shellfish","Soy","Peanuts","Sulphite"
             ,"Nuts","Mustard","Celery","Corn"};
-    int [] imArr ={R.drawable.beef,R.drawable.chicken,R.drawable.pork,R.drawable.fish,R.drawable.insects,R.drawable.eggs,R.drawable.dairy,R.drawable.honey
+    private int [] imArr ={R.drawable.beef,R.drawable.chicken,R.drawable.pork,R.drawable.fish,R.drawable.insects,R.drawable.eggs,R.drawable.dairy,R.drawable.honey
             ,R.drawable.gluten,R.drawable.lupin,R.drawable.sesame,R.drawable.algae,R.drawable.shellfish,R.drawable.soya,R.drawable.peanuts,R.drawable.sulphite,R.drawable.nuts
             ,R.drawable.mustard,R.drawable.celery,R.drawable.corn};
-    static boolean [] familyClicked = {true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true};
-    static boolean isCustom = false;
+    public static boolean [] familyClicked = {true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true};
+    public static boolean isCustom = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,11 +43,13 @@ public class CustomProfile extends AppCompatActivity {
         listView.setAdapter(itemAdapter);
 
         Button done = (Button) findViewById(R.id.Cdone);
+
+        //insert the data that chosen to the db
         done.setOnClickListener(new View.OnClickListener() { //do when click done
             @Override
             public void onClick(View v) {
 
-                myDb.insertData(VFamilyItemAdapter.cBeef,VFamilyItemAdapter.cChicken,VFamilyItemAdapter.cPork,VFamilyItemAdapter.cFish,VFamilyItemAdapter.cInsects,VFamilyItemAdapter.cEggs,VFamilyItemAdapter.cMilk,VFamilyItemAdapter.cHoney,VFamilyItemAdapter.cGluten,VFamilyItemAdapter.cLupin,VFamilyItemAdapter.cSesame,VFamilyItemAdapter.cAlgae,VFamilyItemAdapter.vegiShellfish,0,0,0,0,0,0,0);
+                myDb.insertData(VFamilyItemAdapter.cBeef,VFamilyItemAdapter.cChicken,VFamilyItemAdapter.cPork,VFamilyItemAdapter.cFish,VFamilyItemAdapter.cInsects,VFamilyItemAdapter.cEggs,VFamilyItemAdapter.cMilk,VFamilyItemAdapter.cHoney,VFamilyItemAdapter.cGluten,VFamilyItemAdapter.cLupin,VFamilyItemAdapter.cSesame,VFamilyItemAdapter.cAlgae,VFamilyItemAdapter.cShellfish,VFamilyItemAdapter.cSoy,VFamilyItemAdapter.cPeanuts,VFamilyItemAdapter.cSulphite,VFamilyItemAdapter.cNuts,VFamilyItemAdapter.cMustrad,VFamilyItemAdapter.cCelery,VFamilyItemAdapter.cCorn);
                 myDb.matchProfileToUser();
                 Toast.makeText(CustomProfile.this,"Your Profile Has Been Set Up!",Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(getApplicationContext(), HomePage.class));
@@ -53,6 +58,7 @@ public class CustomProfile extends AppCompatActivity {
 
     }
 
+    //generate pictures and titles into the list
     private void generateData() {
         FamilyData data = null;
         listData = new FamilyData[20];

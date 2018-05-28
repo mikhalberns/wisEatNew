@@ -5,13 +5,10 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.widget.Toast;
 
-import org.w3c.dom.Text;
-
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.List;
+/*************************************************DatabaseHelper.java******************************************************
+ This class is responsible for working with the SqlLite DataBase
+ **************************************************************************************************************************/
 
 public class DatabaseHelper extends SQLiteOpenHelper {
     // profiles table
@@ -79,6 +76,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         super(context, WISEATAPP_DATABASE, null, 4);
     }
 
+    /*creates Our Tables: Users Table (contains the users accounts and their profile id),Ingredients Table (contains the ingredients
+    and their families),Profile Tables (contains all users' profiles),Recovery Table (contains the searches statistics in order to create
+    recommendations for the users).*/
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("create table " + USERS_TABLE + " (userId TEXT PRIMARY KEY, profileID INTEGER, isActive INTEGER)");
@@ -95,6 +95,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
+    //// insert data to the Profile Table
     public boolean insertData(Integer beef,Integer chicken,Integer pork,Integer fish,Integer Insects, Integer eggs,Integer milk,Integer honey,Integer gluten,Integer lupin,Integer sesame, Integer algae, Integer shellfish, Integer soy, Integer peanuts,Integer sulphite,Integer nuts, Integer mustard,Integer celery, Integer corn) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -126,6 +127,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             return true;
     }
 
+    // insert new user id to the Users Table and update the active user to the current user
     public boolean insertUIDToUsers(String userId) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -140,6 +142,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             return true;
     }
 
+    // insert new user id to the Users Table and update the active user to the current user
     public void deactivateAll() {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -147,6 +150,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.update("usersTable",contentValues,null,null);
     }
 
+    //match the created/updated profile
     public void matchProfileToUser(){
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor res = db.rawQuery("select MAX(profileID) from profiles_table", null);
@@ -162,6 +166,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
 
+    //active the current user
     public void activateUser (String userId){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -170,6 +175,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.update("usersTable",contentValues,"userId='"+userId+"'",null);
     }
 
+    //check id user already exists or this is a new one
     public boolean checkIfUIDExist(String userId) {
         //query that checks if the userId exist
         SQLiteDatabase db = this.getWritableDatabase();
@@ -188,6 +194,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("delete from " + USERS_TABLE);
     }*/
 
+    //initialize the database with ingredients
     public void insertING2DB()
     {
         SQLiteDatabase db = this.getWritableDatabase();
@@ -395,9 +402,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 "clove leaf oil,null",
                 "clove stem oil,null",
                 "cocoa,null",
-                "cocoa (processed with alkali),null",
+                "cocoa (processed with al- kali),null",
+                "cocoa (processed with a- kali),null",
                 "cocoa butter,null",
-                "cocoa processed with alkali,null",
+                "cocoa processed with al- kali,null",
                 "coconut,null",
                 "coconut oil,null",
                 "coconut oil (packaging),null",
@@ -1219,7 +1227,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 "triticum,gluten",
                 "triticum flour,gluten",
                 "turmeric,null",
-                "unbleached enriched flour (wheat flour, niacin, re-duced iron, thiamin mononitrate (vitamin : b1), riboflavin (vitamin b2), folic acid),gluten",
+                "unbleached enriched flour (wheat flour, niacin, re- duced iron, thiamin mononitrate (vitamin : b1), riboflavin (vitamin b2), folic acid),gluten",
                 "unbleached flour,gluten",
                 "virginia peanuts,peanuts",
                 "vital gluten,gluten",
@@ -1266,7 +1274,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 "zea mays,corn",
                 "zein,corn",
                 "zinc caseinate,milk",
-                "zinc oxide,null"};
+                "zinc oxide,null",
+                "niacin,null",
+                "re- duced iron,null",
+                "folic acid),null",
+                "titaniunm diox- ide (color),null",
+                "high fructose/or calcium phosphate),null",
+                "corn starch (contains sulfite),sulphite",
+                "vegetable oil, null",
+                "flavourings,null"};
 
         db.execSQL("delete from " + ING_TABLE);
 
@@ -1280,6 +1296,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
+    //get information about the family in user profile (eating habits)
     public Cursor getIngredientFromDb(String ingredient) {
 
         SQLiteDatabase db = this.getWritableDatabase();
@@ -1288,6 +1305,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return res;
     }
 
+    //initialize user choices statistics
     public Integer getRateFromProfile(String family){
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor res = db.rawQuery("select profileID from usersTable where isActive=1", null);//find the active user profileID
@@ -1339,7 +1357,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.insert(RECOVERY_TABLE, null, contentValues); //never row
     }
 
-    //get the active user
+    //get the active user profile ID
     public int getActivateUserProfileId()
     {
         SQLiteDatabase db = this.getWritableDatabase();
@@ -1351,7 +1369,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return res.getInt(0);
     }
 
-    //check if user already exists in recovery table (run in the db search)
+    //check if exist information in Recovery Table
     public boolean checkIfExistInRecoveryTable()
     {
         int pId = getActivateUserProfileId();
@@ -1364,7 +1382,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return true;
     }
 
-    //function - check if current user got to 10 (from homepage) -never (run in homepage)
+    //check if got to 10 ingredients that classified in "never families"
     public String checkIfGotTo10NeverIng()
     {
         int pId = getActivateUserProfileId();
@@ -1455,7 +1473,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return str;
     }
 
-    //check if current user got to 10 (from homepage) -occ (run in homepage)
+    //check if got to 10 ingredients that classified in "occationaly families"
     public String checkIfGotTo10OccIng()
     {
         int pId = getActivateUserProfileId();
@@ -1546,7 +1564,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return str;
     }
 
-    //add +1 to the relevant family in the relevant never/occ (run in the db search)
+    //add +1 to the right family category after ingredients search (never/occationaly)
     public void updateRelevantFamily(String family,int isNever)
     {
         int pId = getActivateUserProfileId();
@@ -1579,7 +1597,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     //check if null user so delete (didn't choose pid)
-
     public void checkIfNullUser()
     {
         SQLiteDatabase db = this.getWritableDatabase();

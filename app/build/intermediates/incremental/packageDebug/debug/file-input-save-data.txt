@@ -1,15 +1,15 @@
 #Internal package file, do not edit.
-#Mon May 21 00:02:08 IDT 2018
+#Mon May 28 00:44:39 IDT 2018
 1.base=C\:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\9
 2.path=classes.dex
 0.baseType=DIRECTORY
-2.base=C\:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\8
+2.base=C\:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\9
 2.set=DEX
 1.baseType=DIRECTORY
 count=3
 1.set=DEX
-0.path=classes2.dex
+0.path=classes.dex
 0.set=DEX
-0.base=C\:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\9
+0.base=C\:\\Users\\mikha\\AndroidStudioProjects\\wisEatNew\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
 2.baseType=DIRECTORY
-1.path=classes.dex
+1.path=classes2.dex

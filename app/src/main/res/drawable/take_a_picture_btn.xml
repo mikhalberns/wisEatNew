@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/take_picture_xml"
+        android:drawable="@drawable/camera_pressedx"
+        android:width="94dp"
+        android:height="94dp"
+        />
+
+</layer-list>

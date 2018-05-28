@@ -4,23 +4,24 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import static com.example.mikhal.wiseatapp.R.id.VegeterianDone;
 
+/***********************************************VegeterianProfile.java**************************************************
+ This class is responsible for the vegeterian profile choices
+ ***********************************************************************************************************************/
 public class VegetarianProfile extends AppCompatActivity {
 
-    DatabaseHelper myDb;
-    ListView listView;
-    VFamilyItemAdapter itemAdapter;
+    private DatabaseHelper myDb;
+    private ListView listView;
+    private VFamilyItemAdapter itemAdapter;
     private FamilyData[] listData;
-    String [] familyArr ={"Beef","Chicken","Pork","Fish","Insects","Shellfish"};
-    int [] imArr ={R.drawable.beef,R.drawable.chicken,R.drawable.pork,R.drawable.fish,R.drawable.insects,R.drawable.shellfish};
-    static boolean [] familyClicked = {true,true,true,true,true,true};
-    static boolean isVegi = false;
+    private String [] familyArr ={"Beef","Chicken","Pork","Fish","Insects","Shellfish"};
+    private int [] imArr ={R.drawable.beef,R.drawable.chicken,R.drawable.pork,R.drawable.fish,R.drawable.insects,R.drawable.shellfish};
+    public static boolean [] familyClicked = {true,true,true,true,true,true};
+    public static boolean isVegi = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +39,8 @@ public class VegetarianProfile extends AppCompatActivity {
         listView.setAdapter(itemAdapter);
 
         Button done = (Button) findViewById(R.id.VegeterianDone);
+
+        //insert the data that chosen to the db
         done.setOnClickListener(new View.OnClickListener() { //do when click done
             @Override
             public void onClick(View v) {
@@ -50,6 +53,7 @@ public class VegetarianProfile extends AppCompatActivity {
 
     }
 
+    //generate pictures and titles into the list
     private void generateData() {
         FamilyData data = null;
         listData = new FamilyData[6];

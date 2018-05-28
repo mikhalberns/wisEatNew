@@ -6,107 +6,86 @@
     android:layout_height="match_parent"
     tools:context="com.example.mikhal.wiseatapp.OcrView">
 
-    <RelativeLayout
-        android:layout_width="152dp"
-        android:layout_height="41dp"
+    <Button
+        android:id="@+id/backB"
+        android:layout_width="45dp"
+        android:layout_height="77dp"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="23dp"
-        android:id="@+id/relativeLayout2">
+        android:layout_marginEnd="29dp"
+        android:background="@drawable/homeicon_preesedx" /> "
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="31dp"
-            android:layout_height="match_parent"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginEnd="16dp"
-            android:elevation="3dp"
-            android:visibility="visible"
-            app:srcCompat="@drawable/focus" />
+    <Button
+        android:id="@+id/picBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/idBtn"
+        android:layout_marginEnd="30dp"
+        android:layout_toStartOf="@+id/backB"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/focus_btn"
+        android:fontFamily="casual"
+        android:text="@string/pic_take"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textStyle="bold" />
 
-    </RelativeLayout>
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="370dp"
-        android:layout_height="480dp"
-        android:layout_above="@+id/relativeLayout"
-        android:layout_alignEnd="@+id/resText"
-        android:layout_below="@+id/relativeLayout2"
-        android:layout_marginBottom="18dp"
-        android:background="@drawable/shadow_rect"
+        android:layout_width="320dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/rotateB"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <RelativeLayout
-        android:layout_width="153dp"
-        android:layout_height="41dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="90dp"
-        android:id="@+id/relativeLayout">
-
-        <Button
-            android:id="@+id/checkBtn"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:background="@drawable/rounded_corner_check"
-            android:fontFamily="casual"
-            android:padding="10dp"
-            android:text="@string/Check"
-            android:textAllCaps="false"
-            android:textColor="@android:color/background_light" />
-
-    </RelativeLayout>
-
-    <TextView
-        android:id="@+id/resText"
-        android:layout_width="341dp"
-        android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="21dp"
-        android:fontFamily="casual"
-        android:textAllCaps="false"
-        android:gravity="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
     <Button
-        android:id="@+id/picBtn"
-        android:layout_width="145dp"
-        android:layout_height="45dp"
-        android:layout_above="@+id/imageView"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/rounded_corner_scan"
+        android:id="@+id/idBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="13dp"
+        android:layout_toStartOf="@+id/picBtn"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/identify_btn"
         android:fontFamily="casual"
-        android:gravity="left"
-        android:padding="10dp"
-        android:text="@string/pic_take"
+        android:text="@string/identify"
         android:textAllCaps="false"
-        android:textColor="@android:color/background_light"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:textSize="12dp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/rotateB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/relativeLayout"
         android:layout_alignParentStart="true"
-        android:text="rotate" />
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/rotate_btn"
+        android:fontFamily="casual"
+        android:text="@string/rotate"
+        android:textAllCaps="false"
+        android:textSize="12dp"
+        android:textStyle="bold" />
 
     <Button
-        android:id="@+id/backB"
-        android:layout_width="wrap_content"
+        android:id="@+id/resB"
+        android:layout_width="168dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/resText"
-        android:layout_alignEnd="@+id/resText"
-        android:text="back" />
+        android:layout_alignBottom="@+id/idBtn"
+        android:layout_alignEnd="@+id/backB"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/check_btn"
+        android:fontFamily="casual"
+        android:text="@string/check_prod"
+        android:textAllCaps="false"
+        android:textColor="@color/check"
+        android:textSize="15dp"
+        android:textStyle="bold" />
 
 </RelativeLayout>

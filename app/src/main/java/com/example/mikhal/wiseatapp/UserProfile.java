@@ -3,33 +3,30 @@ package com.example.mikhal.wiseatapp;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.app.Activity;
-import android.view.LayoutInflater;
-import android.view.Menu;
-import  android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
-
+/*************************************************UserProfile.java******************************************************
+ This class is responsible for the main activity of user profile choose
+ ***********************************************************************************************************************/
 public class UserProfile extends AppCompatActivity {
 
-    ListView listView;
-    FamilyItemAdapter itemAdapter;
+    private ListView listView;
+    private FamilyItemAdapter itemAdapter;
     private FamilyData[] listData;
-    String [] familyArr ={"Dairy Free","Gluten Free","Peanuts Free","Eggs Free","Vegetarian","Vegan","Custom"};
-    String [] descArr ={"Choose profile to avoid dairy products","Choose profile to avoid Gluten",
+    private String [] familyArr ={"Dairy Free","Gluten Free","Peanuts Free","Eggs Free","Vegetarian","Vegan","Custom"};
+    private String [] descArr ={"Choose profile to avoid dairy products","Choose profile to avoid Gluten",
             "Choose profile to avoid Peanuts","Choose profile to avoid Eggs","Choose this profile if your diet is vegetarian",
             "Choose this profile if your diet is vegan","Create your own profile"};
-    int [] imArr ={R.drawable.dairy,R.drawable.gluten,R.drawable.peanuts,R.drawable.eggs,R.drawable.vegaterian,R.drawable.vegan,R.drawable.custom};
-    static boolean [] familyClicked = {false,false,false,false};
-    static public boolean isVegetarian = false;
-    static public boolean isVegan = false;
-    static public boolean isCustom = false;
-    DatabaseHelper myDb;
+    private int [] imArr ={R.drawable.dairy,R.drawable.gluten,R.drawable.peanuts,R.drawable.eggs,R.drawable.vegaterian,R.drawable.vegan,R.drawable.custom};
+    public static boolean [] familyClicked = {false,false,false,false};
+    public static boolean isVegetarian = false;
+    public static boolean isVegan = false;
+    public static boolean isCustom = false;
+    private DatabaseHelper myDb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -126,20 +123,8 @@ public class UserProfile extends AppCompatActivity {
         });
     }
 
-   /* //  @Override
-    protected void onStart() {
-        super.onStart();
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(getApplicationContext(),"on start",Toast.LENGTH_SHORT).show();
-                clickOnFamily(l);
-            }
-        });
-
-    }*/
-
+    //navigate to the right place after clicking the preffered category
     public void clickOnFamily(long position)
     {
         if(position==0)
@@ -196,6 +181,7 @@ public class UserProfile extends AppCompatActivity {
         }
     }
 
+    //generate pictures and titles into the list
     private void generateData() {
         FamilyData data = null;
         listData = new FamilyData[7];

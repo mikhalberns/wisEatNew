@@ -3,23 +3,23 @@ package com.example.mikhal.wiseatapp;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.drawable.Drawable;
-import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
+
+/***************************************************ResultView.java*********************************************************
+ This class is responsible for the Results of the ingredients search.
+ **************************************************************************************************************************/
 
 public class ResultView extends AppCompatActivity {
 
-    TextView resView;
-    TextView email;
-    ImageView resImage;
-    ImageButton home;
+    private TextView resView;
+    private TextView email;
+    private ImageView resImage;
+    private ImageButton home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +39,6 @@ public class ResultView extends AppCompatActivity {
             }
         });
 
-
         if(checkIfNeverIng()==true)//there is never eat ingredient
         {
             resView.setText(getNeverIngString());
@@ -57,8 +56,8 @@ public class ResultView extends AppCompatActivity {
         else if(SearchIngredients.cntUnknown!=0)//unknown ingredient
         {
 
-            resView.setText("We Didn't Find Some Of The Ingredients:\n" + SearchIngredients.buffer +"\n"+"Please Help Us Expand Our DataBase And Send Us" +
-                    "An Email To wiseatapp@gmail.com And Classify The Unknown Ingredients To Their Food Family.");
+            resView.setText("Oh no!\nUnfortunately, our app couldn't find a food family classification for the following ingredients:\n" + SearchIngredients.buffer +"\n"+"Think you know the right classification?\n" +
+                    "Feel free to send us an Email with your suggestion:");
 
             Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.please);
             resImage.setImageBitmap(bm);
@@ -67,7 +66,7 @@ public class ResultView extends AppCompatActivity {
         }
         else //allowed
         {
-            resView.setText("This Product Is Perfect For You!");
+            resView.setText("This Product Is Perfect For You!\nBon Appetit!");
 
             Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.perfect);
             resImage.setImageBitmap(bm);
@@ -79,6 +78,7 @@ public class ResultView extends AppCompatActivity {
         SearchIngredients.cntUnknown=0;
     }
 
+    //Checks if the user searched ingredients that the profile says the user never eat
     private boolean checkIfNeverIng()
     {
         for (int i = 0; i < 20; i++)
@@ -88,6 +88,8 @@ public class ResultView extends AppCompatActivity {
         }
         return false;
     }
+
+    //Checks if the user searched ingredients that the profile says the user occasionally eat
     private boolean checkIfOccIng()
     {
         for (int i = 0; i < 20; i++)
@@ -98,10 +100,11 @@ public class ResultView extends AppCompatActivity {
         return false;
     }
 
+    //Get the list of families that user never eat and found in the search
     private String getNeverIngString()
     {
         StringBuffer buffer = new StringBuffer();
-        buffer.append("You Are Not Allowed To Eat This Product.\n" + "This Product Contains:\n");
+        buffer.append("You Are Not Allowed To Eat This Product.\n" + " This product contains ingredients from the following food families that you've marked as 'Never':\n");
 
         for (int i = 0; i < 20; i++)
         {
@@ -174,12 +177,15 @@ public class ResultView extends AppCompatActivity {
                 }
             }
         }
+        buffer.append("We're really sorry for you. Try another product!");
         return buffer.toString();
     }
+
+    //Get the list of families that user occationally eat and found in the search
     private String getOccIngString()
     {
         StringBuffer buffer = new StringBuffer();
-        buffer.append("This Product Contains Ingredients That You've Marked As 'Occasionally':\n");
+        buffer.append("This Product Contains Ingredients From Food Families That You've Marked As 'Occasionally':\n");
 
         for (int i = 0; i < 20; i++)
         {
@@ -252,6 +258,7 @@ public class ResultView extends AppCompatActivity {
                 }
             }
         }
+        buffer.append("You should consider whether to consume this product or not.");
         return buffer.toString();
     }
 

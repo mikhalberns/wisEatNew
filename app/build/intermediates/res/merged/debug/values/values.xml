@@ -149,8 +149,8 @@
     <color name="cast_libraries_material_featurehighlight_outer_highlight_default_color">#2196F3</color>
     <color name="cast_libraries_material_featurehighlight_text_body_color">#FFFFFFFF</color>
     <color name="cast_libraries_material_featurehighlight_text_header_color">#FFFFFFFF</color>
-    <color name="check">#59757f</color>
-    <color name="colorAccent">#B0B0B0</color>
+    <color name="check">#57688c</color>
+    <color name="colorAccent">#504f4f</color>
     <color name="colorGoogle">#D84B37</color>
     <color name="colorPrimary">#7bb737</color>
     <color name="colorPrimaryDark">#578227</color>
@@ -1059,7 +1059,6 @@
     <integer name="mr_controller_volume_group_list_fade_out_duration_ms">200</integer>
     <integer name="show_password_duration">200</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
-    <string name="Check">Check Ingredients</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
     <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
@@ -1140,6 +1139,7 @@
     <string name="cast_unmute">Unmute</string>
     <string name="celery">celery</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
+    <string name="check_prod">Check Ingredients</string>
     <string name="chicken">chicken</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t work unless you enable Google Play services.</string>
@@ -1179,9 +1179,12 @@
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDmBvrwJj-zZj1QAxMYBAImtLlast1fgHc</string>
     <string name="google_storage_bucket" translatable="false">wiseat-6e837.appspot.com</string>
     <string name="guidelines">Please select a consumption profile, and\n set the desired degree of avoidance</string>
+    <string name="home_guidelines">Welcome!\n How would you like to check the ingredients in your product?</string>
     <string name="honey">honey</string>
     <string name="i_m_avoiding">i_m_avoiding</string>
+    <string name="identify">Identify text</string>
     <string name="insects">insects</string>
+    <string name="instructions">Use a comma to separate between the ingredients</string>
     <string name="logout">\tLog Out</string>
     <string name="lupin">lupin</string>
     <string name="mr_button_content_description">Cast button</string>
@@ -1216,9 +1219,11 @@
     <string name="pic_take">Take A Picture</string>
     <string name="place_autocomplete_clear_button">Clear search</string>
     <string name="place_autocomplete_search_hint">Search</string>
+    <string name="pls_search">Please enter ingredients to search</string>
     <string name="pork">pork</string>
     <string name="profile">Edit Profile</string>
     <string name="project_id" translatable="false">wiseat-6e837</string>
+    <string name="rotate">Rotate Picture</string>
     <string name="s1">Save image</string>
     <string name="s2">"Allow Ad to store image in Picture gallery?"</string>
     <string name="s3">Accept</string>
@@ -1242,7 +1247,7 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_home">Home</string>
     <string name="title_notifications">Notifications</string>
-    <string name="typing">Type manually</string>
+    <string name="typing">\tType manually</string>
     <string name="vegan">Vegan</string>
     <string name="vegetarian">Vegetarian</string>
     <string name="wallet_buy_button_place_holder">Buy with Google</string>

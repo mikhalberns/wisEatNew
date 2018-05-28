@@ -22,7 +22,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:adjustViewBounds="false"
-            android:background="@drawable/profile"
+            android:background="@drawable/profile_pressedx"
             android:cropToPadding="false" />
 
         <TextView
@@ -40,65 +40,63 @@
 
     </RelativeLayout>
 
-    <RelativeLayout
-        android:layout_width="270dp"
-        android:layout_height="110dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="229dp">
+    <TextView
+        android:id="@+id/guidelines_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="121dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="@string/home_guidelines"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
+    <RelativeLayout
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
         <Button
             android:id="@+id/addPic"
-            android:layout_width="113dp"
-            android:layout_height="match_parent"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="0dp"
-            android:background="@drawable/camera" />
-
-        <TextView
-            android:id="@+id/take_picture_textView"
-            android:layout_width="wrap_content"
+            android:layout_width="234dp"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toEndOf="@+id/addPic"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/take_a_picture_btn"
             android:fontFamily="casual"
             android:text="@string/take_picture"
+            android:textAllCaps="false"
             android:textColor="@color/takePic"
             android:textSize="18sp"
-            android:textStyle="bold" />
-
+            android:textStyle="bold"
+            android:visibility="visible" />
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_width="266dp"
-        android:layout_height="96dp"
+        android:layout_width="235dp"
+        android:layout_height="104dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="97dp">
-
+        android:layout_marginBottom="102dp">
         <Button
             android:id="@+id/EnterIngredients"
-            android:layout_width="94dp"
-            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="6dp"
-            android:background="@drawable/manually" />
-
-        <TextView
-            android:id="@+id/manually_textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:layout_marginEnd="30dp"
+            android:layout_marginStart="0dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/type_manually_btn"
             android:fontFamily="casual"
             android:text="@string/typing"
+            android:textAllCaps="false"
             android:textColor="@color/manually"
             android:textSize="18sp"
-            android:textStyle="bold" />
-
+            android:textStyle="bold"
+            android:visibility="visible" />
     </RelativeLayout>
 
 
