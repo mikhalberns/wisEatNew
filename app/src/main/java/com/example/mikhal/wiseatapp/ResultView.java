@@ -56,7 +56,7 @@ public class ResultView extends AppCompatActivity {
         else if(SearchIngredients.cntUnknown!=0)//unknown ingredient
         {
 
-            resView.setText("Oh no!\nUnfortunately, our app couldn't find a food family classification for the following ingredients:\n" + SearchIngredients.buffer +"\n"+"Think you know the right classification?\n" +
+            resView.setText("Oh no ! \nUnfortunately, our app couldn't find a food family classification for the following ingredients:\n" + SearchIngredients.buffer +"\n"+"Think you know the right classification?\n" +
                     "Feel free to send us an Email with your suggestion:");
 
             Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.please);
@@ -66,7 +66,7 @@ public class ResultView extends AppCompatActivity {
         }
         else //allowed
         {
-            resView.setText("This Product Is Perfect For You!\nBon Appetit!");
+            resView.setText("\n\nThis Product Is Perfect For You.\n\nBon Appetit.");
 
             Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.perfect);
             resImage.setImageBitmap(bm);
@@ -177,7 +177,7 @@ public class ResultView extends AppCompatActivity {
                 }
             }
         }
-        buffer.append("We're really sorry for you. Try another product!");
+        buffer.append("We're really sorry for you. Try another product.");
         return buffer.toString();
     }
 

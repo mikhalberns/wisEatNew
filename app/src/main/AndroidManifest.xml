@@ -23,7 +23,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="false"
         android:theme="@style/AppTheme">
-        <activity android:name=".Login">
+        <activity android:name=".Login"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -51,11 +53,21 @@
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".ResultView"
-            android:screenOrientation="portrait" />
-        <activity android:name=".UserProfile" />
-        <activity android:name=".VeganProfile" />
-        <activity android:name=".CustomProfile" />
-        <activity android:name=".VegetarianProfile"></activity>
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".UserProfile"
+                  android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".VeganProfile"
+                  android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".CustomProfile"
+                  android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".VegetarianProfile"
+                   android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
     </application>
 
 </manifest>
