@@ -46,7 +46,10 @@
         android:supportsRtl="false"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.mikhal.wiseatapp.Login" >
+        <activity
+            android:name="com.example.mikhal.wiseatapp.Login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -74,11 +77,21 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.example.mikhal.wiseatapp.ResultView"
-            android:screenOrientation="portrait" />
-        <activity android:name="com.example.mikhal.wiseatapp.UserProfile" />
-        <activity android:name="com.example.mikhal.wiseatapp.VeganProfile" />
-        <activity android:name="com.example.mikhal.wiseatapp.CustomProfile" />
-        <activity android:name="com.example.mikhal.wiseatapp.VegetarianProfile" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.mikhal.wiseatapp.UserProfile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.mikhal.wiseatapp.VeganProfile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.mikhal.wiseatapp.CustomProfile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.mikhal.wiseatapp.VegetarianProfile"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
         <activity
             android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
             android:excludeFromRecents="true"

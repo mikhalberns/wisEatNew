@@ -5020,10 +5020,10 @@ containing a value of this type.
         public static final int icon_only=0x7f0f008d;
         public static final int icon_uri=0x7f0f0064;
         public static final int icon_view=0x7f0f0115;
-        public static final int idBtn=0x7f0f00ec;
+        public static final int idBtn=0x7f0f00ed;
         public static final int ifRoom=0x7f0f007f;
         public static final int image=0x7f0f00b1;
-        public static final int imageView=0x7f0f00ed;
+        public static final int imageView=0x7f0f00ec;
         public static final int index_entity_types=0x7f0f0089;
         public static final int info=0x7f0f0167;
         public static final int instant_message=0x7f0f006f;

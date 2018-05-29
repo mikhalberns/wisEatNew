@@ -30,11 +30,11 @@
         android:layout_height="34dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="182dp"
+        android:layout_marginBottom="267dp"
         android:autoLink="email"
         android:fontFamily="casual"
         android:gravity="center"
-        android:text="wizeatapp@gmail.com"
+        android:text="wiseatapp@gmail.com"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -44,6 +44,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="54dp" />
+        android:layout_marginBottom="137dp" />
 
 </RelativeLayout>
